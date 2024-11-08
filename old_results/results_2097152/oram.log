@@ -1,0 +1,826 @@
+Valid leaf ID range: 67108863:134217726
+Num of top nodes: 67108864
+Data level num of ways: 2097152
+cached_total: 32
+cached_total: 96
+cached_total: 224
+cached_total: 480
+Total number of ORAM protected cache line blocks: 67108864
+Cached number of levels: 8
+Max number of levels: 27
+Start lvl is: 5
+data valid leaf right: 134217727
+data num of levels: 27
+data level num of ways: 2097152
+data number of sets: 32
+Cached node ID: 31 -- 486
+Address space: 0 - 4 GB
+pos1 valid leaf right: 16777215
+pos1 num of levels: 24
+pos1 level num of ways: 262144
+pos1 number of sets: 32
+Cached node ID: 31 -- 87
+Address space: 0 - 0.5 GB
+pos2 valid leaf right: 2097151
+pos2 num of levels: 21
+pos2 level num of ways: 32768
+pos2 number of sets: 32
+Cached node ID: 31 -- 59
+Address space: 0 - 0.0625 GB
+Clk3 @ 1000000 Finished 1374 instructions 
+Clk3 @ 2000000 Finished 3197 instructions 
+Clk7 @ 3000000 Finished 5154 instructions 
+Clk3 @ 4000000 Finished 7135 instructions 
+Clk3 @ 5000000 Finished 9150 instructions 
+Clk@ 5421070 Working on the # 10000 th memory instruction
+Clk3 @ 6000000 Finished 11154 instructions 
+Clk3 @ 7000000 Finished 13198 instructions 
+Clk7 @ 8000000 Finished 15200 instructions 
+Clk3 @ 9000000 Finished 17240 instructions 
+Clk3 @ 10000000 Finished 19291 instructions 
+Clk@ 10355656 Working on the # 20000 th memory instruction
+Clk3 @ 11000000 Finished 21301 instructions 
+Clk7 @ 12000000 Finished 23343 instructions 
+Clk7 @ 13000000 Finished 25368 instructions 
+Clk3 @ 14000000 Finished 27433 instructions 
+Clk3 @ 15000000 Finished 29440 instructions 
+Clk@ 15281635 Working on the # 30000 th memory instruction
+Clk7 @ 16000000 Finished 31417 instructions 
+Clk3 @ 17000000 Finished 33446 instructions 
+Clk7 @ 18000000 Finished 35506 instructions 
+Clk7 @ 19000000 Finished 37556 instructions 
+Clk3 @ 20000000 Finished 39581 instructions 
+Clk@ 20207181 Working on the # 40000 th memory instruction
+Clk3 @ 21000000 Finished 41616 instructions 
+Clk3 @ 22000000 Finished 43630 instructions 
+Clk3 @ 23000000 Finished 45658 instructions 
+Clk3 @ 24000000 Finished 47684 instructions 
+Clk7 @ 25000000 Finished 49710 instructions 
+Clk@ 25148919 Working on the # 50000 th memory instruction
+Clk7 @ 26000000 Finished 51767 instructions 
+Clk3 @ 27000000 Finished 53802 instructions 
+Clk3 @ 28000000 Finished 55862 instructions 
+Clk7 @ 29000000 Finished 57900 instructions 
+Clk3 @ 30000000 Finished 59854 instructions 
+Clk@ 30073144 Working on the # 60000 th memory instruction
+Clk7 @ 31000000 Finished 61797 instructions 
+Clk7 @ 32000000 Finished 63816 instructions 
+Clk7 @ 33000000 Finished 65831 instructions 
+Clk3 @ 34000000 Finished 67896 instructions 
+Clk3 @ 35000000 Finished 69934 instructions 
+Clk@ 35033079 Working on the # 70000 th memory instruction
+Clk3 @ 36000000 Finished 71948 instructions 
+Clk3 @ 37000000 Finished 73982 instructions 
+Clk3 @ 38000000 Finished 76005 instructions 
+Clk7 @ 39000000 Finished 78013 instructions 
+Clk@ 39984959 Working on the # 80000 th memory instruction
+Clk7 @ 40000000 Finished 80025 instructions 
+Clk3 @ 41000000 Finished 82049 instructions 
+Clk3 @ 42000000 Finished 84088 instructions 
+Clk3 @ 43000000 Finished 86088 instructions 
+Clk3 @ 44000000 Finished 88098 instructions 
+Clk@ 44941731 Working on the # 90000 th memory instruction
+Clk3 @ 45000000 Finished 90114 instructions 
+Clk3 @ 46000000 Finished 92143 instructions 
+Clk7 @ 47000000 Finished 94177 instructions 
+Clk3 @ 48000000 Finished 96192 instructions 
+Clk3 @ 49000000 Finished 98216 instructions 
+Clk@ 49886456 Working on the # 100000 th memory instruction
+Clk7 @ 50000000 Finished 100230 instructions 
+Clk7 @ 51000000 Finished 102266 instructions 
+Clk3 @ 52000000 Finished 104290 instructions 
+Clk3 @ 53000000 Finished 106336 instructions 
+Clk7 @ 54000000 Finished 108385 instructions 
+Clk@ 54793729 Working on the # 110000 th memory instruction
+Clk3 @ 55000000 Finished 110423 instructions 
+Clk3 @ 57000000 Finished 114491 instructions 
+Clk3 @ 58000000 Finished 116492 instructions 
+Clk3 @ 59000000 Finished 118434 instructions 
+Clk@ 59815622 Working on the # 120000 th memory instruction
+Clk3 @ 60000000 Finished 120349 instructions 
+Clk7 @ 61000000 Finished 122260 instructions 
+Clk3 @ 62000000 Finished 124256 instructions 
+Clk7 @ 63000000 Finished 126319 instructions 
+Clk7 @ 64000000 Finished 128320 instructions 
+Clk@ 64831757 Working on the # 130000 th memory instruction
+Clk7 @ 65000000 Finished 130341 instructions 
+Clk3 @ 66000000 Finished 132365 instructions 
+Clk3 @ 67000000 Finished 134415 instructions 
+Clk3 @ 68000000 Finished 136462 instructions 
+Clk7 @ 69000000 Finished 138488 instructions 
+Clk@ 69744350 Working on the # 140000 th memory instruction
+Clk3 @ 70000000 Finished 140496 instructions 
+Clk3 @ 71000000 Finished 142486 instructions 
+Clk3 @ 72000000 Finished 144500 instructions 
+Clk7 @ 73000000 Finished 146527 instructions 
+Clk3 @ 74000000 Finished 148545 instructions 
+Clk@ 74714426 Working on the # 150000 th memory instruction
+Clk3 @ 75000000 Finished 150561 instructions 
+Clk3 @ 76000000 Finished 152553 instructions 
+Clk3 @ 77000000 Finished 154540 instructions 
+Clk3 @ 78000000 Finished 156546 instructions 
+Clk3 @ 79000000 Finished 158572 instructions 
+Clk@ 79720607 Working on the # 160000 th memory instruction
+Clk3 @ 80000000 Finished 160548 instructions 
+Clk3 @ 81000000 Finished 162579 instructions 
+Clk7 @ 82000000 Finished 164564 instructions 
+Clk3 @ 83000000 Finished 166575 instructions 
+Clk3 @ 84000000 Finished 168609 instructions 
+Clk@ 84683650 Working on the # 170000 th memory instruction
+Clk3 @ 85000000 Finished 170624 instructions 
+Clk3 @ 86000000 Finished 172617 instructions 
+Clk3 @ 87000000 Finished 174616 instructions 
+Clk3 @ 88000000 Finished 176613 instructions 
+Clk3 @ 89000000 Finished 178622 instructions 
+Clk@ 89678420 Working on the # 180000 th memory instruction
+Clk3 @ 90000000 Finished 180658 instructions 
+Clk3 @ 91000000 Finished 182699 instructions 
+Clk3 @ 92000000 Finished 184690 instructions 
+Clk3 @ 93000000 Finished 186731 instructions 
+Clk7 @ 94000000 Finished 188751 instructions 
+Clk@ 94624682 Working on the # 190000 th memory instruction
+Clk3 @ 95000000 Finished 190749 instructions 
+Clk3 @ 96000000 Finished 192765 instructions 
+Clk3 @ 97000000 Finished 194776 instructions 
+Clk3 @ 98000000 Finished 196762 instructions 
+Clk3 @ 99000000 Finished 198765 instructions 
+Clk@ 99608569 Working on the # 200000 th memory instruction
+Clk3 @ 100000000 Finished 200782 instructions 
+Clk3 @ 101000000 Finished 202783 instructions 
+Clk3 @ 102000000 Finished 204826 instructions 
+Clk3 @ 103000000 Finished 206855 instructions 
+Clk3 @ 104000000 Finished 208880 instructions 
+Clk@ 104559579 Working on the # 210000 th memory instruction
+Clk3 @ 105000000 Finished 210900 instructions 
+Clk7 @ 106000000 Finished 212928 instructions 
+Clk3 @ 107000000 Finished 214942 instructions 
+Clk3 @ 108000000 Finished 216964 instructions 
+Clk3 @ 109000000 Finished 219001 instructions 
+Clk@ 109502208 Working on the # 220000 th memory instruction
+Clk3 @ 110000000 Finished 221012 instructions 
+Clk3 @ 111000000 Finished 223015 instructions 
+Clk7 @ 112000000 Finished 225036 instructions 
+Clk3 @ 113000000 Finished 227059 instructions 
+Clk7 @ 114000000 Finished 229104 instructions 
+Clk@ 114439242 Working on the # 230000 th memory instruction
+Clk3 @ 115000000 Finished 231151 instructions 
+Clk3 @ 116000000 Finished 233144 instructions 
+Clk7 @ 117000000 Finished 235122 instructions 
+Clk7 @ 118000000 Finished 237038 instructions 
+Clk3 @ 119000000 Finished 238835 instructions 
+Clk@ 119651221 Working on the # 240000 th memory instruction
+Clk3 @ 120000000 Finished 240663 instructions 
+Clk3 @ 121000000 Finished 242571 instructions 
+Clk3 @ 122000000 Finished 244491 instructions 
+Clk7 @ 123000000 Finished 246485 instructions 
+Clk3 @ 124000000 Finished 248530 instructions 
+Clk@ 124728593 Working on the # 250000 th memory instruction
+Clk3 @ 125000000 Finished 250542 instructions 
+Clk3 @ 126000000 Finished 252552 instructions 
+Clk3 @ 127000000 Finished 254582 instructions 
+Clk3 @ 128000000 Finished 256572 instructions 
+Clk3 @ 129000000 Finished 258571 instructions 
+Clk@ 129713256 Working on the # 260000 th memory instruction
+Clk3 @ 130000000 Finished 260557 instructions 
+Clk3 @ 131000000 Finished 262555 instructions 
+Clk3 @ 132000000 Finished 264583 instructions 
+Clk3 @ 133000000 Finished 266585 instructions 
+Clk7 @ 134000000 Finished 268628 instructions 
+Clk@ 134670993 Working on the # 270000 th memory instruction
+Clk3 @ 135000000 Finished 270673 instructions 
+Clk3 @ 136000000 Finished 272719 instructions 
+Clk7 @ 137000000 Finished 274726 instructions 
+Clk7 @ 138000000 Finished 276743 instructions 
+Clk3 @ 139000000 Finished 278727 instructions 
+Clk@ 139643260 Working on the # 280000 th memory instruction
+Clk3 @ 140000000 Finished 280709 instructions 
+Clk7 @ 141000000 Finished 282648 instructions 
+Clk3 @ 142000000 Finished 284643 instructions 
+Clk3 @ 143000000 Finished 286639 instructions 
+Clk3 @ 144000000 Finished 288633 instructions 
+Clk@ 144678434 Working on the # 290000 th memory instruction
+Clk3 @ 145000000 Finished 290650 instructions 
+Clk3 @ 146000000 Finished 292666 instructions 
+Clk3 @ 147000000 Finished 294686 instructions 
+Clk3 @ 148000000 Finished 296719 instructions 
+Clk7 @ 149000000 Finished 298744 instructions 
+Clk@ 149625086 Working on the # 300000 th memory instruction
+Clk7 @ 150000000 Finished 300762 instructions 
+Clk3 @ 151000000 Finished 302750 instructions 
+Clk7 @ 152000000 Finished 304741 instructions 
+Clk3 @ 153000000 Finished 306719 instructions 
+Clk7 @ 154000000 Finished 308712 instructions 
+Clk@ 154646891 Working on the # 310000 th memory instruction
+Clk3 @ 155000000 Finished 310707 instructions 
+Clk3 @ 156000000 Finished 312703 instructions 
+Clk7 @ 157000000 Finished 314719 instructions 
+Clk7 @ 158000000 Finished 316749 instructions 
+Clk3 @ 159000000 Finished 318786 instructions 
+Clk@ 159595008 Working on the # 320000 th memory instruction
+Clk3 @ 160000000 Finished 320819 instructions 
+Clk3 @ 161000000 Finished 322783 instructions 
+Clk7 @ 162000000 Finished 324752 instructions 
+Clk3 @ 163000000 Finished 326707 instructions 
+Clk3 @ 164000000 Finished 328698 instructions 
+Clk@ 164657174 Working on the # 330000 th memory instruction
+Clk3 @ 165000000 Finished 330700 instructions 
+Clk3 @ 166000000 Finished 332715 instructions 
+Clk7 @ 167000000 Finished 334719 instructions 
+Clk3 @ 168000000 Finished 336745 instructions 
+Clk3 @ 169000000 Finished 338756 instructions 
+Clk@ 169615338 Working on the # 340000 th memory instruction
+Clk7 @ 170000000 Finished 340783 instructions 
+Clk3 @ 171000000 Finished 342782 instructions 
+Clk3 @ 172000000 Finished 344751 instructions 
+Clk3 @ 173000000 Finished 346687 instructions 
+Clk3 @ 174000000 Finished 348634 instructions 
+Clk@ 174697273 Working on the # 350000 th memory instruction
+Clk3 @ 175000000 Finished 350612 instructions 
+Clk3 @ 176000000 Finished 352635 instructions 
+Clk7 @ 177000000 Finished 354657 instructions 
+Clk3 @ 178000000 Finished 356653 instructions 
+Clk3 @ 179000000 Finished 358648 instructions 
+Clk@ 179669473 Working on the # 360000 th memory instruction
+Clk3 @ 180000000 Finished 360666 instructions 
+Clk7 @ 181000000 Finished 362699 instructions 
+Clk7 @ 182000000 Finished 364720 instructions 
+Clk3 @ 183000000 Finished 366731 instructions 
+Clk7 @ 184000000 Finished 368742 instructions 
+Clk@ 184626464 Working on the # 370000 th memory instruction
+Clk3 @ 185000000 Finished 370742 instructions 
+Clk7 @ 186000000 Finished 372736 instructions 
+Clk3 @ 187000000 Finished 374751 instructions 
+Clk3 @ 188000000 Finished 376757 instructions 
+Clk3 @ 189000000 Finished 378782 instructions 
+Clk@ 189610002 Working on the # 380000 th memory instruction
+Clk3 @ 190000000 Finished 380794 instructions 
+Clk3 @ 191000000 Finished 382808 instructions 
+Clk3 @ 192000000 Finished 384819 instructions 
+Clk3 @ 193000000 Finished 386824 instructions 
+Clk3 @ 194000000 Finished 388758 instructions 
+Clk@ 194624523 Working on the # 390000 th memory instruction
+Clk3 @ 195000000 Finished 390754 instructions 
+Clk7 @ 196000000 Finished 392701 instructions 
+Clk3 @ 197000000 Finished 394674 instructions 
+Clk3 @ 198000000 Finished 396672 instructions 
+Clk3 @ 199000000 Finished 398675 instructions 
+Clk@ 199666489 Working on the # 400000 th memory instruction
+Clk7 @ 200000000 Finished 400678 instructions 
+Clk3 @ 201000000 Finished 402700 instructions 
+Clk3 @ 202000000 Finished 404725 instructions 
+Clk3 @ 203000000 Finished 406720 instructions 
+Clk3 @ 204000000 Finished 408721 instructions 
+Clk@ 204626318 Working on the # 410000 th memory instruction
+Clk7 @ 205000000 Finished 410745 instructions 
+Clk3 @ 206000000 Finished 412748 instructions 
+Clk3 @ 207000000 Finished 414745 instructions 
+Clk3 @ 208000000 Finished 416780 instructions 
+Clk3 @ 209000000 Finished 418804 instructions 
+Clk@ 209598563 Working on the # 420000 th memory instruction
+Clk3 @ 210000000 Finished 420801 instructions 
+Clk3 @ 211000000 Finished 422809 instructions 
+Clk7 @ 212000000 Finished 424826 instructions 
+Clk3 @ 213000000 Finished 426857 instructions 
+Clk3 @ 214000000 Finished 428892 instructions 
+Clk@ 214556113 Working on the # 430000 th memory instruction
+Clk7 @ 215000000 Finished 430880 instructions 
+Clk3 @ 216000000 Finished 432886 instructions 
+Clk7 @ 217000000 Finished 434861 instructions 
+Clk3 @ 218000000 Finished 436845 instructions 
+Clk3 @ 219000000 Finished 438868 instructions 
+Clk@ 219565704 Working on the # 440000 th memory instruction
+Clk7 @ 220000000 Finished 440892 instructions 
+Clk3 @ 221000000 Finished 442905 instructions 
+Clk7 @ 222000000 Finished 444925 instructions 
+Clk3 @ 223000000 Finished 446961 instructions 
+Clk3 @ 224000000 Finished 448988 instructions 
+Clk@ 224503714 Working on the # 450000 th memory instruction
+Clk3 @ 225000000 Finished 450997 instructions 
+Clk3 @ 226000000 Finished 453013 instructions 
+Clk3 @ 227000000 Finished 455012 instructions 
+Clk7 @ 228000000 Finished 457005 instructions 
+Clk3 @ 229000000 Finished 459015 instructions 
+Clk@ 229481310 Working on the # 460000 th memory instruction
+Clk3 @ 230000000 Finished 461042 instructions 
+Clk7 @ 231000000 Finished 463081 instructions 
+Clk3 @ 232000000 Finished 465078 instructions 
+Clk3 @ 233000000 Finished 467074 instructions 
+Clk7 @ 234000000 Finished 469108 instructions 
+Clk@ 234444862 Working on the # 470000 th memory instruction
+Clk3 @ 235000000 Finished 471131 instructions 
+Clk3 @ 236000000 Finished 473127 instructions 
+Clk3 @ 237000000 Finished 475066 instructions 
+Clk3 @ 238000000 Finished 476942 instructions 
+Clk3 @ 239000000 Finished 478767 instructions 
+Clk@ 239660912 Working on the # 480000 th memory instruction
+Clk3 @ 240000000 Finished 480629 instructions 
+Clk7 @ 241000000 Finished 482576 instructions 
+Clk7 @ 242000000 Finished 484530 instructions 
+Clk3 @ 243000000 Finished 486478 instructions 
+Clk3 @ 244000000 Finished 488482 instructions 
+Clk@ 244756070 Working on the # 490000 th memory instruction
+Clk3 @ 245000000 Finished 490488 instructions 
+Clk3 @ 246000000 Finished 492498 instructions 
+Clk3 @ 247000000 Finished 494495 instructions 
+Clk3 @ 248000000 Finished 496526 instructions 
+Clk3 @ 249000000 Finished 498530 instructions 
+Clk@ 249732072 Working on the # 500000 th memory instruction
+Warm up done after line access count: 500000 out of 1000000 (50 %)
+Clk7 @ 250000000 Finished 500542 instructions 
+Clk3 @ 251000000 Finished 502569 instructions 
+Clk3 @ 252000000 Finished 504571 instructions 
+Clk7 @ 253000000 Finished 506578 instructions 
+Clk3 @ 254000000 Finished 508604 instructions 
+Clk@ 254694473 Working on the # 510000 th memory instruction
+Clk3 @ 255000000 Finished 510614 instructions 
+Clk7 @ 256000000 Finished 512573 instructions 
+Clk3 @ 257000000 Finished 514585 instructions 
+Clk3 @ 258000000 Finished 516586 instructions 
+Clk7 @ 259000000 Finished 518565 instructions 
+Clk@ 259736288 Working on the # 520000 th memory instruction
+Clk3 @ 260000000 Finished 520511 instructions 
+Clk3 @ 261000000 Finished 522480 instructions 
+Clk3 @ 262000000 Finished 524440 instructions 
+Clk3 @ 263000000 Finished 526451 instructions 
+Clk3 @ 264000000 Finished 528460 instructions 
+Clk@ 264764485 Working on the # 530000 th memory instruction
+Clk3 @ 265000000 Finished 530475 instructions 
+Clk3 @ 266000000 Finished 532496 instructions 
+Clk3 @ 267000000 Finished 534511 instructions 
+Clk3 @ 268000000 Finished 536540 instructions 
+Clk3 @ 269000000 Finished 538550 instructions 
+Clk@ 269722628 Working on the # 540000 th memory instruction
+Clk7 @ 270000000 Finished 540554 instructions 
+Clk3 @ 271000000 Finished 542555 instructions 
+Clk3 @ 272000000 Finished 544552 instructions 
+Clk3 @ 273000000 Finished 546561 instructions 
+Clk3 @ 274000000 Finished 548548 instructions 
+Clk@ 274720351 Working on the # 550000 th memory instruction
+Clk3 @ 275000000 Finished 550562 instructions 
+Clk3 @ 276000000 Finished 552575 instructions 
+Clk3 @ 277000000 Finished 554592 instructions 
+Clk3 @ 278000000 Finished 556592 instructions 
+Clk3 @ 279000000 Finished 558583 instructions 
+Clk@ 279713455 Working on the # 560000 th memory instruction
+Clk3 @ 280000000 Finished 560546 instructions 
+Clk3 @ 281000000 Finished 562538 instructions 
+Clk7 @ 282000000 Finished 564484 instructions 
+Clk3 @ 283000000 Finished 566459 instructions 
+Clk3 @ 284000000 Finished 568431 instructions 
+Clk@ 284784879 Working on the # 570000 th memory instruction
+Clk3 @ 285000000 Finished 570431 instructions 
+Clk3 @ 286000000 Finished 572434 instructions 
+Clk3 @ 287000000 Finished 574443 instructions 
+Clk7 @ 288000000 Finished 576453 instructions 
+Clk3 @ 289000000 Finished 578446 instructions 
+Clk@ 289774586 Working on the # 580000 th memory instruction
+Clk3 @ 290000000 Finished 580462 instructions 
+Clk3 @ 291000000 Finished 582456 instructions 
+Clk3 @ 292000000 Finished 584454 instructions 
+Clk3 @ 293000000 Finished 586455 instructions 
+Clk3 @ 294000000 Finished 588476 instructions 
+Clk@ 294755800 Working on the # 590000 th memory instruction
+Clk3 @ 295000000 Finished 590491 instructions 
+Clk7 @ 296000000 Finished 592507 instructions 
+Clk3 @ 297000000 Finished 594521 instructions 
+Clk3 @ 298000000 Finished 596535 instructions 
+Clk3 @ 299000000 Finished 598552 instructions 
+Clk@ 299718945 Working on the # 600000 th memory instruction
+Clk3 @ 300000000 Finished 600565 instructions 
+Clk3 @ 301000000 Finished 602568 instructions 
+Clk3 @ 302000000 Finished 604548 instructions 
+Clk7 @ 303000000 Finished 606546 instructions 
+Clk7 @ 304000000 Finished 608530 instructions 
+Clk@ 304743067 Working on the # 610000 th memory instruction
+Clk3 @ 305000000 Finished 610499 instructions 
+Clk3 @ 306000000 Finished 612463 instructions 
+Clk7 @ 307000000 Finished 614470 instructions 
+Clk3 @ 308000000 Finished 616458 instructions 
+Clk3 @ 309000000 Finished 618458 instructions 
+Clk@ 309770318 Working on the # 620000 th memory instruction
+Clk3 @ 310000000 Finished 620469 instructions 
+Clk3 @ 311000000 Finished 622498 instructions 
+Clk3 @ 312000000 Finished 624504 instructions 
+Clk3 @ 313000000 Finished 626552 instructions 
+Clk7 @ 314000000 Finished 628551 instructions 
+Clk@ 314730586 Working on the # 630000 th memory instruction
+Clk7 @ 315000000 Finished 630529 instructions 
+Clk7 @ 316000000 Finished 632544 instructions 
+Clk3 @ 317000000 Finished 634555 instructions 
+Clk3 @ 318000000 Finished 636564 instructions 
+Clk3 @ 319000000 Finished 638602 instructions 
+Clk@ 319694985 Working on the # 640000 th memory instruction
+Clk3 @ 320000000 Finished 640607 instructions 
+Clk3 @ 321000000 Finished 642612 instructions 
+Clk3 @ 322000000 Finished 644619 instructions 
+Clk3 @ 323000000 Finished 646599 instructions 
+Clk3 @ 324000000 Finished 648565 instructions 
+Clk@ 324744811 Working on the # 650000 th memory instruction
+Clk3 @ 325000000 Finished 650511 instructions 
+Clk3 @ 326000000 Finished 652432 instructions 
+Clk3 @ 327000000 Finished 654393 instructions 
+Clk3 @ 328000000 Finished 656368 instructions 
+Clk3 @ 329000000 Finished 658361 instructions 
+Clk@ 329821453 Working on the # 660000 th memory instruction
+Clk3 @ 330000000 Finished 660341 instructions 
+Clk3 @ 331000000 Finished 662354 instructions 
+Clk3 @ 332000000 Finished 664345 instructions 
+Clk3 @ 333000000 Finished 666351 instructions 
+Clk3 @ 334000000 Finished 668379 instructions 
+Clk7 @ 334000000 Finished 668379 instructions 
+Clk@ 334800828 Working on the # 670000 th memory instruction
+Clk3 @ 335000000 Finished 670398 instructions 
+Clk3 @ 336000000 Finished 672369 instructions 
+Clk7 @ 337000000 Finished 674399 instructions 
+Clk7 @ 338000000 Finished 676379 instructions 
+Clk3 @ 339000000 Finished 678385 instructions 
+Clk@ 339799034 Working on the # 680000 th memory instruction
+Clk3 @ 340000000 Finished 680387 instructions 
+Clk7 @ 341000000 Finished 682400 instructions 
+Clk7 @ 342000000 Finished 684389 instructions 
+Clk7 @ 343000000 Finished 686391 instructions 
+Clk7 @ 344000000 Finished 688350 instructions 
+Clk@ 344851535 Working on the # 690000 th memory instruction
+Clk7 @ 345000000 Finished 690290 instructions 
+Clk3 @ 346000000 Finished 692213 instructions 
+Clk7 @ 347000000 Finished 694187 instructions 
+Clk3 @ 348000000 Finished 696056 instructions 
+Clk7 @ 349000000 Finished 697983 instructions 
+Clk3 @ 350000000 Finished 699959 instructions 
+Clk@ 350019732 Working on the # 700000 th memory instruction
+Clk3 @ 351000000 Finished 701916 instructions 
+Clk7 @ 352000000 Finished 703904 instructions 
+Clk3 @ 353000000 Finished 705912 instructions 
+Clk3 @ 354000000 Finished 707897 instructions 
+Clk7 @ 355000000 Finished 709923 instructions 
+Clk@ 355040986 Working on the # 710000 th memory instruction
+Clk3 @ 356000000 Finished 711935 instructions 
+Clk3 @ 357000000 Finished 713936 instructions 
+Clk7 @ 357000000 Finished 713936 instructions 
+Clk3 @ 358000000 Finished 715953 instructions 
+Clk3 @ 359000000 Finished 717934 instructions 
+Clk3 @ 360000000 Finished 719922 instructions 
+Clk@ 360038928 Working on the # 720000 th memory instruction
+Clk3 @ 361000000 Finished 721911 instructions 
+Clk3 @ 362000000 Finished 723920 instructions 
+Clk3 @ 363000000 Finished 725936 instructions 
+Clk7 @ 364000000 Finished 727953 instructions 
+Clk3 @ 365000000 Finished 729977 instructions 
+Clk@ 365011417 Working on the # 730000 th memory instruction
+Clk7 @ 366000000 Finished 731961 instructions 
+Clk3 @ 367000000 Finished 733936 instructions 
+Clk3 @ 368000000 Finished 735913 instructions 
+Clk3 @ 369000000 Finished 737927 instructions 
+Clk3 @ 370000000 Finished 739916 instructions 
+Clk@ 370041592 Working on the # 740000 th memory instruction
+Clk3 @ 371000000 Finished 741865 instructions 
+Clk3 @ 372000000 Finished 743859 instructions 
+Clk3 @ 373000000 Finished 745865 instructions 
+Clk3 @ 374000000 Finished 747849 instructions 
+Clk3 @ 375000000 Finished 749854 instructions 
+Clk@ 375073569 Working on the # 750000 th memory instruction
+Clk3 @ 376000000 Finished 751854 instructions 
+Clk3 @ 377000000 Finished 753848 instructions 
+Clk7 @ 378000000 Finished 755865 instructions 
+Clk3 @ 379000000 Finished 757869 instructions 
+Clk7 @ 380000000 Finished 759873 instructions 
+Clk@ 380065598 Working on the # 760000 th memory instruction
+Clk7 @ 381000000 Finished 761887 instructions 
+Clk3 @ 382000000 Finished 763872 instructions 
+Clk7 @ 383000000 Finished 765876 instructions 
+Clk3 @ 384000000 Finished 767859 instructions 
+Clk3 @ 385000000 Finished 769852 instructions 
+Clk@ 385073639 Working on the # 770000 th memory instruction
+Clk7 @ 386000000 Finished 771840 instructions 
+Clk3 @ 387000000 Finished 773846 instructions 
+Clk3 @ 388000000 Finished 775822 instructions 
+Clk3 @ 389000000 Finished 777789 instructions 
+Clk3 @ 390000000 Finished 779747 instructions 
+Clk@ 390127408 Working on the # 780000 th memory instruction
+Clk3 @ 391000000 Finished 781747 instructions 
+Clk3 @ 392000000 Finished 783683 instructions 
+Clk3 @ 393000000 Finished 785637 instructions 
+Clk3 @ 395000000 Finished 789542 instructions 
+Clk@ 395231339 Working on the # 790000 th memory instruction
+Clk7 @ 396000000 Finished 791524 instructions 
+Clk3 @ 397000000 Finished 793509 instructions 
+Clk7 @ 398000000 Finished 795492 instructions 
+Clk7 @ 399000000 Finished 797484 instructions 
+Clk7 @ 400000000 Finished 799478 instructions 
+Clk@ 400260875 Working on the # 800000 th memory instruction
+Clk3 @ 401000000 Finished 801475 instructions 
+Clk3 @ 402000000 Finished 803482 instructions 
+Clk7 @ 403000000 Finished 805498 instructions 
+Clk3 @ 404000000 Finished 807506 instructions 
+Clk3 @ 405000000 Finished 809481 instructions 
+Clk@ 405258006 Working on the # 810000 th memory instruction
+Clk7 @ 406000000 Finished 811495 instructions 
+Clk3 @ 407000000 Finished 813460 instructions 
+Clk3 @ 408000000 Finished 815459 instructions 
+Clk7 @ 409000000 Finished 817445 instructions 
+Clk3 @ 410000000 Finished 819443 instructions 
+Clk@ 410281680 Working on the # 820000 th memory instruction
+Clk3 @ 411000000 Finished 821421 instructions 
+Clk3 @ 412000000 Finished 823423 instructions 
+Clk3 @ 413000000 Finished 825434 instructions 
+Clk3 @ 414000000 Finished 827421 instructions 
+Clk3 @ 415000000 Finished 829426 instructions 
+Clk@ 415279490 Working on the # 830000 th memory instruction
+Clk3 @ 416000000 Finished 831462 instructions 
+Clk7 @ 417000000 Finished 833464 instructions 
+Clk7 @ 418000000 Finished 835473 instructions 
+Clk7 @ 419000000 Finished 837446 instructions 
+Clk7 @ 420000000 Finished 839445 instructions 
+Clk@ 420278801 Working on the # 840000 th memory instruction
+Clk3 @ 421000000 Finished 841433 instructions 
+Clk3 @ 422000000 Finished 843435 instructions 
+Clk7 @ 423000000 Finished 845428 instructions 
+Clk3 @ 424000000 Finished 847430 instructions 
+Clk7 @ 425000000 Finished 849426 instructions 
+Clk@ 425287936 Working on the # 850000 th memory instruction
+Clk3 @ 426000000 Finished 851441 instructions 
+Clk3 @ 427000000 Finished 853433 instructions 
+Clk7 @ 428000000 Finished 855417 instructions 
+Clk3 @ 429000000 Finished 857425 instructions 
+Clk3 @ 430000000 Finished 859415 instructions 
+Clk@ 430288701 Working on the # 860000 th memory instruction
+Clk3 @ 431000000 Finished 861412 instructions 
+Clk7 @ 432000000 Finished 863402 instructions 
+Clk3 @ 433000000 Finished 865387 instructions 
+Clk3 @ 434000000 Finished 867364 instructions 
+Clk3 @ 435000000 Finished 869330 instructions 
+Clk@ 435341510 Working on the # 870000 th memory instruction
+Clk7 @ 436000000 Finished 871316 instructions 
+Clk7 @ 437000000 Finished 873308 instructions 
+Clk3 @ 438000000 Finished 875280 instructions 
+Clk3 @ 439000000 Finished 877260 instructions 
+Clk3 @ 440000000 Finished 879250 instructions 
+Clk7 @ 440000000 Finished 879250 instructions 
+Clk@ 440368414 Working on the # 880000 th memory instruction
+Clk3 @ 441000000 Finished 881258 instructions 
+Clk3 @ 442000000 Finished 883269 instructions 
+Clk7 @ 443000000 Finished 885271 instructions 
+Clk3 @ 444000000 Finished 887255 instructions 
+Clk7 @ 445000000 Finished 889262 instructions 
+Clk@ 445367101 Working on the # 890000 th memory instruction
+Clk3 @ 446000000 Finished 891270 instructions 
+Clk3 @ 447000000 Finished 893276 instructions 
+Clk3 @ 448000000 Finished 895278 instructions 
+Clk3 @ 449000000 Finished 897284 instructions 
+Clk3 @ 450000000 Finished 899277 instructions 
+Clk@ 450360700 Working on the # 900000 th memory instruction
+Clk3 @ 451000000 Finished 901283 instructions 
+Clk7 @ 452000000 Finished 903288 instructions 
+Clk3 @ 453000000 Finished 905296 instructions 
+Clk3 @ 454000000 Finished 907296 instructions 
+Clk3 @ 455000000 Finished 909311 instructions 
+Clk@ 455350589 Working on the # 910000 th memory instruction
+Clk7 @ 456000000 Finished 911290 instructions 
+Clk3 @ 457000000 Finished 913290 instructions 
+Clk3 @ 458000000 Finished 915284 instructions 
+Clk3 @ 459000000 Finished 917304 instructions 
+Clk7 @ 460000000 Finished 919322 instructions 
+Clk@ 460348328 Working on the # 920000 th memory instruction
+Clk3 @ 461000000 Finished 921315 instructions 
+Clk7 @ 462000000 Finished 923326 instructions 
+Clk3 @ 463000000 Finished 925324 instructions 
+Clk3 @ 464000000 Finished 927325 instructions 
+Clk3 @ 465000000 Finished 929337 instructions 
+Clk@ 465329292 Working on the # 930000 th memory instruction
+Clk3 @ 466000000 Finished 931331 instructions 
+Clk3 @ 467000000 Finished 933343 instructions 
+Clk3 @ 468000000 Finished 935356 instructions 
+Clk3 @ 469000000 Finished 937351 instructions 
+Clk3 @ 470000000 Finished 939346 instructions 
+Clk@ 470315830 Working on the # 940000 th memory instruction
+Clk3 @ 471000000 Finished 941359 instructions 
+Clk3 @ 472000000 Finished 943351 instructions 
+Clk3 @ 473000000 Finished 945345 instructions 
+Clk3 @ 474000000 Finished 947317 instructions 
+Clk3 @ 475000000 Finished 949280 instructions 
+Clk@ 475366840 Working on the # 950000 th memory instruction
+Clk3 @ 476000000 Finished 951245 instructions 
+Clk3 @ 477000000 Finished 953167 instructions 
+Clk3 @ 478000000 Finished 955081 instructions 
+Clk3 @ 479000000 Finished 956980 instructions 
+Clk3 @ 480000000 Finished 958911 instructions 
+Clk@ 480556923 Working on the # 960000 th memory instruction
+Clk3 @ 481000000 Finished 960868 instructions 
+Clk3 @ 482000000 Finished 962793 instructions 
+Clk3 @ 483000000 Finished 964754 instructions 
+Clk7 @ 484000000 Finished 966721 instructions 
+Clk3 @ 485000000 Finished 968716 instructions 
+Clk@ 485635708 Working on the # 970000 th memory instruction
+Clk3 @ 486000000 Finished 970735 instructions 
+Clk3 @ 487000000 Finished 972724 instructions 
+Clk3 @ 488000000 Finished 974722 instructions 
+Clk3 @ 489000000 Finished 976715 instructions 
+Clk7 @ 490000000 Finished 978706 instructions 
+Clk@ 490636454 Working on the # 980000 th memory instruction
+Clk3 @ 491000000 Finished 980716 instructions 
+Clk3 @ 492000000 Finished 982737 instructions 
+Clk3 @ 493000000 Finished 984740 instructions 
+Clk7 @ 494000000 Finished 986741 instructions 
+Clk3 @ 495000000 Finished 988748 instructions 
+Clk@ 495621363 Working on the # 990000 th memory instruction
+Clk3 @ 496000000 Finished 990756 instructions 
+Clk3 @ 497000000 Finished 992744 instructions 
+Clk3 @ 498000000 Finished 994750 instructions 
+Clk3 @ 499000000 Finished 996737 instructions 
+Clk3 @ 500000000 Finished 998723 instructions 
+Clk@ 500639175 Working on the # 1000000 th memory instruction
+
+===*** Data ***====
+Stall reason distribution: 
+mc_hazard: 0
+normal: 0
+rs_hazard: 0
+rw_swtich: 0
+Early reshuffle distribution: 
+0: 0
+1: 0
+2: 0
+3: 0
+4: 0
+5: 0
+6: 0
+7: 0
+8: 5389
+9: 60562
+10: 61441
+11: 62142
+12: 62430
+13: 62050
+14: 60878
+15: 59592
+16: 56678
+17: 49924
+18: 37065
+19: 14829
+20: 2484
+21: 231
+22: 21
+23: 2
+24: 0
+25: 0
+26: 0
+=================
+Max stash size is: 94
+Average stash size is: 44.4363
+useful_read_pull_ddr: 500003 (0.922124) %
+dummy_read_pull_ddr: 8546200 (15.7612) %
+useful_early_pull_ddr: 1318470 (2.43157) %
+useful_early_push_ddr: 456280 (0.841488) %
+useful_write_pull_ddr: 12059045 (22.2397) %
+useful_write_push_ddr: 3823291 (7.05105) %
+dummy_early_pull_ddr: 329895 (0.608404) %
+dummy_early_push_ddr: 2510777 (4.63047) %
+dummy_write_pull_ddr: 2419 (0.00446121) %
+dummy_write_push_ddr: 24676595 (45.5095) %
+=================
+Stash violation number of times: 0
+=================
+Check NodeID traffic: 9744388
+Update NodeID traffic: 6243
+=================
+Read RS lines: 1000000 (34.9886) %
+Write RS lines: 666640 (23.3248) %
+Early RS lines: 1191436 (41.6866) %
+Read DDR lines: 16593330 (16.0585) %
+Write DDR lines: 78397176 (75.8703) %
+Early DDR lines: 8340052 (8.07123) %
+
+====*** pos1 ***====
+Stall reason distribution: 
+mc_hazard: 0
+normal: 0
+rs_hazard: 0
+rw_swtich: 0
+Early reshuffle distribution: 
+0: 0
+1: 0
+2: 0
+3: 0
+4: 0
+5: 0
+6: 22736
+7: 52581
+8: 58350
+9: 61041
+10: 61792
+11: 62124
+12: 62010
+13: 62001
+14: 60983
+15: 59417
+16: 56475
+17: 49641
+18: 36371
+19: 13971
+20: 2032
+21: 148
+22: 5
+23: 0
+=================
+Max stash size is: 95
+Average stash size is: 43.5671
+useful_read_pull_ddr: 999995 (0.92404) %
+dummy_read_pull_ddr: 16622711 (15.3601) %
+useful_early_pull_ddr: 2884327 (2.66525) %
+useful_early_push_ddr: 1055008 (0.974874) %
+useful_write_pull_ddr: 23470700 (21.688) %
+useful_write_push_ddr: 8794683 (8.12668) %
+dummy_early_pull_ddr: 724063 (0.669066) %
+dummy_early_push_ddr: 5440094 (5.02689) %
+dummy_write_pull_ddr: 25308 (0.0233857) %
+dummy_write_push_ddr: 48203037 (44.5417) %
+=================
+Stash violation number of times: 0
+=================
+Check NodeID traffic: 15086360
+Update NodeID traffic: 1069
+=================
+Read RS lines: 1000000 (32.1544) %
+Write RS lines: 666640 (21.4354) %
+Early RS lines: 1443356 (46.4102) %
+Read DDR lines: 16189193 (15.7705) %
+Write DDR lines: 76362026 (74.3873) %
+Early DDR lines: 10103492 (9.84221) %
+
+====*** pos2 ***====
+Stall reason distribution: 
+mc_hazard: 0
+normal: 0
+rs_hazard: 0
+rw_swtich: 0
+Early reshuffle distribution: 
+0: 0
+1: 0
+2: 0
+3: 0
+4: 0
+5: 0
+6: 36369
+7: 52786
+8: 58207
+9: 60413
+10: 61771
+11: 61963
+12: 62153
+13: 61741
+14: 60806
+15: 59097
+16: 55193
+17: 47373
+18: 32727
+19: 8797
+20: 343
+=================
+Max stash size is: 97
+Average stash size is: 43.0302
+useful_read_pull_ddr: 999985 (1.0065) %
+dummy_read_pull_ddr: 14119588 (14.2116) %
+useful_early_pull_ddr: 2860137 (2.87878) %
+useful_early_push_ddr: 1069129 (1.0761) %
+useful_write_pull_ddr: 19968336 (20.0985) %
+useful_write_push_ddr: 8587713 (8.64369) %
+dummy_early_pull_ddr: 738558 (0.743372) %
+dummy_early_push_ddr: 5408522 (5.44378) %
+dummy_write_pull_ddr: 190288 (0.191528) %
+dummy_write_push_ddr: 45410127 (45.7061) %
+=================
+Stash violation number of times: 0
+=================
+Check NodeID traffic: 10535383
+Update NodeID traffic: 204
+=================
+Read RS lines: 1000000 (32.1945) %
+Write RS lines: 666640 (21.4622) %
+Early RS lines: 1439478 (46.3433) %
+Read DDR lines: 14079411 (15.7011) %
+Write DDR lines: 65515528 (73.0619) %
+Early DDR lines: 10076346 (11.237) %
+=================
+The final DRAM clk is: 500640318 ticks.
+Idle waiting clk is 125685277, which is 25.1049 %
+DRAM Frequency is: 1600MHz
+The final time in ns is: 3.129e+08 ns.
+Time distribution: 
+Data pull time is: 0
+data: 0
+pos1: 0
+pos2: 0
+Data distribution: 
+Pos2 data: 89671285
+Pos1 data: 102654711
+Data: 103330558
+Node access DDR: 19488776
+Pull DDR: 16593330
+WB DDR: 78397176
+Early DDR: 8340052
+Achieved BW is: 69.6995 GB/s
+Ideal BW is: 102.4 GB/s
+Metadata cache conclusion: 
+overall_hit: 19442722 overall_total: 38928398
+Cache Size 64 KB Overall Hit rate: 49.9448 %. 
+Simulation done. Statistics written to my_output.txt

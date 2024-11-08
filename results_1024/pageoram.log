@@ -1,0 +1,13 @@
+Total number of ORAM protected cache line blocks: 1048576
+Max number of levels: 21
+Valid leaf ID range: 1048575:2097150
+Address space: 0 - 8 GB
+The final DRAM clk is: 4044245570 ticks.
+DRAM Frequency is: 1600MHz
+The final time in ns is: 2.52765e+09 ns.
+Achieved BW is: 72.9214 GB/s
+Ideal BW is: 204.8 GB/s
+Metadata cache conclusion: 
+overall_hit: 0 overall_total: 0
+Cache Size 64 KB Overall Hit rate: -nan %. 
+Simulation done. Statistics written to my_output.txt

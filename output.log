@@ -1,0 +1,161 @@
+Total number of ORAM protected cache line blocks: 4
+Max number of levels: 3
+Valid leaf ID range: 3:6
+Type | orig | block | node | offset 
+read | 0x12345680 | 1 | -1 | -1
+Prospective lines added: 1
+Registering leaf# 4 into 0 th line READ
+Line # 0 Leading write line number: 24
+Outstanding request register: 200
+Outstanding request register: 700
+L# 0 : 1 | read-pull | 0 | 24 | 0x12345680 ||  RPath: 4 | 0,2,0x80,1 | 1,1,0x200,0 | 4,0,0x700,0 | | 0
+ORAM access: 0x 12345680; success is: 1
+Issuing addr 200 Type: READ
+Issuing addr 700 Type: READ
+Type | orig | block | node | offset 
+read | 0x4cbd56c0 | 0 | -1 | -1
+Prospective lines added: 1
+Registering leaf# 3 into 1 th line READ
+Line # 1 Leading write line number: 24
+Outstanding request register: 340
+Outstanding request register: 540
+L# 1 : 1 | read-pull | 0 | 24 | 0x4cbd56c0 ||  RPath: 3 | 0,5,0x140,1 | 1,6,0x340,0 | 3,0,0x540,0 | | 0
+ORAM access: 0x 4cbd56c0; success is: 1
+Issuing addr 340 Type: READ
+Issuing addr 540 Type: READ
+Type | orig | block | node | offset 
+read | 0x35d46f00 | 2 | -1 | -1
+Prospective lines added: 1
+Registering leaf# 5 into 2 th line READ
+Line # 2 Leading write line number: 24
+Outstanding request register: 480
+Outstanding request register: 980
+L# 2 : 1 | read-pull | 0 | 24 | 0x35d46f00 ||  RPath: 5 | 0,0,0x0,1 | 2,4,0x480,0 | 5,3,0x980,0 | | 0
+ORAM access: 0x 35d46f00; success is: 1
+Issuing addr 480 Type: READ
+Issuing addr 980 Type: READ
+Type | orig | block | node | offset 
+read | 0x696fed40 | 3 | -1 | -1
+Prospective lines added: 4
+Registering leaf# 6 into 3 th line READ
+Line # 3 Leading write line number: 24
+Outstanding request register: 3c0
+Outstanding request register: ac0
+L# 3 : 1 | read-pull | 0 | 24 | 0x696fed40 ||  RPath: 6 | 0,6,0x180,1 | 2,1,0x3c0,0 | 6,1,0xac0,0 | | 0
+Trying to wb: 0
+Registering leaf# 3 into 4 th line PULL
+Line # 4 Leading write line number: 24
+Outstanding request register: 1c0
+Outstanding request register: 240
+Outstanding request register: 280
+Outstanding request register: 2c0
+Outstanding request register: 300
+Outstanding request register: 580
+Outstanding request register: 5c0
+Outstanding request register: 600
+Outstanding request register: 640
+Outstanding request register: 680
+Outstanding request register: 6c0
+L# 4 : 1 | write-pull | 0 | 24 | 0xdeadbeef ||  WPath: 3 | 0x0,1 | 0x40,1 | 0x80,1 | 0xc0,1 | 0x100,1 | 0x140,1 | 0x180,1 | 0x1c0,0 | 0x200,1 | 0x240,0 | 0x280,0 | 0x2c0,0 | 0x300,0 | 0x340,1 | 0x540,1 | 0x580,0 | 0x5c0,0 | 0x600,0 | 0x640,0 | 0x680,0 | 0x6c0,0 | | 0
+Registering leaf# 3 into 5 th line WRITE
+Line # 5 L# 5 : 1 | write-push | 1 | 24 | 0xdeadbeef ||  WPath: 3 | 0x0,1 | 0x40,1 | 0x80,1 | 0xc0,1 | 0x100,1 | 0x140,1 | 0x180,1 | 0x1c0,0 | 0x200,0 | 0x240,0 | 0x280,0 | 0x2c0,0 | 0x300,0 | 0x340,0 | 0x540,0 | 0x580,0 | 0x5c0,0 | 0x600,0 | 0x640,0 | 0x680,0 | 0x6c0,0 | | 0
+Erasing and writing back to leaf# 3
+Checking stash: 0x12345680 => 6
+writing back to node: 0 offset: 4
+Checking stash: 0x35d46f00 => 3
+writing back to node: 3 offset: 4
+Checking stash: 0x4cbd56c0 => 4
+writing back to node: 1 offset: 3
+Checking stash: 0x696fed40 => 5
+writing back to node: 0 offset: 0
+ORAM access: 0x 696fed40; success is: 2
+Issuing addr 3c0 Type: READ
+Issuing addr ac0 Type: READ
+Issuing addr 1c0 Type: READ
+Issuing addr 240 Type: READ
+Issuing addr 280 Type: READ
+Issuing addr 2c0 Type: READ
+Issuing addr 300 Type: READ
+Issuing addr 580 Type: READ
+Issuing addr 5c0 Type: READ
+Issuing addr 600 Type: READ
+Issuing addr 640 Type: READ
+Issuing addr 680 Type: READ
+Issuing addr 6c0 Type: READ
+Type | orig | block | node | offset 
+read | 0x7876af80 | 1 | -1 | -1
+Prospective lines added: 1
+Registering leaf# 4 into 6 th line READ
+Line # 6 Leading write line number: 5
+read_node_id: 4
+Hoisting write_leaf_id: 3
+Outstanding request register: 880
+L# 6 : 1 | read-pull | 0 | 5 | 0x7876af80 ||  RPath: 4 | 0,5,0x140,1 | 1,6,0x340,1 | 4,6,0x880,0 | | 0
+ORAM access: 0x 7876af80; success is: 1
+Issuing addr 880 Type: READ
+Hearing response back on addr: 0x 200 R
+Hearing response back on addr: 0x 700 R
+Checking row number readiness: 0
+rs_line_commit_attempt @ head 0
+Now tail is @ tail 7
+Head moving to 1
+rs_line_commit_attempt @ head 1
+Now tail is @ tail 7
+Hearing response back on addr: 0x 340 R
+Hearing response back on addr: 0x 540 R
+Checking row number readiness: 1
+rs_line_commit_attempt @ head 1
+Now tail is @ tail 7
+Head moving to 2
+rs_line_commit_attempt @ head 2
+Now tail is @ tail 7
+Hearing response back on addr: 0x 480 R
+Hearing response back on addr: 0x 980 R
+Checking row number readiness: 2
+rs_line_commit_attempt @ head 2
+Now tail is @ tail 7
+Head moving to 3
+rs_line_commit_attempt @ head 3
+Now tail is @ tail 7
+Hearing response back on addr: 0x 3c0 R
+Hearing response back on addr: 0x ac0 R
+Checking row number readiness: 3
+rs_line_commit_attempt @ head 3
+Now tail is @ tail 7
+Head moving to 4
+rs_line_commit_attempt @ head 4
+Now tail is @ tail 7
+Hearing response back on addr: 0x 1c0 R
+Hearing response back on addr: 0x 240 R
+Hearing response back on addr: 0x 280 R
+Hearing response back on addr: 0x 2c0 R
+Hearing response back on addr: 0x 300 R
+Hearing response back on addr: 0x 580 R
+Hearing response back on addr: 0x 5c0 R
+Hearing response back on addr: 0x 600 R
+Hearing response back on addr: 0x 640 R
+Hearing response back on addr: 0x 680 R
+Hearing response back on addr: 0x 6c0 R
+Checking row number readiness: 4
+rs_line_commit_attempt @ head 4
+Now tail is @ tail 7
+Head moving to 5
+rs_line_commit_attempt @ head 5
+Now tail is @ tail 7
+Checking row number readiness: 5
+rs_line_commit_attempt @ head 5
+Now tail is @ tail 7
+Head moving to 6
+rs_line_commit_attempt @ head 6
+Now tail is @ tail 7
+Hearing response back on addr: 0x 880 R
+Checking row number readiness: 6
+rs_line_commit_attempt @ head 6
+Now tail is @ tail 7
+Head moving to 7
+rs_line_commit_attempt @ head 7
+Now tail is @ tail 7
+The final DRAM clk is: 103 ticks.
+DRAM Frequency is: 800MHz
+The final time in ns is: 128.75 ns.
+Simulation done. Statistics written to my_output.txt

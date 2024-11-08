@@ -1,0 +1,4006 @@
+Total num of original addr space: 32768
+This is equivalent to: 0.00195312 GB 
+Security params: Z, S, A: 4, 3, 4
+Served 1 inst so far ( 0.1 %)
+Max stash size is: 0
+Trace too short. To report stash size average have a longer trace. 
+Stash violation number of times: 0
+Served 2 inst so far ( 0.2 %)
+Max stash size is: 0
+Trace too short. To report stash size average have a longer trace. 
+Stash violation number of times: 0
+Served 3 inst so far ( 0.3 %)
+Max stash size is: 0
+Trace too short. To report stash size average have a longer trace. 
+Stash violation number of times: 0
+Served 4 inst so far ( 0.4 %)
+Max stash size is: 3
+Average stash size is: 3
+Stash violation number of times: 0
+Served 5 inst so far ( 0.5 %)
+Max stash size is: 8
+Average stash size is: 5.5
+Stash violation number of times: 0
+Served 6 inst so far ( 0.6 %)
+Max stash size is: 8
+Average stash size is: 5.5
+Stash violation number of times: 0
+Served 7 inst so far ( 0.7 %)
+Max stash size is: 8
+Average stash size is: 4.33333
+Stash violation number of times: 0
+Served 8 inst so far ( 0.8 %)
+Max stash size is: 8
+Average stash size is: 4.25
+Stash violation number of times: 0
+Served 9 inst so far ( 0.9 %)
+Max stash size is: 11
+Average stash size is: 5.6
+Stash violation number of times: 0
+Served 10 inst so far ( 1 %)
+Max stash size is: 11
+Average stash size is: 4.83333
+Stash violation number of times: 0
+Served 11 inst so far ( 1.1 %)
+Max stash size is: 11
+Average stash size is: 4.42857
+Stash violation number of times: 0
+Served 12 inst so far ( 1.2 %)
+Max stash size is: 11
+Average stash size is: 4
+Stash violation number of times: 0
+Served 13 inst so far ( 1.3 %)
+Max stash size is: 11
+Average stash size is: 4.08333
+Stash violation number of times: 0
+Served 14 inst so far ( 1.4 %)
+Max stash size is: 11
+Average stash size is: 4.08333
+Stash violation number of times: 0
+Served 15 inst so far ( 1.5 %)
+Max stash size is: 11
+Average stash size is: 3.78571
+Stash violation number of times: 0
+Served 16 inst so far ( 1.6 %)
+Max stash size is: 11
+Average stash size is: 3.5625
+Stash violation number of times: 0
+Served 17 inst so far ( 1.7 %)
+Max stash size is: 12
+Average stash size is: 4.05882
+Stash violation number of times: 0
+Served 18 inst so far ( 1.8 %)
+Max stash size is: 12
+Average stash size is: 4.11111
+Stash violation number of times: 0
+Served 19 inst so far ( 1.9 %)
+Max stash size is: 12
+Average stash size is: 4.11111
+Stash violation number of times: 0
+Served 20 inst so far ( 2 %)
+Max stash size is: 12
+Average stash size is: 3.71429
+Stash violation number of times: 0
+Served 21 inst so far ( 2.1 %)
+Max stash size is: 13
+Average stash size is: 4.13636
+Stash violation number of times: 0
+Served 22 inst so far ( 2.2 %)
+Max stash size is: 13
+Average stash size is: 3.91667
+Stash violation number of times: 0
+Served 23 inst so far ( 2.3 %)
+Max stash size is: 13
+Average stash size is: 3.91667
+Stash violation number of times: 0
+Served 24 inst so far ( 2.4 %)
+Max stash size is: 13
+Average stash size is: 3.88462
+Stash violation number of times: 0
+Served 25 inst so far ( 2.5 %)
+Max stash size is: 14
+Average stash size is: 4.25926
+Stash violation number of times: 0
+Served 26 inst so far ( 2.6 %)
+Max stash size is: 14
+Average stash size is: 4.21429
+Stash violation number of times: 0
+Served 27 inst so far ( 2.7 %)
+Max stash size is: 14
+Average stash size is: 4.10345
+Stash violation number of times: 0
+Served 28 inst so far ( 2.8 %)
+Max stash size is: 14
+Average stash size is: 3.84375
+Stash violation number of times: 0
+Served 29 inst so far ( 2.9 %)
+Max stash size is: 14
+Average stash size is: 4
+Stash violation number of times: 0
+Served 30 inst so far ( 3 %)
+Max stash size is: 14
+Average stash size is: 4
+Stash violation number of times: 0
+Served 31 inst so far ( 3.1 %)
+Max stash size is: 14
+Average stash size is: 3.88889
+Stash violation number of times: 0
+Served 32 inst so far ( 3.2 %)
+Max stash size is: 14
+Average stash size is: 3.89189
+Stash violation number of times: 0
+Served 33 inst so far ( 3.3 %)
+Max stash size is: 14
+Average stash size is: 3.9
+Stash violation number of times: 0
+Served 34 inst so far ( 3.4 %)
+Max stash size is: 14
+Average stash size is: 3.53333
+Stash violation number of times: 0
+Served 35 inst so far ( 3.5 %)
+Max stash size is: 14
+Average stash size is: 3.32653
+Stash violation number of times: 0
+Served 36 inst so far ( 3.6 %)
+Max stash size is: 14
+Average stash size is: 3.26923
+Stash violation number of times: 0
+Served 37 inst so far ( 3.7 %)
+Max stash size is: 15
+Average stash size is: 3.49057
+Stash violation number of times: 0
+Served 38 inst so far ( 3.8 %)
+Max stash size is: 15
+Average stash size is: 3.49057
+Stash violation number of times: 0
+Served 39 inst so far ( 3.9 %)
+Max stash size is: 15
+Average stash size is: 3.49057
+Stash violation number of times: 0
+Served 40 inst so far ( 4 %)
+Max stash size is: 15
+Average stash size is: 3.36842
+Stash violation number of times: 0
+Served 41 inst so far ( 4.1 %)
+Max stash size is: 15
+Average stash size is: 3.47458
+Stash violation number of times: 0
+Served 42 inst so far ( 4.2 %)
+Max stash size is: 15
+Average stash size is: 3.47458
+Stash violation number of times: 0
+Served 43 inst so far ( 4.3 %)
+Max stash size is: 15
+Average stash size is: 3.44262
+Stash violation number of times: 0
+Served 44 inst so far ( 4.4 %)
+Max stash size is: 15
+Average stash size is: 3.39683
+Stash violation number of times: 0
+Served 45 inst so far ( 4.5 %)
+Max stash size is: 15
+Average stash size is: 3.45455
+Stash violation number of times: 0
+Served 46 inst so far ( 4.6 %)
+Max stash size is: 15
+Average stash size is: 3.45455
+Stash violation number of times: 0
+Served 47 inst so far ( 4.7 %)
+Max stash size is: 15
+Average stash size is: 3.44776
+Stash violation number of times: 0
+Served 48 inst so far ( 4.8 %)
+Max stash size is: 15
+Average stash size is: 3.45588
+Stash violation number of times: 0
+Served 49 inst so far ( 4.9 %)
+Max stash size is: 15
+Average stash size is: 3.47945
+Stash violation number of times: 0
+Served 50 inst so far ( 5 %)
+Max stash size is: 15
+Average stash size is: 3.41333
+Stash violation number of times: 0
+Served 51 inst so far ( 5.1 %)
+Max stash size is: 15
+Average stash size is: 3.41333
+Stash violation number of times: 0
+Served 52 inst so far ( 5.2 %)
+Max stash size is: 15
+Average stash size is: 3.34615
+Stash violation number of times: 0
+Served 53 inst so far ( 5.3 %)
+Max stash size is: 15
+Average stash size is: 3.4875
+Stash violation number of times: 0
+Served 54 inst so far ( 5.4 %)
+Max stash size is: 15
+Average stash size is: 3.34118
+Stash violation number of times: 0
+Served 55 inst so far ( 5.5 %)
+Max stash size is: 15
+Average stash size is: 3.34118
+Stash violation number of times: 0
+Served 56 inst so far ( 5.6 %)
+Max stash size is: 15
+Average stash size is: 3.31818
+Stash violation number of times: 0
+Served 57 inst so far ( 5.7 %)
+Max stash size is: 18
+Average stash size is: 3.48315
+Stash violation number of times: 0
+Served 58 inst so far ( 5.8 %)
+Max stash size is: 18
+Average stash size is: 3.35484
+Stash violation number of times: 0
+Served 59 inst so far ( 5.9 %)
+Max stash size is: 18
+Average stash size is: 3.35484
+Stash violation number of times: 0
+Served 60 inst so far ( 6 %)
+Max stash size is: 18
+Average stash size is: 3.32632
+Stash violation number of times: 0
+Served 61 inst so far ( 6.1 %)
+Max stash size is: 18
+Average stash size is: 3.38776
+Stash violation number of times: 0
+Served 62 inst so far ( 6.2 %)
+Max stash size is: 18
+Average stash size is: 3.38384
+Stash violation number of times: 0
+Served 63 inst so far ( 6.3 %)
+Max stash size is: 18
+Average stash size is: 3.37624
+Stash violation number of times: 0
+Served 64 inst so far ( 6.4 %)
+Max stash size is: 18
+Average stash size is: 3.34286
+Stash violation number of times: 0
+Served 65 inst so far ( 6.5 %)
+Max stash size is: 18
+Average stash size is: 3.37963
+Stash violation number of times: 0
+Served 66 inst so far ( 6.6 %)
+Max stash size is: 18
+Average stash size is: 3.3578
+Stash violation number of times: 0
+Served 67 inst so far ( 6.7 %)
+Max stash size is: 18
+Average stash size is: 3.34545
+Stash violation number of times: 0
+Served 68 inst so far ( 6.8 %)
+Max stash size is: 18
+Average stash size is: 3.32143
+Stash violation number of times: 0
+Served 69 inst so far ( 6.9 %)
+Max stash size is: 18
+Average stash size is: 3.40708
+Stash violation number of times: 0
+Served 70 inst so far ( 7 %)
+Max stash size is: 18
+Average stash size is: 3.4
+Stash violation number of times: 0
+Served 71 inst so far ( 7.1 %)
+Max stash size is: 18
+Average stash size is: 3.40517
+Stash violation number of times: 0
+Served 72 inst so far ( 7.2 %)
+Max stash size is: 18
+Average stash size is: 3.41667
+Stash violation number of times: 0
+Served 73 inst so far ( 7.3 %)
+Max stash size is: 18
+Average stash size is: 3.52893
+Stash violation number of times: 0
+Served 74 inst so far ( 7.4 %)
+Max stash size is: 18
+Average stash size is: 3.49593
+Stash violation number of times: 0
+Served 75 inst so far ( 7.5 %)
+Max stash size is: 18
+Average stash size is: 3.50806
+Stash violation number of times: 0
+Served 76 inst so far ( 7.6 %)
+Max stash size is: 18
+Average stash size is: 3.536
+Stash violation number of times: 0
+Served 77 inst so far ( 7.7 %)
+Max stash size is: 19
+Average stash size is: 3.57692
+Stash violation number of times: 0
+Served 78 inst so far ( 7.8 %)
+Max stash size is: 19
+Average stash size is: 3.57692
+Stash violation number of times: 0
+Served 79 inst so far ( 7.9 %)
+Max stash size is: 19
+Average stash size is: 3.53333
+Stash violation number of times: 0
+Served 80 inst so far ( 8 %)
+Max stash size is: 19
+Average stash size is: 3.53676
+Stash violation number of times: 0
+Served 81 inst so far ( 8.1 %)
+Max stash size is: 19
+Average stash size is: 3.60145
+Stash violation number of times: 0
+Served 82 inst so far ( 8.2 %)
+Max stash size is: 19
+Average stash size is: 3.58993
+Stash violation number of times: 0
+Served 83 inst so far ( 8.3 %)
+Max stash size is: 19
+Average stash size is: 3.55319
+Stash violation number of times: 0
+Served 84 inst so far ( 8.4 %)
+Max stash size is: 19
+Average stash size is: 3.50694
+Stash violation number of times: 0
+Served 85 inst so far ( 8.5 %)
+Max stash size is: 19
+Average stash size is: 3.57143
+Stash violation number of times: 0
+Served 86 inst so far ( 8.6 %)
+Max stash size is: 19
+Average stash size is: 3.55705
+Stash violation number of times: 0
+Served 87 inst so far ( 8.7 %)
+Max stash size is: 19
+Average stash size is: 3.55705
+Stash violation number of times: 0
+Served 88 inst so far ( 8.8 %)
+Max stash size is: 19
+Average stash size is: 3.56
+Stash violation number of times: 0
+Served 89 inst so far ( 8.9 %)
+Max stash size is: 20
+Average stash size is: 3.66887
+Stash violation number of times: 0
+Served 90 inst so far ( 9 %)
+Max stash size is: 20
+Average stash size is: 3.66013
+Stash violation number of times: 0
+Served 91 inst so far ( 9.1 %)
+Max stash size is: 20
+Average stash size is: 3.63462
+Stash violation number of times: 0
+Served 92 inst so far ( 9.2 %)
+Max stash size is: 20
+Average stash size is: 3.64557
+Stash violation number of times: 0
+Served 93 inst so far ( 9.3 %)
+Max stash size is: 22
+Average stash size is: 3.75
+Stash violation number of times: 0
+Served 94 inst so far ( 9.4 %)
+Max stash size is: 22
+Average stash size is: 3.73913
+Stash violation number of times: 0
+Served 95 inst so far ( 9.5 %)
+Max stash size is: 22
+Average stash size is: 3.73457
+Stash violation number of times: 0
+Served 96 inst so far ( 9.6 %)
+Max stash size is: 22
+Average stash size is: 3.7378
+Stash violation number of times: 0
+Served 97 inst so far ( 9.7 %)
+Max stash size is: 22
+Average stash size is: 3.79394
+Stash violation number of times: 0
+Served 98 inst so far ( 9.8 %)
+Max stash size is: 22
+Average stash size is: 3.77246
+Stash violation number of times: 0
+Served 99 inst so far ( 9.9 %)
+Max stash size is: 22
+Average stash size is: 3.77515
+Stash violation number of times: 0
+Served 100 inst so far ( 10 %)
+Max stash size is: 22
+Average stash size is: 3.71264
+Stash violation number of times: 0
+Served 101 inst so far ( 10.1 %)
+Max stash size is: 22
+Average stash size is: 3.77273
+Stash violation number of times: 0
+Served 102 inst so far ( 10.2 %)
+Max stash size is: 22
+Average stash size is: 3.76836
+Stash violation number of times: 0
+Served 103 inst so far ( 10.3 %)
+Max stash size is: 22
+Average stash size is: 3.7486
+Stash violation number of times: 0
+Served 104 inst so far ( 10.4 %)
+Max stash size is: 22
+Average stash size is: 3.75556
+Stash violation number of times: 0
+Served 105 inst so far ( 10.5 %)
+Max stash size is: 22
+Average stash size is: 3.79891
+Stash violation number of times: 0
+Served 106 inst so far ( 10.6 %)
+Max stash size is: 22
+Average stash size is: 3.8
+Stash violation number of times: 0
+Served 107 inst so far ( 10.7 %)
+Max stash size is: 22
+Average stash size is: 3.81183
+Stash violation number of times: 0
+Served 108 inst so far ( 10.8 %)
+Max stash size is: 22
+Average stash size is: 3.82353
+Stash violation number of times: 0
+Served 109 inst so far ( 10.9 %)
+Max stash size is: 22
+Average stash size is: 3.89894
+Stash violation number of times: 0
+Served 110 inst so far ( 11 %)
+Max stash size is: 22
+Average stash size is: 3.88889
+Stash violation number of times: 0
+Served 111 inst so far ( 11.1 %)
+Max stash size is: 22
+Average stash size is: 3.88889
+Stash violation number of times: 0
+Served 112 inst so far ( 11.2 %)
+Max stash size is: 22
+Average stash size is: 3.84974
+Stash violation number of times: 0
+Served 113 inst so far ( 11.3 %)
+Max stash size is: 22
+Average stash size is: 3.91327
+Stash violation number of times: 0
+Served 114 inst so far ( 11.4 %)
+Max stash size is: 22
+Average stash size is: 3.8995
+Stash violation number of times: 0
+Served 115 inst so far ( 11.5 %)
+Max stash size is: 22
+Average stash size is: 3.89
+Stash violation number of times: 0
+Served 116 inst so far ( 11.6 %)
+Max stash size is: 22
+Average stash size is: 3.87685
+Stash violation number of times: 0
+Served 117 inst so far ( 11.7 %)
+Max stash size is: 22
+Average stash size is: 3.90865
+Stash violation number of times: 0
+Served 118 inst so far ( 11.8 %)
+Max stash size is: 22
+Average stash size is: 3.90431
+Stash violation number of times: 0
+Served 119 inst so far ( 11.9 %)
+Max stash size is: 22
+Average stash size is: 3.89524
+Stash violation number of times: 0
+Served 120 inst so far ( 12 %)
+Max stash size is: 22
+Average stash size is: 3.89573
+Stash violation number of times: 0
+Served 121 inst so far ( 12.1 %)
+Max stash size is: 22
+Average stash size is: 3.9717
+Stash violation number of times: 0
+Served 122 inst so far ( 12.2 %)
+Max stash size is: 22
+Average stash size is: 3.96262
+Stash violation number of times: 0
+Served 123 inst so far ( 12.3 %)
+Max stash size is: 22
+Average stash size is: 3.95349
+Stash violation number of times: 0
+Served 124 inst so far ( 12.4 %)
+Max stash size is: 22
+Average stash size is: 3.9537
+Stash violation number of times: 0
+Served 125 inst so far ( 12.5 %)
+Max stash size is: 22
+Average stash size is: 3.98174
+Stash violation number of times: 0
+Served 126 inst so far ( 12.6 %)
+Max stash size is: 22
+Average stash size is: 3.96833
+Stash violation number of times: 0
+Served 127 inst so far ( 12.7 %)
+Max stash size is: 22
+Average stash size is: 3.96833
+Stash violation number of times: 0
+Served 128 inst so far ( 12.8 %)
+Max stash size is: 22
+Average stash size is: 3.96444
+Stash violation number of times: 0
+Served 129 inst so far ( 12.9 %)
+Max stash size is: 22
+Average stash size is: 3.98246
+Stash violation number of times: 0
+Served 130 inst so far ( 13 %)
+Max stash size is: 22
+Average stash size is: 3.97817
+Stash violation number of times: 0
+Served 131 inst so far ( 13.1 %)
+Max stash size is: 22
+Average stash size is: 3.97817
+Stash violation number of times: 0
+Served 132 inst so far ( 13.2 %)
+Max stash size is: 22
+Average stash size is: 4
+Stash violation number of times: 0
+Served 133 inst so far ( 13.3 %)
+Max stash size is: 22
+Average stash size is: 4.04255
+Stash violation number of times: 0
+Served 134 inst so far ( 13.4 %)
+Max stash size is: 22
+Average stash size is: 4.01261
+Stash violation number of times: 0
+Served 135 inst so far ( 13.5 %)
+Max stash size is: 22
+Average stash size is: 4.00417
+Stash violation number of times: 0
+Served 136 inst so far ( 13.6 %)
+Max stash size is: 22
+Average stash size is: 3.97119
+Stash violation number of times: 0
+Served 137 inst so far ( 13.7 %)
+Max stash size is: 22
+Average stash size is: 3.9879
+Stash violation number of times: 0
+Served 138 inst so far ( 13.8 %)
+Max stash size is: 22
+Average stash size is: 3.968
+Stash violation number of times: 0
+Served 139 inst so far ( 13.9 %)
+Max stash size is: 22
+Average stash size is: 3.96016
+Stash violation number of times: 0
+Served 140 inst so far ( 14 %)
+Max stash size is: 22
+Average stash size is: 3.92941
+Stash violation number of times: 0
+Served 141 inst so far ( 14.1 %)
+Max stash size is: 22
+Average stash size is: 3.97276
+Stash violation number of times: 0
+Served 142 inst so far ( 14.2 %)
+Max stash size is: 22
+Average stash size is: 3.97287
+Stash violation number of times: 0
+Served 143 inst so far ( 14.3 %)
+Max stash size is: 22
+Average stash size is: 3.95019
+Stash violation number of times: 0
+Served 144 inst so far ( 14.4 %)
+Max stash size is: 22
+Average stash size is: 3.9283
+Stash violation number of times: 0
+Served 145 inst so far ( 14.5 %)
+Max stash size is: 22
+Average stash size is: 3.94757
+Stash violation number of times: 0
+Served 146 inst so far ( 14.6 %)
+Max stash size is: 22
+Average stash size is: 3.94757
+Stash violation number of times: 0
+Served 147 inst so far ( 14.7 %)
+Max stash size is: 22
+Average stash size is: 3.95926
+Stash violation number of times: 0
+Served 148 inst so far ( 14.8 %)
+Max stash size is: 22
+Average stash size is: 3.95221
+Stash violation number of times: 0
+Served 149 inst so far ( 14.9 %)
+Max stash size is: 22
+Average stash size is: 3.9927
+Stash violation number of times: 0
+Served 150 inst so far ( 15 %)
+Max stash size is: 22
+Average stash size is: 3.97826
+Stash violation number of times: 0
+Served 151 inst so far ( 15.1 %)
+Max stash size is: 22
+Average stash size is: 3.96751
+Stash violation number of times: 0
+Served 152 inst so far ( 15.2 %)
+Max stash size is: 22
+Average stash size is: 3.96057
+Stash violation number of times: 0
+Served 153 inst so far ( 15.3 %)
+Max stash size is: 22
+Average stash size is: 4.01773
+Stash violation number of times: 0
+Served 154 inst so far ( 15.4 %)
+Max stash size is: 22
+Average stash size is: 3.99296
+Stash violation number of times: 0
+Served 155 inst so far ( 15.5 %)
+Max stash size is: 22
+Average stash size is: 3.99296
+Stash violation number of times: 0
+Served 156 inst so far ( 15.6 %)
+Max stash size is: 22
+Average stash size is: 4.00699
+Stash violation number of times: 0
+Served 157 inst so far ( 15.7 %)
+Max stash size is: 22
+Average stash size is: 4.0662
+Stash violation number of times: 0
+Served 158 inst so far ( 15.8 %)
+Max stash size is: 22
+Average stash size is: 4.0662
+Stash violation number of times: 0
+Served 159 inst so far ( 15.9 %)
+Max stash size is: 22
+Average stash size is: 4.05882
+Stash violation number of times: 0
+Served 160 inst so far ( 16 %)
+Max stash size is: 22
+Average stash size is: 4.02381
+Stash violation number of times: 0
+Served 161 inst so far ( 16.1 %)
+Max stash size is: 22
+Average stash size is: 4.03356
+Stash violation number of times: 0
+Served 162 inst so far ( 16.2 %)
+Max stash size is: 22
+Average stash size is: 4.01993
+Stash violation number of times: 0
+Served 163 inst so far ( 16.3 %)
+Max stash size is: 22
+Average stash size is: 4.01993
+Stash violation number of times: 0
+Served 164 inst so far ( 16.4 %)
+Max stash size is: 22
+Average stash size is: 4.01987
+Stash violation number of times: 0
+Served 165 inst so far ( 16.5 %)
+Max stash size is: 24
+Average stash size is: 4.03896
+Stash violation number of times: 0
+Served 166 inst so far ( 16.6 %)
+Max stash size is: 24
+Average stash size is: 4.02913
+Stash violation number of times: 0
+Served 167 inst so far ( 16.7 %)
+Max stash size is: 24
+Average stash size is: 4.01923
+Stash violation number of times: 0
+Served 168 inst so far ( 16.8 %)
+Max stash size is: 24
+Average stash size is: 4
+Stash violation number of times: 0
+Served 169 inst so far ( 16.9 %)
+Max stash size is: 24
+Average stash size is: 4.05696
+Stash violation number of times: 0
+Served 170 inst so far ( 17 %)
+Max stash size is: 24
+Average stash size is: 4.04088
+Stash violation number of times: 0
+Served 171 inst so far ( 17.1 %)
+Max stash size is: 24
+Average stash size is: 4.02187
+Stash violation number of times: 0
+Served 172 inst so far ( 17.2 %)
+Max stash size is: 24
+Average stash size is: 4
+Stash violation number of times: 0
+Served 173 inst so far ( 17.3 %)
+Max stash size is: 24
+Average stash size is: 4.02454
+Stash violation number of times: 0
+Served 174 inst so far ( 17.4 %)
+Max stash size is: 24
+Average stash size is: 4.02454
+Stash violation number of times: 0
+Served 175 inst so far ( 17.5 %)
+Max stash size is: 24
+Average stash size is: 4.0152
+Stash violation number of times: 0
+Served 176 inst so far ( 17.6 %)
+Max stash size is: 24
+Average stash size is: 4
+Stash violation number of times: 0
+Served 177 inst so far ( 17.7 %)
+Max stash size is: 24
+Average stash size is: 4.02381
+Stash violation number of times: 0
+Served 178 inst so far ( 17.8 %)
+Max stash size is: 24
+Average stash size is: 4.01479
+Stash violation number of times: 0
+Served 179 inst so far ( 17.9 %)
+Max stash size is: 24
+Average stash size is: 4.01176
+Stash violation number of times: 0
+Served 180 inst so far ( 18 %)
+Max stash size is: 24
+Average stash size is: 4.0088
+Stash violation number of times: 0
+Served 181 inst so far ( 18.1 %)
+Max stash size is: 24
+Average stash size is: 4.02601
+Stash violation number of times: 0
+Served 182 inst so far ( 18.2 %)
+Max stash size is: 24
+Average stash size is: 4.02017
+Stash violation number of times: 0
+Served 183 inst so far ( 18.3 %)
+Max stash size is: 24
+Average stash size is: 4.01719
+Stash violation number of times: 0
+Served 184 inst so far ( 18.4 %)
+Max stash size is: 24
+Average stash size is: 3.99432
+Stash violation number of times: 0
+Served 185 inst so far ( 18.5 %)
+Max stash size is: 24
+Average stash size is: 4.03399
+Stash violation number of times: 0
+Served 186 inst so far ( 18.6 %)
+Max stash size is: 24
+Average stash size is: 4.03399
+Stash violation number of times: 0
+Served 187 inst so far ( 18.7 %)
+Max stash size is: 24
+Average stash size is: 4.02817
+Stash violation number of times: 0
+Served 188 inst so far ( 18.8 %)
+Max stash size is: 24
+Average stash size is: 4.03361
+Stash violation number of times: 0
+Served 189 inst so far ( 18.9 %)
+Max stash size is: 24
+Average stash size is: 4.0554
+Stash violation number of times: 0
+Served 190 inst so far ( 19 %)
+Max stash size is: 24
+Average stash size is: 4.05249
+Stash violation number of times: 0
+Served 191 inst so far ( 19.1 %)
+Max stash size is: 24
+Average stash size is: 4.05205
+Stash violation number of times: 0
+Served 192 inst so far ( 19.2 %)
+Max stash size is: 24
+Average stash size is: 4.06793
+Stash violation number of times: 0
+Served 193 inst so far ( 19.3 %)
+Max stash size is: 24
+Average stash size is: 4.08333
+Stash violation number of times: 0
+Served 194 inst so far ( 19.4 %)
+Max stash size is: 24
+Average stash size is: 4.07754
+Stash violation number of times: 0
+Served 195 inst so far ( 19.5 %)
+Max stash size is: 24
+Average stash size is: 4.07467
+Stash violation number of times: 0
+Served 196 inst so far ( 19.6 %)
+Max stash size is: 24
+Average stash size is: 4.0235
+Stash violation number of times: 0
+Served 197 inst so far ( 19.7 %)
+Max stash size is: 24
+Average stash size is: 4.05455
+Stash violation number of times: 0
+Served 198 inst so far ( 19.8 %)
+Max stash size is: 24
+Average stash size is: 4.0544
+Stash violation number of times: 0
+Served 199 inst so far ( 19.9 %)
+Max stash size is: 24
+Average stash size is: 4.05412
+Stash violation number of times: 0
+Served 200 inst so far ( 20 %)
+Max stash size is: 24
+Average stash size is: 4.02296
+Stash violation number of times: 0
+Served 201 inst so far ( 20.1 %)
+Max stash size is: 24
+Average stash size is: 4.02771
+Stash violation number of times: 0
+Served 202 inst so far ( 20.2 %)
+Max stash size is: 24
+Average stash size is: 4.0201
+Stash violation number of times: 0
+Served 203 inst so far ( 20.3 %)
+Max stash size is: 24
+Average stash size is: 4.0201
+Stash violation number of times: 0
+Served 204 inst so far ( 20.4 %)
+Max stash size is: 24
+Average stash size is: 4.02256
+Stash violation number of times: 0
+Served 205 inst so far ( 20.5 %)
+Max stash size is: 24
+Average stash size is: 4.04715
+Stash violation number of times: 0
+Served 206 inst so far ( 20.6 %)
+Max stash size is: 24
+Average stash size is: 4.04455
+Stash violation number of times: 0
+Served 207 inst so far ( 20.7 %)
+Max stash size is: 24
+Average stash size is: 4.03431
+Stash violation number of times: 0
+Served 208 inst so far ( 20.8 %)
+Max stash size is: 24
+Average stash size is: 4.03659
+Stash violation number of times: 0
+Served 209 inst so far ( 20.9 %)
+Max stash size is: 24
+Average stash size is: 4.07299
+Stash violation number of times: 0
+Served 210 inst so far ( 21 %)
+Max stash size is: 24
+Average stash size is: 4.07299
+Stash violation number of times: 0
+Served 211 inst so far ( 21.1 %)
+Max stash size is: 24
+Average stash size is: 4.06538
+Stash violation number of times: 0
+Served 212 inst so far ( 21.2 %)
+Max stash size is: 24
+Average stash size is: 4.0747
+Stash violation number of times: 0
+Served 213 inst so far ( 21.3 %)
+Max stash size is: 24
+Average stash size is: 4.09809
+Stash violation number of times: 0
+Served 214 inst so far ( 21.4 %)
+Max stash size is: 24
+Average stash size is: 4.09809
+Stash violation number of times: 0
+Served 215 inst so far ( 21.5 %)
+Max stash size is: 24
+Average stash size is: 4.09308
+Stash violation number of times: 0
+Served 216 inst so far ( 21.6 %)
+Max stash size is: 24
+Average stash size is: 4.09953
+Stash violation number of times: 0
+Served 217 inst so far ( 21.7 %)
+Max stash size is: 24
+Average stash size is: 4.07692
+Stash violation number of times: 0
+Served 218 inst so far ( 21.8 %)
+Max stash size is: 24
+Average stash size is: 4.06265
+Stash violation number of times: 0
+Served 219 inst so far ( 21.9 %)
+Max stash size is: 24
+Average stash size is: 4.0625
+Stash violation number of times: 0
+Served 220 inst so far ( 22 %)
+Max stash size is: 24
+Average stash size is: 4.05275
+Stash violation number of times: 0
+Served 221 inst so far ( 22.1 %)
+Max stash size is: 24
+Average stash size is: 4.08656
+Stash violation number of times: 0
+Served 222 inst so far ( 22.2 %)
+Max stash size is: 24
+Average stash size is: 4.08163
+Stash violation number of times: 0
+Served 223 inst so far ( 22.3 %)
+Max stash size is: 24
+Average stash size is: 4.08145
+Stash violation number of times: 0
+Served 224 inst so far ( 22.4 %)
+Max stash size is: 24
+Average stash size is: 4.08108
+Stash violation number of times: 0
+Served 225 inst so far ( 22.5 %)
+Max stash size is: 24
+Average stash size is: 4.11211
+Stash violation number of times: 0
+Served 226 inst so far ( 22.6 %)
+Max stash size is: 24
+Average stash size is: 4.11211
+Stash violation number of times: 0
+Served 227 inst so far ( 22.7 %)
+Max stash size is: 24
+Average stash size is: 4.1069
+Stash violation number of times: 0
+Served 228 inst so far ( 22.8 %)
+Max stash size is: 24
+Average stash size is: 4.08609
+Stash violation number of times: 0
+Served 229 inst so far ( 22.9 %)
+Max stash size is: 24
+Average stash size is: 4.10088
+Stash violation number of times: 0
+Served 230 inst so far ( 23 %)
+Max stash size is: 24
+Average stash size is: 4.10088
+Stash violation number of times: 0
+Served 231 inst so far ( 23.1 %)
+Max stash size is: 24
+Average stash size is: 4.10066
+Stash violation number of times: 0
+Served 232 inst so far ( 23.2 %)
+Max stash size is: 24
+Average stash size is: 4.08932
+Stash violation number of times: 0
+Served 233 inst so far ( 23.3 %)
+Max stash size is: 24
+Average stash size is: 4.11714
+Stash violation number of times: 0
+Served 234 inst so far ( 23.4 %)
+Max stash size is: 24
+Average stash size is: 4.11714
+Stash violation number of times: 0
+Served 235 inst so far ( 23.5 %)
+Max stash size is: 24
+Average stash size is: 4.10799
+Stash violation number of times: 0
+Served 236 inst so far ( 23.6 %)
+Max stash size is: 24
+Average stash size is: 4.09615
+Stash violation number of times: 0
+Served 237 inst so far ( 23.7 %)
+Max stash size is: 24
+Average stash size is: 4.13433
+Stash violation number of times: 0
+Served 238 inst so far ( 23.8 %)
+Max stash size is: 24
+Average stash size is: 4.13559
+Stash violation number of times: 0
+Served 239 inst so far ( 23.9 %)
+Max stash size is: 24
+Average stash size is: 4.13263
+Stash violation number of times: 0
+Served 240 inst so far ( 24 %)
+Max stash size is: 24
+Average stash size is: 4.12579
+Stash violation number of times: 0
+Served 241 inst so far ( 24.1 %)
+Max stash size is: 24
+Average stash size is: 4.16318
+Stash violation number of times: 0
+Served 242 inst so far ( 24.2 %)
+Max stash size is: 24
+Average stash size is: 4.1625
+Stash violation number of times: 0
+Served 243 inst so far ( 24.3 %)
+Max stash size is: 24
+Average stash size is: 4.1556
+Stash violation number of times: 0
+Served 244 inst so far ( 24.4 %)
+Max stash size is: 24
+Average stash size is: 4.13169
+Stash violation number of times: 0
+Served 245 inst so far ( 24.5 %)
+Max stash size is: 24
+Average stash size is: 4.15779
+Stash violation number of times: 0
+Served 246 inst so far ( 24.6 %)
+Max stash size is: 24
+Average stash size is: 4.15133
+Stash violation number of times: 0
+Served 247 inst so far ( 24.7 %)
+Max stash size is: 24
+Average stash size is: 4.14868
+Stash violation number of times: 0
+Served 248 inst so far ( 24.8 %)
+Max stash size is: 24
+Average stash size is: 4.14402
+Stash violation number of times: 0
+Served 249 inst so far ( 24.9 %)
+Max stash size is: 24
+Average stash size is: 4.18421
+Stash violation number of times: 0
+Served 250 inst so far ( 25 %)
+Max stash size is: 24
+Average stash size is: 4.167
+Stash violation number of times: 0
+Served 251 inst so far ( 25.1 %)
+Max stash size is: 24
+Average stash size is: 4.167
+Stash violation number of times: 0
+Served 252 inst so far ( 25.2 %)
+Max stash size is: 24
+Average stash size is: 4.17
+Stash violation number of times: 0
+Served 253 inst so far ( 25.3 %)
+Max stash size is: 24
+Average stash size is: 4.19721
+Stash violation number of times: 0
+Served 254 inst so far ( 25.4 %)
+Max stash size is: 24
+Average stash size is: 4.18614
+Stash violation number of times: 0
+Served 255 inst so far ( 25.5 %)
+Max stash size is: 24
+Average stash size is: 4.17913
+Stash violation number of times: 0
+Served 256 inst so far ( 25.6 %)
+Max stash size is: 24
+Average stash size is: 4.17773
+Stash violation number of times: 0
+Served 257 inst so far ( 25.7 %)
+Max stash size is: 24
+Average stash size is: 4.20039
+Stash violation number of times: 0
+Served 258 inst so far ( 25.8 %)
+Max stash size is: 24
+Average stash size is: 4.19961
+Stash violation number of times: 0
+Served 259 inst so far ( 25.9 %)
+Max stash size is: 24
+Average stash size is: 4.19961
+Stash violation number of times: 0
+Served 260 inst so far ( 26 %)
+Max stash size is: 24
+Average stash size is: 4.20463
+Stash violation number of times: 0
+Served 261 inst so far ( 26.1 %)
+Max stash size is: 26
+Average stash size is: 4.23417
+Stash violation number of times: 0
+Served 262 inst so far ( 26.2 %)
+Max stash size is: 26
+Average stash size is: 4.22753
+Stash violation number of times: 0
+Served 263 inst so far ( 26.3 %)
+Max stash size is: 26
+Average stash size is: 4.22286
+Stash violation number of times: 0
+Served 264 inst so far ( 26.4 %)
+Max stash size is: 26
+Average stash size is: 4.2178
+Stash violation number of times: 0
+Served 265 inst so far ( 26.5 %)
+Max stash size is: 26
+Average stash size is: 4.22411
+Stash violation number of times: 0
+Served 266 inst so far ( 26.6 %)
+Max stash size is: 26
+Average stash size is: 4.21348
+Stash violation number of times: 0
+Served 267 inst so far ( 26.7 %)
+Max stash size is: 26
+Average stash size is: 4.20074
+Stash violation number of times: 0
+Served 268 inst so far ( 26.8 %)
+Max stash size is: 26
+Average stash size is: 4.20037
+Stash violation number of times: 0
+Served 269 inst so far ( 26.9 %)
+Max stash size is: 26
+Average stash size is: 4.2329
+Stash violation number of times: 0
+Served 270 inst so far ( 27 %)
+Max stash size is: 26
+Average stash size is: 4.2329
+Stash violation number of times: 0
+Served 271 inst so far ( 27.1 %)
+Max stash size is: 26
+Average stash size is: 4.23573
+Stash violation number of times: 0
+Served 272 inst so far ( 27.2 %)
+Max stash size is: 26
+Average stash size is: 4.21129
+Stash violation number of times: 0
+Served 273 inst so far ( 27.3 %)
+Max stash size is: 26
+Average stash size is: 4.21157
+Stash violation number of times: 0
+Served 274 inst so far ( 27.4 %)
+Max stash size is: 26
+Average stash size is: 4.20721
+Stash violation number of times: 0
+Served 275 inst so far ( 27.5 %)
+Max stash size is: 26
+Average stash size is: 4.21185
+Stash violation number of times: 0
+Served 276 inst so far ( 27.6 %)
+Max stash size is: 26
+Average stash size is: 4.20893
+Stash violation number of times: 0
+Served 277 inst so far ( 27.7 %)
+Max stash size is: 26
+Average stash size is: 4.22558
+Stash violation number of times: 0
+Served 278 inst so far ( 27.8 %)
+Max stash size is: 26
+Average stash size is: 4.21986
+Stash violation number of times: 0
+Served 279 inst so far ( 27.9 %)
+Max stash size is: 26
+Average stash size is: 4.21731
+Stash violation number of times: 0
+Served 280 inst so far ( 28 %)
+Max stash size is: 26
+Average stash size is: 4.20455
+Stash violation number of times: 0
+Served 281 inst so far ( 28.1 %)
+Max stash size is: 26
+Average stash size is: 4.22087
+Stash violation number of times: 0
+Served 282 inst so far ( 28.2 %)
+Max stash size is: 26
+Average stash size is: 4.21528
+Stash violation number of times: 0
+Served 283 inst so far ( 28.3 %)
+Max stash size is: 26
+Average stash size is: 4.21144
+Stash violation number of times: 0
+Served 284 inst so far ( 28.4 %)
+Max stash size is: 26
+Average stash size is: 4.20725
+Stash violation number of times: 0
+Served 285 inst so far ( 28.5 %)
+Max stash size is: 26
+Average stash size is: 4.22813
+Stash violation number of times: 0
+Served 286 inst so far ( 28.6 %)
+Max stash size is: 26
+Average stash size is: 4.22051
+Stash violation number of times: 0
+Served 287 inst so far ( 28.7 %)
+Max stash size is: 26
+Average stash size is: 4.20954
+Stash violation number of times: 0
+Served 288 inst so far ( 28.8 %)
+Max stash size is: 26
+Average stash size is: 4.19492
+Stash violation number of times: 0
+Served 289 inst so far ( 28.9 %)
+Max stash size is: 26
+Average stash size is: 4.21754
+Stash violation number of times: 0
+Served 290 inst so far ( 29 %)
+Max stash size is: 26
+Average stash size is: 4.2107
+Stash violation number of times: 0
+Served 291 inst so far ( 29.1 %)
+Max stash size is: 26
+Average stash size is: 4.20701
+Stash violation number of times: 0
+Served 292 inst so far ( 29.2 %)
+Max stash size is: 26
+Average stash size is: 4.20199
+Stash violation number of times: 0
+Served 293 inst so far ( 29.3 %)
+Max stash size is: 26
+Average stash size is: 4.21875
+Stash violation number of times: 0
+Served 294 inst so far ( 29.4 %)
+Max stash size is: 26
+Average stash size is: 4.2082
+Stash violation number of times: 0
+Served 295 inst so far ( 29.5 %)
+Max stash size is: 26
+Average stash size is: 4.20949
+Stash violation number of times: 0
+Served 296 inst so far ( 29.6 %)
+Max stash size is: 26
+Average stash size is: 4.20684
+Stash violation number of times: 0
+Served 297 inst so far ( 29.7 %)
+Max stash size is: 26
+Average stash size is: 4.2188
+Stash violation number of times: 0
+Served 298 inst so far ( 29.8 %)
+Max stash size is: 26
+Average stash size is: 4.22006
+Stash violation number of times: 0
+Served 299 inst so far ( 29.9 %)
+Max stash size is: 26
+Average stash size is: 4.21971
+Stash violation number of times: 0
+Served 300 inst so far ( 30 %)
+Max stash size is: 26
+Average stash size is: 4.2183
+Stash violation number of times: 0
+Served 301 inst so far ( 30.1 %)
+Max stash size is: 27
+Average stash size is: 4.25481
+Stash violation number of times: 0
+Served 302 inst so far ( 30.2 %)
+Max stash size is: 27
+Average stash size is: 4.24402
+Stash violation number of times: 0
+Served 303 inst so far ( 30.3 %)
+Max stash size is: 27
+Average stash size is: 4.24204
+Stash violation number of times: 0
+Served 304 inst so far ( 30.4 %)
+Max stash size is: 27
+Average stash size is: 4.22979
+Stash violation number of times: 0
+Served 305 inst so far ( 30.5 %)
+Max stash size is: 27
+Average stash size is: 4.2429
+Stash violation number of times: 0
+Served 306 inst so far ( 30.6 %)
+Max stash size is: 27
+Average stash size is: 4.2429
+Stash violation number of times: 0
+Served 307 inst so far ( 30.7 %)
+Max stash size is: 27
+Average stash size is: 4.24843
+Stash violation number of times: 0
+Served 308 inst so far ( 30.8 %)
+Max stash size is: 27
+Average stash size is: 4.24138
+Stash violation number of times: 0
+Served 309 inst so far ( 30.9 %)
+Max stash size is: 27
+Average stash size is: 4.25816
+Stash violation number of times: 0
+Served 310 inst so far ( 31 %)
+Max stash size is: 27
+Average stash size is: 4.25311
+Stash violation number of times: 0
+Served 311 inst so far ( 31.1 %)
+Max stash size is: 27
+Average stash size is: 4.25232
+Stash violation number of times: 0
+Served 312 inst so far ( 31.2 %)
+Max stash size is: 27
+Average stash size is: 4.23846
+Stash violation number of times: 0
+Served 313 inst so far ( 31.3 %)
+Max stash size is: 27
+Average stash size is: 4.24655
+Stash violation number of times: 0
+Served 314 inst so far ( 31.4 %)
+Max stash size is: 27
+Average stash size is: 4.23664
+Stash violation number of times: 0
+Served 315 inst so far ( 31.5 %)
+Max stash size is: 27
+Average stash size is: 4.23628
+Stash violation number of times: 0
+Served 316 inst so far ( 31.6 %)
+Max stash size is: 27
+Average stash size is: 4.22121
+Stash violation number of times: 0
+Served 317 inst so far ( 31.7 %)
+Max stash size is: 27
+Average stash size is: 4.23831
+Stash violation number of times: 0
+Served 318 inst so far ( 31.8 %)
+Max stash size is: 27
+Average stash size is: 4.23831
+Stash violation number of times: 0
+Served 319 inst so far ( 31.9 %)
+Max stash size is: 27
+Average stash size is: 4.23724
+Stash violation number of times: 0
+Served 320 inst so far ( 32 %)
+Max stash size is: 27
+Average stash size is: 4.22917
+Stash violation number of times: 0
+Served 321 inst so far ( 32.1 %)
+Max stash size is: 27
+Average stash size is: 4.24036
+Stash violation number of times: 0
+Served 322 inst so far ( 32.2 %)
+Max stash size is: 27
+Average stash size is: 4.23225
+Stash violation number of times: 0
+Served 323 inst so far ( 32.3 %)
+Max stash size is: 27
+Average stash size is: 4.22828
+Stash violation number of times: 0
+Served 324 inst so far ( 32.4 %)
+Max stash size is: 27
+Average stash size is: 4.2172
+Stash violation number of times: 0
+Served 325 inst so far ( 32.5 %)
+Max stash size is: 27
+Average stash size is: 4.24454
+Stash violation number of times: 0
+Served 326 inst so far ( 32.6 %)
+Max stash size is: 27
+Average stash size is: 4.23768
+Stash violation number of times: 0
+Served 327 inst so far ( 32.7 %)
+Max stash size is: 27
+Average stash size is: 4.23444
+Stash violation number of times: 0
+Served 328 inst so far ( 32.8 %)
+Max stash size is: 27
+Average stash size is: 4.22622
+Stash violation number of times: 0
+Served 329 inst so far ( 32.9 %)
+Max stash size is: 27
+Average stash size is: 4.23563
+Stash violation number of times: 0
+Served 330 inst so far ( 33 %)
+Max stash size is: 27
+Average stash size is: 4.23242
+Stash violation number of times: 0
+Served 331 inst so far ( 33.1 %)
+Max stash size is: 27
+Average stash size is: 4.22254
+Stash violation number of times: 0
+Served 332 inst so far ( 33.2 %)
+Max stash size is: 27
+Average stash size is: 4.22191
+Stash violation number of times: 0
+Served 333 inst so far ( 33.3 %)
+Max stash size is: 27
+Average stash size is: 4.24432
+Stash violation number of times: 0
+Served 334 inst so far ( 33.4 %)
+Max stash size is: 27
+Average stash size is: 4.23654
+Stash violation number of times: 0
+Served 335 inst so far ( 33.5 %)
+Max stash size is: 27
+Average stash size is: 4.2299
+Stash violation number of times: 0
+Served 336 inst so far ( 33.6 %)
+Max stash size is: 27
+Average stash size is: 4.22925
+Stash violation number of times: 0
+Served 337 inst so far ( 33.7 %)
+Max stash size is: 27
+Average stash size is: 4.25562
+Stash violation number of times: 0
+Served 338 inst so far ( 33.8 %)
+Max stash size is: 27
+Average stash size is: 4.2507
+Stash violation number of times: 0
+Served 339 inst so far ( 33.9 %)
+Max stash size is: 27
+Average stash size is: 4.25175
+Stash violation number of times: 0
+Served 340 inst so far ( 34 %)
+Max stash size is: 27
+Average stash size is: 4.25487
+Stash violation number of times: 0
+Served 341 inst so far ( 34.1 %)
+Max stash size is: 27
+Average stash size is: 4.27601
+Stash violation number of times: 0
+Served 342 inst so far ( 34.2 %)
+Max stash size is: 27
+Average stash size is: 4.27034
+Stash violation number of times: 0
+Served 343 inst so far ( 34.3 %)
+Max stash size is: 27
+Average stash size is: 4.26997
+Stash violation number of times: 0
+Served 344 inst so far ( 34.4 %)
+Max stash size is: 27
+Average stash size is: 4.2696
+Stash violation number of times: 0
+Served 345 inst so far ( 34.5 %)
+Max stash size is: 27
+Average stash size is: 4.28669
+Stash violation number of times: 0
+Served 346 inst so far ( 34.6 %)
+Max stash size is: 27
+Average stash size is: 4.28219
+Stash violation number of times: 0
+Served 347 inst so far ( 34.7 %)
+Max stash size is: 27
+Average stash size is: 4.26122
+Stash violation number of times: 0
+Served 348 inst so far ( 34.8 %)
+Max stash size is: 27
+Average stash size is: 4.24932
+Stash violation number of times: 0
+Served 349 inst so far ( 34.9 %)
+Max stash size is: 27
+Average stash size is: 4.25572
+Stash violation number of times: 0
+Served 350 inst so far ( 35 %)
+Max stash size is: 27
+Average stash size is: 4.24665
+Stash violation number of times: 0
+Served 351 inst so far ( 35.1 %)
+Max stash size is: 27
+Average stash size is: 4.23797
+Stash violation number of times: 0
+Served 352 inst so far ( 35.2 %)
+Max stash size is: 27
+Average stash size is: 4.23067
+Stash violation number of times: 0
+Served 353 inst so far ( 35.3 %)
+Max stash size is: 27
+Average stash size is: 4.24568
+Stash violation number of times: 0
+Served 354 inst so far ( 35.4 %)
+Max stash size is: 27
+Average stash size is: 4.24074
+Stash violation number of times: 0
+Served 355 inst so far ( 35.5 %)
+Max stash size is: 27
+Average stash size is: 4.23615
+Stash violation number of times: 0
+Served 356 inst so far ( 35.6 %)
+Max stash size is: 27
+Average stash size is: 4.2339
+Stash violation number of times: 0
+Served 357 inst so far ( 35.7 %)
+Max stash size is: 27
+Average stash size is: 4.24674
+Stash violation number of times: 0
+Served 358 inst so far ( 35.8 %)
+Max stash size is: 27
+Average stash size is: 4.23537
+Stash violation number of times: 0
+Served 359 inst so far ( 35.9 %)
+Max stash size is: 27
+Average stash size is: 4.23087
+Stash violation number of times: 0
+Served 360 inst so far ( 36 %)
+Max stash size is: 27
+Average stash size is: 4.21364
+Stash violation number of times: 0
+Served 361 inst so far ( 36.1 %)
+Max stash size is: 27
+Average stash size is: 4.24005
+Stash violation number of times: 0
+Served 362 inst so far ( 36.2 %)
+Max stash size is: 27
+Average stash size is: 4.23274
+Stash violation number of times: 0
+Served 363 inst so far ( 36.3 %)
+Max stash size is: 27
+Average stash size is: 4.22989
+Stash violation number of times: 0
+Served 364 inst so far ( 36.4 %)
+Max stash size is: 27
+Average stash size is: 4.22618
+Stash violation number of times: 0
+Served 365 inst so far ( 36.5 %)
+Max stash size is: 27
+Average stash size is: 4.23954
+Stash violation number of times: 0
+Served 366 inst so far ( 36.6 %)
+Max stash size is: 27
+Average stash size is: 4.23641
+Stash violation number of times: 0
+Served 367 inst so far ( 36.7 %)
+Max stash size is: 27
+Average stash size is: 4.23737
+Stash violation number of times: 0
+Served 368 inst so far ( 36.8 %)
+Max stash size is: 27
+Average stash size is: 4.23019
+Stash violation number of times: 0
+Served 369 inst so far ( 36.9 %)
+Max stash size is: 27
+Average stash size is: 4.22472
+Stash violation number of times: 0
+Served 370 inst so far ( 37 %)
+Max stash size is: 27
+Average stash size is: 4.22015
+Stash violation number of times: 0
+Served 371 inst so far ( 37.1 %)
+Max stash size is: 27
+Average stash size is: 4.20838
+Stash violation number of times: 0
+Served 372 inst so far ( 37.2 %)
+Max stash size is: 27
+Average stash size is: 4.19706
+Stash violation number of times: 0
+Served 373 inst so far ( 37.3 %)
+Max stash size is: 27
+Average stash size is: 4.22005
+Stash violation number of times: 0
+Served 374 inst so far ( 37.4 %)
+Max stash size is: 27
+Average stash size is: 4.21612
+Stash violation number of times: 0
+Served 375 inst so far ( 37.5 %)
+Max stash size is: 27
+Average stash size is: 4.21829
+Stash violation number of times: 0
+Served 376 inst so far ( 37.6 %)
+Max stash size is: 27
+Average stash size is: 4.21142
+Stash violation number of times: 0
+Served 377 inst so far ( 37.7 %)
+Max stash size is: 27
+Average stash size is: 4.23301
+Stash violation number of times: 0
+Served 378 inst so far ( 37.8 %)
+Max stash size is: 27
+Average stash size is: 4.22881
+Stash violation number of times: 0
+Served 379 inst so far ( 37.9 %)
+Max stash size is: 27
+Average stash size is: 4.22826
+Stash violation number of times: 0
+Served 380 inst so far ( 38 %)
+Max stash size is: 27
+Average stash size is: 4.23012
+Stash violation number of times: 0
+Served 381 inst so far ( 38.1 %)
+Max stash size is: 27
+Average stash size is: 4.2521
+Stash violation number of times: 0
+Served 382 inst so far ( 38.2 %)
+Max stash size is: 27
+Average stash size is: 4.24551
+Stash violation number of times: 0
+Served 383 inst so far ( 38.3 %)
+Max stash size is: 27
+Average stash size is: 4.24014
+Stash violation number of times: 0
+Served 384 inst so far ( 38.4 %)
+Max stash size is: 27
+Average stash size is: 4.23838
+Stash violation number of times: 0
+Served 385 inst so far ( 38.5 %)
+Max stash size is: 27
+Average stash size is: 4.24466
+Stash violation number of times: 0
+Served 386 inst so far ( 38.6 %)
+Max stash size is: 27
+Average stash size is: 4.24318
+Stash violation number of times: 0
+Served 387 inst so far ( 38.7 %)
+Max stash size is: 27
+Average stash size is: 4.24052
+Stash violation number of times: 0
+Served 388 inst so far ( 38.8 %)
+Max stash size is: 27
+Average stash size is: 4.24232
+Stash violation number of times: 0
+Served 389 inst so far ( 38.9 %)
+Max stash size is: 28
+Average stash size is: 4.26769
+Stash violation number of times: 0
+Served 390 inst so far ( 39 %)
+Max stash size is: 28
+Average stash size is: 4.25969
+Stash violation number of times: 0
+Served 391 inst so far ( 39.1 %)
+Max stash size is: 28
+Average stash size is: 4.25909
+Stash violation number of times: 0
+Served 392 inst so far ( 39.2 %)
+Max stash size is: 28
+Average stash size is: 4.25
+Stash violation number of times: 0
+Served 393 inst so far ( 39.3 %)
+Max stash size is: 28
+Average stash size is: 4.25611
+Stash violation number of times: 0
+Served 394 inst so far ( 39.4 %)
+Max stash size is: 28
+Average stash size is: 4.24306
+Stash violation number of times: 0
+Served 395 inst so far ( 39.5 %)
+Max stash size is: 28
+Average stash size is: 4.24309
+Stash violation number of times: 0
+Served 396 inst so far ( 39.6 %)
+Max stash size is: 28
+Average stash size is: 4.24511
+Stash violation number of times: 0
+Served 397 inst so far ( 39.7 %)
+Max stash size is: 28
+Average stash size is: 4.24828
+Stash violation number of times: 0
+Served 398 inst so far ( 39.8 %)
+Max stash size is: 28
+Average stash size is: 4.24457
+Stash violation number of times: 0
+Served 399 inst so far ( 39.9 %)
+Max stash size is: 28
+Average stash size is: 4.24601
+Stash violation number of times: 0
+Served 400 inst so far ( 40 %)
+Max stash size is: 28
+Average stash size is: 4.23837
+Stash violation number of times: 0
+Served 401 inst so far ( 40.1 %)
+Max stash size is: 28
+Average stash size is: 4.24802
+Stash violation number of times: 0
+Served 402 inst so far ( 40.2 %)
+Max stash size is: 28
+Average stash size is: 4.24802
+Stash violation number of times: 0
+Served 403 inst so far ( 40.3 %)
+Max stash size is: 28
+Average stash size is: 4.24831
+Stash violation number of times: 0
+Served 404 inst so far ( 40.4 %)
+Max stash size is: 28
+Average stash size is: 4.24437
+Stash violation number of times: 0
+Served 405 inst so far ( 40.5 %)
+Max stash size is: 28
+Average stash size is: 4.26292
+Stash violation number of times: 0
+Served 406 inst so far ( 40.6 %)
+Max stash size is: 28
+Average stash size is: 4.25644
+Stash violation number of times: 0
+Served 407 inst so far ( 40.7 %)
+Max stash size is: 28
+Average stash size is: 4.25644
+Stash violation number of times: 0
+Served 408 inst so far ( 40.8 %)
+Max stash size is: 28
+Average stash size is: 4.25587
+Stash violation number of times: 0
+Served 409 inst so far ( 40.9 %)
+Max stash size is: 28
+Average stash size is: 4.25918
+Stash violation number of times: 0
+Served 410 inst so far ( 41 %)
+Max stash size is: 28
+Average stash size is: 4.25166
+Stash violation number of times: 0
+Served 411 inst so far ( 41.1 %)
+Max stash size is: 28
+Average stash size is: 4.24972
+Stash violation number of times: 0
+Served 412 inst so far ( 41.2 %)
+Max stash size is: 28
+Average stash size is: 4.24339
+Stash violation number of times: 0
+Served 413 inst so far ( 41.3 %)
+Max stash size is: 28
+Average stash size is: 4.25604
+Stash violation number of times: 0
+Served 414 inst so far ( 41.4 %)
+Max stash size is: 28
+Average stash size is: 4.25658
+Stash violation number of times: 0
+Served 415 inst so far ( 41.5 %)
+Max stash size is: 28
+Average stash size is: 4.25658
+Stash violation number of times: 0
+Served 416 inst so far ( 41.6 %)
+Max stash size is: 28
+Average stash size is: 4.25328
+Stash violation number of times: 0
+Served 417 inst so far ( 41.7 %)
+Max stash size is: 28
+Average stash size is: 4.26413
+Stash violation number of times: 0
+Served 418 inst so far ( 41.8 %)
+Max stash size is: 28
+Average stash size is: 4.26139
+Stash violation number of times: 0
+Served 419 inst so far ( 41.9 %)
+Max stash size is: 28
+Average stash size is: 4.25405
+Stash violation number of times: 0
+Served 420 inst so far ( 42 %)
+Max stash size is: 28
+Average stash size is: 4.23498
+Stash violation number of times: 0
+Served 421 inst so far ( 42.1 %)
+Max stash size is: 28
+Average stash size is: 4.25
+Stash violation number of times: 0
+Served 422 inst so far ( 42.2 %)
+Max stash size is: 28
+Average stash size is: 4.24068
+Stash violation number of times: 0
+Served 423 inst so far ( 42.3 %)
+Max stash size is: 28
+Average stash size is: 4.24043
+Stash violation number of times: 0
+Served 424 inst so far ( 42.4 %)
+Max stash size is: 28
+Average stash size is: 4.23517
+Stash violation number of times: 0
+Served 425 inst so far ( 42.5 %)
+Max stash size is: 28
+Average stash size is: 4.25159
+Stash violation number of times: 0
+Served 426 inst so far ( 42.6 %)
+Max stash size is: 28
+Average stash size is: 4.24265
+Stash violation number of times: 0
+Served 427 inst so far ( 42.7 %)
+Max stash size is: 28
+Average stash size is: 4.24134
+Stash violation number of times: 0
+Served 428 inst so far ( 42.8 %)
+Max stash size is: 28
+Average stash size is: 4.24084
+Stash violation number of times: 0
+Served 429 inst so far ( 42.9 %)
+Max stash size is: 28
+Average stash size is: 4.25496
+Stash violation number of times: 0
+Served 430 inst so far ( 43 %)
+Max stash size is: 28
+Average stash size is: 4.2547
+Stash violation number of times: 0
+Served 431 inst so far ( 43.1 %)
+Max stash size is: 28
+Average stash size is: 4.25235
+Stash violation number of times: 0
+Served 432 inst so far ( 43.2 %)
+Max stash size is: 28
+Average stash size is: 4.24352
+Stash violation number of times: 0
+Served 433 inst so far ( 43.3 %)
+Max stash size is: 28
+Average stash size is: 4.258
+Stash violation number of times: 0
+Served 434 inst so far ( 43.4 %)
+Max stash size is: 28
+Average stash size is: 4.25206
+Stash violation number of times: 0
+Served 435 inst so far ( 43.5 %)
+Max stash size is: 28
+Average stash size is: 4.24846
+Stash violation number of times: 0
+Served 436 inst so far ( 43.6 %)
+Max stash size is: 28
+Average stash size is: 4.24923
+Stash violation number of times: 0
+Served 437 inst so far ( 43.7 %)
+Max stash size is: 28
+Average stash size is: 4.26817
+Stash violation number of times: 0
+Served 438 inst so far ( 43.8 %)
+Max stash size is: 28
+Average stash size is: 4.25994
+Stash violation number of times: 0
+Served 439 inst so far ( 43.9 %)
+Max stash size is: 28
+Average stash size is: 4.25662
+Stash violation number of times: 0
+Served 440 inst so far ( 44 %)
+Max stash size is: 28
+Average stash size is: 4.24417
+Stash violation number of times: 0
+Served 441 inst so far ( 44.1 %)
+Max stash size is: 28
+Average stash size is: 4.25758
+Stash violation number of times: 0
+Served 442 inst so far ( 44.2 %)
+Max stash size is: 28
+Average stash size is: 4.25429
+Stash violation number of times: 0
+Served 443 inst so far ( 44.3 %)
+Max stash size is: 28
+Average stash size is: 4.25327
+Stash violation number of times: 0
+Served 444 inst so far ( 44.4 %)
+Max stash size is: 28
+Average stash size is: 4.23453
+Stash violation number of times: 0
+Served 445 inst so far ( 44.5 %)
+Max stash size is: 28
+Average stash size is: 4.249
+Stash violation number of times: 0
+Served 446 inst so far ( 44.6 %)
+Max stash size is: 28
+Average stash size is: 4.24776
+Stash violation number of times: 0
+Served 447 inst so far ( 44.7 %)
+Max stash size is: 28
+Average stash size is: 4.24553
+Stash violation number of times: 0
+Served 448 inst so far ( 44.8 %)
+Max stash size is: 28
+Average stash size is: 4.24628
+Stash violation number of times: 0
+Served 449 inst so far ( 44.9 %)
+Max stash size is: 28
+Average stash size is: 4.24704
+Stash violation number of times: 0
+Served 450 inst so far ( 45 %)
+Max stash size is: 28
+Average stash size is: 4.24704
+Stash violation number of times: 0
+Served 451 inst so far ( 45.1 %)
+Max stash size is: 28
+Average stash size is: 4.24114
+Stash violation number of times: 0
+Served 452 inst so far ( 45.2 %)
+Max stash size is: 28
+Average stash size is: 4.22647
+Stash violation number of times: 0
+Served 453 inst so far ( 45.3 %)
+Max stash size is: 28
+Average stash size is: 4.24192
+Stash violation number of times: 0
+Served 454 inst so far ( 45.4 %)
+Max stash size is: 28
+Average stash size is: 4.23949
+Stash violation number of times: 0
+Served 455 inst so far ( 45.5 %)
+Max stash size is: 28
+Average stash size is: 4.23977
+Stash violation number of times: 0
+Served 456 inst so far ( 45.6 %)
+Max stash size is: 28
+Average stash size is: 4.23953
+Stash violation number of times: 0
+Served 457 inst so far ( 45.7 %)
+Max stash size is: 28
+Average stash size is: 4.24879
+Stash violation number of times: 0
+Served 458 inst so far ( 45.8 %)
+Max stash size is: 28
+Average stash size is: 4.24539
+Stash violation number of times: 0
+Served 459 inst so far ( 45.9 %)
+Max stash size is: 28
+Average stash size is: 4.24468
+Stash violation number of times: 0
+Served 460 inst so far ( 46 %)
+Max stash size is: 28
+Average stash size is: 4.23892
+Stash violation number of times: 0
+Served 461 inst so far ( 46.1 %)
+Max stash size is: 28
+Average stash size is: 4.25698
+Stash violation number of times: 0
+Served 462 inst so far ( 46.2 %)
+Max stash size is: 28
+Average stash size is: 4.25385
+Stash violation number of times: 0
+Served 463 inst so far ( 46.3 %)
+Max stash size is: 28
+Average stash size is: 4.25072
+Stash violation number of times: 0
+Served 464 inst so far ( 46.4 %)
+Max stash size is: 28
+Average stash size is: 4.24069
+Stash violation number of times: 0
+Served 465 inst so far ( 46.5 %)
+Max stash size is: 28
+Average stash size is: 4.25071
+Stash violation number of times: 0
+Served 466 inst so far ( 46.6 %)
+Max stash size is: 28
+Average stash size is: 4.23932
+Stash violation number of times: 0
+Served 467 inst so far ( 46.7 %)
+Max stash size is: 28
+Average stash size is: 4.23864
+Stash violation number of times: 0
+Served 468 inst so far ( 46.8 %)
+Max stash size is: 28
+Average stash size is: 4.23819
+Stash violation number of times: 0
+Served 469 inst so far ( 46.9 %)
+Max stash size is: 28
+Average stash size is: 4.24105
+Stash violation number of times: 0
+Served 470 inst so far ( 47 %)
+Max stash size is: 28
+Average stash size is: 4.23895
+Stash violation number of times: 0
+Served 471 inst so far ( 47.1 %)
+Max stash size is: 28
+Average stash size is: 4.23778
+Stash violation number of times: 0
+Served 472 inst so far ( 47.2 %)
+Max stash size is: 28
+Average stash size is: 4.22264
+Stash violation number of times: 0
+Served 473 inst so far ( 47.3 %)
+Max stash size is: 28
+Average stash size is: 4.23925
+Stash violation number of times: 0
+Served 474 inst so far ( 47.4 %)
+Max stash size is: 28
+Average stash size is: 4.23694
+Stash violation number of times: 0
+Served 475 inst so far ( 47.5 %)
+Max stash size is: 28
+Average stash size is: 4.23694
+Stash violation number of times: 0
+Served 476 inst so far ( 47.6 %)
+Max stash size is: 28
+Average stash size is: 4.2365
+Stash violation number of times: 0
+Served 477 inst so far ( 47.7 %)
+Max stash size is: 28
+Average stash size is: 4.25
+Stash violation number of times: 0
+Served 478 inst so far ( 47.8 %)
+Max stash size is: 28
+Average stash size is: 4.25
+Stash violation number of times: 0
+Served 479 inst so far ( 47.9 %)
+Max stash size is: 28
+Average stash size is: 4.25
+Stash violation number of times: 0
+Served 480 inst so far ( 48 %)
+Max stash size is: 28
+Average stash size is: 4.24329
+Stash violation number of times: 0
+Served 481 inst so far ( 48.1 %)
+Max stash size is: 28
+Average stash size is: 4.25693
+Stash violation number of times: 0
+Served 482 inst so far ( 48.2 %)
+Max stash size is: 28
+Average stash size is: 4.25299
+Stash violation number of times: 0
+Served 483 inst so far ( 48.3 %)
+Max stash size is: 28
+Average stash size is: 4.25299
+Stash violation number of times: 0
+Served 484 inst so far ( 48.4 %)
+Max stash size is: 28
+Average stash size is: 4.25413
+Stash violation number of times: 0
+Served 485 inst so far ( 48.5 %)
+Max stash size is: 28
+Average stash size is: 4.26532
+Stash violation number of times: 0
+Served 486 inst so far ( 48.6 %)
+Max stash size is: 28
+Average stash size is: 4.26325
+Stash violation number of times: 0
+Served 487 inst so far ( 48.7 %)
+Max stash size is: 28
+Average stash size is: 4.26095
+Stash violation number of times: 0
+Served 488 inst so far ( 48.8 %)
+Max stash size is: 28
+Average stash size is: 4.25068
+Stash violation number of times: 0
+Served 489 inst so far ( 48.9 %)
+Max stash size is: 28
+Average stash size is: 4.25407
+Stash violation number of times: 0
+Served 490 inst so far ( 49 %)
+Max stash size is: 28
+Average stash size is: 4.25
+Stash violation number of times: 0
+Served 491 inst so far ( 49.1 %)
+Max stash size is: 28
+Average stash size is: 4.24887
+Stash violation number of times: 0
+Served 492 inst so far ( 49.2 %)
+Max stash size is: 28
+Average stash size is: 4.25045
+Stash violation number of times: 0
+Served 493 inst so far ( 49.3 %)
+Max stash size is: 28
+Average stash size is: 4.26415
+Stash violation number of times: 0
+Served 494 inst so far ( 49.4 %)
+Max stash size is: 28
+Average stash size is: 4.25425
+Stash violation number of times: 0
+Served 495 inst so far ( 49.5 %)
+Max stash size is: 28
+Average stash size is: 4.25425
+Stash violation number of times: 0
+Served 496 inst so far ( 49.6 %)
+Max stash size is: 28
+Average stash size is: 4.24532
+Stash violation number of times: 0
+Served 497 inst so far ( 49.7 %)
+Max stash size is: 28
+Average stash size is: 4.25333
+Stash violation number of times: 0
+Served 498 inst so far ( 49.8 %)
+Max stash size is: 28
+Average stash size is: 4.25222
+Stash violation number of times: 0
+Served 499 inst so far ( 49.9 %)
+Max stash size is: 28
+Average stash size is: 4.25177
+Stash violation number of times: 0
+Served 500 inst so far ( 50 %)
+Max stash size is: 28
+Average stash size is: 4.24867
+Stash violation number of times: 0
+Served 501 inst so far ( 50.1 %)
+Max stash size is: 28
+Average stash size is: 4.26437
+Stash violation number of times: 0
+Served 502 inst so far ( 50.2 %)
+Max stash size is: 28
+Average stash size is: 4.25727
+Stash violation number of times: 0
+Served 503 inst so far ( 50.3 %)
+Max stash size is: 28
+Average stash size is: 4.25571
+Stash violation number of times: 0
+Served 504 inst so far ( 50.4 %)
+Max stash size is: 28
+Average stash size is: 4.25634
+Stash violation number of times: 0
+Served 505 inst so far ( 50.5 %)
+Max stash size is: 28
+Average stash size is: 4.26789
+Stash violation number of times: 0
+Served 506 inst so far ( 50.6 %)
+Max stash size is: 28
+Average stash size is: 4.26678
+Stash violation number of times: 0
+Served 507 inst so far ( 50.7 %)
+Max stash size is: 28
+Average stash size is: 4.26348
+Stash violation number of times: 0
+Served 508 inst so far ( 50.8 %)
+Max stash size is: 28
+Average stash size is: 4.25823
+Stash violation number of times: 0
+Served 509 inst so far ( 50.9 %)
+Max stash size is: 28
+Average stash size is: 4.2688
+Stash violation number of times: 0
+Served 510 inst so far ( 51 %)
+Max stash size is: 28
+Average stash size is: 4.25473
+Stash violation number of times: 0
+Served 511 inst so far ( 51.1 %)
+Max stash size is: 28
+Average stash size is: 4.25086
+Stash violation number of times: 0
+Served 512 inst so far ( 51.2 %)
+Max stash size is: 28
+Average stash size is: 4.25386
+Stash violation number of times: 0
+Served 513 inst so far ( 51.3 %)
+Max stash size is: 28
+Average stash size is: 4.26798
+Stash violation number of times: 0
+Served 514 inst so far ( 51.4 %)
+Max stash size is: 28
+Average stash size is: 4.25405
+Stash violation number of times: 0
+Served 515 inst so far ( 51.5 %)
+Max stash size is: 28
+Average stash size is: 4.25191
+Stash violation number of times: 0
+Served 516 inst so far ( 51.6 %)
+Max stash size is: 28
+Average stash size is: 4.25085
+Stash violation number of times: 0
+Served 517 inst so far ( 51.7 %)
+Max stash size is: 28
+Average stash size is: 4.27096
+Stash violation number of times: 0
+Served 518 inst so far ( 51.8 %)
+Max stash size is: 28
+Average stash size is: 4.27096
+Stash violation number of times: 0
+Served 519 inst so far ( 51.9 %)
+Max stash size is: 28
+Average stash size is: 4.2728
+Stash violation number of times: 0
+Served 520 inst so far ( 52 %)
+Max stash size is: 28
+Average stash size is: 4.2679
+Stash violation number of times: 0
+Served 521 inst so far ( 52.1 %)
+Max stash size is: 28
+Average stash size is: 4.27792
+Stash violation number of times: 0
+Served 522 inst so far ( 52.2 %)
+Max stash size is: 28
+Average stash size is: 4.27554
+Stash violation number of times: 0
+Served 523 inst so far ( 52.3 %)
+Max stash size is: 28
+Average stash size is: 4.27129
+Stash violation number of times: 0
+Served 524 inst so far ( 52.4 %)
+Max stash size is: 28
+Average stash size is: 4.27311
+Stash violation number of times: 0
+Served 525 inst so far ( 52.5 %)
+Max stash size is: 28
+Average stash size is: 4.28536
+Stash violation number of times: 0
+Served 526 inst so far ( 52.6 %)
+Max stash size is: 28
+Average stash size is: 4.28536
+Stash violation number of times: 0
+Served 527 inst so far ( 52.7 %)
+Max stash size is: 28
+Average stash size is: 4.2869
+Stash violation number of times: 0
+Served 528 inst so far ( 52.8 %)
+Max stash size is: 28
+Average stash size is: 4.28205
+Stash violation number of times: 0
+Served 529 inst so far ( 52.9 %)
+Max stash size is: 28
+Average stash size is: 4.29421
+Stash violation number of times: 0
+Served 530 inst so far ( 53 %)
+Max stash size is: 28
+Average stash size is: 4.28878
+Stash violation number of times: 0
+Served 531 inst so far ( 53.1 %)
+Max stash size is: 28
+Average stash size is: 4.2802
+Stash violation number of times: 0
+Served 532 inst so far ( 53.2 %)
+Max stash size is: 28
+Average stash size is: 4.27273
+Stash violation number of times: 0
+Served 533 inst so far ( 53.3 %)
+Max stash size is: 28
+Average stash size is: 4.28782
+Stash violation number of times: 0
+Served 534 inst so far ( 53.4 %)
+Max stash size is: 28
+Average stash size is: 4.2849
+Stash violation number of times: 0
+Served 535 inst so far ( 53.5 %)
+Max stash size is: 28
+Average stash size is: 4.28385
+Stash violation number of times: 0
+Served 536 inst so far ( 53.6 %)
+Max stash size is: 28
+Average stash size is: 4.28072
+Stash violation number of times: 0
+Served 537 inst so far ( 53.7 %)
+Max stash size is: 28
+Average stash size is: 4.29116
+Stash violation number of times: 0
+Served 538 inst so far ( 53.8 %)
+Max stash size is: 28
+Average stash size is: 4.28191
+Stash violation number of times: 0
+Served 539 inst so far ( 53.9 %)
+Max stash size is: 28
+Average stash size is: 4.28191
+Stash violation number of times: 0
+Served 540 inst so far ( 54 %)
+Max stash size is: 28
+Average stash size is: 4.2818
+Stash violation number of times: 0
+Served 541 inst so far ( 54.1 %)
+Max stash size is: 28
+Average stash size is: 4.29341
+Stash violation number of times: 0
+Served 542 inst so far ( 54.2 %)
+Max stash size is: 28
+Average stash size is: 4.29341
+Stash violation number of times: 0
+Served 543 inst so far ( 54.3 %)
+Max stash size is: 28
+Average stash size is: 4.29317
+Stash violation number of times: 0
+Served 544 inst so far ( 54.4 %)
+Max stash size is: 28
+Average stash size is: 4.29511
+Stash violation number of times: 0
+Served 545 inst so far ( 54.5 %)
+Max stash size is: 28
+Average stash size is: 4.3112
+Stash violation number of times: 0
+Served 546 inst so far ( 54.6 %)
+Max stash size is: 28
+Average stash size is: 4.30383
+Stash violation number of times: 0
+Served 547 inst so far ( 54.7 %)
+Max stash size is: 28
+Average stash size is: 4.30359
+Stash violation number of times: 0
+Served 548 inst so far ( 54.8 %)
+Max stash size is: 28
+Average stash size is: 4.29547
+Stash violation number of times: 0
+Served 549 inst so far ( 54.9 %)
+Max stash size is: 28
+Average stash size is: 4.30873
+Stash violation number of times: 0
+Served 550 inst so far ( 55 %)
+Max stash size is: 28
+Average stash size is: 4.308
+Stash violation number of times: 0
+Served 551 inst so far ( 55.1 %)
+Max stash size is: 28
+Average stash size is: 4.30672
+Stash violation number of times: 0
+Served 552 inst so far ( 55.2 %)
+Max stash size is: 28
+Average stash size is: 4.30284
+Stash violation number of times: 0
+Served 553 inst so far ( 55.3 %)
+Max stash size is: 28
+Average stash size is: 4.31029
+Stash violation number of times: 0
+Served 554 inst so far ( 55.4 %)
+Max stash size is: 28
+Average stash size is: 4.30564
+Stash violation number of times: 0
+Served 555 inst so far ( 55.5 %)
+Max stash size is: 28
+Average stash size is: 4.30564
+Stash violation number of times: 0
+Served 556 inst so far ( 55.6 %)
+Max stash size is: 28
+Average stash size is: 4.29742
+Stash violation number of times: 0
+Served 557 inst so far ( 55.7 %)
+Max stash size is: 28
+Average stash size is: 4.31411
+Stash violation number of times: 0
+Served 558 inst so far ( 55.8 %)
+Max stash size is: 28
+Average stash size is: 4.30973
+Stash violation number of times: 0
+Served 559 inst so far ( 55.9 %)
+Max stash size is: 28
+Average stash size is: 4.31056
+Stash violation number of times: 0
+Served 560 inst so far ( 56 %)
+Max stash size is: 28
+Average stash size is: 4.30674
+Stash violation number of times: 0
+Served 561 inst so far ( 56.1 %)
+Max stash size is: 28
+Average stash size is: 4.32096
+Stash violation number of times: 0
+Served 562 inst so far ( 56.2 %)
+Max stash size is: 28
+Average stash size is: 4.32096
+Stash violation number of times: 0
+Served 563 inst so far ( 56.3 %)
+Max stash size is: 28
+Average stash size is: 4.32096
+Stash violation number of times: 0
+Served 564 inst so far ( 56.4 %)
+Max stash size is: 28
+Average stash size is: 4.31892
+Stash violation number of times: 0
+Served 565 inst so far ( 56.5 %)
+Max stash size is: 28
+Average stash size is: 4.31518
+Stash violation number of times: 0
+Served 566 inst so far ( 56.6 %)
+Max stash size is: 28
+Average stash size is: 4.31164
+Stash violation number of times: 0
+Served 567 inst so far ( 56.7 %)
+Max stash size is: 28
+Average stash size is: 4.31016
+Stash violation number of times: 0
+Served 568 inst so far ( 56.8 %)
+Max stash size is: 28
+Average stash size is: 4.30365
+Stash violation number of times: 0
+Served 569 inst so far ( 56.9 %)
+Max stash size is: 28
+Average stash size is: 4.31587
+Stash violation number of times: 0
+Served 570 inst so far ( 57 %)
+Max stash size is: 28
+Average stash size is: 4.31061
+Stash violation number of times: 0
+Served 571 inst so far ( 57.1 %)
+Max stash size is: 28
+Average stash size is: 4.30415
+Stash violation number of times: 0
+Served 572 inst so far ( 57.2 %)
+Max stash size is: 28
+Average stash size is: 4.29248
+Stash violation number of times: 0
+Served 573 inst so far ( 57.3 %)
+Max stash size is: 28
+Average stash size is: 4.30255
+Stash violation number of times: 0
+Served 574 inst so far ( 57.4 %)
+Max stash size is: 28
+Average stash size is: 4.30135
+Stash violation number of times: 0
+Served 575 inst so far ( 57.5 %)
+Max stash size is: 28
+Average stash size is: 4.29963
+Stash violation number of times: 0
+Served 576 inst so far ( 57.6 %)
+Max stash size is: 28
+Average stash size is: 4.29768
+Stash violation number of times: 0
+Served 577 inst so far ( 57.7 %)
+Max stash size is: 28
+Average stash size is: 4.305
+Stash violation number of times: 0
+Served 578 inst so far ( 57.8 %)
+Max stash size is: 28
+Average stash size is: 4.3006
+Stash violation number of times: 0
+Served 579 inst so far ( 57.9 %)
+Max stash size is: 28
+Average stash size is: 4.29963
+Stash violation number of times: 0
+Served 580 inst so far ( 58 %)
+Max stash size is: 28
+Average stash size is: 4.29993
+Stash violation number of times: 0
+Served 581 inst so far ( 58.1 %)
+Max stash size is: 28
+Average stash size is: 4.31134
+Stash violation number of times: 0
+Served 582 inst so far ( 58.2 %)
+Max stash size is: 28
+Average stash size is: 4.30377
+Stash violation number of times: 0
+Served 583 inst so far ( 58.3 %)
+Max stash size is: 28
+Average stash size is: 4.30406
+Stash violation number of times: 0
+Served 584 inst so far ( 58.4 %)
+Max stash size is: 28
+Average stash size is: 4.30508
+Stash violation number of times: 0
+Served 585 inst so far ( 58.5 %)
+Max stash size is: 28
+Average stash size is: 4.31714
+Stash violation number of times: 0
+Served 586 inst so far ( 58.6 %)
+Max stash size is: 28
+Average stash size is: 4.31544
+Stash violation number of times: 0
+Served 587 inst so far ( 58.7 %)
+Max stash size is: 28
+Average stash size is: 4.31571
+Stash violation number of times: 0
+Served 588 inst so far ( 58.8 %)
+Max stash size is: 28
+Average stash size is: 4.30482
+Stash violation number of times: 0
+Served 589 inst so far ( 58.9 %)
+Max stash size is: 28
+Average stash size is: 4.30977
+Stash violation number of times: 0
+Served 590 inst so far ( 59 %)
+Max stash size is: 28
+Average stash size is: 4.30808
+Stash violation number of times: 0
+Served 591 inst so far ( 59.1 %)
+Max stash size is: 28
+Average stash size is: 4.30713
+Stash violation number of times: 0
+Served 592 inst so far ( 59.2 %)
+Max stash size is: 28
+Average stash size is: 4.29254
+Stash violation number of times: 0
+Served 593 inst so far ( 59.3 %)
+Max stash size is: 28
+Average stash size is: 4.29509
+Stash violation number of times: 0
+Served 594 inst so far ( 59.4 %)
+Max stash size is: 28
+Average stash size is: 4.29179
+Stash violation number of times: 0
+Served 595 inst so far ( 59.5 %)
+Max stash size is: 28
+Average stash size is: 4.29179
+Stash violation number of times: 0
+Served 596 inst so far ( 59.6 %)
+Max stash size is: 28
+Average stash size is: 4.28541
+Stash violation number of times: 0
+Served 597 inst so far ( 59.7 %)
+Max stash size is: 28
+Average stash size is: 4.2972
+Stash violation number of times: 0
+Served 598 inst so far ( 59.8 %)
+Max stash size is: 28
+Average stash size is: 4.28919
+Stash violation number of times: 0
+Served 599 inst so far ( 59.9 %)
+Max stash size is: 28
+Average stash size is: 4.28592
+Stash violation number of times: 0
+Served 600 inst so far ( 60 %)
+Max stash size is: 28
+Average stash size is: 4.28011
+Stash violation number of times: 0
+Served 601 inst so far ( 60.1 %)
+Max stash size is: 28
+Average stash size is: 4.29039
+Stash violation number of times: 0
+Served 602 inst so far ( 60.2 %)
+Max stash size is: 28
+Average stash size is: 4.29018
+Stash violation number of times: 0
+Served 603 inst so far ( 60.3 %)
+Max stash size is: 28
+Average stash size is: 4.28856
+Stash violation number of times: 0
+Served 604 inst so far ( 60.4 %)
+Max stash size is: 28
+Average stash size is: 4.2844
+Stash violation number of times: 0
+Served 605 inst so far ( 60.5 %)
+Max stash size is: 28
+Average stash size is: 4.2947
+Stash violation number of times: 0
+Served 606 inst so far ( 60.6 %)
+Max stash size is: 28
+Average stash size is: 4.29005
+Stash violation number of times: 0
+Served 607 inst so far ( 60.7 %)
+Max stash size is: 28
+Average stash size is: 4.28964
+Stash violation number of times: 0
+Served 608 inst so far ( 60.8 %)
+Max stash size is: 28
+Average stash size is: 4.28511
+Stash violation number of times: 0
+Served 609 inst so far ( 60.9 %)
+Max stash size is: 28
+Average stash size is: 4.29412
+Stash violation number of times: 0
+Served 610 inst so far ( 61 %)
+Max stash size is: 28
+Average stash size is: 4.29412
+Stash violation number of times: 0
+Served 611 inst so far ( 61.1 %)
+Max stash size is: 28
+Average stash size is: 4.29412
+Stash violation number of times: 0
+Served 612 inst so far ( 61.2 %)
+Max stash size is: 28
+Average stash size is: 4.29441
+Stash violation number of times: 0
+Served 613 inst so far ( 61.3 %)
+Max stash size is: 28
+Average stash size is: 4.30565
+Stash violation number of times: 0
+Served 614 inst so far ( 61.4 %)
+Max stash size is: 28
+Average stash size is: 4.30383
+Stash violation number of times: 0
+Served 615 inst so far ( 61.5 %)
+Max stash size is: 28
+Average stash size is: 4.29444
+Stash violation number of times: 0
+Served 616 inst so far ( 61.6 %)
+Max stash size is: 28
+Average stash size is: 4.29404
+Stash violation number of times: 0
+Served 617 inst so far ( 61.7 %)
+Max stash size is: 28
+Average stash size is: 4.29806
+Stash violation number of times: 0
+Served 618 inst so far ( 61.8 %)
+Max stash size is: 28
+Average stash size is: 4.29578
+Stash violation number of times: 0
+Served 619 inst so far ( 61.9 %)
+Max stash size is: 28
+Average stash size is: 4.29331
+Stash violation number of times: 0
+Served 620 inst so far ( 62 %)
+Max stash size is: 28
+Average stash size is: 4.29339
+Stash violation number of times: 0
+Served 621 inst so far ( 62.1 %)
+Max stash size is: 28
+Average stash size is: 4.30764
+Stash violation number of times: 0
+Served 622 inst so far ( 62.2 %)
+Max stash size is: 28
+Average stash size is: 4.30584
+Stash violation number of times: 0
+Served 623 inst so far ( 62.3 %)
+Max stash size is: 28
+Average stash size is: 4.29815
+Stash violation number of times: 0
+Served 624 inst so far ( 62.4 %)
+Max stash size is: 28
+Average stash size is: 4.29343
+Stash violation number of times: 0
+Served 625 inst so far ( 62.5 %)
+Max stash size is: 28
+Average stash size is: 4.30375
+Stash violation number of times: 0
+Served 626 inst so far ( 62.6 %)
+Max stash size is: 28
+Average stash size is: 4.29925
+Stash violation number of times: 0
+Served 627 inst so far ( 62.7 %)
+Max stash size is: 28
+Average stash size is: 4.30041
+Stash violation number of times: 0
+Served 628 inst so far ( 62.8 %)
+Max stash size is: 28
+Average stash size is: 4.29647
+Stash violation number of times: 0
+Served 629 inst so far ( 62.9 %)
+Max stash size is: 28
+Average stash size is: 4.30514
+Stash violation number of times: 0
+Served 630 inst so far ( 63 %)
+Max stash size is: 28
+Average stash size is: 4.2998
+Stash violation number of times: 0
+Served 631 inst so far ( 63.1 %)
+Max stash size is: 28
+Average stash size is: 4.29582
+Stash violation number of times: 0
+Served 632 inst so far ( 63.2 %)
+Max stash size is: 28
+Average stash size is: 4.28811
+Stash violation number of times: 0
+Served 633 inst so far ( 63.3 %)
+Max stash size is: 28
+Average stash size is: 4.29097
+Stash violation number of times: 0
+Served 634 inst so far ( 63.4 %)
+Max stash size is: 28
+Average stash size is: 4.28419
+Stash violation number of times: 0
+Served 635 inst so far ( 63.5 %)
+Max stash size is: 28
+Average stash size is: 4.27291
+Stash violation number of times: 0
+Served 636 inst so far ( 63.6 %)
+Max stash size is: 28
+Average stash size is: 4.26887
+Stash violation number of times: 0
+Served 637 inst so far ( 63.7 %)
+Max stash size is: 28
+Average stash size is: 4.27279
+Stash violation number of times: 0
+Served 638 inst so far ( 63.8 %)
+Max stash size is: 28
+Average stash size is: 4.27195
+Stash violation number of times: 0
+Served 639 inst so far ( 63.9 %)
+Max stash size is: 28
+Average stash size is: 4.26877
+Stash violation number of times: 0
+Served 640 inst so far ( 64 %)
+Max stash size is: 28
+Average stash size is: 4.26693
+Stash violation number of times: 0
+Served 641 inst so far ( 64.1 %)
+Max stash size is: 28
+Average stash size is: 4.26702
+Stash violation number of times: 0
+Served 642 inst so far ( 64.2 %)
+Max stash size is: 28
+Average stash size is: 4.26127
+Stash violation number of times: 0
+Served 643 inst so far ( 64.3 %)
+Max stash size is: 28
+Average stash size is: 4.25962
+Stash violation number of times: 0
+Served 644 inst so far ( 64.4 %)
+Max stash size is: 28
+Average stash size is: 4.25798
+Stash violation number of times: 0
+Served 645 inst so far ( 64.5 %)
+Max stash size is: 28
+Average stash size is: 4.26463
+Stash violation number of times: 0
+Served 646 inst so far ( 64.6 %)
+Max stash size is: 28
+Average stash size is: 4.26169
+Stash violation number of times: 0
+Served 647 inst so far ( 64.7 %)
+Max stash size is: 28
+Average stash size is: 4.2594
+Stash violation number of times: 0
+Served 648 inst so far ( 64.8 %)
+Max stash size is: 28
+Average stash size is: 4.25842
+Stash violation number of times: 0
+Served 649 inst so far ( 64.9 %)
+Max stash size is: 28
+Average stash size is: 4.26873
+Stash violation number of times: 0
+Served 650 inst so far ( 65 %)
+Max stash size is: 28
+Average stash size is: 4.26873
+Stash violation number of times: 0
+Served 651 inst so far ( 65.1 %)
+Max stash size is: 28
+Average stash size is: 4.26727
+Stash violation number of times: 0
+Served 652 inst so far ( 65.2 %)
+Max stash size is: 28
+Average stash size is: 4.26435
+Stash violation number of times: 0
+Served 653 inst so far ( 65.3 %)
+Max stash size is: 29
+Average stash size is: 4.27314
+Stash violation number of times: 0
+Served 654 inst so far ( 65.4 %)
+Max stash size is: 29
+Average stash size is: 4.26376
+Stash violation number of times: 0
+Served 655 inst so far ( 65.5 %)
+Max stash size is: 29
+Average stash size is: 4.26376
+Stash violation number of times: 0
+Served 656 inst so far ( 65.6 %)
+Max stash size is: 29
+Average stash size is: 4.25879
+Stash violation number of times: 0
+Served 657 inst so far ( 65.7 %)
+Max stash size is: 29
+Average stash size is: 4.26276
+Stash violation number of times: 0
+Served 658 inst so far ( 65.8 %)
+Max stash size is: 29
+Average stash size is: 4.26051
+Stash violation number of times: 0
+Served 659 inst so far ( 65.9 %)
+Max stash size is: 29
+Average stash size is: 4.25891
+Stash violation number of times: 0
+Served 660 inst so far ( 66 %)
+Max stash size is: 29
+Average stash size is: 4.25127
+Stash violation number of times: 0
+Served 661 inst so far ( 66.1 %)
+Max stash size is: 29
+Average stash size is: 4.25776
+Stash violation number of times: 0
+Served 662 inst so far ( 66.2 %)
+Max stash size is: 29
+Average stash size is: 4.25823
+Stash violation number of times: 0
+Served 663 inst so far ( 66.3 %)
+Max stash size is: 29
+Average stash size is: 4.25664
+Stash violation number of times: 0
+Served 664 inst so far ( 66.4 %)
+Max stash size is: 29
+Average stash size is: 4.25521
+Stash violation number of times: 0
+Served 665 inst so far ( 66.5 %)
+Max stash size is: 29
+Average stash size is: 4.26263
+Stash violation number of times: 0
+Served 666 inst so far ( 66.6 %)
+Max stash size is: 29
+Average stash size is: 4.2604
+Stash violation number of times: 0
+Served 667 inst so far ( 66.7 %)
+Max stash size is: 29
+Average stash size is: 4.25597
+Stash violation number of times: 0
+Served 668 inst so far ( 66.8 %)
+Max stash size is: 29
+Average stash size is: 4.25424
+Stash violation number of times: 0
+Served 669 inst so far ( 66.9 %)
+Max stash size is: 29
+Average stash size is: 4.25986
+Stash violation number of times: 0
+Served 670 inst so far ( 67 %)
+Max stash size is: 29
+Average stash size is: 4.2597
+Stash violation number of times: 0
+Served 671 inst so far ( 67.1 %)
+Max stash size is: 29
+Average stash size is: 4.2597
+Stash violation number of times: 0
+Served 672 inst so far ( 67.2 %)
+Max stash size is: 29
+Average stash size is: 4.25593
+Stash violation number of times: 0
+Served 673 inst so far ( 67.3 %)
+Max stash size is: 29
+Average stash size is: 4.25981
+Stash violation number of times: 0
+Served 674 inst so far ( 67.4 %)
+Max stash size is: 29
+Average stash size is: 4.25762
+Stash violation number of times: 0
+Served 675 inst so far ( 67.5 %)
+Max stash size is: 29
+Average stash size is: 4.25684
+Stash violation number of times: 0
+Served 676 inst so far ( 67.6 %)
+Max stash size is: 29
+Average stash size is: 4.25062
+Stash violation number of times: 0
+Served 677 inst so far ( 67.7 %)
+Max stash size is: 29
+Average stash size is: 4.25944
+Stash violation number of times: 0
+Served 678 inst so far ( 67.8 %)
+Max stash size is: 29
+Average stash size is: 4.25448
+Stash violation number of times: 0
+Served 679 inst so far ( 67.9 %)
+Max stash size is: 29
+Average stash size is: 4.2517
+Stash violation number of times: 0
+Served 680 inst so far ( 68 %)
+Max stash size is: 29
+Average stash size is: 4.25154
+Stash violation number of times: 0
+Served 681 inst so far ( 68.1 %)
+Max stash size is: 29
+Average stash size is: 4.26108
+Stash violation number of times: 0
+Served 682 inst so far ( 68.2 %)
+Max stash size is: 29
+Average stash size is: 4.25814
+Stash violation number of times: 0
+Served 683 inst so far ( 68.3 %)
+Max stash size is: 29
+Average stash size is: 4.2566
+Stash violation number of times: 0
+Served 684 inst so far ( 68.4 %)
+Max stash size is: 29
+Average stash size is: 4.24985
+Stash violation number of times: 0
+Served 685 inst so far ( 68.5 %)
+Max stash size is: 29
+Average stash size is: 4.26255
+Stash violation number of times: 0
+Served 686 inst so far ( 68.6 %)
+Max stash size is: 29
+Average stash size is: 4.25564
+Stash violation number of times: 0
+Served 687 inst so far ( 68.7 %)
+Max stash size is: 29
+Average stash size is: 4.25533
+Stash violation number of times: 0
+Served 688 inst so far ( 68.8 %)
+Max stash size is: 29
+Average stash size is: 4.25228
+Stash violation number of times: 0
+Served 689 inst so far ( 68.9 %)
+Max stash size is: 29
+Average stash size is: 4.2585
+Stash violation number of times: 0
+Served 690 inst so far ( 69 %)
+Max stash size is: 29
+Average stash size is: 4.25773
+Stash violation number of times: 0
+Served 691 inst so far ( 69.1 %)
+Max stash size is: 29
+Average stash size is: 4.2556
+Stash violation number of times: 0
+Served 692 inst so far ( 69.2 %)
+Max stash size is: 29
+Average stash size is: 4.25091
+Stash violation number of times: 0
+Served 693 inst so far ( 69.3 %)
+Max stash size is: 29
+Average stash size is: 4.26329
+Stash violation number of times: 0
+Served 694 inst so far ( 69.4 %)
+Max stash size is: 29
+Average stash size is: 4.26132
+Stash violation number of times: 0
+Served 695 inst so far ( 69.5 %)
+Max stash size is: 29
+Average stash size is: 4.26055
+Stash violation number of times: 0
+Served 696 inst so far ( 69.6 %)
+Max stash size is: 29
+Average stash size is: 4.25647
+Stash violation number of times: 0
+Served 697 inst so far ( 69.7 %)
+Max stash size is: 29
+Average stash size is: 4.2599
+Stash violation number of times: 0
+Served 698 inst so far ( 69.8 %)
+Max stash size is: 29
+Average stash size is: 4.25795
+Stash violation number of times: 0
+Served 699 inst so far ( 69.9 %)
+Max stash size is: 29
+Average stash size is: 4.25719
+Stash violation number of times: 0
+Served 700 inst so far ( 70 %)
+Max stash size is: 29
+Average stash size is: 4.25629
+Stash violation number of times: 0
+Served 701 inst so far ( 70.1 %)
+Max stash size is: 29
+Average stash size is: 4.25895
+Stash violation number of times: 0
+Served 702 inst so far ( 70.2 %)
+Max stash size is: 29
+Average stash size is: 4.25104
+Stash violation number of times: 0
+Served 703 inst so far ( 70.3 %)
+Max stash size is: 29
+Average stash size is: 4.2503
+Stash violation number of times: 0
+Served 704 inst so far ( 70.4 %)
+Max stash size is: 29
+Average stash size is: 4.24748
+Stash violation number of times: 0
+Served 705 inst so far ( 70.5 %)
+Max stash size is: 29
+Average stash size is: 4.25311
+Stash violation number of times: 0
+Served 706 inst so far ( 70.6 %)
+Max stash size is: 29
+Average stash size is: 4.2497
+Stash violation number of times: 0
+Served 707 inst so far ( 70.7 %)
+Max stash size is: 29
+Average stash size is: 4.24366
+Stash violation number of times: 0
+Served 708 inst so far ( 70.8 %)
+Max stash size is: 29
+Average stash size is: 4.23882
+Stash violation number of times: 0
+Served 709 inst so far ( 70.9 %)
+Max stash size is: 29
+Average stash size is: 4.24237
+Stash violation number of times: 0
+Served 710 inst so far ( 71 %)
+Max stash size is: 29
+Average stash size is: 4.23857
+Stash violation number of times: 0
+Served 711 inst so far ( 71.1 %)
+Max stash size is: 29
+Average stash size is: 4.23829
+Stash violation number of times: 0
+Served 712 inst so far ( 71.2 %)
+Max stash size is: 29
+Average stash size is: 4.23189
+Stash violation number of times: 0
+Served 713 inst so far ( 71.3 %)
+Max stash size is: 29
+Average stash size is: 4.23979
+Stash violation number of times: 0
+Served 714 inst so far ( 71.4 %)
+Max stash size is: 29
+Average stash size is: 4.2379
+Stash violation number of times: 0
+Served 715 inst so far ( 71.5 %)
+Max stash size is: 29
+Average stash size is: 4.23458
+Stash violation number of times: 0
+Served 716 inst so far ( 71.6 %)
+Max stash size is: 29
+Average stash size is: 4.23273
+Stash violation number of times: 0
+Served 717 inst so far ( 71.7 %)
+Max stash size is: 29
+Average stash size is: 4.24392
+Stash violation number of times: 0
+Served 718 inst so far ( 71.8 %)
+Max stash size is: 29
+Average stash size is: 4.23887
+Stash violation number of times: 0
+Served 719 inst so far ( 71.9 %)
+Max stash size is: 29
+Average stash size is: 4.23499
+Stash violation number of times: 0
+Served 720 inst so far ( 72 %)
+Max stash size is: 29
+Average stash size is: 4.23458
+Stash violation number of times: 0
+Served 721 inst so far ( 72.1 %)
+Max stash size is: 29
+Average stash size is: 4.24064
+Stash violation number of times: 0
+Served 722 inst so far ( 72.2 %)
+Max stash size is: 29
+Average stash size is: 4.24064
+Stash violation number of times: 0
+Served 723 inst so far ( 72.3 %)
+Max stash size is: 29
+Average stash size is: 4.23979
+Stash violation number of times: 0
+Served 724 inst so far ( 72.4 %)
+Max stash size is: 29
+Average stash size is: 4.24023
+Stash violation number of times: 0
+Served 725 inst so far ( 72.5 %)
+Max stash size is: 29
+Average stash size is: 4.24771
+Stash violation number of times: 0
+Served 726 inst so far ( 72.6 %)
+Max stash size is: 29
+Average stash size is: 4.2457
+Stash violation number of times: 0
+Served 727 inst so far ( 72.7 %)
+Max stash size is: 29
+Average stash size is: 4.24556
+Stash violation number of times: 0
+Served 728 inst so far ( 72.8 %)
+Max stash size is: 29
+Average stash size is: 4.24146
+Stash violation number of times: 0
+Served 729 inst so far ( 72.9 %)
+Max stash size is: 29
+Average stash size is: 4.24659
+Stash violation number of times: 0
+Served 730 inst so far ( 73 %)
+Max stash size is: 29
+Average stash size is: 4.24475
+Stash violation number of times: 0
+Served 731 inst so far ( 73.1 %)
+Max stash size is: 29
+Average stash size is: 4.2422
+Stash violation number of times: 0
+Served 732 inst so far ( 73.2 %)
+Max stash size is: 29
+Average stash size is: 4.23726
+Stash violation number of times: 0
+Served 733 inst so far ( 73.3 %)
+Max stash size is: 29
+Average stash size is: 4.24844
+Stash violation number of times: 0
+Served 734 inst so far ( 73.4 %)
+Max stash size is: 29
+Average stash size is: 4.24337
+Stash violation number of times: 0
+Served 735 inst so far ( 73.5 %)
+Max stash size is: 29
+Average stash size is: 4.23761
+Stash violation number of times: 0
+Served 736 inst so far ( 73.6 %)
+Max stash size is: 29
+Average stash size is: 4.23371
+Stash violation number of times: 0
+Served 737 inst so far ( 73.7 %)
+Max stash size is: 29
+Average stash size is: 4.24018
+Stash violation number of times: 0
+Served 738 inst so far ( 73.8 %)
+Max stash size is: 29
+Average stash size is: 4.23655
+Stash violation number of times: 0
+Served 739 inst so far ( 73.9 %)
+Max stash size is: 29
+Average stash size is: 4.2349
+Stash violation number of times: 0
+Served 740 inst so far ( 74 %)
+Max stash size is: 29
+Average stash size is: 4.23171
+Stash violation number of times: 0
+Served 741 inst so far ( 74.1 %)
+Max stash size is: 29
+Average stash size is: 4.23677
+Stash violation number of times: 0
+Served 742 inst so far ( 74.2 %)
+Max stash size is: 29
+Average stash size is: 4.23595
+Stash violation number of times: 0
+Served 743 inst so far ( 74.3 %)
+Max stash size is: 29
+Average stash size is: 4.23595
+Stash violation number of times: 0
+Served 744 inst so far ( 74.4 %)
+Max stash size is: 29
+Average stash size is: 4.23265
+Stash violation number of times: 0
+Served 745 inst so far ( 74.5 %)
+Max stash size is: 29
+Average stash size is: 4.24169
+Stash violation number of times: 0
+Served 746 inst so far ( 74.6 %)
+Max stash size is: 29
+Average stash size is: 4.2392
+Stash violation number of times: 0
+Served 747 inst so far ( 74.7 %)
+Max stash size is: 29
+Average stash size is: 4.23962
+Stash violation number of times: 0
+Served 748 inst so far ( 74.8 %)
+Max stash size is: 29
+Average stash size is: 4.23578
+Stash violation number of times: 0
+Served 749 inst so far ( 74.9 %)
+Max stash size is: 29
+Average stash size is: 4.246
+Stash violation number of times: 0
+Served 750 inst so far ( 75 %)
+Max stash size is: 29
+Average stash size is: 4.246
+Stash violation number of times: 0
+Served 751 inst so far ( 75.1 %)
+Max stash size is: 29
+Average stash size is: 4.24628
+Stash violation number of times: 0
+Served 752 inst so far ( 75.2 %)
+Max stash size is: 29
+Average stash size is: 4.24656
+Stash violation number of times: 0
+Served 753 inst so far ( 75.3 %)
+Max stash size is: 29
+Average stash size is: 4.25495
+Stash violation number of times: 0
+Served 754 inst so far ( 75.4 %)
+Max stash size is: 29
+Average stash size is: 4.24836
+Stash violation number of times: 0
+Served 755 inst so far ( 75.5 %)
+Max stash size is: 29
+Average stash size is: 4.24412
+Stash violation number of times: 0
+Served 756 inst so far ( 75.6 %)
+Max stash size is: 29
+Average stash size is: 4.23921
+Stash violation number of times: 0
+Served 757 inst so far ( 75.7 %)
+Max stash size is: 29
+Average stash size is: 4.24864
+Stash violation number of times: 0
+Served 758 inst so far ( 75.8 %)
+Max stash size is: 29
+Average stash size is: 4.24741
+Stash violation number of times: 0
+Served 759 inst so far ( 75.9 %)
+Max stash size is: 29
+Average stash size is: 4.24728
+Stash violation number of times: 0
+Served 760 inst so far ( 76 %)
+Max stash size is: 29
+Average stash size is: 4.24646
+Stash violation number of times: 0
+Served 761 inst so far ( 76.1 %)
+Max stash size is: 29
+Average stash size is: 4.25598
+Stash violation number of times: 0
+Served 762 inst so far ( 76.2 %)
+Max stash size is: 29
+Average stash size is: 4.25163
+Stash violation number of times: 0
+Served 763 inst so far ( 76.3 %)
+Max stash size is: 29
+Average stash size is: 4.24919
+Stash violation number of times: 0
+Served 764 inst so far ( 76.4 %)
+Max stash size is: 29
+Average stash size is: 4.24608
+Stash violation number of times: 0
+Served 765 inst so far ( 76.5 %)
+Max stash size is: 29
+Average stash size is: 4.24528
+Stash violation number of times: 0
+Served 766 inst so far ( 76.6 %)
+Max stash size is: 29
+Average stash size is: 4.24448
+Stash violation number of times: 0
+Served 767 inst so far ( 76.7 %)
+Max stash size is: 29
+Average stash size is: 4.24381
+Stash violation number of times: 0
+Served 768 inst so far ( 76.8 %)
+Max stash size is: 29
+Average stash size is: 4.24477
+Stash violation number of times: 0
+Served 769 inst so far ( 76.9 %)
+Max stash size is: 29
+Average stash size is: 4.25308
+Stash violation number of times: 0
+Served 770 inst so far ( 77 %)
+Max stash size is: 29
+Average stash size is: 4.24893
+Stash violation number of times: 0
+Served 771 inst so far ( 77.1 %)
+Max stash size is: 29
+Average stash size is: 4.24693
+Stash violation number of times: 0
+Served 772 inst so far ( 77.2 %)
+Max stash size is: 29
+Average stash size is: 4.23921
+Stash violation number of times: 0
+Served 773 inst so far ( 77.3 %)
+Max stash size is: 29
+Average stash size is: 4.24615
+Stash violation number of times: 0
+Served 774 inst so far ( 77.4 %)
+Max stash size is: 29
+Average stash size is: 4.24655
+Stash violation number of times: 0
+Served 775 inst so far ( 77.5 %)
+Max stash size is: 29
+Average stash size is: 4.24509
+Stash violation number of times: 0
+Served 776 inst so far ( 77.6 %)
+Max stash size is: 29
+Average stash size is: 4.24299
+Stash violation number of times: 0
+Served 777 inst so far ( 77.7 %)
+Max stash size is: 29
+Average stash size is: 4.24947
+Stash violation number of times: 0
+Served 778 inst so far ( 77.8 %)
+Max stash size is: 29
+Average stash size is: 4.24578
+Stash violation number of times: 0
+Served 779 inst so far ( 77.9 %)
+Max stash size is: 29
+Average stash size is: 4.24499
+Stash violation number of times: 0
+Served 780 inst so far ( 78 %)
+Max stash size is: 29
+Average stash size is: 4.24513
+Stash violation number of times: 0
+Served 781 inst so far ( 78.1 %)
+Max stash size is: 29
+Average stash size is: 4.25657
+Stash violation number of times: 0
+Served 782 inst so far ( 78.2 %)
+Max stash size is: 29
+Average stash size is: 4.25657
+Stash violation number of times: 0
+Served 783 inst so far ( 78.3 %)
+Max stash size is: 29
+Average stash size is: 4.25644
+Stash violation number of times: 0
+Served 784 inst so far ( 78.4 %)
+Max stash size is: 29
+Average stash size is: 4.25026
+Stash violation number of times: 0
+Served 785 inst so far ( 78.5 %)
+Max stash size is: 29
+Average stash size is: 4.25837
+Stash violation number of times: 0
+Served 786 inst so far ( 78.6 %)
+Max stash size is: 29
+Average stash size is: 4.25876
+Stash violation number of times: 0
+Served 787 inst so far ( 78.7 %)
+Max stash size is: 29
+Average stash size is: 4.25561
+Stash violation number of times: 0
+Served 788 inst so far ( 78.8 %)
+Max stash size is: 29
+Average stash size is: 4.25221
+Stash violation number of times: 0
+Served 789 inst so far ( 78.9 %)
+Max stash size is: 29
+Average stash size is: 4.25843
+Stash violation number of times: 0
+Served 790 inst so far ( 79 %)
+Max stash size is: 29
+Average stash size is: 4.25207
+Stash violation number of times: 0
+Served 791 inst so far ( 79.1 %)
+Max stash size is: 29
+Average stash size is: 4.25116
+Stash violation number of times: 0
+Served 792 inst so far ( 79.2 %)
+Max stash size is: 29
+Average stash size is: 4.246
+Stash violation number of times: 0
+Served 793 inst so far ( 79.3 %)
+Max stash size is: 29
+Average stash size is: 4.25567
+Stash violation number of times: 0
+Served 794 inst so far ( 79.4 %)
+Max stash size is: 29
+Average stash size is: 4.25103
+Stash violation number of times: 0
+Served 795 inst so far ( 79.5 %)
+Max stash size is: 29
+Average stash size is: 4.25064
+Stash violation number of times: 0
+Served 796 inst so far ( 79.6 %)
+Max stash size is: 29
+Average stash size is: 4.24526
+Stash violation number of times: 0
+Served 797 inst so far ( 79.7 %)
+Max stash size is: 29
+Average stash size is: 4.24413
+Stash violation number of times: 0
+Served 798 inst so far ( 79.8 %)
+Max stash size is: 29
+Average stash size is: 4.24413
+Stash violation number of times: 0
+Served 799 inst so far ( 79.9 %)
+Max stash size is: 29
+Average stash size is: 4.24184
+Stash violation number of times: 0
+Served 800 inst so far ( 80 %)
+Max stash size is: 29
+Average stash size is: 4.23676
+Stash violation number of times: 0
+Served 801 inst so far ( 80.1 %)
+Max stash size is: 29
+Average stash size is: 4.24555
+Stash violation number of times: 0
+Served 802 inst so far ( 80.2 %)
+Max stash size is: 29
+Average stash size is: 4.24213
+Stash violation number of times: 0
+Served 803 inst so far ( 80.3 %)
+Max stash size is: 29
+Average stash size is: 4.24087
+Stash violation number of times: 0
+Served 804 inst so far ( 80.4 %)
+Max stash size is: 29
+Average stash size is: 4.23759
+Stash violation number of times: 0
+Served 805 inst so far ( 80.5 %)
+Max stash size is: 29
+Average stash size is: 4.24456
+Stash violation number of times: 0
+Served 806 inst so far ( 80.6 %)
+Max stash size is: 29
+Average stash size is: 4.2438
+Stash violation number of times: 0
+Served 807 inst so far ( 80.7 %)
+Max stash size is: 29
+Average stash size is: 4.24343
+Stash violation number of times: 0
+Served 808 inst so far ( 80.8 %)
+Max stash size is: 29
+Average stash size is: 4.24382
+Stash violation number of times: 0
+Served 809 inst so far ( 80.9 %)
+Max stash size is: 29
+Average stash size is: 4.24698
+Stash violation number of times: 0
+Served 810 inst so far ( 81 %)
+Max stash size is: 29
+Average stash size is: 4.24584
+Stash violation number of times: 0
+Served 811 inst so far ( 81.1 %)
+Max stash size is: 29
+Average stash size is: 4.24459
+Stash violation number of times: 0
+Served 812 inst so far ( 81.2 %)
+Max stash size is: 29
+Average stash size is: 4.24485
+Stash violation number of times: 0
+Served 813 inst so far ( 81.3 %)
+Max stash size is: 29
+Average stash size is: 4.25163
+Stash violation number of times: 0
+Served 814 inst so far ( 81.4 %)
+Max stash size is: 29
+Average stash size is: 4.24925
+Stash violation number of times: 0
+Served 815 inst so far ( 81.5 %)
+Max stash size is: 29
+Average stash size is: 4.24887
+Stash violation number of times: 0
+Served 816 inst so far ( 81.6 %)
+Max stash size is: 29
+Average stash size is: 4.24862
+Stash violation number of times: 0
+Served 817 inst so far ( 81.7 %)
+Max stash size is: 31
+Average stash size is: 4.25987
+Stash violation number of times: 0
+Served 818 inst so far ( 81.8 %)
+Max stash size is: 31
+Average stash size is: 4.25686
+Stash violation number of times: 0
+Served 819 inst so far ( 81.9 %)
+Max stash size is: 31
+Average stash size is: 4.25535
+Stash violation number of times: 0
+Served 820 inst so far ( 82 %)
+Max stash size is: 31
+Average stash size is: 4.25137
+Stash violation number of times: 0
+Served 821 inst so far ( 82.1 %)
+Max stash size is: 31
+Average stash size is: 4.26165
+Stash violation number of times: 0
+Served 822 inst so far ( 82.2 %)
+Max stash size is: 31
+Average stash size is: 4.26152
+Stash violation number of times: 0
+Served 823 inst so far ( 82.3 %)
+Max stash size is: 31
+Average stash size is: 4.26152
+Stash violation number of times: 0
+Served 824 inst so far ( 82.4 %)
+Max stash size is: 31
+Average stash size is: 4.25655
+Stash violation number of times: 0
+Served 825 inst so far ( 82.5 %)
+Max stash size is: 31
+Average stash size is: 4.26134
+Stash violation number of times: 0
+Served 826 inst so far ( 82.6 %)
+Max stash size is: 31
+Average stash size is: 4.26171
+Stash violation number of times: 0
+Served 827 inst so far ( 82.7 %)
+Max stash size is: 31
+Average stash size is: 4.25935
+Stash violation number of times: 0
+Served 828 inst so far ( 82.8 %)
+Max stash size is: 31
+Average stash size is: 4.25651
+Stash violation number of times: 0
+Served 829 inst so far ( 82.9 %)
+Max stash size is: 31
+Average stash size is: 4.26572
+Stash violation number of times: 0
+Served 830 inst so far ( 83 %)
+Max stash size is: 31
+Average stash size is: 4.26349
+Stash violation number of times: 0
+Served 831 inst so far ( 83.1 %)
+Max stash size is: 31
+Average stash size is: 4.26102
+Stash violation number of times: 0
+Served 832 inst so far ( 83.2 %)
+Max stash size is: 31
+Average stash size is: 4.2577
+Stash violation number of times: 0
+Served 833 inst so far ( 83.3 %)
+Max stash size is: 31
+Average stash size is: 4.26709
+Stash violation number of times: 0
+Served 834 inst so far ( 83.4 %)
+Max stash size is: 31
+Average stash size is: 4.26598
+Stash violation number of times: 0
+Served 835 inst so far ( 83.5 %)
+Max stash size is: 31
+Average stash size is: 4.26426
+Stash violation number of times: 0
+Served 836 inst so far ( 83.6 %)
+Max stash size is: 31
+Average stash size is: 4.25656
+Stash violation number of times: 0
+Served 837 inst so far ( 83.7 %)
+Max stash size is: 31
+Average stash size is: 4.26408
+Stash violation number of times: 0
+Served 838 inst so far ( 83.8 %)
+Max stash size is: 31
+Average stash size is: 4.26091
+Stash violation number of times: 0
+Served 839 inst so far ( 83.9 %)
+Max stash size is: 31
+Average stash size is: 4.26017
+Stash violation number of times: 0
+Served 840 inst so far ( 84 %)
+Max stash size is: 31
+Average stash size is: 4.2615
+Stash violation number of times: 0
+Served 841 inst so far ( 84.1 %)
+Max stash size is: 31
+Average stash size is: 4.26983
+Stash violation number of times: 0
+Served 842 inst so far ( 84.2 %)
+Max stash size is: 31
+Average stash size is: 4.2697
+Stash violation number of times: 0
+Served 843 inst so far ( 84.3 %)
+Max stash size is: 31
+Average stash size is: 4.26847
+Stash violation number of times: 0
+Served 844 inst so far ( 84.4 %)
+Max stash size is: 31
+Average stash size is: 4.26288
+Stash violation number of times: 0
+Served 845 inst so far ( 84.5 %)
+Max stash size is: 31
+Average stash size is: 4.26766
+Stash violation number of times: 0
+Served 846 inst so far ( 84.6 %)
+Max stash size is: 31
+Average stash size is: 4.26801
+Stash violation number of times: 0
+Served 847 inst so far ( 84.7 %)
+Max stash size is: 31
+Average stash size is: 4.26763
+Stash violation number of times: 0
+Served 848 inst so far ( 84.8 %)
+Max stash size is: 31
+Average stash size is: 4.26785
+Stash violation number of times: 0
+Served 849 inst so far ( 84.9 %)
+Max stash size is: 31
+Average stash size is: 4.27286
+Stash violation number of times: 0
+Served 850 inst so far ( 85 %)
+Max stash size is: 31
+Average stash size is: 4.27043
+Stash violation number of times: 0
+Served 851 inst so far ( 85.1 %)
+Max stash size is: 31
+Average stash size is: 4.27077
+Stash violation number of times: 0
+Served 852 inst so far ( 85.2 %)
+Max stash size is: 31
+Average stash size is: 4.27112
+Stash violation number of times: 0
+Served 853 inst so far ( 85.3 %)
+Max stash size is: 31
+Average stash size is: 4.27645
+Stash violation number of times: 0
+Served 854 inst so far ( 85.4 %)
+Max stash size is: 31
+Average stash size is: 4.27476
+Stash violation number of times: 0
+Served 855 inst so far ( 85.5 %)
+Max stash size is: 31
+Average stash size is: 4.27416
+Stash violation number of times: 0
+Served 856 inst so far ( 85.6 %)
+Max stash size is: 31
+Average stash size is: 4.27437
+Stash violation number of times: 0
+Served 857 inst so far ( 85.7 %)
+Max stash size is: 31
+Average stash size is: 4.28144
+Stash violation number of times: 0
+Served 858 inst so far ( 85.8 %)
+Max stash size is: 31
+Average stash size is: 4.28178
+Stash violation number of times: 0
+Served 859 inst so far ( 85.9 %)
+Max stash size is: 31
+Average stash size is: 4.27875
+Stash violation number of times: 0
+Served 860 inst so far ( 86 %)
+Max stash size is: 31
+Average stash size is: 4.27303
+Stash violation number of times: 0
+Served 861 inst so far ( 86.1 %)
+Max stash size is: 31
+Average stash size is: 4.2756
+Stash violation number of times: 0
+Served 862 inst so far ( 86.2 %)
+Max stash size is: 31
+Average stash size is: 4.275
+Stash violation number of times: 0
+Served 863 inst so far ( 86.3 %)
+Max stash size is: 31
+Average stash size is: 4.27393
+Stash violation number of times: 0
+Served 864 inst so far ( 86.4 %)
+Max stash size is: 31
+Average stash size is: 4.26704
+Stash violation number of times: 0
+Served 865 inst so far ( 86.5 %)
+Max stash size is: 31
+Average stash size is: 4.27525
+Stash violation number of times: 0
+Served 866 inst so far ( 86.6 %)
+Max stash size is: 31
+Average stash size is: 4.27392
+Stash violation number of times: 0
+Served 867 inst so far ( 86.7 %)
+Max stash size is: 31
+Average stash size is: 4.27392
+Stash violation number of times: 0
+Served 868 inst so far ( 86.8 %)
+Max stash size is: 31
+Average stash size is: 4.2726
+Stash violation number of times: 0
+Served 869 inst so far ( 86.9 %)
+Max stash size is: 31
+Average stash size is: 4.28137
+Stash violation number of times: 0
+Served 870 inst so far ( 87 %)
+Max stash size is: 31
+Average stash size is: 4.27983
+Stash violation number of times: 0
+Served 871 inst so far ( 87.1 %)
+Max stash size is: 31
+Average stash size is: 4.27863
+Stash violation number of times: 0
+Served 872 inst so far ( 87.2 %)
+Max stash size is: 31
+Average stash size is: 4.27451
+Stash violation number of times: 0
+Served 873 inst so far ( 87.3 %)
+Max stash size is: 31
+Average stash size is: 4.28545
+Stash violation number of times: 0
+Served 874 inst so far ( 87.4 %)
+Max stash size is: 31
+Average stash size is: 4.28285
+Stash violation number of times: 0
+Served 875 inst so far ( 87.5 %)
+Max stash size is: 31
+Average stash size is: 4.28246
+Stash violation number of times: 0
+Served 876 inst so far ( 87.6 %)
+Max stash size is: 31
+Average stash size is: 4.27809
+Stash violation number of times: 0
+Served 877 inst so far ( 87.7 %)
+Max stash size is: 31
+Average stash size is: 4.28095
+Stash violation number of times: 0
+Served 878 inst so far ( 87.8 %)
+Max stash size is: 31
+Average stash size is: 4.27917
+Stash violation number of times: 0
+Served 879 inst so far ( 87.9 %)
+Max stash size is: 31
+Average stash size is: 4.27798
+Stash violation number of times: 0
+Served 880 inst so far ( 88 %)
+Max stash size is: 31
+Average stash size is: 4.27924
+Stash violation number of times: 0
+Served 881 inst so far ( 88.1 %)
+Max stash size is: 31
+Average stash size is: 4.28077
+Stash violation number of times: 0
+Served 882 inst so far ( 88.2 %)
+Max stash size is: 31
+Average stash size is: 4.27624
+Stash violation number of times: 0
+Served 883 inst so far ( 88.3 %)
+Max stash size is: 31
+Average stash size is: 4.27553
+Stash violation number of times: 0
+Served 884 inst so far ( 88.4 %)
+Max stash size is: 31
+Average stash size is: 4.2711
+Stash violation number of times: 0
+Served 885 inst so far ( 88.5 %)
+Max stash size is: 31
+Average stash size is: 4.27597
+Stash violation number of times: 0
+Served 886 inst so far ( 88.6 %)
+Max stash size is: 31
+Average stash size is: 4.27481
+Stash violation number of times: 0
+Served 887 inst so far ( 88.7 %)
+Max stash size is: 31
+Average stash size is: 4.27455
+Stash violation number of times: 0
+Served 888 inst so far ( 88.8 %)
+Max stash size is: 31
+Average stash size is: 4.27235
+Stash violation number of times: 0
+Served 889 inst so far ( 88.9 %)
+Max stash size is: 31
+Average stash size is: 4.28181
+Stash violation number of times: 0
+Served 890 inst so far ( 89 %)
+Max stash size is: 31
+Average stash size is: 4.27778
+Stash violation number of times: 0
+Served 891 inst so far ( 89.1 %)
+Max stash size is: 31
+Average stash size is: 4.27856
+Stash violation number of times: 0
+Served 892 inst so far ( 89.2 %)
+Max stash size is: 31
+Average stash size is: 4.27682
+Stash violation number of times: 0
+Served 893 inst so far ( 89.3 %)
+Max stash size is: 31
+Average stash size is: 4.28305
+Stash violation number of times: 0
+Served 894 inst so far ( 89.4 %)
+Max stash size is: 31
+Average stash size is: 4.2804
+Stash violation number of times: 0
+Served 895 inst so far ( 89.5 %)
+Max stash size is: 31
+Average stash size is: 4.2775
+Stash violation number of times: 0
+Served 896 inst so far ( 89.6 %)
+Max stash size is: 31
+Average stash size is: 4.27133
+Stash violation number of times: 0
+Served 897 inst so far ( 89.7 %)
+Max stash size is: 31
+Average stash size is: 4.27921
+Stash violation number of times: 0
+Served 898 inst so far ( 89.8 %)
+Max stash size is: 31
+Average stash size is: 4.27838
+Stash violation number of times: 0
+Served 899 inst so far ( 89.9 %)
+Max stash size is: 31
+Average stash size is: 4.27838
+Stash violation number of times: 0
+Served 900 inst so far ( 90 %)
+Max stash size is: 31
+Average stash size is: 4.27813
+Stash violation number of times: 0
+Served 901 inst so far ( 90.1 %)
+Max stash size is: 31
+Average stash size is: 4.28449
+Stash violation number of times: 0
+Served 902 inst so far ( 90.2 %)
+Max stash size is: 31
+Average stash size is: 4.28449
+Stash violation number of times: 0
+Served 903 inst so far ( 90.3 %)
+Max stash size is: 31
+Average stash size is: 4.28039
+Stash violation number of times: 0
+Served 904 inst so far ( 90.4 %)
+Max stash size is: 31
+Average stash size is: 4.2779
+Stash violation number of times: 0
+Served 905 inst so far ( 90.5 %)
+Max stash size is: 31
+Average stash size is: 4.28559
+Stash violation number of times: 0
+Served 906 inst so far ( 90.6 %)
+Max stash size is: 31
+Average stash size is: 4.28386
+Stash violation number of times: 0
+Served 907 inst so far ( 90.7 %)
+Max stash size is: 31
+Average stash size is: 4.28463
+Stash violation number of times: 0
+Served 908 inst so far ( 90.8 %)
+Max stash size is: 31
+Average stash size is: 4.2838
+Stash violation number of times: 0
+Served 909 inst so far ( 90.9 %)
+Max stash size is: 31
+Average stash size is: 4.28985
+Stash violation number of times: 0
+Served 910 inst so far ( 91 %)
+Max stash size is: 31
+Average stash size is: 4.29016
+Stash violation number of times: 0
+Served 911 inst so far ( 91.1 %)
+Max stash size is: 31
+Average stash size is: 4.28946
+Stash violation number of times: 0
+Served 912 inst so far ( 91.2 %)
+Max stash size is: 31
+Average stash size is: 4.2892
+Stash violation number of times: 0
+Served 913 inst so far ( 91.3 %)
+Max stash size is: 31
+Average stash size is: 4.29078
+Stash violation number of times: 0
+Served 914 inst so far ( 91.4 %)
+Max stash size is: 31
+Average stash size is: 4.28932
+Stash violation number of times: 0
+Served 915 inst so far ( 91.5 %)
+Max stash size is: 31
+Average stash size is: 4.28875
+Stash violation number of times: 0
+Served 916 inst so far ( 91.6 %)
+Max stash size is: 31
+Average stash size is: 4.28325
+Stash violation number of times: 0
+Served 917 inst so far ( 91.7 %)
+Max stash size is: 31
+Average stash size is: 4.29183
+Stash violation number of times: 0
+Served 918 inst so far ( 91.8 %)
+Max stash size is: 31
+Average stash size is: 4.29069
+Stash violation number of times: 0
+Served 919 inst so far ( 91.9 %)
+Max stash size is: 31
+Average stash size is: 4.29106
+Stash violation number of times: 0
+Served 920 inst so far ( 92 %)
+Max stash size is: 31
+Average stash size is: 4.29081
+Stash violation number of times: 0
+Served 921 inst so far ( 92.1 %)
+Max stash size is: 31
+Average stash size is: 4.29525
+Stash violation number of times: 0
+Served 922 inst so far ( 92.2 %)
+Max stash size is: 31
+Average stash size is: 4.29412
+Stash violation number of times: 0
+Served 923 inst so far ( 92.3 %)
+Max stash size is: 31
+Average stash size is: 4.29461
+Stash violation number of times: 0
+Served 924 inst so far ( 92.4 %)
+Max stash size is: 31
+Average stash size is: 4.29479
+Stash violation number of times: 0
+Served 925 inst so far ( 92.5 %)
+Max stash size is: 31
+Average stash size is: 4.30241
+Stash violation number of times: 0
+Served 926 inst so far ( 92.6 %)
+Max stash size is: 31
+Average stash size is: 4.30302
+Stash violation number of times: 0
+Served 927 inst so far ( 92.7 %)
+Max stash size is: 31
+Average stash size is: 4.30349
+Stash violation number of times: 0
+Served 928 inst so far ( 92.8 %)
+Max stash size is: 31
+Average stash size is: 4.30109
+Stash violation number of times: 0
+Served 929 inst so far ( 92.9 %)
+Max stash size is: 31
+Average stash size is: 4.30666
+Stash violation number of times: 0
+Served 930 inst so far ( 93 %)
+Max stash size is: 31
+Average stash size is: 4.30352
+Stash violation number of times: 0
+Served 931 inst so far ( 93.1 %)
+Max stash size is: 31
+Average stash size is: 4.30456
+Stash violation number of times: 0
+Served 932 inst so far ( 93.2 %)
+Max stash size is: 31
+Average stash size is: 4.30043
+Stash violation number of times: 0
+Served 933 inst so far ( 93.3 %)
+Max stash size is: 31
+Average stash size is: 4.30497
+Stash violation number of times: 0
+Served 934 inst so far ( 93.4 %)
+Max stash size is: 31
+Average stash size is: 4.30484
+Stash violation number of times: 0
+Served 935 inst so far ( 93.5 %)
+Max stash size is: 31
+Average stash size is: 4.30371
+Stash violation number of times: 0
+Served 936 inst so far ( 93.6 %)
+Max stash size is: 31
+Average stash size is: 4.30491
+Stash violation number of times: 0
+Served 937 inst so far ( 93.7 %)
+Max stash size is: 31
+Average stash size is: 4.31083
+Stash violation number of times: 0
+Served 938 inst so far ( 93.8 %)
+Max stash size is: 31
+Average stash size is: 4.30842
+Stash violation number of times: 0
+Served 939 inst so far ( 93.9 %)
+Max stash size is: 31
+Average stash size is: 4.3073
+Stash violation number of times: 0
+Served 940 inst so far ( 94 %)
+Max stash size is: 31
+Average stash size is: 4.30604
+Stash violation number of times: 0
+Served 941 inst so far ( 94.1 %)
+Max stash size is: 31
+Average stash size is: 4.31577
+Stash violation number of times: 0
+Served 942 inst so far ( 94.2 %)
+Max stash size is: 31
+Average stash size is: 4.31408
+Stash violation number of times: 0
+Served 943 inst so far ( 94.3 %)
+Max stash size is: 31
+Average stash size is: 4.31368
+Stash violation number of times: 0
+Served 944 inst so far ( 94.4 %)
+Max stash size is: 31
+Average stash size is: 4.31229
+Stash violation number of times: 0
+Served 945 inst so far ( 94.5 %)
+Max stash size is: 31
+Average stash size is: 4.32353
+Stash violation number of times: 0
+Served 946 inst so far ( 94.6 %)
+Max stash size is: 31
+Average stash size is: 4.32198
+Stash violation number of times: 0
+Served 947 inst so far ( 94.7 %)
+Max stash size is: 31
+Average stash size is: 4.31677
+Stash violation number of times: 0
+Served 948 inst so far ( 94.8 %)
+Max stash size is: 31
+Average stash size is: 4.31566
+Stash violation number of times: 0
+Served 949 inst so far ( 94.9 %)
+Max stash size is: 31
+Average stash size is: 4.32415
+Stash violation number of times: 0
+Served 950 inst so far ( 95 %)
+Max stash size is: 31
+Average stash size is: 4.32247
+Stash violation number of times: 0
+Served 951 inst so far ( 95.1 %)
+Max stash size is: 31
+Average stash size is: 4.32234
+Stash violation number of times: 0
+Served 952 inst so far ( 95.2 %)
+Max stash size is: 31
+Average stash size is: 4.31981
+Stash violation number of times: 0
+Served 953 inst so far ( 95.3 %)
+Max stash size is: 31
+Average stash size is: 4.32363
+Stash violation number of times: 0
+Served 954 inst so far ( 95.4 %)
+Max stash size is: 31
+Average stash size is: 4.32251
+Stash violation number of times: 0
+Served 955 inst so far ( 95.5 %)
+Max stash size is: 31
+Average stash size is: 4.32029
+Stash violation number of times: 0
+Served 956 inst so far ( 95.6 %)
+Max stash size is: 31
+Average stash size is: 4.31807
+Stash violation number of times: 0
+Served 957 inst so far ( 95.7 %)
+Max stash size is: 31
+Average stash size is: 4.32368
+Stash violation number of times: 0
+Served 958 inst so far ( 95.8 %)
+Max stash size is: 31
+Average stash size is: 4.31881
+Stash violation number of times: 0
+Served 959 inst so far ( 95.9 %)
+Max stash size is: 31
+Average stash size is: 4.31771
+Stash violation number of times: 0
+Served 960 inst so far ( 96 %)
+Max stash size is: 31
+Average stash size is: 4.31647
+Stash violation number of times: 0
+Served 961 inst so far ( 96.1 %)
+Max stash size is: 31
+Average stash size is: 4.32025
+Stash violation number of times: 0
+Served 962 inst so far ( 96.2 %)
+Max stash size is: 31
+Average stash size is: 4.31957
+Stash violation number of times: 0
+Served 963 inst so far ( 96.3 %)
+Max stash size is: 31
+Average stash size is: 4.31542
+Stash violation number of times: 0
+Served 964 inst so far ( 96.4 %)
+Max stash size is: 31
+Average stash size is: 4.31487
+Stash violation number of times: 0
+Served 965 inst so far ( 96.5 %)
+Max stash size is: 31
+Average stash size is: 4.31933
+Stash violation number of times: 0
+Served 966 inst so far ( 96.6 %)
+Max stash size is: 31
+Average stash size is: 4.31343
+Stash violation number of times: 0
+Served 967 inst so far ( 96.7 %)
+Max stash size is: 31
+Average stash size is: 4.31247
+Stash violation number of times: 0
+Served 968 inst so far ( 96.8 %)
+Max stash size is: 31
+Average stash size is: 4.31234
+Stash violation number of times: 0
+Served 969 inst so far ( 96.9 %)
+Max stash size is: 31
+Average stash size is: 4.31844
+Stash violation number of times: 0
+Served 970 inst so far ( 97 %)
+Max stash size is: 31
+Average stash size is: 4.31707
+Stash violation number of times: 0
+Served 971 inst so far ( 97.1 %)
+Max stash size is: 31
+Average stash size is: 4.31668
+Stash violation number of times: 0
+Served 972 inst so far ( 97.2 %)
+Max stash size is: 31
+Average stash size is: 4.31026
+Stash violation number of times: 0
+Served 973 inst so far ( 97.3 %)
+Max stash size is: 31
+Average stash size is: 4.31659
+Stash violation number of times: 0
+Served 974 inst so far ( 97.4 %)
+Max stash size is: 31
+Average stash size is: 4.31117
+Stash violation number of times: 0
+Served 975 inst so far ( 97.5 %)
+Max stash size is: 31
+Average stash size is: 4.30832
+Stash violation number of times: 0
+Served 976 inst so far ( 97.6 %)
+Max stash size is: 31
+Average stash size is: 4.30552
+Stash violation number of times: 0
+Served 977 inst so far ( 97.7 %)
+Max stash size is: 31
+Average stash size is: 4.31033
+Stash violation number of times: 0
+Served 978 inst so far ( 97.8 %)
+Max stash size is: 31
+Average stash size is: 4.3098
+Stash violation number of times: 0
+Served 979 inst so far ( 97.9 %)
+Max stash size is: 31
+Average stash size is: 4.30914
+Stash violation number of times: 0
+Served 980 inst so far ( 98 %)
+Max stash size is: 31
+Average stash size is: 4.30807
+Stash violation number of times: 0
+Served 981 inst so far ( 98.1 %)
+Max stash size is: 31
+Average stash size is: 4.31095
+Stash violation number of times: 0
+Served 982 inst so far ( 98.2 %)
+Max stash size is: 31
+Average stash size is: 4.30988
+Stash violation number of times: 0
+Served 983 inst so far ( 98.3 %)
+Max stash size is: 31
+Average stash size is: 4.31044
+Stash violation number of times: 0
+Served 984 inst so far ( 98.4 %)
+Max stash size is: 31
+Average stash size is: 4.3071
+Stash violation number of times: 0
+Served 985 inst so far ( 98.5 %)
+Max stash size is: 31
+Average stash size is: 4.31174
+Stash violation number of times: 0
+Served 986 inst so far ( 98.6 %)
+Max stash size is: 31
+Average stash size is: 4.30505
+Stash violation number of times: 0
+Served 987 inst so far ( 98.7 %)
+Max stash size is: 31
+Average stash size is: 4.30505
+Stash violation number of times: 0
+Served 988 inst so far ( 98.8 %)
+Max stash size is: 31
+Average stash size is: 4.30415
+Stash violation number of times: 0
+Served 989 inst so far ( 98.9 %)
+Max stash size is: 31
+Average stash size is: 4.30729
+Stash violation number of times: 0
+Served 990 inst so far ( 99 %)
+Max stash size is: 31
+Average stash size is: 4.30584
+Stash violation number of times: 0
+Served 991 inst so far ( 99.1 %)
+Max stash size is: 31
+Average stash size is: 4.30438
+Stash violation number of times: 0
+Served 992 inst so far ( 99.2 %)
+Max stash size is: 31
+Average stash size is: 4.30414
+Stash violation number of times: 0
+Served 993 inst so far ( 99.3 %)
+Max stash size is: 31
+Average stash size is: 4.30819
+Stash violation number of times: 0
+Served 994 inst so far ( 99.4 %)
+Max stash size is: 31
+Average stash size is: 4.30637
+Stash violation number of times: 0
+Served 995 inst so far ( 99.5 %)
+Max stash size is: 31
+Average stash size is: 4.30572
+Stash violation number of times: 0
+Served 996 inst so far ( 99.6 %)
+Max stash size is: 31
+Average stash size is: 4.306
+Stash violation number of times: 0
+Served 997 inst so far ( 99.7 %)
+Max stash size is: 31
+Average stash size is: 4.31243
+Stash violation number of times: 0
+Served 998 inst so far ( 99.8 %)
+Max stash size is: 31
+Average stash size is: 4.31243
+Stash violation number of times: 0
+Served 999 inst so far ( 99.9 %)
+Max stash size is: 31
+Average stash size is: 4.31165
+Stash violation number of times: 0
+Served 1000 inst so far ( 100 %)
+Max stash size is: 31
+Average stash size is: 4.30889
+Stash violation number of times: 0
+Max stash size is: 31
+Average stash size is: 4.31424
+Stash violation number of times: 0

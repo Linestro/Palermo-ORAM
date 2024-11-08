@@ -1,0 +1,38 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./ramulator_16...
+Starting program: /data3/haojie/olsq_ramulator/ramulator_16 configs/DDR4-config.cfg --mode=pathoram --stats my_output.txt random_addr_10000000.trace
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Total number of ORAM protected cache line blocks: 16384
+Max number of levels: 15
+Valid leaf ID range: 16383:32766
+data valid leaf right: 32767
+data num of levels: 15
+data level num of ways: 16
+data number of sets: 1024
+Address space: 0 - 0.00195312 GB
+
+Program received signal SIGINT, Interrupt.
+0x00005555555d9241 in ramulator::DRAM<ramulator::DDR4>::decode (this=<optimized out>, cmd=<optimized out>, addr=<optimized out>) at src/DRAM.h:262
+262	}
+(gdb) 
+quit
+A debugging session is active.
+
+	Inferior 1 [process 1974530] will be killed.
+
+Quit anyway? (y or n) [answered Y; input not from terminal]

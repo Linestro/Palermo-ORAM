@@ -1,0 +1,15 @@
+*.swp
+
+# Compiled Object files
+obj/
+
+# Compiled target executable files
+ramulator
+
+cputraces/
+
+*reuslts*/
+ramulator_*
+*.txt
+*.trace
+.vscode/

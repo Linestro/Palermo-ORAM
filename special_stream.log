@@ -1,0 +1,2193 @@
+Valid leaf ID range: 16777215:33554430
+Num of top nodes: 16777216
+Data level num of ways: 2048
+Z: 16
+S: 27
+A: 20
+cached_total: 8192
+Total number of ORAM protected cache line blocks: 16777216
+Cached number of levels: 12
+Max number of levels: 25
+Start lvl is: 13
+data valid leaf right: 33554431
+data num of levels: 25
+data level num of ways: 2048
+data number of sets: 8192
+Cached node ID: 8191 -- 8286
+Address space: 0 - 4 GB
+pos1 valid leaf right: 4194303
+pos1 num of levels: 22
+pos1 level num of ways: 256
+pos1 number of sets: 8192
+Cached node ID: 8191 -- 8202
+Address space: 0 - 0.5 GB
+pos2 valid leaf right: 524287
+pos2 num of levels: 19
+pos2 level num of ways: 32
+pos2 number of sets: 8192
+Cached node ID: 8191 -- 8196
+Address space: 0 - 0.0625 GB
+Clk7 @ 1000000 Finished 2657 instructions 
+Sampling stash size at 4999 req has local max stash size of: 131
+Clk7 @ 2000000 Finished 5316 instructions 
+Clk7 @ 3000000 Finished 7964 instructions 
+Clk@ 3761478 Working on the # 10000 th memory instruction
+Sampling stash size at 9999 req has local max stash size of: 143
+Clk3 @ 4000000 Finished 10611 instructions 
+Clk7 @ 4000000 Finished 10611 instructions 
+Clk7 @ 5000000 Finished 13267 instructions 
+Sampling stash size at 14999 req has local max stash size of: 149
+Clk7 @ 6000000 Finished 15950 instructions 
+Clk7 @ 7000000 Finished 18607 instructions 
+Clk@ 7519147 Working on the # 20000 th memory instruction
+Sampling stash size at 19999 req has local max stash size of: 153
+Clk7 @ 8000000 Finished 21264 instructions 
+Clk3 @ 9000000 Finished 23947 instructions 
+Sampling stash size at 24999 req has local max stash size of: 160
+Clk7 @ 10000000 Finished 26616 instructions 
+Clk7 @ 11000000 Finished 29261 instructions 
+Clk@ 11276730 Working on the # 30000 th memory instruction
+Sampling stash size at 29999 req has local max stash size of: 154
+Clk7 @ 12000000 Finished 31946 instructions 
+Clk3 @ 13000000 Finished 35511 instructions 
+Clk7 @ 14000000 Finished 39467 instructions 
+Clk@ 14134415 Working on the # 40000 th memory instruction
+Clk7 @ 15000000 Finished 43422 instructions 
+Clk3 @ 16000000 Finished 47370 instructions 
+Clk@ 16666792 Working on the # 50000 th memory instruction
+Clk3 @ 17000000 Finished 51315 instructions 
+Clk3 @ 18000000 Finished 55275 instructions 
+Clk7 @ 19000000 Finished 59255 instructions 
+Clk@ 19188262 Working on the # 60000 th memory instruction
+Clk7 @ 20000000 Finished 63212 instructions 
+Clk3 @ 21000000 Finished 67599 instructions 
+Clk@ 21474813 Working on the # 70000 th memory instruction
+Clk3 @ 22000000 Finished 72643 instructions 
+Clk7 @ 23000000 Finished 77663 instructions 
+Clk@ 23464948 Working on the # 80000 th memory instruction
+Clk3 @ 24000000 Finished 82683 instructions 
+Clk3 @ 25000000 Finished 87720 instructions 
+Clk@ 25451255 Working on the # 90000 th memory instruction
+Clk7 @ 26000000 Finished 92763 instructions 
+Clk7 @ 27000000 Finished 97800 instructions 
+Clk@ 27399550 Working on the # 100000 th memory instruction
+Clk7 @ 28000000 Finished 103467 instructions 
+Clk7 @ 29000000 Finished 109178 instructions 
+Clk@ 29143036 Working on the # 110000 th memory instruction
+Clk7 @ 30000000 Finished 114893 instructions 
+Clk@ 30892336 Working on the # 120000 th memory instruction
+Clk3 @ 31000000 Finished 120611 instructions 
+Clk3 @ 32000000 Finished 126329 instructions 
+Clk@ 32645964 Working on the # 130000 th memory instruction
+Clk3 @ 33000000 Finished 132139 instructions 
+Clk3 @ 34000000 Finished 138759 instructions 
+Clk@ 34187124 Working on the # 140000 th memory instruction
+Clk7 @ 35000000 Finished 145357 instructions 
+Clk@ 35710805 Working on the # 150000 th memory instruction
+Clk7 @ 36000000 Finished 151899 instructions 
+Clk3 @ 37000000 Finished 158477 instructions 
+Clk@ 37233795 Working on the # 160000 th memory instruction
+Clk3 @ 38000000 Finished 164961 instructions 
+Sampling stash size at 164999 req has local max stash size of: 192
+Clk@ 38827190 Working on the # 170000 th memory instruction
+Sampling stash size at 169999 req has local max stash size of: 175
+Clk3 @ 39000000 Finished 171067 instructions 
+Sampling stash size at 174999 req has local max stash size of: 185
+Clk3 @ 40000000 Finished 177143 instructions 
+Clk@ 40469174 Working on the # 180000 th memory instruction
+Sampling stash size at 179999 req has local max stash size of: 185
+Clk7 @ 41000000 Finished 183209 instructions 
+Sampling stash size at 184999 req has local max stash size of: 191
+Clk3 @ 42000000 Finished 189267 instructions 
+Clk@ 42118870 Working on the # 190000 th memory instruction
+Sampling stash size at 189999 req has local max stash size of: 212
+Sampling stash size at 194999 req has local max stash size of: 193
+Clk7 @ 43000000 Finished 195351 instructions 
+Clk@ 43813222 Working on the # 200000 th memory instruction
+Clk7 @ 44000000 Finished 201032 instructions 
+Clk3 @ 45000000 Finished 206571 instructions 
+Clk@ 45623571 Working on the # 210000 th memory instruction
+Clk7 @ 46000000 Finished 212073 instructions 
+Clk7 @ 47000000 Finished 217555 instructions 
+Clk@ 47444127 Working on the # 220000 th memory instruction
+Clk3 @ 48000000 Finished 223052 instructions 
+Clk3 @ 49000000 Finished 228551 instructions 
+Clk@ 49249011 Working on the # 230000 th memory instruction
+Clk7 @ 50000000 Finished 234672 instructions 
+Clk@ 50866401 Working on the # 240000 th memory instruction
+Clk3 @ 51000000 Finished 240823 instructions 
+Clk3 @ 52000000 Finished 247003 instructions 
+Clk@ 52482007 Working on the # 250000 th memory instruction
+Clk3 @ 53000000 Finished 253203 instructions 
+Clk3 @ 54000000 Finished 259412 instructions 
+Clk@ 54094019 Working on the # 260000 th memory instruction
+Clk3 @ 55000000 Finished 265681 instructions 
+Clk@ 55681773 Working on the # 270000 th memory instruction
+Clk3 @ 56000000 Finished 272011 instructions 
+Clk3 @ 57000000 Finished 278279 instructions 
+Clk@ 57271671 Working on the # 280000 th memory instruction
+Clk7 @ 58000000 Finished 284603 instructions 
+Clk@ 58863131 Working on the # 290000 th memory instruction
+Clk3 @ 59000000 Finished 290849 instructions 
+Clk3 @ 60000000 Finished 297179 instructions 
+Clk@ 60450268 Working on the # 300000 th memory instruction
+Clk3 @ 61000000 Finished 303473 instructions 
+Clk3 @ 62000000 Finished 309759 instructions 
+Clk@ 62037602 Working on the # 310000 th memory instruction
+Clk3 @ 63000000 Finished 316079 instructions 
+Clk@ 63621279 Working on the # 320000 th memory instruction
+Clk7 @ 64000000 Finished 322395 instructions 
+Clk3 @ 65000000 Finished 328684 instructions 
+Clk@ 65205170 Working on the # 330000 th memory instruction
+Sampling stash size at 329999 req has local max stash size of: 236
+Sampling stash size at 334999 req has local max stash size of: 213
+Clk3 @ 66000000 Finished 335103 instructions 
+Clk@ 66763374 Working on the # 340000 th memory instruction
+Sampling stash size at 339999 req has local max stash size of: 226
+Clk3 @ 67000000 Finished 341535 instructions 
+Sampling stash size at 344999 req has local max stash size of: 231
+Clk3 @ 68000000 Finished 347947 instructions 
+Clk@ 68319108 Working on the # 350000 th memory instruction
+Sampling stash size at 349999 req has local max stash size of: 232
+Clk3 @ 69000000 Finished 354355 instructions 
+Sampling stash size at 354999 req has local max stash size of: 237
+Clk@ 69882520 Working on the # 360000 th memory instruction
+Sampling stash size at 359999 req has local max stash size of: 240
+Clk7 @ 70000000 Finished 360711 instructions 
+Clk3 @ 71000000 Finished 366291 instructions 
+Clk@ 71667174 Working on the # 370000 th memory instruction
+Clk3 @ 72000000 Finished 371835 instructions 
+Clk3 @ 73000000 Finished 377401 instructions 
+Clk@ 73469073 Working on the # 380000 th memory instruction
+Clk3 @ 74000000 Finished 382932 instructions 
+Clk3 @ 75000000 Finished 388493 instructions 
+Clk@ 75270657 Working on the # 390000 th memory instruction
+Clk3 @ 76000000 Finished 393960 instructions 
+Clk3 @ 77000000 Finished 399021 instructions 
+Clk@ 77193624 Working on the # 400000 th memory instruction
+Clk3 @ 78000000 Finished 404023 instructions 
+Clk3 @ 79000000 Finished 409040 instructions 
+Clk@ 79191299 Working on the # 410000 th memory instruction
+Clk3 @ 80000000 Finished 414033 instructions 
+Clk7 @ 81000000 Finished 419035 instructions 
+Clk@ 81196161 Working on the # 420000 th memory instruction
+Clk7 @ 82000000 Finished 424022 instructions 
+Clk3 @ 83000000 Finished 429258 instructions 
+Clk@ 83138328 Working on the # 430000 th memory instruction
+Clk3 @ 84000000 Finished 434630 instructions 
+Clk7 @ 85000000 Finished 439971 instructions 
+Clk@ 85006333 Working on the # 440000 th memory instruction
+Clk3 @ 86000000 Finished 445347 instructions 
+Clk@ 86871318 Working on the # 450000 th memory instruction
+Clk7 @ 87000000 Finished 450673 instructions 
+Clk7 @ 88000000 Finished 456040 instructions 
+Clk@ 88709671 Working on the # 460000 th memory instruction
+Clk3 @ 89000000 Finished 461837 instructions 
+Clk3 @ 90000000 Finished 468079 instructions 
+Clk@ 90308413 Working on the # 470000 th memory instruction
+Clk3 @ 91000000 Finished 474296 instructions 
+Clk@ 91917943 Working on the # 480000 th memory instruction
+Clk7 @ 92000000 Finished 480517 instructions 
+Clk3 @ 93000000 Finished 486739 instructions 
+Clk@ 93523638 Working on the # 490000 th memory instruction
+Clk3 @ 94000000 Finished 492767 instructions 
+Sampling stash size at 494999 req has local max stash size of: 266
+Clk7 @ 95000000 Finished 498087 instructions 
+Clk@ 95356675 Working on the # 500000 th memory instruction
+Warm up done after line access count: 500000 out of 1000000 (50 %)
+Sampling stash size at 499999 req has local max stash size of: 260
+Clk3 @ 96000000 Finished 503407 instructions 
+Sampling stash size at 504999 req has local max stash size of: 262
+Clk3 @ 97000000 Finished 508763 instructions 
+Clk@ 97230333 Working on the # 510000 th memory instruction
+Sampling stash size at 509999 req has local max stash size of: 269
+Clk7 @ 98000000 Finished 514081 instructions 
+Sampling stash size at 514999 req has local max stash size of: 275
+Clk7 @ 99000000 Finished 519366 instructions 
+Clk@ 99119601 Working on the # 520000 th memory instruction
+Sampling stash size at 519999 req has local max stash size of: 269
+Clk3 @ 100000000 Finished 524696 instructions 
+Clk@ 100873441 Working on the # 530000 th memory instruction
+Clk3 @ 101000000 Finished 530775 instructions 
+Clk3 @ 102000000 Finished 536835 instructions 
+Clk@ 102528262 Working on the # 540000 th memory instruction
+Clk3 @ 103000000 Finished 542892 instructions 
+Clk7 @ 104000000 Finished 548936 instructions 
+Clk@ 104179304 Working on the # 550000 th memory instruction
+Clk7 @ 105000000 Finished 554954 instructions 
+Clk@ 105839030 Working on the # 560000 th memory instruction
+Clk7 @ 106000000 Finished 560961 instructions 
+Clk3 @ 107000000 Finished 566922 instructions 
+Clk@ 107517318 Working on the # 570000 th memory instruction
+Clk3 @ 108000000 Finished 572863 instructions 
+Clk3 @ 109000000 Finished 578763 instructions 
+Clk@ 109206380 Working on the # 580000 th memory instruction
+Clk3 @ 110000000 Finished 584720 instructions 
+Clk@ 110895384 Working on the # 590000 th memory instruction
+Clk3 @ 111000000 Finished 590629 instructions 
+Clk3 @ 112000000 Finished 596549 instructions 
+Clk@ 112586925 Working on the # 600000 th memory instruction
+Clk7 @ 113000000 Finished 602411 instructions 
+Clk3 @ 114000000 Finished 608309 instructions 
+Clk@ 114288341 Working on the # 610000 th memory instruction
+Clk7 @ 115000000 Finished 614171 instructions 
+Clk@ 115991116 Working on the # 620000 th memory instruction
+Clk3 @ 116000000 Finished 620051 instructions 
+Clk3 @ 117000000 Finished 626059 instructions 
+Clk@ 117648395 Working on the # 630000 th memory instruction
+Clk3 @ 118000000 Finished 632154 instructions 
+Clk3 @ 119000000 Finished 638219 instructions 
+Clk@ 119292809 Working on the # 640000 th memory instruction
+Clk3 @ 120000000 Finished 644316 instructions 
+Clk@ 120935185 Working on the # 650000 th memory instruction
+Clk3 @ 121000000 Finished 650396 instructions 
+Clk7 @ 122000000 Finished 656462 instructions 
+Clk@ 122590139 Working on the # 660000 th memory instruction
+Sampling stash size at 659999 req has local max stash size of: 312
+Clk3 @ 123000000 Finished 662436 instructions 
+Sampling stash size at 664999 req has local max stash size of: 299
+Clk3 @ 124000000 Finished 668435 instructions 
+Clk@ 124261619 Working on the # 670000 th memory instruction
+Sampling stash size at 669999 req has local max stash size of: 304
+Clk3 @ 125000000 Finished 674423 instructions 
+Sampling stash size at 674999 req has local max stash size of: 330
+Clk@ 125938037 Working on the # 680000 th memory instruction
+Sampling stash size at 679999 req has local max stash size of: 314
+Clk3 @ 126000000 Finished 680382 instructions 
+Sampling stash size at 684999 req has local max stash size of: 314
+Clk3 @ 127000000 Finished 686387 instructions 
+Clk@ 127584907 Working on the # 690000 th memory instruction
+Clk7 @ 128000000 Finished 692567 instructions 
+Clk3 @ 129000000 Finished 698763 instructions 
+Clk@ 129200899 Working on the # 700000 th memory instruction
+Clk3 @ 130000000 Finished 704951 instructions 
+Clk@ 130818850 Working on the # 710000 th memory instruction
+Clk3 @ 131000000 Finished 711116 instructions 
+Clk3 @ 132000000 Finished 717292 instructions 
+Clk@ 132435106 Working on the # 720000 th memory instruction
+Clk3 @ 133000000 Finished 723503 instructions 
+Clk7 @ 134000000 Finished 729643 instructions 
+Clk@ 134058730 Working on the # 730000 th memory instruction
+Clk3 @ 135000000 Finished 735772 instructions 
+Clk@ 135686355 Working on the # 740000 th memory instruction
+Clk3 @ 136000000 Finished 741903 instructions 
+Clk3 @ 137000000 Finished 748052 instructions 
+Clk@ 137313738 Working on the # 750000 th memory instruction
+Clk7 @ 138000000 Finished 754071 instructions 
+Clk3 @ 139000000 Finished 758691 instructions 
+Clk@ 139287276 Working on the # 760000 th memory instruction
+Clk3 @ 140000000 Finished 763271 instructions 
+Clk3 @ 141000000 Finished 767871 instructions 
+Clk@ 141468215 Working on the # 770000 th memory instruction
+Clk3 @ 142000000 Finished 772411 instructions 
+Clk3 @ 143000000 Finished 776966 instructions 
+Clk@ 143663036 Working on the # 780000 th memory instruction
+Clk3 @ 144000000 Finished 781543 instructions 
+Clk3 @ 145000000 Finished 786108 instructions 
+Clk@ 145714878 Working on the # 790000 th memory instruction
+Clk7 @ 146000000 Finished 791579 instructions 
+Clk7 @ 147000000 Finished 797067 instructions 
+Clk@ 147537717 Working on the # 800000 th memory instruction
+Clk3 @ 148000000 Finished 802512 instructions 
+Clk3 @ 149000000 Finished 807995 instructions 
+Clk@ 149364495 Working on the # 810000 th memory instruction
+Clk7 @ 150000000 Finished 813510 instructions 
+Clk3 @ 151000000 Finished 818996 instructions 
+Clk@ 151180639 Working on the # 820000 th memory instruction
+Sampling stash size at 819999 req has local max stash size of: 352
+Clk3 @ 152000000 Finished 824561 instructions 
+Sampling stash size at 824999 req has local max stash size of: 326
+Clk@ 152979429 Working on the # 830000 th memory instruction
+Sampling stash size at 829999 req has local max stash size of: 340
+Clk7 @ 153000000 Finished 830116 instructions 
+Sampling stash size at 834999 req has local max stash size of: 355
+Clk7 @ 154000000 Finished 835676 instructions 
+Clk@ 154775410 Working on the # 840000 th memory instruction
+Sampling stash size at 839999 req has local max stash size of: 355
+Clk3 @ 155000000 Finished 841247 instructions 
+Sampling stash size at 844999 req has local max stash size of: 354
+Clk3 @ 156000000 Finished 846804 instructions 
+Clk@ 156576741 Working on the # 850000 th memory instruction
+Sampling stash size at 849999 req has local max stash size of: 365
+Clk3 @ 157000000 Finished 852375 instructions 
+Clk3 @ 158000000 Finished 858226 instructions 
+Clk@ 158305477 Working on the # 860000 th memory instruction
+Clk7 @ 159000000 Finished 864043 instructions 
+Clk7 @ 160000000 Finished 869863 instructions 
+Clk@ 160023735 Working on the # 870000 th memory instruction
+Clk3 @ 161000000 Finished 875675 instructions 
+Clk@ 161745334 Working on the # 880000 th memory instruction
+Clk3 @ 162000000 Finished 881474 instructions 
+Clk3 @ 163000000 Finished 886783 instructions 
+Clk@ 163673617 Working on the # 890000 th memory instruction
+Clk3 @ 164000000 Finished 891540 instructions 
+Clk3 @ 165000000 Finished 896247 instructions 
+Clk@ 165787842 Working on the # 900000 th memory instruction
+Clk7 @ 166000000 Finished 901003 instructions 
+Clk3 @ 167000000 Finished 905724 instructions 
+Clk@ 167896382 Working on the # 910000 th memory instruction
+Clk7 @ 168000000 Finished 910500 instructions 
+Clk7 @ 169000000 Finished 915223 instructions 
+Clk@ 169898043 Working on the # 920000 th memory instruction
+Clk3 @ 170000000 Finished 920609 instructions 
+Clk3 @ 171000000 Finished 926532 instructions 
+Clk@ 171584259 Working on the # 930000 th memory instruction
+Clk3 @ 172000000 Finished 932469 instructions 
+Clk7 @ 173000000 Finished 938388 instructions 
+Clk@ 173274052 Working on the # 940000 th memory instruction
+Clk3 @ 174000000 Finished 944291 instructions 
+Clk@ 174965770 Working on the # 950000 th memory instruction
+Clk3 @ 175000000 Finished 950207 instructions 
+Clk3 @ 176000000 Finished 956223 instructions 
+Clk@ 176627352 Working on the # 960000 th memory instruction
+Clk7 @ 177000000 Finished 962239 instructions 
+Clk7 @ 178000000 Finished 968255 instructions 
+Clk@ 178292481 Working on the # 970000 th memory instruction
+Clk3 @ 179000000 Finished 974256 instructions 
+Clk@ 179955042 Working on the # 980000 th memory instruction
+Clk7 @ 180000000 Finished 980279 instructions 
+Sampling stash size at 984999 req has local max stash size of: 393
+Clk7 @ 181000000 Finished 986166 instructions 
+Clk@ 181674466 Working on the # 990000 th memory instruction
+Sampling stash size at 989999 req has local max stash size of: 373
+Clk7 @ 182000000 Finished 991883 instructions 
+Sampling stash size at 994999 req has local max stash size of: 386
+Clk3 @ 183000000 Finished 997535 instructions 
+Clk@ 183436469 Working on the # 1000000 th memory instruction
+Sampling stash size at 999999 req has local max stash size of: 393
+
+===*** Data ***====
+Stall reason distribution: 
+mc_hazard: 0
+normal: 0
+rs_hazard: 0
+rw_swtich: 0
+Early reshuffle distribution: 
+0: 0
+1: 0
+2: 0
+3: 0
+4: 0
+5: 0
+6: 0
+7: 0
+8: 0
+9: 0
+10: 0
+11: 0
+12: 0
+13: 0
+14: 943
+15: 2364
+16: 3108
+17: 3482
+18: 3576
+19: 3483
+20: 3202
+21: 2559
+22: 1537
+23: 133
+24: 0
+=================
+Max stash size is: 393
+Average stash size is: 205.481
+Average mem q size is: 63.5428
+Total mem q size is:7673807
+mem_q_sample_times is:120766
+useful_read_pull_ddr: 500004 (2.03285) %
+dummy_read_pull_ddr: 5000040 (20.3285) %
+useful_early_pull_ddr: 193149 (0.785281) %
+useful_early_push_ddr: 125381 (0.509758) %
+useful_write_pull_ddr: 4196214 (17.0604) %
+useful_write_push_ddr: 3011206 (12.2426) %
+dummy_early_pull_ddr: 12211 (0.0496459) %
+dummy_early_push_ddr: 394059 (1.60212) %
+dummy_write_pull_ddr: 202906 (0.82495) %
+dummy_write_push_ddr: 10960999 (44.5638) %
+=================
+Stash violation number of times: 0
+=================
+Check NodeID traffic: 1920
+Update NodeID traffic: 1823
+=================
+Read RS lines: 1000000 (87.0511) %
+Write RS lines: 99976 (8.70303) %
+Early RS lines: 48774 (4.24583) %
+Read DDR lines: 11000000 (24.4959) %
+Write DDR lines: 32442212 (72.2456) %
+Early DDR lines: 1463220 (3.25845) %
+
+====*** pos1 ***====
+Stall reason distribution: 
+mc_hazard: 0
+normal: 0
+rs_hazard: 0
+rw_swtich: 0
+Early reshuffle distribution: 
+0: 0
+1: 0
+2: 0
+3: 0
+4: 0
+5: 0
+6: 0
+7: 0
+8: 0
+9: 0
+10: 0
+11: 0
+12: 0
+13: 0
+14: 938
+15: 2463
+16: 3150
+17: 3472
+18: 3738
+19: 3665
+20: 3566
+21: 3344
+=================
+Max stash size is: 77
+Average stash size is: 34.881
+Average mem q size is: 86.3049
+Total mem q size is:3264827
+mem_q_sample_times is:37829
+useful_read_pull_ddr: 147033 (0.327082) %
+dummy_read_pull_ddr: 8492519 (18.892) %
+useful_early_pull_ddr: 378216 (0.841359) %
+useful_early_push_ddr: 78358 (0.174311) %
+useful_write_pull_ddr: 6782044 (15.087) %
+useful_write_push_ddr: 1372909 (3.0541) %
+dummy_early_pull_ddr: 35496 (0.0789625) %
+dummy_early_push_ddr: 968090 (2.15356) %
+dummy_write_pull_ddr: 127940 (0.284608) %
+dummy_write_push_ddr: 26570383 (59.107) %
+=================
+Stash violation number of times: 0
+=================
+Check NodeID traffic: 5315
+Update NodeID traffic: 1789
+=================
+Read RS lines: 1000000 (87.0589) %
+Write RS lines: 99976 (8.7038) %
+Early RS lines: 48672 (4.23733) %
+Read DDR lines: 8639552 (24.2819) %
+Write DDR lines: 25480566 (71.6143) %
+Early DDR lines: 1460160 (4.10385) %
+
+====*** pos2 ***====
+Stall reason distribution: 
+mc_hazard: 0
+normal: 0
+rs_hazard: 0
+rw_swtich: 0
+Early reshuffle distribution: 
+0: 0
+1: 0
+2: 0
+3: 0
+4: 0
+5: 0
+6: 0
+7: 0
+8: 0
+9: 0
+10: 0
+11: 0
+12: 0
+13: 0
+14: 933
+15: 2436
+16: 3096
+17: 3487
+18: 3700
+=================
+Max stash size is: 63
+Average stash size is: 30.8234
+Average mem q size is: 76.9087
+Total mem q size is:1910643
+mem_q_sample_times is:24843
+useful_read_pull_ddr: 60157 (0.153202) %
+dummy_read_pull_ddr: 5776003 (14.7098) %
+useful_early_pull_ddr: 215719 (0.549373) %
+useful_early_push_ddr: 65360 (0.166453) %
+useful_write_pull_ddr: 4610557 (11.7417) %
+useful_write_push_ddr: 943151 (2.40193) %
+dummy_early_pull_ddr: 16365 (0.0416769) %
+dummy_early_push_ddr: 521676 (1.32856) %
+dummy_write_pull_ddr: 57251 (0.145802) %
+dummy_write_push_ddr: 27000141 (68.7615) %
+=================
+Stash violation number of times: 0
+=================
+Check NodeID traffic: 68
+Update NodeID traffic: 12
+=================
+Read RS lines: 1000000 (88.7091) %
+Write RS lines: 99976 (8.86878) %
+Early RS lines: 27304 (2.42211) %
+Read DDR lines: 5836160 (24.452) %
+Write DDR lines: 17212542 (72.1161) %
+Early DDR lines: 819120 (3.4319) %
+=================
+The final DRAM clk is: 183438557 ticks.
+Idle waiting clk is 72608947, which is 39.5822 %
+DRAM Frequency is: 1600MHz
+The final time in ns is: 1.14649e+08 ns.
+Time distribution: 
+Data pull time is: 0
+data: 0
+pos1: 0
+pos2: 0
+Data distribution: 
+Pos2 data: 23867822
+Pos1 data: 35580278
+Data: 44905432
+Node access DDR: 3840
+Pull DDR: 11000000
+WB DDR: 32442212
+Early DDR: 1463220
+Achieved BW is: 58.2707 GB/s
+Ideal BW is: 102.4 GB/s
+Metadata cache conclusion: 
+overall_hit: 13849047 overall_total: 13873943
+Cache Size 64 KB Overall Hit rate: 99.8206 %. 
+8381
+5163
+5373
+6470
+4786
+5258
+6099
+3918
+5158
+5303
+6053
+4603
+4895
+5302
+4791
+4606
+5467
+4743
+5726
+4724
+4889
+5104
+4879
+4767
+4429
+5918
+4833
+4584
+4503
+4945
+4927
+3755
+6068
+5164
+4893
+6090
+4695
+5805
+4908
+3946
+4914
+5718
+5456
+4235
+4232
+6457
+4449
+4715
+5293
+4917
+5354
+4867
+6165
+5513
+4342
+4706
+4367
+5732
+5575
+4729
+4728
+5568
+4333
+4574
+6530
+5352
+4881
+6397
+4722
+5065
+5780
+4451
+5494
+5618
+6569
+4437
+4748
+6105
+4285
+4653
+5438
+4395
+6014
+5017
+5301
+5628
+4768
+4845
+4639
+4931
+5295
+4909
+4138
+5242
+5239
+4533
+5875
+5919
+4994
+4826
+5251
+5352
+5472
+4266
+4102
+5872
+5479
+4471
+4072
+5600
+4779
+4043
+5110
+4928
+5380
+5050
+4588
+6520
+4499
+5330
+5257
+5429
+5986
+4529
+4916
+5980
+4228
+5041
+7557
+4626
+6627
+5372
+5123
+5563
+6059
+5204
+4913
+4631
+5267
+4365
+5752
+5225
+4570
+5236
+5934
+5821
+6280
+5409
+5638
+4738
+5154
+4140
+4716
+5394
+5128
+4721
+3973
+5015
+4716
+4628
+5691
+5491
+5281
+5355
+4247
+5132
+5353
+4480
+5959
+5157
+5430
+5113
+4392
+5555
+4906
+4593
+5773
+4660
+5355
+4627
+4881
+5004
+4092
+5017
+5059
+5662
+5557
+4096
+5237
+7032
+4357
+4437
+6739
+5740
+4717
+6582
+5474
+5284
+5502
+4044
+5377
+6265
+4876
+5030
+5246
+5422
+4934
+4246
+5830
+5184
+5193
+5633
+4885
+5321
+4024
+4121
+4066
+5217
+6009
+4135
+4385
+5251
+4696
+4808
+5284
+5281
+4991
+5231
+5393
+5867
+5458
+4827
+5023
+5097
+5190
+5130
+4036
+4624
+5323
+5388
+5285
+4979
+5163
+5316
+4788
+5568
+4283
+4971
+4972
+4954
+5968
+5790
+5038
+6916
+4215
+4636
+8132
+4810
+6038
+5097
+4378
+5813
+5278
+4017
+5008
+4963
+5463
+5049
+4931
+5628
+4347
+6218
+5849
+4758
+5545
+4865
+4994
+5897
+4200
+4845
+4693
+5560
+4543
+4097
+4961
+5704
+6092
+4400
+5162
+5785
+4999
+6127
+4580
+4746
+5873
+4049
+4824
+5582
+5134
+5361
+4441
+4859
+5133
+5279
+5288
+5253
+4971
+5820
+5083
+5874
+5117
+4204
+5051
+5372
+6988
+4139
+5256
+6156
+3705
+3770
+6579
+5445
+5822
+5575
+5014
+5817
+5710
+4293
+5901
+6409
+5325
+4064
+5283
+5266
+4371
+5123
+5021
+5010
+6467
+5024
+5264
+5290
+4551
+3667
+4617
+4852
+5421
+3803
+4863
+5829
+4305
+4580
+5594
+5545
+5513
+5430
+5264
+5063
+5038
+5433
+4852
+5490
+4934
+5371
+4021
+5359
+4776
+5005
+5316
+4806
+5156
+6657
+5129
+5509
+4540
+5638
+3857
+5039
+5395
+4550
+4746
+5343
+4410
+4219
+6279
+6009
+4697
+5991
+5459
+5097
+6257
+3804
+4631
+5582
+6026
+4637
+4490
+5032
+4823
+4263
+5684
+4813
+4984
+5913
+5387
+5258
+4225
+4090
+4447
+5763
+5547
+4067
+4317
+4739
+4396
+4604
+5603
+5415
+5138
+5390
+5450
+5142
+5611
+4053
+5764
+5644
+5004
+3853
+4295
+4826
+4975
+5197
+5736
+6365
+5252
+5254
+4597
+5638
+4815
+4839
+5232
+4838
+4841
+4313
+4394
+6344
+3818
+4016
+6116
+5329
+5077
+5601
+4771
+5371
+5489
+4999
+4101
+5497
+5917
+4232
+5418
+5470
+4918
+3943
+5130
+5295
+4849
+5888
+5097
+5839
+5069
+3978
+4953
+5437
+4548
+5176
+4691
+5391
+4864
+4657
+5666
+4831
+5104
+5948
+4686
+6532
+4846
+3914
+5134
+5066
+5188
+4806
+4530
+5734
+4275
+4611
+4862
+5316
+5411
+4556
+5149
+5173
+4546
+4862
+3956
+5261
+6513
+4594
+4843
+5753
+4735
+4745
+6937
+5224
+5456
+5889
+5939
+5587
+6268
+5716
+5751
+5543
+6057
+4687
+4910
+5583
+4170
+5271
+5408
+4953
+5260
+4757
+5575
+4934
+4350
+4271
+5733
+5283
+4828
+4635
+3822
+5349
+5730
+4559
+6625
+5480
+5771
+5596
+6087
+5335
+6429
+5003
+5023
+5236
+5637
+5295
+5081
+5146
+4473
+4523
+5919
+4805
+4943
+6757
+4982
+4925
+5419
+4543
+5704
+5046
+4725
+4750
+4470
+5607
+4133
+4573
+6717
+4974
+5088
+5326
+5215
+6089
+5179
+4581
+5522
+5320
+5693
+4070
+5660
+5521
+3893
+5061
+5685
+4728
+5746
+4859
+5364
+4823
+3957
+4321
+4017
+4397
+5596
+4500
+4386
+5996
+5292
+4600
+5812
+5721
+5472
+6190
+4770
+6016
+5093
+4070
+4909
+5170
+5189
+4272
+3964
+5813
+4445
+4462
+5357
+4746
+6807
+4640
+5141
+5858
+4310
+4950
+4128
+5100
+4470
+3953
+4482
+4968
+4452
+4688
+7125
+5501
+5307
+5676
+5061
+4524
+6576
+4481
+5476
+5369
+4656
+5018
+4684
+4969
+4155
+4249
+5746
+5120
+5802
+6129
+4568
+5445
+4147
+4701
+4589
+4902
+6655
+4310
+5112
+5355
+3736
+4855
+5465
+5744
+5730
+5592
+5535
+4825
+5455
+4346
+4679
+5564
+5161
+4394
+4064
+5250
+4114
+3971
+5704
+4606
+5654
+5309
+4779
+5029
+5356
+4635
+4138
+4762
+5395
+4293
+4781
+5280
+4842
+4123
+5565
+5922
+5495
+6459
+5538
+5391
+5599
+4676
+4869
+6566
+5733
+4753
+5386
+5135
+4462
+4503
+5332
+5401
+4931
+5444
+4849
+5962
+5317
+4576
+5140
+5039
+4939
+4274
+4819
+4352
+4046
+4494
+5561
+5193
+4791
+5143
+6047
+4459
+5249
+4158
+4741
+5703
+4731
+5509
+4824
+4837
+5278
+4305
+5017
+5776
+5160
+5058
+5470
+5031
+4241
+4096
+4727
+4810
+5599
+4259
+4087
+5888
+4066
+4616
+7569
+4761
+5070
+5367
+4233
+5616
+5689
+3894
+4258
+5165
+5272
+4688
+5686
+5392
+4288
+5394
+5028
+5512
+5003
+5842
+4785
+5469
+4550
+4008
+5735
+4905
+5889
+4989
+4608
+5766
+4640
+4343
+5920
+5239
+6052
+5087
+5322
+5175
+5129
+5763
+5373
+5640
+5345
+4567
+4306
+5817
+3568
+4971
+5453
+5456
+5221
+5001
+6233
+5393
+4214
+5505
+4054
+5676
+5090
+4250
+6254
+5069
+4521
+4107
+6305
+5122
+5881
+5649
+5331
+4790
+5673
+4408
+4846
+5846
+4952
+4188
+5000
+5063
+4864
+3880
+5518
+5488
+4762
+5906
+5042
+5811
+4704
+4544
+5144
+5262
+5229
+4088
+4218
+5774
+4580
+5302
+5239
+5506
+5621
+4753
+5358
+4918
+5651
+5402
+5468
+5225
+5855
+4606
+4664
+5949
+4120
+4557
+5246
+5359
+5289
+5235
+5607
+5953
+4358
+4603
+4716
+4722
+5926
+4474
+4360
+6115
+4339
+4296
+6777
+5070
+5562
+5219
+5610
+5417
+5521
+4089
+5433
+5299
+5843
+4260
+5491
+4775
+3769
+4444
+5144
+5493
+4366
+5716
+5726
+5422
+5412
+4425
+4954
+5803
+5338
+4932
+3695
+5095
+4479
+4410
+5685
+5278
+4866
+6169
+5544
+5305
+5226
+3610
+5186
+4935
+5645
+4501
+4012
+4953
+4239
+4048
+4845
+5669
+4844
+4856
+6107
+4341
+4636
+4130
+4982
+5713
+5259
+4251
+3991
+6036
+4094
+5111
+6203
+4922
+5288
+6167
+4577
+5368
+6166
+4094
+5278
+5607
+6090
+4485
+4392
+5422
+4171
+4387
+5462
+5347
+5380
+6167
+5374
+5471
+4564
+4558
+4554
+5678
+4834
+5078
+5253
+5578
+4895
+4229
+5277
+5184
+4758
+5167
+5182
+4861
+5481
+3890
+6055
+5107
+5233
+4359
+3871
+5653
+4123
+4592
+5473
+5157
+5752
+4872
+5916
+5194
+4048
+5102
+5165
+4920
+6062
+4288
+4957
+7180
+4308
+5057
+7991
+5160
+5682
+6575
+5287
+5576
+5134
+3912
+5116
+5266
+6543
+4189
+5122
+5092
+4357
+4529
+5083
+5318
+5872
+4942
+5746
+5914
+4481
+4359
+4519
+5794
+5684
+4377
+5209
+5347
+4496
+4356
+5660
+5241
+4788
+4955
+5656
+5307
+5116
+3963
+5032
+5368
+4851
+5259
+4300
+5971
+4826
+4040
+5535
+4296
+5900
+4414
+4673
+5144
+4469
+4916
+4211
+5219
+5146
+3651
+4709
+5654
+4333
+3954
+6521
+5814
+5097
+6395
+6004
+4551
+5925
+4172
+5354
+5836
+6137
+3982
+5499
+4996
+4666
+4583
+5343
+5429
+4768
+6333
+4643
+5592
+4201
+4367
+4744
+5235
+6188
+4887
+5116
+5345
+4561
+4500
+5433
+4980
+5726
+5026
+5547
+5185
+5171
+4754
+4717
+4345
+5158
+4618
+5151
+4737
+3889
+4259
+4335
+5436
+5162
+5828
+6007
+5150
+4576
+4443
+4493
+4850
+5409
+4463
+4059
+5713
+4624
+5156
+6917
+4952
+5428
+5883
+5163
+6014
+6439
+4071
+5741
+5547
+5473
+4085
+4821
+5613
+4149
+4704
+5305
+5366
+4863
+4433
+5692
+4706
+4728
+4641
+5450
+4470
+5355
+4874
+4455
+5734
+3883
+4284
+5519
+4857
+5366
+5193
+5007
+5484
+4857
+5406
+5129
+4798
+5177
+4034
+4587
+4611
+4234
+4114
+5420
+5686
+5557
+5318
+5277
+4867
+4844
+4546
+4755
+4890
+5432
+3879
+5242
+6601
+4451
+4537
+6275
+5372
+5458
+6169
+4621
+5639
+4614
+4731
+4697
+4980
+4751
+3867
+4869
+4944
+4210
+4290
+5418
+5278
+6480
+5177
+6009
+5261
+5763
+4998
+4285
+5767
+4966
+4123
+4503
+5045
+4893
+4585
+5586
+4812
+4485
+6171
+4840
+5593
+5675
+4048
+4998
+4880
+5196
+4589
+4865
+6171
+5863
+4478
+5203
+4951
+6391
+4733
+4408
+5329
+4112
+5086
+3871
+5562
+6117
+3987
+4963
+6058
+4696
+5715
+6939
+4706
+5623
+5842
+5060
+4980
+5851
+4426
+4416
+6416
+4583
+4482
+5695
+5055
+4515
+4150
+4903
+5468
+5534
+6274
+4939
+5225
+4984
+3977
+6278
+4402
+5561
+4112
+3897
+5334
+4253
+4991
+5458
+5553
+5650
+5522
+6288
+5138
+4800
+4070
+5263
+4989
+5623
+4167
+4827
+5009
+4640
+4375
+5624
+5145
+4849
+5556
+4531
+5233
+4523
+5585
+4175
+4994
+6076
+4270
+4045
+5404
+4424
+4151
+6596
+5454
+5724
+5720
+5236
+5433
+4591
+3935
+5487
+4895
+5071
+4362
+5842
+6720
+4358
+4878
+4872
+5150
+5397
+5049
+5190
+5491
+4246
+4510
+4552
+7044
+5702
+5174
+4944
+5147
+4293
+4585
+5780
+5682
+5744
+5141
+5787
+5485
+4928
+4729
+4707
+5950
+5731
+5851
+5062
+5140
+4889
+4866
+4926
+5164
+5142
+4837
+4898
+5418
+4584
+4327
+5659
+4779
+5720
+3976
+4238
+5652
+3917
+4927
+6777
+5336
+4947
+5509
+4486
+4796
+6123
+4366
+5268
+4835
+6260
+4615
+5918
+6351
+4461
+4901
+6091
+5412
+5738
+4689
+5282
+5572
+4134
+4701
+4802
+5641
+5578
+3865
+5125
+4693
+5148
+4167
+6049
+5345
+5072
+6102
+5645
+5064
+5385
+4190
+5326
+4792
+5276
+5472
+4630
+5739
+4503
+4434
+5386
+5343
+5291
+4830
+4402
+5419
+4699
+4497
+3769
+5399
+5494
+4170
+5541
+5795
+4215
+4899
+6196
+5614
+5459
+4920
+4895
+4992
+5192
+4839
+4555
+5311
+4938
+3851
+5582
+5101
+4806
+4435
+5498
+5330
+4934
+5310
+5258
+5463
+5144
+4202
+4944
+4870
+5674
+4276
+4689
+6217
+4305
+5532
+5411
+5274
+4462
+5351
+5884
+5109
+5016
+3969
+4432
+5284
+5323
+5064
+5048
+5417
+4591
+4222
+4949
+5453
+6431
+5224
+4845
+6748
+4347
+4618
+4739
+4988
+5715
+4171
+4857
+5594
+4788
+5227
+7200
+5504
+5605
+6254
+5208
+4960
+5866
+5050
+4454
+5396
+4869
+4067
+5652
+5205
+4292
+4663
+4936
+5336
+5021
+6006
+4856
+4511
+5402
+4376
+4835
+5157
+5706
+4716
+4095
+5557
+4049
+4790
+5868
+5922
+6384
+6020
+5547
+5113
+4821
+4501
+4640
+5799
+5958
+3824
+4232
+5515
+4276
+5006
+4869
+5554
+5727
+5548
+4708
+5046
+4218
+4121
+3887
+5257
+4657
+4202
+4051
+6013
+4555
+4506
+5900
+5032
+6013
+5521
+4596
+5061
+4809
+4163
+4245
+5130
+5490
+4218
+4879
+5618
+3715
+5374
+5012
+5717
+5140
+5334
+4790
+4751
+4764
+4714
+4253
+5951
+5215
+4403
+4402
+5511
+4652
+5397
+6085
+5298
+5420
+5969
+4440
+5313
+Simulation done. Statistics written to my_output.txt

@@ -1,0 +1,953 @@
+Valid leaf ID range: 16777215:33554430
+Num of top nodes: 16777216
+Data level num of ways: 16777216
+Z: 16
+S: 27
+A: 20
+cached_total: 1
+cached_total: 3
+cached_total: 7
+cached_total: 15
+cached_total: 31
+cached_total: 63
+cached_total: 127
+Total number of ORAM protected cache line blocks: 16777216
+Cached number of levels: 6
+Max number of levels: 25
+Start lvl is: 0
+data valid leaf right: 33554431
+data num of levels: 25
+data level num of ways: 16777216
+data number of sets: 1
+Cached node ID: 0 -- 95
+Address space: 0 - 4 GB
+pos1 valid leaf right: 4194303
+pos1 num of levels: 22
+pos1 level num of ways: 2097152
+pos1 number of sets: 1
+Cached node ID: 0 -- 11
+Address space: 0 - 0.5 GB
+pos2 valid leaf right: 524287
+pos2 num of levels: 19
+pos2 level num of ways: 262144
+pos2 number of sets: 1
+Cached node ID: 0 -- 5
+Address space: 0 - 0.0625 GB
+new addr: f3c9
+(myrs->posMap.find(new_addr) != myrs->posMap.end()): 1
+(myrs->posMap[new_addr].pending): 0
+myrs->posMap[new_addr] = 62409
+#2 ID 0 set true here
+Clk3 @ 1000000 Finished 2107 instructions 
+Clk3 @ 2000000 Finished 4383 instructions 
+Sampling stash size at 4999 req has local max stash size of: 136
+Clk3 @ 3000000 Finished 6727 instructions 
+Clk3 @ 4000000 Finished 9064 instructions 
+Clk@ 4397198 Working on the # 10000 th memory instruction
+Sampling stash size at 9999 req has local max stash size of: 148
+Clk7 @ 5000000 Finished 11447 instructions 
+Clk7 @ 6000000 Finished 13877 instructions 
+Sampling stash size at 14999 req has local max stash size of: 156
+Clk3 @ 7000000 Finished 16254 instructions 
+Clk3 @ 8000000 Finished 18705 instructions 
+Clk@ 8537117 Working on the # 20000 th memory instruction
+Sampling stash size at 19999 req has local max stash size of: 159
+Clk3 @ 9000000 Finished 21108 instructions 
+Clk7 @ 10000000 Finished 23543 instructions 
+Sampling stash size at 24999 req has local max stash size of: 165
+Clk7 @ 11000000 Finished 26011 instructions 
+Clk7 @ 12000000 Finished 28467 instructions 
+Clk@ 12625153 Working on the # 30000 th memory instruction
+Sampling stash size at 29999 req has local max stash size of: 168
+Clk3 @ 13000000 Finished 30847 instructions 
+Clk7 @ 14000000 Finished 33238 instructions 
+Sampling stash size at 34999 req has local max stash size of: 176
+Clk7 @ 15000000 Finished 35689 instructions 
+Clk7 @ 16000000 Finished 38133 instructions 
+Clk@ 16767575 Working on the # 40000 th memory instruction
+Sampling stash size at 39999 req has local max stash size of: 178
+Clk7 @ 17000000 Finished 40563 instructions 
+Clk7 @ 18000000 Finished 42977 instructions 
+Sampling stash size at 44999 req has local max stash size of: 175
+Clk7 @ 19000000 Finished 45440 instructions 
+Clk7 @ 20000000 Finished 47838 instructions 
+Clk@ 20874377 Working on the # 50000 th memory instruction
+Sampling stash size at 49999 req has local max stash size of: 175
+Clk3 @ 21000000 Finished 50307 instructions 
+Clk3 @ 22000000 Finished 52790 instructions 
+Sampling stash size at 54999 req has local max stash size of: 175
+Clk3 @ 23000000 Finished 55218 instructions 
+Clk7 @ 24000000 Finished 57667 instructions 
+Clk@ 24941308 Working on the # 60000 th memory instruction
+Sampling stash size at 59999 req has local max stash size of: 176
+Clk3 @ 25000000 Finished 60143 instructions 
+Clk3 @ 26000000 Finished 62367 instructions 
+Clk3 @ 27000000 Finished 64770 instructions 
+Sampling stash size at 64999 req has local max stash size of: 180
+Clk3 @ 28000000 Finished 67227 instructions 
+Clk7 @ 29000000 Finished 69678 instructions 
+Clk@ 29129434 Working on the # 70000 th memory instruction
+Sampling stash size at 69999 req has local max stash size of: 177
+Clk7 @ 30000000 Finished 72148 instructions 
+Clk7 @ 31000000 Finished 74599 instructions 
+Sampling stash size at 74999 req has local max stash size of: 182
+Clk7 @ 32000000 Finished 77014 instructions 
+Clk7 @ 33000000 Finished 79448 instructions 
+Clk@ 33220801 Working on the # 80000 th memory instruction
+Sampling stash size at 79999 req has local max stash size of: 195
+Clk7 @ 34000000 Finished 81888 instructions 
+Clk7 @ 35000000 Finished 84267 instructions 
+Sampling stash size at 84999 req has local max stash size of: 205
+Clk3 @ 36000000 Finished 86703 instructions 
+Clk3 @ 37000000 Finished 89167 instructions 
+Clk@ 37341061 Working on the # 90000 th memory instruction
+Sampling stash size at 89999 req has local max stash size of: 180
+Clk3 @ 38000000 Finished 91562 instructions 
+Clk7 @ 39000000 Finished 93936 instructions 
+Sampling stash size at 94999 req has local max stash size of: 189
+Clk3 @ 40000000 Finished 96387 instructions 
+Clk7 @ 41000000 Finished 98852 instructions 
+Clk@ 41470437 Working on the # 100000 th memory instruction
+Sampling stash size at 99999 req has local max stash size of: 191
+Clk3 @ 42000000 Finished 101297 instructions 
+Sampling stash size at 104999 req has local max stash size of: 196
+Clk7 @ 44000000 Finished 106177 instructions 
+Clk7 @ 45000000 Finished 108596 instructions 
+Clk@ 45578901 Working on the # 110000 th memory instruction
+Sampling stash size at 109999 req has local max stash size of: 191
+Clk3 @ 46000000 Finished 111026 instructions 
+Clk3 @ 47000000 Finished 113483 instructions 
+Sampling stash size at 114999 req has local max stash size of: 189
+Clk3 @ 48000000 Finished 115906 instructions 
+Clk7 @ 49000000 Finished 118336 instructions 
+Clk@ 49684435 Working on the # 120000 th memory instruction
+Sampling stash size at 119999 req has local max stash size of: 200
+Clk7 @ 50000000 Finished 120765 instructions 
+Clk3 @ 51000000 Finished 123009 instructions 
+Sampling stash size at 124999 req has local max stash size of: 191
+Clk3 @ 52000000 Finished 125248 instructions 
+Clk7 @ 53000000 Finished 127655 instructions 
+Clk@ 53965774 Working on the # 130000 th memory instruction
+Sampling stash size at 129999 req has local max stash size of: 198
+Clk3 @ 54000000 Finished 130084 instructions 
+Clk3 @ 55000000 Finished 132503 instructions 
+Clk3 @ 56000000 Finished 134967 instructions 
+Sampling stash size at 134999 req has local max stash size of: 189
+Clk3 @ 57000000 Finished 137387 instructions 
+Clk3 @ 58000000 Finished 139823 instructions 
+Clk@ 58072407 Working on the # 140000 th memory instruction
+Sampling stash size at 139999 req has local max stash size of: 194
+Clk3 @ 59000000 Finished 142272 instructions 
+Sampling stash size at 144999 req has local max stash size of: 195
+Clk3 @ 61000000 Finished 147162 instructions 
+Clk3 @ 62000000 Finished 149627 instructions 
+Clk@ 62152776 Working on the # 150000 th memory instruction
+Sampling stash size at 149999 req has local max stash size of: 215
+Clk3 @ 63000000 Finished 152080 instructions 
+Clk7 @ 64000000 Finished 154424 instructions 
+Sampling stash size at 154999 req has local max stash size of: 199
+Clk3 @ 65000000 Finished 156847 instructions 
+Clk7 @ 66000000 Finished 159287 instructions 
+Clk@ 66290435 Working on the # 160000 th memory instruction
+Sampling stash size at 159999 req has local max stash size of: 197
+Clk3 @ 67000000 Finished 161727 instructions 
+Clk7 @ 68000000 Finished 164119 instructions 
+Sampling stash size at 164999 req has local max stash size of: 191
+Clk3 @ 69000000 Finished 166465 instructions 
+Clk3 @ 70000000 Finished 168842 instructions 
+Clk@ 70473083 Working on the # 170000 th memory instruction
+Sampling stash size at 169999 req has local max stash size of: 197
+Clk3 @ 71000000 Finished 171267 instructions 
+Clk7 @ 72000000 Finished 173647 instructions 
+Sampling stash size at 174999 req has local max stash size of: 197
+Clk3 @ 73000000 Finished 176084 instructions 
+Clk3 @ 74000000 Finished 178527 instructions 
+Clk@ 74613297 Working on the # 180000 th memory instruction
+Sampling stash size at 179999 req has local max stash size of: 200
+Clk7 @ 75000000 Finished 180945 instructions 
+Clk3 @ 76000000 Finished 183307 instructions 
+Sampling stash size at 184999 req has local max stash size of: 196
+Clk3 @ 77000000 Finished 185722 instructions 
+Clk3 @ 78000000 Finished 187990 instructions 
+Clk@ 78814236 Working on the # 190000 th memory instruction
+Sampling stash size at 189999 req has local max stash size of: 201
+Clk7 @ 79000000 Finished 190447 instructions 
+Clk3 @ 80000000 Finished 192887 instructions 
+Sampling stash size at 194999 req has local max stash size of: 201
+Clk3 @ 81000000 Finished 195323 instructions 
+Clk3 @ 82000000 Finished 197786 instructions 
+Clk@ 82918034 Working on the # 200000 th memory instruction
+Sampling stash size at 199999 req has local max stash size of: 192
+Clk7 @ 83000000 Finished 200192 instructions 
+Clk3 @ 84000000 Finished 202605 instructions 
+Sampling stash size at 204999 req has local max stash size of: 202
+Clk7 @ 85000000 Finished 205051 instructions 
+Clk7 @ 86000000 Finished 207467 instructions 
+Clk3 @ 87000000 Finished 209893 instructions 
+Clk@ 87042095 Working on the # 210000 th memory instruction
+Sampling stash size at 209999 req has local max stash size of: 200
+Clk7 @ 88000000 Finished 212314 instructions 
+Clk3 @ 89000000 Finished 214726 instructions 
+Sampling stash size at 214999 req has local max stash size of: 192
+Clk3 @ 90000000 Finished 217144 instructions 
+Clk3 @ 91000000 Finished 219545 instructions 
+Clk@ 91178608 Working on the # 220000 th memory instruction
+Sampling stash size at 219999 req has local max stash size of: 199
+Clk3 @ 92000000 Finished 221991 instructions 
+Clk7 @ 93000000 Finished 224467 instructions 
+Sampling stash size at 224999 req has local max stash size of: 202
+Clk3 @ 94000000 Finished 226919 instructions 
+Clk3 @ 95000000 Finished 229324 instructions 
+Clk@ 95269550 Working on the # 230000 th memory instruction
+Sampling stash size at 229999 req has local max stash size of: 201
+Clk7 @ 96000000 Finished 231803 instructions 
+Clk3 @ 97000000 Finished 234203 instructions 
+Sampling stash size at 234999 req has local max stash size of: 206
+Clk7 @ 98000000 Finished 236632 instructions 
+Clk3 @ 99000000 Finished 239075 instructions 
+Clk@ 99375117 Working on the # 240000 th memory instruction
+Sampling stash size at 239999 req has local max stash size of: 205
+Clk7 @ 100000000 Finished 241491 instructions 
+Clk7 @ 101000000 Finished 243853 instructions 
+Sampling stash size at 244999 req has local max stash size of: 203
+Clk3 @ 102000000 Finished 246062 instructions 
+Clk3 @ 103000000 Finished 248242 instructions 
+Clk@ 103762856 Working on the # 250000 th memory instruction
+Sampling stash size at 249999 req has local max stash size of: 202
+Clk7 @ 104000000 Finished 250549 instructions 
+Clk3 @ 105000000 Finished 252947 instructions 
+Sampling stash size at 254999 req has local max stash size of: 199
+Clk3 @ 106000000 Finished 255325 instructions 
+Clk3 @ 107000000 Finished 257746 instructions 
+Clk@ 107935593 Working on the # 260000 th memory instruction
+Sampling stash size at 259999 req has local max stash size of: 203
+Clk3 @ 108000000 Finished 260161 instructions 
+Clk3 @ 109000000 Finished 262581 instructions 
+Clk3 @ 110000000 Finished 264978 instructions 
+Sampling stash size at 264999 req has local max stash size of: 205
+Clk3 @ 111000000 Finished 267407 instructions 
+Clk7 @ 112000000 Finished 269863 instructions 
+Clk@ 112053797 Working on the # 270000 th memory instruction
+Sampling stash size at 269999 req has local max stash size of: 200
+Clk3 @ 113000000 Finished 272316 instructions 
+Clk3 @ 114000000 Finished 274687 instructions 
+Sampling stash size at 274999 req has local max stash size of: 218
+Clk7 @ 115000000 Finished 277122 instructions 
+Clk7 @ 116000000 Finished 279517 instructions 
+Clk@ 116197063 Working on the # 280000 th memory instruction
+Sampling stash size at 279999 req has local max stash size of: 211
+Clk3 @ 117000000 Finished 281963 instructions 
+Clk7 @ 118000000 Finished 284395 instructions 
+Sampling stash size at 284999 req has local max stash size of: 200
+Clk7 @ 119000000 Finished 286820 instructions 
+Clk3 @ 120000000 Finished 289264 instructions 
+Clk@ 120310488 Working on the # 290000 th memory instruction
+Sampling stash size at 289999 req has local max stash size of: 202
+Clk3 @ 121000000 Finished 291687 instructions 
+Clk7 @ 122000000 Finished 294099 instructions 
+Sampling stash size at 294999 req has local max stash size of: 202
+Clk3 @ 123000000 Finished 296544 instructions 
+Clk3 @ 124000000 Finished 298981 instructions 
+Clk@ 124415259 Working on the # 300000 th memory instruction
+Sampling stash size at 299999 req has local max stash size of: 203
+Clk3 @ 125000000 Finished 301402 instructions 
+Clk3 @ 126000000 Finished 303829 instructions 
+Sampling stash size at 304999 req has local max stash size of: 204
+Clk3 @ 127000000 Finished 306131 instructions 
+Clk3 @ 128000000 Finished 308527 instructions 
+Clk@ 128630819 Working on the # 310000 th memory instruction
+Sampling stash size at 309999 req has local max stash size of: 209
+Clk3 @ 129000000 Finished 310887 instructions 
+Clk3 @ 130000000 Finished 313326 instructions 
+Sampling stash size at 314999 req has local max stash size of: 201
+Clk7 @ 131000000 Finished 315768 instructions 
+Clk3 @ 132000000 Finished 318174 instructions 
+Clk@ 132741305 Working on the # 320000 th memory instruction
+Sampling stash size at 319999 req has local max stash size of: 203
+Clk7 @ 133000000 Finished 320596 instructions 
+Clk7 @ 134000000 Finished 323047 instructions 
+Sampling stash size at 324999 req has local max stash size of: 205
+Clk3 @ 135000000 Finished 325447 instructions 
+Clk3 @ 136000000 Finished 327844 instructions 
+Clk@ 136903205 Working on the # 330000 th memory instruction
+Sampling stash size at 329999 req has local max stash size of: 205
+Clk3 @ 137000000 Finished 330227 instructions 
+Clk3 @ 138000000 Finished 332570 instructions 
+Clk3 @ 139000000 Finished 335006 instructions 
+Sampling stash size at 334999 req has local max stash size of: 211
+Clk7 @ 140000000 Finished 337396 instructions 
+Clk3 @ 141000000 Finished 339827 instructions 
+Clk@ 141070417 Working on the # 340000 th memory instruction
+Sampling stash size at 339999 req has local max stash size of: 199
+Clk3 @ 142000000 Finished 342234 instructions 
+Clk3 @ 143000000 Finished 344582 instructions 
+Sampling stash size at 344999 req has local max stash size of: 210
+Clk3 @ 144000000 Finished 347005 instructions 
+Clk7 @ 145000000 Finished 349447 instructions 
+Clk@ 145221120 Working on the # 350000 th memory instruction
+Sampling stash size at 349999 req has local max stash size of: 212
+Clk3 @ 146000000 Finished 351882 instructions 
+Clk7 @ 147000000 Finished 354333 instructions 
+Sampling stash size at 354999 req has local max stash size of: 201
+Clk3 @ 148000000 Finished 356770 instructions 
+Clk7 @ 149000000 Finished 359135 instructions 
+Clk@ 149352558 Working on the # 360000 th memory instruction
+Sampling stash size at 359999 req has local max stash size of: 204
+Clk3 @ 150000000 Finished 361587 instructions 
+Clk3 @ 151000000 Finished 364003 instructions 
+Sampling stash size at 364999 req has local max stash size of: 203
+Clk7 @ 152000000 Finished 366281 instructions 
+Clk3 @ 153000000 Finished 368689 instructions 
+Clk@ 153540344 Working on the # 370000 th memory instruction
+Sampling stash size at 369999 req has local max stash size of: 205
+Clk7 @ 154000000 Finished 371099 instructions 
+Clk3 @ 155000000 Finished 373364 instructions 
+Sampling stash size at 374999 req has local max stash size of: 204
+Clk7 @ 156000000 Finished 375711 instructions 
+Clk3 @ 157000000 Finished 378149 instructions 
+Clk@ 157750547 Working on the # 380000 th memory instruction
+Sampling stash size at 379999 req has local max stash size of: 222
+Clk3 @ 158000000 Finished 380602 instructions 
+Clk7 @ 159000000 Finished 383007 instructions 
+Sampling stash size at 384999 req has local max stash size of: 205
+Clk3 @ 160000000 Finished 385462 instructions 
+Clk3 @ 161000000 Finished 387887 instructions 
+Clk@ 161879928 Working on the # 390000 th memory instruction
+Sampling stash size at 389999 req has local max stash size of: 206
+Clk7 @ 162000000 Finished 390296 instructions 
+Clk3 @ 163000000 Finished 392744 instructions 
+Sampling stash size at 394999 req has local max stash size of: 208
+Clk7 @ 164000000 Finished 395213 instructions 
+Clk3 @ 165000000 Finished 397581 instructions 
+Clk@ 165985940 Working on the # 400000 th memory instruction
+Sampling stash size at 399999 req has local max stash size of: 207
+Clk3 @ 166000000 Finished 400027 instructions 
+Clk3 @ 167000000 Finished 402445 instructions 
+Clk3 @ 168000000 Finished 404844 instructions 
+Sampling stash size at 404999 req has local max stash size of: 226
+Clk3 @ 169000000 Finished 407247 instructions 
+Clk3 @ 170000000 Finished 409669 instructions 
+Clk@ 170133919 Working on the # 410000 th memory instruction
+Sampling stash size at 409999 req has local max stash size of: 208
+Clk3 @ 171000000 Finished 412105 instructions 
+Clk3 @ 172000000 Finished 414501 instructions 
+Sampling stash size at 414999 req has local max stash size of: 210
+Clk7 @ 173000000 Finished 416948 instructions 
+Clk3 @ 174000000 Finished 419363 instructions 
+Clk@ 174257590 Working on the # 420000 th memory instruction
+Sampling stash size at 419999 req has local max stash size of: 203
+Clk3 @ 175000000 Finished 421802 instructions 
+Clk7 @ 176000000 Finished 424221 instructions 
+Sampling stash size at 424999 req has local max stash size of: 209
+Clk3 @ 177000000 Finished 426627 instructions 
+Clk3 @ 178000000 Finished 429006 instructions 
+Clk@ 178411327 Working on the # 430000 th memory instruction
+Sampling stash size at 429999 req has local max stash size of: 206
+Clk3 @ 179000000 Finished 431427 instructions 
+Clk3 @ 180000000 Finished 433827 instructions 
+Sampling stash size at 434999 req has local max stash size of: 205
+Clk3 @ 181000000 Finished 436133 instructions 
+Clk7 @ 182000000 Finished 438548 instructions 
+Clk@ 182588156 Working on the # 440000 th memory instruction
+Sampling stash size at 439999 req has local max stash size of: 215
+Clk7 @ 183000000 Finished 441016 instructions 
+Clk7 @ 184000000 Finished 443430 instructions 
+Sampling stash size at 444999 req has local max stash size of: 214
+Clk7 @ 185000000 Finished 445866 instructions 
+Clk3 @ 186000000 Finished 448309 instructions 
+Clk@ 186694974 Working on the # 450000 th memory instruction
+Sampling stash size at 449999 req has local max stash size of: 202
+Clk3 @ 187000000 Finished 450744 instructions 
+Sampling stash size at 454999 req has local max stash size of: 206
+Clk7 @ 189000000 Finished 455608 instructions 
+Clk7 @ 190000000 Finished 458011 instructions 
+Clk@ 190809731 Working on the # 460000 th memory instruction
+Sampling stash size at 459999 req has local max stash size of: 212
+Clk3 @ 191000000 Finished 460464 instructions 
+Clk7 @ 192000000 Finished 462920 instructions 
+Sampling stash size at 464999 req has local max stash size of: 207
+Clk7 @ 194000000 Finished 467705 instructions 
+Clk@ 194940478 Working on the # 470000 th memory instruction
+Sampling stash size at 469999 req has local max stash size of: 212
+Clk3 @ 195000000 Finished 470147 instructions 
+Clk7 @ 196000000 Finished 472566 instructions 
+Clk7 @ 197000000 Finished 474987 instructions 
+Sampling stash size at 474999 req has local max stash size of: 216
+Clk7 @ 198000000 Finished 477419 instructions 
+Clk3 @ 199000000 Finished 479865 instructions 
+Clk@ 199056608 Working on the # 480000 th memory instruction
+Sampling stash size at 479999 req has local max stash size of: 209
+Clk3 @ 200000000 Finished 482230 instructions 
+Clk7 @ 201000000 Finished 484631 instructions 
+Sampling stash size at 484999 req has local max stash size of: 212
+Clk3 @ 202000000 Finished 487016 instructions 
+Clk3 @ 203000000 Finished 489163 instructions 
+Clk@ 203364245 Working on the # 490000 th memory instruction
+Sampling stash size at 489999 req has local max stash size of: 219
+Clk7 @ 204000000 Finished 491486 instructions 
+Clk7 @ 205000000 Finished 493712 instructions 
+Sampling stash size at 494999 req has local max stash size of: 210
+Clk3 @ 206000000 Finished 495826 instructions 
+Clk7 @ 207000000 Finished 498107 instructions 
+Clk@ 207828404 Working on the # 500000 th memory instruction
+Warm up done after line access count: 500000 out of 1000000 (50 %)
+Sampling stash size at 499999 req has local max stash size of: 211
+Clk7 @ 208000000 Finished 500392 instructions 
+Clk3 @ 209000000 Finished 502745 instructions 
+Sampling stash size at 504999 req has local max stash size of: 214
+Clk3 @ 210000000 Finished 505107 instructions 
+Clk7 @ 211000000 Finished 507482 instructions 
+Clk3 @ 212000000 Finished 509847 instructions 
+Clk@ 212063447 Working on the # 510000 th memory instruction
+Sampling stash size at 509999 req has local max stash size of: 210
+Clk7 @ 213000000 Finished 512167 instructions 
+Clk3 @ 214000000 Finished 514559 instructions 
+Sampling stash size at 514999 req has local max stash size of: 210
+Clk7 @ 215000000 Finished 516973 instructions 
+Clk3 @ 216000000 Finished 519325 instructions 
+Clk@ 216275205 Working on the # 520000 th memory instruction
+Sampling stash size at 519999 req has local max stash size of: 204
+Clk3 @ 217000000 Finished 521750 instructions 
+Clk3 @ 218000000 Finished 524147 instructions 
+Sampling stash size at 524999 req has local max stash size of: 216
+Clk3 @ 219000000 Finished 526490 instructions 
+Clk3 @ 220000000 Finished 528882 instructions 
+Clk@ 220463477 Working on the # 530000 th memory instruction
+Sampling stash size at 529999 req has local max stash size of: 206
+Clk3 @ 221000000 Finished 531301 instructions 
+Clk3 @ 222000000 Finished 533683 instructions 
+Sampling stash size at 534999 req has local max stash size of: 204
+Clk7 @ 223000000 Finished 536115 instructions 
+Clk3 @ 224000000 Finished 538563 instructions 
+Clk@ 224592675 Working on the # 540000 th memory instruction
+Sampling stash size at 539999 req has local max stash size of: 204
+Clk3 @ 225000000 Finished 540987 instructions 
+Clk7 @ 226000000 Finished 543400 instructions 
+Sampling stash size at 544999 req has local max stash size of: 208
+Clk7 @ 227000000 Finished 545810 instructions 
+Clk3 @ 228000000 Finished 548224 instructions 
+Clk@ 228786449 Working on the # 550000 th memory instruction
+Sampling stash size at 549999 req has local max stash size of: 209
+Clk7 @ 229000000 Finished 550520 instructions 
+Clk3 @ 230000000 Finished 552942 instructions 
+Sampling stash size at 554999 req has local max stash size of: 210
+Clk7 @ 231000000 Finished 555346 instructions 
+Clk3 @ 232000000 Finished 557682 instructions 
+Clk@ 232956126 Working on the # 560000 th memory instruction
+Sampling stash size at 559999 req has local max stash size of: 212
+Clk3 @ 233000000 Finished 560103 instructions 
+Clk3 @ 234000000 Finished 562523 instructions 
+Clk7 @ 235000000 Finished 564916 instructions 
+Sampling stash size at 564999 req has local max stash size of: 208
+Clk3 @ 236000000 Finished 567363 instructions 
+Clk7 @ 237000000 Finished 569744 instructions 
+Clk@ 237102604 Working on the # 570000 th memory instruction
+Sampling stash size at 569999 req has local max stash size of: 205
+Clk3 @ 238000000 Finished 572163 instructions 
+Clk3 @ 239000000 Finished 574607 instructions 
+Sampling stash size at 574999 req has local max stash size of: 210
+Clk3 @ 240000000 Finished 577007 instructions 
+Clk7 @ 241000000 Finished 579397 instructions 
+Clk@ 241247585 Working on the # 580000 th memory instruction
+Sampling stash size at 579999 req has local max stash size of: 212
+Clk3 @ 242000000 Finished 581843 instructions 
+Clk3 @ 243000000 Finished 584283 instructions 
+Sampling stash size at 584999 req has local max stash size of: 205
+Clk3 @ 244000000 Finished 586685 instructions 
+Clk3 @ 245000000 Finished 589058 instructions 
+Clk@ 245384442 Working on the # 590000 th memory instruction
+Sampling stash size at 589999 req has local max stash size of: 209
+Clk3 @ 246000000 Finished 591501 instructions 
+Clk3 @ 247000000 Finished 593925 instructions 
+Sampling stash size at 594999 req has local max stash size of: 212
+Clk3 @ 248000000 Finished 596341 instructions 
+Clk3 @ 249000000 Finished 598775 instructions 
+Clk@ 249493334 Working on the # 600000 th memory instruction
+Sampling stash size at 599999 req has local max stash size of: 208
+Clk3 @ 250000000 Finished 601227 instructions 
+Clk3 @ 251000000 Finished 603627 instructions 
+Sampling stash size at 604999 req has local max stash size of: 212
+Clk3 @ 252000000 Finished 606055 instructions 
+Clk3 @ 253000000 Finished 608506 instructions 
+Clk@ 253669144 Working on the # 610000 th memory instruction
+Sampling stash size at 609999 req has local max stash size of: 210
+Clk7 @ 254000000 Finished 610727 instructions 
+Clk3 @ 255000000 Finished 613105 instructions 
+Sampling stash size at 614999 req has local max stash size of: 215
+Clk3 @ 256000000 Finished 615505 instructions 
+Clk7 @ 257000000 Finished 617807 instructions 
+Clk@ 257936239 Working on the # 620000 th memory instruction
+Sampling stash size at 619999 req has local max stash size of: 218
+Clk3 @ 258000000 Finished 620153 instructions 
+Clk7 @ 259000000 Finished 622568 instructions 
+Clk3 @ 260000000 Finished 624959 instructions 
+Sampling stash size at 624999 req has local max stash size of: 211
+Clk3 @ 261000000 Finished 627426 instructions 
+Clk7 @ 262000000 Finished 629872 instructions 
+Clk@ 262053621 Working on the # 630000 th memory instruction
+Sampling stash size at 629999 req has local max stash size of: 208
+Clk3 @ 263000000 Finished 632304 instructions 
+Clk3 @ 264000000 Finished 634689 instructions 
+Sampling stash size at 634999 req has local max stash size of: 217
+Clk7 @ 265000000 Finished 637097 instructions 
+Clk3 @ 266000000 Finished 639547 instructions 
+Clk@ 266182106 Working on the # 640000 th memory instruction
+Sampling stash size at 639999 req has local max stash size of: 219
+Clk3 @ 267000000 Finished 641907 instructions 
+Clk7 @ 268000000 Finished 644359 instructions 
+Sampling stash size at 644999 req has local max stash size of: 217
+Clk7 @ 269000000 Finished 646796 instructions 
+Clk7 @ 270000000 Finished 649183 instructions 
+Clk@ 270336270 Working on the # 650000 th memory instruction
+Sampling stash size at 649999 req has local max stash size of: 220
+Clk3 @ 271000000 Finished 651557 instructions 
+Clk7 @ 272000000 Finished 653989 instructions 
+Sampling stash size at 654999 req has local max stash size of: 207
+Clk3 @ 273000000 Finished 656365 instructions 
+Clk3 @ 274000000 Finished 658802 instructions 
+Clk@ 274499063 Working on the # 660000 th memory instruction
+Sampling stash size at 659999 req has local max stash size of: 212
+Clk3 @ 275000000 Finished 661206 instructions 
+Clk3 @ 276000000 Finished 663581 instructions 
+Sampling stash size at 664999 req has local max stash size of: 211
+Clk3 @ 277000000 Finished 665905 instructions 
+Clk7 @ 278000000 Finished 668327 instructions 
+Clk@ 278692026 Working on the # 670000 th memory instruction
+Sampling stash size at 669999 req has local max stash size of: 212
+Clk3 @ 279000000 Finished 670688 instructions 
+Clk7 @ 280000000 Finished 673087 instructions 
+Sampling stash size at 674999 req has local max stash size of: 214
+Clk7 @ 281000000 Finished 675520 instructions 
+Clk3 @ 282000000 Finished 677960 instructions 
+Clk@ 282849825 Working on the # 680000 th memory instruction
+Sampling stash size at 679999 req has local max stash size of: 212
+Clk3 @ 283000000 Finished 680367 instructions 
+Clk3 @ 284000000 Finished 682787 instructions 
+Sampling stash size at 684999 req has local max stash size of: 214
+Clk3 @ 285000000 Finished 685162 instructions 
+Clk7 @ 286000000 Finished 687445 instructions 
+Clk7 @ 287000000 Finished 689879 instructions 
+Clk@ 287050466 Working on the # 690000 th memory instruction
+Sampling stash size at 689999 req has local max stash size of: 216
+Clk3 @ 288000000 Finished 692296 instructions 
+Clk3 @ 289000000 Finished 694706 instructions 
+Sampling stash size at 694999 req has local max stash size of: 210
+Clk7 @ 290000000 Finished 697152 instructions 
+Clk7 @ 291000000 Finished 699547 instructions 
+Clk@ 291183247 Working on the # 700000 th memory instruction
+Sampling stash size at 699999 req has local max stash size of: 211
+Clk7 @ 292000000 Finished 701948 instructions 
+Clk3 @ 293000000 Finished 704382 instructions 
+Sampling stash size at 704999 req has local max stash size of: 213
+Clk3 @ 294000000 Finished 706772 instructions 
+Clk3 @ 295000000 Finished 709198 instructions 
+Clk@ 295329461 Working on the # 710000 th memory instruction
+Sampling stash size at 709999 req has local max stash size of: 221
+Clk3 @ 296000000 Finished 711644 instructions 
+Clk3 @ 297000000 Finished 714085 instructions 
+Sampling stash size at 714999 req has local max stash size of: 216
+Clk3 @ 298000000 Finished 716454 instructions 
+Clk3 @ 299000000 Finished 718824 instructions 
+Clk@ 299474154 Working on the # 720000 th memory instruction
+Sampling stash size at 719999 req has local max stash size of: 212
+Clk7 @ 300000000 Finished 721278 instructions 
+Clk7 @ 301000000 Finished 723704 instructions 
+Sampling stash size at 724999 req has local max stash size of: 219
+Clk3 @ 302000000 Finished 726107 instructions 
+Clk3 @ 303000000 Finished 728522 instructions 
+Clk@ 303620142 Working on the # 730000 th memory instruction
+Sampling stash size at 729999 req has local max stash size of: 206
+Clk7 @ 304000000 Finished 730865 instructions 
+Clk3 @ 305000000 Finished 733101 instructions 
+Sampling stash size at 734999 req has local max stash size of: 212
+Clk3 @ 306000000 Finished 735547 instructions 
+Clk3 @ 307000000 Finished 737967 instructions 
+Clk@ 307844776 Working on the # 740000 th memory instruction
+Sampling stash size at 739999 req has local max stash size of: 207
+Clk3 @ 308000000 Finished 740367 instructions 
+Clk3 @ 309000000 Finished 742718 instructions 
+Sampling stash size at 744999 req has local max stash size of: 210
+Clk3 @ 310000000 Finished 745007 instructions 
+Clk7 @ 311000000 Finished 747175 instructions 
+Clk7 @ 312000000 Finished 749504 instructions 
+Clk@ 312202469 Working on the # 750000 th memory instruction
+Sampling stash size at 749999 req has local max stash size of: 210
+Clk3 @ 313000000 Finished 751919 instructions 
+Clk3 @ 314000000 Finished 754327 instructions 
+Sampling stash size at 754999 req has local max stash size of: 214
+Clk3 @ 315000000 Finished 756723 instructions 
+Clk3 @ 316000000 Finished 759158 instructions 
+Clk@ 316342302 Working on the # 760000 th memory instruction
+Sampling stash size at 759999 req has local max stash size of: 211
+Clk3 @ 317000000 Finished 761583 instructions 
+Clk7 @ 317000000 Finished 761583 instructions 
+Clk3 @ 318000000 Finished 763937 instructions 
+Sampling stash size at 764999 req has local max stash size of: 206
+Clk3 @ 319000000 Finished 766380 instructions 
+Clk7 @ 320000000 Finished 768827 instructions 
+Clk@ 320489318 Working on the # 770000 th memory instruction
+Sampling stash size at 769999 req has local max stash size of: 212
+Clk7 @ 321000000 Finished 771253 instructions 
+Clk7 @ 322000000 Finished 773651 instructions 
+Sampling stash size at 774999 req has local max stash size of: 210
+Clk3 @ 323000000 Finished 776090 instructions 
+Clk7 @ 324000000 Finished 778473 instructions 
+Clk@ 324640855 Working on the # 780000 th memory instruction
+Sampling stash size at 779999 req has local max stash size of: 210
+Clk7 @ 325000000 Finished 780874 instructions 
+Clk3 @ 326000000 Finished 783307 instructions 
+Sampling stash size at 784999 req has local max stash size of: 214
+Clk7 @ 327000000 Finished 785742 instructions 
+Clk3 @ 328000000 Finished 788170 instructions 
+Clk@ 328752157 Working on the # 790000 th memory instruction
+Sampling stash size at 789999 req has local max stash size of: 211
+Clk3 @ 329000000 Finished 790603 instructions 
+Clk3 @ 330000000 Finished 792887 instructions 
+Sampling stash size at 794999 req has local max stash size of: 212
+Clk3 @ 331000000 Finished 795267 instructions 
+Clk7 @ 332000000 Finished 797716 instructions 
+Clk@ 332931101 Working on the # 800000 th memory instruction
+Sampling stash size at 799999 req has local max stash size of: 216
+Clk7 @ 333000000 Finished 800155 instructions 
+Clk7 @ 334000000 Finished 802567 instructions 
+Clk7 @ 335000000 Finished 804998 instructions 
+Sampling stash size at 804999 req has local max stash size of: 212
+Clk7 @ 336000000 Finished 807406 instructions 
+Clk3 @ 337000000 Finished 809747 instructions 
+Clk@ 337104168 Working on the # 810000 th memory instruction
+Sampling stash size at 809999 req has local max stash size of: 213
+Clk3 @ 338000000 Finished 812181 instructions 
+Clk7 @ 339000000 Finished 814573 instructions 
+Sampling stash size at 814999 req has local max stash size of: 208
+Clk3 @ 340000000 Finished 816972 instructions 
+Clk7 @ 341000000 Finished 819383 instructions 
+Clk@ 341252197 Working on the # 820000 th memory instruction
+Sampling stash size at 819999 req has local max stash size of: 212
+Clk3 @ 342000000 Finished 821807 instructions 
+Clk3 @ 343000000 Finished 824204 instructions 
+Sampling stash size at 824999 req has local max stash size of: 216
+Clk3 @ 344000000 Finished 826621 instructions 
+Clk7 @ 345000000 Finished 828953 instructions 
+Clk@ 345431980 Working on the # 830000 th memory instruction
+Sampling stash size at 829999 req has local max stash size of: 213
+Clk3 @ 346000000 Finished 831360 instructions 
+Clk3 @ 347000000 Finished 833791 instructions 
+Sampling stash size at 834999 req has local max stash size of: 213
+Clk7 @ 348000000 Finished 836223 instructions 
+Clk7 @ 349000000 Finished 838557 instructions 
+Clk@ 349592179 Working on the # 840000 th memory instruction
+Sampling stash size at 839999 req has local max stash size of: 216
+Clk3 @ 350000000 Finished 840987 instructions 
+Clk3 @ 351000000 Finished 843394 instructions 
+Sampling stash size at 844999 req has local max stash size of: 210
+Clk3 @ 352000000 Finished 845823 instructions 
+Clk3 @ 353000000 Finished 848205 instructions 
+Clk@ 353742501 Working on the # 850000 th memory instruction
+Sampling stash size at 849999 req has local max stash size of: 225
+Clk3 @ 354000000 Finished 850607 instructions 
+Clk3 @ 355000000 Finished 853000 instructions 
+Sampling stash size at 854999 req has local max stash size of: 213
+Clk7 @ 356000000 Finished 855288 instructions 
+Clk7 @ 357000000 Finished 857722 instructions 
+Clk@ 357945971 Working on the # 860000 th memory instruction
+Sampling stash size at 859999 req has local max stash size of: 205
+Clk7 @ 358000000 Finished 860127 instructions 
+Clk3 @ 359000000 Finished 862544 instructions 
+Clk3 @ 360000000 Finished 864967 instructions 
+Sampling stash size at 864999 req has local max stash size of: 213
+Clk3 @ 361000000 Finished 867351 instructions 
+Clk7 @ 361000000 Finished 867351 instructions 
+Clk3 @ 362000000 Finished 869567 instructions 
+Clk@ 362186561 Working on the # 870000 th memory instruction
+Sampling stash size at 869999 req has local max stash size of: 213
+Clk3 @ 363000000 Finished 871965 instructions 
+Clk3 @ 364000000 Finished 874376 instructions 
+Sampling stash size at 874999 req has local max stash size of: 214
+Clk3 @ 365000000 Finished 876785 instructions 
+Clk7 @ 366000000 Finished 879235 instructions 
+Clk@ 366311524 Working on the # 880000 th memory instruction
+Sampling stash size at 879999 req has local max stash size of: 213
+Clk7 @ 367000000 Finished 881678 instructions 
+Clk7 @ 368000000 Finished 884076 instructions 
+Sampling stash size at 884999 req has local max stash size of: 215
+Clk3 @ 369000000 Finished 886493 instructions 
+Clk7 @ 370000000 Finished 888909 instructions 
+Clk@ 370452225 Working on the # 890000 th memory instruction
+Sampling stash size at 889999 req has local max stash size of: 207
+Clk3 @ 371000000 Finished 891343 instructions 
+Clk7 @ 372000000 Finished 893765 instructions 
+Sampling stash size at 894999 req has local max stash size of: 207
+Clk3 @ 373000000 Finished 896167 instructions 
+Clk7 @ 374000000 Finished 898593 instructions 
+Clk@ 374590510 Working on the # 900000 th memory instruction
+Sampling stash size at 899999 req has local max stash size of: 214
+Clk3 @ 375000000 Finished 900987 instructions 
+Clk7 @ 376000000 Finished 903387 instructions 
+Sampling stash size at 904999 req has local max stash size of: 214
+Clk3 @ 377000000 Finished 905808 instructions 
+Clk3 @ 378000000 Finished 908223 instructions 
+Clk@ 378746577 Working on the # 910000 th memory instruction
+Sampling stash size at 909999 req has local max stash size of: 209
+Clk3 @ 379000000 Finished 910616 instructions 
+Clk3 @ 380000000 Finished 913040 instructions 
+Sampling stash size at 914999 req has local max stash size of: 221
+Clk3 @ 381000000 Finished 915364 instructions 
+Clk3 @ 382000000 Finished 917803 instructions 
+Clk@ 382896674 Working on the # 920000 th memory instruction
+Sampling stash size at 919999 req has local max stash size of: 215
+Clk3 @ 383000000 Finished 920244 instructions 
+Clk3 @ 384000000 Finished 922647 instructions 
+Sampling stash size at 924999 req has local max stash size of: 217
+Clk3 @ 385000000 Finished 925084 instructions 
+Clk3 @ 386000000 Finished 927510 instructions 
+Clk7 @ 387000000 Finished 929847 instructions 
+Clk@ 387068324 Working on the # 930000 th memory instruction
+Sampling stash size at 929999 req has local max stash size of: 216
+Clk7 @ 388000000 Finished 932185 instructions 
+Clk3 @ 389000000 Finished 934607 instructions 
+Sampling stash size at 934999 req has local max stash size of: 213
+Clk7 @ 390000000 Finished 937047 instructions 
+Clk7 @ 391000000 Finished 939435 instructions 
+Clk@ 391228091 Working on the # 940000 th memory instruction
+Sampling stash size at 939999 req has local max stash size of: 211
+Clk7 @ 392000000 Finished 941867 instructions 
+Clk7 @ 393000000 Finished 944272 instructions 
+Sampling stash size at 944999 req has local max stash size of: 210
+Clk7 @ 394000000 Finished 946620 instructions 
+Clk3 @ 395000000 Finished 949012 instructions 
+Clk@ 395404806 Working on the # 950000 th memory instruction
+Sampling stash size at 949999 req has local max stash size of: 215
+Clk3 @ 396000000 Finished 951414 instructions 
+Clk3 @ 397000000 Finished 953804 instructions 
+Sampling stash size at 954999 req has local max stash size of: 215
+Clk3 @ 398000000 Finished 956225 instructions 
+Clk3 @ 399000000 Finished 958647 instructions 
+Clk@ 399555894 Working on the # 960000 th memory instruction
+Sampling stash size at 959999 req has local max stash size of: 233
+Clk3 @ 400000000 Finished 961007 instructions 
+Clk7 @ 401000000 Finished 963387 instructions 
+Sampling stash size at 964999 req has local max stash size of: 215
+Clk7 @ 402000000 Finished 965738 instructions 
+Clk3 @ 403000000 Finished 968105 instructions 
+Clk@ 403798240 Working on the # 970000 th memory instruction
+Sampling stash size at 969999 req has local max stash size of: 212
+Clk7 @ 404000000 Finished 970481 instructions 
+Clk3 @ 405000000 Finished 972883 instructions 
+Sampling stash size at 974999 req has local max stash size of: 216
+Clk3 @ 406000000 Finished 975125 instructions 
+Clk3 @ 407000000 Finished 977193 instructions 
+Clk7 @ 408000000 Finished 979462 instructions 
+Clk@ 408229447 Working on the # 980000 th memory instruction
+Sampling stash size at 979999 req has local max stash size of: 214
+Clk7 @ 409000000 Finished 981801 instructions 
+Clk7 @ 410000000 Finished 984067 instructions 
+Sampling stash size at 984999 req has local max stash size of: 209
+Clk3 @ 411000000 Finished 986380 instructions 
+Clk7 @ 412000000 Finished 988657 instructions 
+Clk@ 412611007 Working on the # 990000 th memory instruction
+Sampling stash size at 989999 req has local max stash size of: 222
+Clk7 @ 413000000 Finished 990803 instructions 
+Clk3 @ 414000000 Finished 993082 instructions 
+Sampling stash size at 994999 req has local max stash size of: 216
+Clk3 @ 415000000 Finished 995443 instructions 
+Clk3 @ 416000000 Finished 997802 instructions 
+Clk@ 416950221 Working on the # 1000000 th memory instruction
+Sampling stash size at 999999 req has local max stash size of: 211
+
+===*** Data ***====
+Stall reason distribution: 
+mc_hazard: 0
+normal: 0
+rs_hazard: 0
+rw_swtich: 0
+Early reshuffle distribution: 
+0: 0
+1: 0
+2: 0
+3: 0
+4: 0
+5: 0
+6: 2046
+7: 3864
+8: 3916
+9: 3882
+10: 3982
+11: 3802
+12: 3635
+13: 3386
+14: 2857
+15: 1772
+16: 80
+17: 0
+18: 0
+19: 0
+20: 0
+21: 0
+22: 0
+23: 0
+24: 0
+=================
+Max stash size is: 233
+Average stash size is: 110.759
+Average mem q size is: 59.3774
+Total mem q size is:15017144
+mem_q_sample_times is:252910
+useful_read_pull_ddr: 500007 (1.30928) %
+dummy_read_pull_ddr: 8750974 (22.9146) %
+useful_early_pull_ddr: 277061 (0.725491) %
+useful_early_push_ddr: 154115 (0.403554) %
+useful_write_pull_ddr: 7237999 (18.9529) %
+useful_write_push_ddr: 2961186 (7.75394) %
+dummy_early_pull_ddr: 38102 (0.099771) %
+dummy_early_push_ddr: 643062 (1.68387) %
+dummy_write_pull_ddr: 162305 (0.425) %
+dummy_write_push_ddr: 17464631 (45.7316) %
+=================
+Stash violation number of times: 0
+=================
+Check NodeID traffic: 6540875
+Update NodeID traffic: 33
+=================
+Read RS lines: 1000000 (85.7306) %
+Write RS lines: 100000 (8.57306) %
+Early RS lines: 66444 (5.69629) %
+Read DDR lines: 18502656 (24.6469) %
+Write DDR lines: 54575000 (72.6979) %
+Early DDR lines: 1993320 (2.65525) %
+
+====*** pos1 ***====
+Stall reason distribution: 
+mc_hazard: 0
+normal: 0
+rs_hazard: 0
+rw_swtich: 0
+Early reshuffle distribution: 
+0: 0
+1: 0
+2: 0
+3: 1604
+4: 3550
+5: 3755
+6: 3924
+7: 3840
+8: 3922
+9: 3916
+10: 3909
+11: 3759
+12: 3645
+13: 3383
+14: 2845
+15: 1858
+16: 97
+17: 0
+18: 0
+19: 0
+20: 0
+21: 0
+=================
+Max stash size is: 68
+Average stash size is: 24.116
+Average mem q size is: 79.4549
+Total mem q size is:7099452
+mem_q_sample_times is:89352
+useful_read_pull_ddr: 168573 (0.219523) %
+dummy_read_pull_ddr: 18331494 (23.8721) %
+useful_early_pull_ddr: 699497 (0.910916) %
+useful_early_push_ddr: 66301 (0.0863401) %
+useful_write_pull_ddr: 14760559 (19.2219) %
+useful_write_push_ddr: 1842427 (2.39929) %
+dummy_early_pull_ddr: 48622 (0.0633177) %
+dummy_early_push_ddr: 1826000 (2.3779) %
+dummy_write_pull_ddr: 39441 (0.0513618) %
+dummy_write_push_ddr: 39007573 (50.7974) %
+=================
+Stash violation number of times: 0
+=================
+Check NodeID traffic: 9508243
+Update NodeID traffic: 5
+=================
+Read RS lines: 1000000 (84.1741) %
+Write RS lines: 100000 (8.41741) %
+Early RS lines: 88014 (7.4085) %
+Read DDR lines: 18500067 (24.4337) %
+Write DDR lines: 54575000 (72.079) %
+Early DDR lines: 2640420 (3.48729) %
+
+====*** pos2 ***====
+Stall reason distribution: 
+mc_hazard: 0
+normal: 0
+rs_hazard: 0
+rw_swtich: 0
+Early reshuffle distribution: 
+0: 0
+1: 0
+2: 1229
+3: 3211
+4: 3594
+5: 3730
+6: 3795
+7: 3838
+8: 3877
+9: 3897
+10: 3822
+11: 3777
+12: 3713
+13: 3336
+14: 2890
+15: 1832
+16: 86
+17: 0
+18: 0
+=================
+Max stash size is: 48
+Average stash size is: 17.0189
+Average mem q size is: 77.0693
+Total mem q size is:5756458
+mem_q_sample_times is:74692
+useful_read_pull_ddr: 97415 (0.147769) %
+dummy_read_pull_ddr: 15902585 (24.1226) %
+useful_early_pull_ddr: 722688 (1.09625) %
+useful_early_push_ddr: 37545 (0.056952) %
+useful_write_pull_ddr: 12763372 (19.3608) %
+useful_write_push_ddr: 1363156 (2.06777) %
+dummy_early_pull_ddr: 49078 (0.0744465) %
+dummy_early_push_ddr: 1914569 (2.90421) %
+dummy_write_pull_ddr: 36628 (0.0555611) %
+dummy_write_push_ddr: 33036844 (50.1136) %
+=================
+Stash violation number of times: 0
+=================
+Check NodeID traffic: 5746366
+Update NodeID traffic: 0
+=================
+Read RS lines: 1000000 (83.8045) %
+Write RS lines: 100000 (8.38045) %
+Early RS lines: 93254 (7.8151) %
+Read DDR lines: 16000000 (24.2704) %
+Write DDR lines: 47200000 (71.5977) %
+Early DDR lines: 2723880 (4.13186) %
+=================
+The final DRAM clk is: 416954959 ticks.
+Idle waiting clk is 160490255, which is 38.491 %
+DRAM Frequency is: 1600MHz
+The final time in ns is: 2.60597e+08 ns.
+Time distribution: 
+Data pull time is: 0
+data: 0
+pos1: 0
+pos2: 0
+Data distribution: 
+Pos2 data: 65923880
+Pos1 data: 75715487
+Data: 75070976
+Node access DDR: 13081750
+Pull DDR: 18502656
+WB DDR: 54575000
+Early DDR: 1993320
+Achieved BW is: 60.181 GB/s
+Ideal BW is: 102.4 GB/s
+Metadata cache conclusion: 
+overall_hit: 14451653 overall_total: 27533222
+Cache Size 64 KB Overall Hit rate: 52.4881 %. 
+Simulation done. Statistics written to results_all/orca_output.txt

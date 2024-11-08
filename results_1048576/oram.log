@@ -1,0 +1,712 @@
+Valid leaf ID range: 16777215:33554430
+Num of top nodes: 16777216
+Data level num of ways: 1048576
+Z: 16
+S: 27
+A: 20
+cached_total: 16
+cached_total: 48
+cached_total: 112
+Total number of ORAM protected cache line blocks: 16777216
+Cached number of levels: 6
+Max number of levels: 25
+Start lvl is: 4
+data valid leaf right: 33554431
+data num of levels: 25
+data level num of ways: 1048576
+data number of sets: 16
+Cached node ID: 15 -- 110
+Address space: 0 - 4 GB
+pos1 valid leaf right: 4194303
+pos1 num of levels: 22
+pos1 level num of ways: 131072
+pos1 number of sets: 16
+Cached node ID: 15 -- 26
+Address space: 0 - 0.5 GB
+pos2 valid leaf right: 524287
+pos2 num of levels: 19
+pos2 level num of ways: 16384
+pos2 number of sets: 16
+Cached node ID: 15 -- 20
+Address space: 0 - 0.0625 GB
+Clk7 @ 1000000 Finished 2661 instructions 
+Sampling stash size at 3000 req has stash size of: 163
+Clk3 @ 2000000 Finished 5509 instructions 
+Clk3 @ 3000000 Finished 8405 instructions 
+Clk@ 3551020 Working on the # 10000 th memory instruction
+Clk3 @ 4000000 Finished 11343 instructions 
+Clk7 @ 5000000 Finished 14369 instructions 
+Sampling stash size at 15000 req has stash size of: 184
+Clk3 @ 6000000 Finished 17336 instructions 
+Clk@ 6877355 Working on the # 20000 th memory instruction
+Clk3 @ 7000000 Finished 20369 instructions 
+Clk7 @ 8000000 Finished 23409 instructions 
+Sampling stash size at 26000 req has stash size of: 123
+Clk3 @ 9000000 Finished 26447 instructions 
+Clk3 @ 10000000 Finished 29522 instructions 
+Clk@ 10169517 Working on the # 30000 th memory instruction
+Clk3 @ 11000000 Finished 32469 instructions 
+Sampling stash size at 34000 req has stash size of: 139
+Clk3 @ 12000000 Finished 35459 instructions 
+Clk3 @ 13000000 Finished 38551 instructions 
+Clk@ 13479573 Working on the # 40000 th memory instruction
+Clk3 @ 14000000 Finished 41536 instructions 
+Clk3 @ 15000000 Finished 44628 instructions 
+Clk3 @ 16000000 Finished 47618 instructions 
+Clk@ 16772244 Working on the # 50000 th memory instruction
+Sampling stash size at 50000 req has stash size of: 182
+Clk7 @ 17000000 Finished 50670 instructions 
+Sampling stash size at 51000 req has stash size of: 163
+Clk7 @ 18000000 Finished 53750 instructions 
+Clk3 @ 19000000 Finished 56824 instructions 
+Clk7 @ 20000000 Finished 59848 instructions 
+Clk@ 20050869 Working on the # 60000 th memory instruction
+Clk3 @ 21000000 Finished 62750 instructions 
+Sampling stash size at 64000 req has stash size of: 144
+Clk3 @ 22000000 Finished 65722 instructions 
+Clk7 @ 23000000 Finished 68780 instructions 
+Clk@ 23407926 Working on the # 70000 th memory instruction
+Clk3 @ 24000000 Finished 71826 instructions 
+Clk7 @ 25000000 Finished 74924 instructions 
+Clk3 @ 26000000 Finished 77921 instructions 
+Clk@ 26669411 Working on the # 80000 th memory instruction
+Clk3 @ 27000000 Finished 80998 instructions 
+Clk3 @ 28000000 Finished 84026 instructions 
+Clk3 @ 29000000 Finished 87061 instructions 
+Clk@ 29978163 Working on the # 90000 th memory instruction
+Clk3 @ 30000000 Finished 90052 instructions 
+Clk3 @ 31000000 Finished 93031 instructions 
+Clk3 @ 32000000 Finished 96117 instructions 
+Clk3 @ 33000000 Finished 99149 instructions 
+Clk@ 33280654 Working on the # 100000 th memory instruction
+Clk3 @ 34000000 Finished 102170 instructions 
+Clk3 @ 35000000 Finished 105233 instructions 
+Clk3 @ 36000000 Finished 108250 instructions 
+Clk@ 36593914 Working on the # 110000 th memory instruction
+Sampling stash size at 110000 req has stash size of: 125
+Clk3 @ 37000000 Finished 111276 instructions 
+Clk3 @ 38000000 Finished 114330 instructions 
+Clk3 @ 39000000 Finished 117369 instructions 
+Clk@ 39878409 Working on the # 120000 th memory instruction
+Clk7 @ 40000000 Finished 120349 instructions 
+Clk3 @ 41000000 Finished 123197 instructions 
+Sampling stash size at 126000 req has stash size of: 168
+Clk3 @ 42000000 Finished 126083 instructions 
+Sampling stash size at 127000 req has stash size of: 127
+Clk3 @ 43000000 Finished 129069 instructions 
+Clk@ 43308279 Working on the # 130000 th memory instruction
+Clk3 @ 44000000 Finished 132082 instructions 
+Clk3 @ 45000000 Finished 135157 instructions 
+Clk3 @ 46000000 Finished 138173 instructions 
+Clk@ 46602165 Working on the # 140000 th memory instruction
+Clk7 @ 47000000 Finished 141202 instructions 
+Clk3 @ 48000000 Finished 144267 instructions 
+Clk7 @ 48000000 Finished 144267 instructions 
+Clk7 @ 49000000 Finished 147333 instructions 
+Clk@ 49875950 Working on the # 150000 th memory instruction
+Clk3 @ 50000000 Finished 150373 instructions 
+Clk3 @ 51000000 Finished 153328 instructions 
+Clk3 @ 52000000 Finished 156374 instructions 
+Clk7 @ 53000000 Finished 159420 instructions 
+Clk@ 53186884 Working on the # 160000 th memory instruction
+Clk3 @ 54000000 Finished 162445 instructions 
+Clk3 @ 55000000 Finished 165412 instructions 
+Sampling stash size at 167000 req has stash size of: 124
+Sampling stash size at 168000 req has stash size of: 141
+Clk7 @ 56000000 Finished 168369 instructions 
+Clk@ 56543383 Working on the # 170000 th memory instruction
+Clk3 @ 57000000 Finished 171335 instructions 
+Clk7 @ 58000000 Finished 174421 instructions 
+Clk3 @ 59000000 Finished 177419 instructions 
+Clk@ 59848114 Working on the # 180000 th memory instruction
+Clk3 @ 60000000 Finished 180445 instructions 
+Sampling stash size at 182000 req has stash size of: 159
+Clk3 @ 61000000 Finished 183396 instructions 
+Sampling stash size at 185000 req has stash size of: 122
+Clk3 @ 62000000 Finished 186310 instructions 
+Clk7 @ 63000000 Finished 189327 instructions 
+Clk@ 63219716 Working on the # 190000 th memory instruction
+Clk7 @ 64000000 Finished 192332 instructions 
+Sampling stash size at 194000 req has stash size of: 141
+Clk7 @ 65000000 Finished 195380 instructions 
+Clk7 @ 66000000 Finished 198393 instructions 
+Clk@ 66523714 Working on the # 200000 th memory instruction
+Clk3 @ 67000000 Finished 201418 instructions 
+Clk3 @ 68000000 Finished 204445 instructions 
+Clk3 @ 69000000 Finished 207500 instructions 
+Clk@ 69833678 Working on the # 210000 th memory instruction
+Clk3 @ 70000000 Finished 210527 instructions 
+Clk7 @ 71000000 Finished 213568 instructions 
+Clk3 @ 72000000 Finished 216580 instructions 
+Sampling stash size at 218000 req has stash size of: 181
+Clk7 @ 73000000 Finished 219589 instructions 
+Clk@ 73134271 Working on the # 220000 th memory instruction
+Clk3 @ 74000000 Finished 222614 instructions 
+Clk3 @ 75000000 Finished 225667 instructions 
+Clk3 @ 76000000 Finished 228733 instructions 
+Clk@ 76418784 Working on the # 230000 th memory instruction
+Clk3 @ 77000000 Finished 231775 instructions 
+Clk3 @ 78000000 Finished 234828 instructions 
+Clk3 @ 79000000 Finished 237859 instructions 
+Clk@ 79715215 Working on the # 240000 th memory instruction
+Clk3 @ 80000000 Finished 240844 instructions 
+Clk7 @ 81000000 Finished 243693 instructions 
+Clk3 @ 82000000 Finished 246487 instructions 
+Clk3 @ 83000000 Finished 249325 instructions 
+Clk@ 83230188 Working on the # 250000 th memory instruction
+Clk7 @ 84000000 Finished 252271 instructions 
+Clk3 @ 85000000 Finished 255247 instructions 
+Clk3 @ 86000000 Finished 258280 instructions 
+Clk@ 86569932 Working on the # 260000 th memory instruction
+Clk3 @ 87000000 Finished 261247 instructions 
+Sampling stash size at 264000 req has stash size of: 143
+Clk3 @ 88000000 Finished 264226 instructions 
+Sampling stash size at 266000 req has stash size of: 168
+Clk3 @ 89000000 Finished 267261 instructions 
+Clk@ 89904135 Working on the # 270000 th memory instruction
+Clk3 @ 90000000 Finished 270279 instructions 
+Clk3 @ 91000000 Finished 273296 instructions 
+Sampling stash size at 274000 req has stash size of: 163
+Clk3 @ 92000000 Finished 276283 instructions 
+Clk3 @ 93000000 Finished 279289 instructions 
+Clk@ 93230493 Working on the # 280000 th memory instruction
+Clk3 @ 94000000 Finished 282314 instructions 
+Clk3 @ 95000000 Finished 285362 instructions 
+Clk7 @ 96000000 Finished 288423 instructions 
+Clk@ 96511103 Working on the # 290000 th memory instruction
+Clk3 @ 97000000 Finished 291466 instructions 
+Sampling stash size at 293000 req has stash size of: 122
+Clk3 @ 98000000 Finished 294494 instructions 
+Clk3 @ 99000000 Finished 297561 instructions 
+Clk@ 99801721 Working on the # 300000 th memory instruction
+Clk3 @ 100000000 Finished 300611 instructions 
+Clk3 @ 101000000 Finished 303550 instructions 
+Clk3 @ 102000000 Finished 306491 instructions 
+Clk3 @ 103000000 Finished 309486 instructions 
+Clk@ 103170651 Working on the # 310000 th memory instruction
+Clk7 @ 104000000 Finished 312502 instructions 
+Clk3 @ 105000000 Finished 315533 instructions 
+Clk3 @ 106000000 Finished 318495 instructions 
+Clk@ 106493961 Working on the # 320000 th memory instruction
+Clk3 @ 107000000 Finished 321534 instructions 
+Clk3 @ 108000000 Finished 324554 instructions 
+Clk3 @ 109000000 Finished 327563 instructions 
+Clk@ 109833728 Working on the # 330000 th memory instruction
+Clk7 @ 110000000 Finished 330511 instructions 
+Clk7 @ 111000000 Finished 333482 instructions 
+Clk3 @ 112000000 Finished 336518 instructions 
+Clk3 @ 113000000 Finished 339517 instructions 
+Clk@ 113166803 Working on the # 340000 th memory instruction
+Clk3 @ 114000000 Finished 342514 instructions 
+Clk7 @ 115000000 Finished 345496 instructions 
+Clk3 @ 116000000 Finished 348527 instructions 
+Clk@ 116485417 Working on the # 350000 th memory instruction
+Clk7 @ 117000000 Finished 351538 instructions 
+Clk3 @ 118000000 Finished 354578 instructions 
+Clk3 @ 119000000 Finished 357629 instructions 
+Clk@ 119790195 Working on the # 360000 th memory instruction
+Clk7 @ 120000000 Finished 360607 instructions 
+Clk7 @ 121000000 Finished 363553 instructions 
+Clk7 @ 122000000 Finished 366543 instructions 
+Sampling stash size at 368000 req has stash size of: 121
+Clk3 @ 123000000 Finished 369486 instructions 
+Clk@ 123175657 Working on the # 370000 th memory instruction
+Clk7 @ 124000000 Finished 372375 instructions 
+Clk7 @ 125000000 Finished 375366 instructions 
+Clk3 @ 126000000 Finished 378405 instructions 
+Clk@ 126527444 Working on the # 380000 th memory instruction
+Sampling stash size at 381000 req has stash size of: 161
+Clk7 @ 127000000 Finished 381447 instructions 
+Clk3 @ 128000000 Finished 384483 instructions 
+Clk3 @ 129000000 Finished 387540 instructions 
+Clk@ 129810387 Working on the # 390000 th memory instruction
+Clk3 @ 130000000 Finished 390557 instructions 
+Clk3 @ 131000000 Finished 393612 instructions 
+Clk3 @ 132000000 Finished 396600 instructions 
+Clk3 @ 133000000 Finished 399573 instructions 
+Clk@ 133139537 Working on the # 400000 th memory instruction
+Clk3 @ 134000000 Finished 402555 instructions 
+Clk7 @ 134000000 Finished 402555 instructions 
+Clk3 @ 135000000 Finished 405562 instructions 
+Sampling stash size at 408000 req has stash size of: 106
+Clk3 @ 136000000 Finished 408642 instructions 
+Clk@ 136438212 Working on the # 410000 th memory instruction
+Clk3 @ 137000000 Finished 411700 instructions 
+Clk7 @ 137000000 Finished 411700 instructions 
+Clk7 @ 138000000 Finished 414698 instructions 
+Clk3 @ 139000000 Finished 417719 instructions 
+Clk@ 139744278 Working on the # 420000 th memory instruction
+Clk3 @ 140000000 Finished 420776 instructions 
+Clk7 @ 141000000 Finished 423767 instructions 
+Clk3 @ 142000000 Finished 426755 instructions 
+Sampling stash size at 429000 req has stash size of: 167
+Clk3 @ 143000000 Finished 429755 instructions 
+Clk@ 143082096 Working on the # 430000 th memory instruction
+Clk3 @ 144000000 Finished 432699 instructions 
+Clk3 @ 145000000 Finished 435686 instructions 
+Clk3 @ 146000000 Finished 438700 instructions 
+Clk@ 146429549 Working on the # 440000 th memory instruction
+Clk3 @ 147000000 Finished 441725 instructions 
+Clk3 @ 148000000 Finished 444755 instructions 
+Clk3 @ 149000000 Finished 447808 instructions 
+Clk@ 149727884 Working on the # 450000 th memory instruction
+Clk7 @ 150000000 Finished 450841 instructions 
+Clk3 @ 151000000 Finished 453857 instructions 
+Clk3 @ 152000000 Finished 456896 instructions 
+Clk7 @ 153000000 Finished 459922 instructions 
+Clk@ 153028578 Working on the # 460000 th memory instruction
+Sampling stash size at 461000 req has stash size of: 142
+Clk7 @ 154000000 Finished 462939 instructions 
+Clk3 @ 155000000 Finished 465953 instructions 
+Clk3 @ 156000000 Finished 468964 instructions 
+Clk@ 156335007 Working on the # 470000 th memory instruction
+Clk3 @ 157000000 Finished 472024 instructions 
+Clk3 @ 158000000 Finished 475054 instructions 
+Clk7 @ 159000000 Finished 478055 instructions 
+Clk@ 159657899 Working on the # 480000 th memory instruction
+Clk3 @ 160000000 Finished 480989 instructions 
+Clk7 @ 161000000 Finished 483895 instructions 
+Sampling stash size at 486000 req has stash size of: 141
+Clk3 @ 162000000 Finished 486714 instructions 
+Clk3 @ 163000000 Finished 489492 instructions 
+Clk@ 163174722 Working on the # 490000 th memory instruction
+Sampling stash size at 492000 req has stash size of: 162
+Clk3 @ 164000000 Finished 492250 instructions 
+Clk3 @ 165000000 Finished 495032 instructions 
+Sampling stash size at 496000 req has stash size of: 144
+Clk3 @ 166000000 Finished 497871 instructions 
+Clk@ 166729839 Working on the # 500000 th memory instruction
+Warm up done after line access count: 500000 out of 1000000 (50 %)
+Clk7 @ 167000000 Finished 500821 instructions 
+Clk3 @ 168000000 Finished 503761 instructions 
+Clk7 @ 169000000 Finished 506686 instructions 
+Clk3 @ 170000000 Finished 509617 instructions 
+Clk@ 170134610 Working on the # 510000 th memory instruction
+Clk7 @ 171000000 Finished 512551 instructions 
+Clk3 @ 172000000 Finished 515525 instructions 
+Clk3 @ 173000000 Finished 518511 instructions 
+Clk@ 173500396 Working on the # 520000 th memory instruction
+Clk3 @ 174000000 Finished 521455 instructions 
+Clk3 @ 175000000 Finished 524397 instructions 
+Sampling stash size at 526000 req has stash size of: 164
+Clk3 @ 176000000 Finished 527369 instructions 
+Clk@ 176892615 Working on the # 530000 th memory instruction
+Clk7 @ 177000000 Finished 530323 instructions 
+Clk3 @ 178000000 Finished 533338 instructions 
+Clk3 @ 179000000 Finished 536351 instructions 
+Clk7 @ 180000000 Finished 539350 instructions 
+Clk@ 180202331 Working on the # 540000 th memory instruction
+Clk3 @ 181000000 Finished 542357 instructions 
+Clk7 @ 182000000 Finished 545346 instructions 
+Clk7 @ 183000000 Finished 548312 instructions 
+Sampling stash size at 549000 req has stash size of: 158
+Clk@ 183558680 Working on the # 550000 th memory instruction
+Clk3 @ 184000000 Finished 551301 instructions 
+Clk3 @ 185000000 Finished 554275 instructions 
+Clk7 @ 186000000 Finished 557273 instructions 
+Clk@ 186903003 Working on the # 560000 th memory instruction
+Sampling stash size at 560000 req has stash size of: 139
+Clk7 @ 187000000 Finished 560307 instructions 
+Clk7 @ 188000000 Finished 563281 instructions 
+Clk3 @ 189000000 Finished 566279 instructions 
+Sampling stash size at 568000 req has stash size of: 163
+Clk3 @ 190000000 Finished 569291 instructions 
+Clk@ 190237613 Working on the # 570000 th memory instruction
+Clk3 @ 191000000 Finished 572296 instructions 
+Clk3 @ 192000000 Finished 575327 instructions 
+Clk3 @ 193000000 Finished 578319 instructions 
+Clk@ 193557606 Working on the # 580000 th memory instruction
+Clk3 @ 194000000 Finished 581363 instructions 
+Clk3 @ 195000000 Finished 584379 instructions 
+Clk3 @ 196000000 Finished 587370 instructions 
+Clk@ 196875379 Working on the # 590000 th memory instruction
+Clk7 @ 197000000 Finished 590382 instructions 
+Clk3 @ 198000000 Finished 593432 instructions 
+Clk3 @ 199000000 Finished 596467 instructions 
+Clk3 @ 200000000 Finished 599480 instructions 
+Clk@ 200169013 Working on the # 600000 th memory instruction
+Sampling stash size at 601000 req has stash size of: 142
+Clk3 @ 201000000 Finished 602505 instructions 
+Clk7 @ 202000000 Finished 605439 instructions 
+Clk7 @ 203000000 Finished 608383 instructions 
+Sampling stash size at 609000 req has stash size of: 128
+Clk@ 203546336 Working on the # 610000 th memory instruction
+Clk3 @ 204000000 Finished 611327 instructions 
+Clk3 @ 205000000 Finished 614248 instructions 
+Clk@ 206929133 Working on the # 620000 th memory instruction
+Clk3 @ 207000000 Finished 620218 instructions 
+Clk3 @ 208000000 Finished 623250 instructions 
+Clk3 @ 209000000 Finished 626279 instructions 
+Clk3 @ 210000000 Finished 629325 instructions 
+Clk@ 210231660 Working on the # 630000 th memory instruction
+Clk3 @ 211000000 Finished 632318 instructions 
+Clk3 @ 212000000 Finished 635277 instructions 
+Clk3 @ 213000000 Finished 638303 instructions 
+Clk@ 213566900 Working on the # 640000 th memory instruction
+Clk3 @ 214000000 Finished 641324 instructions 
+Clk3 @ 215000000 Finished 644321 instructions 
+Clk3 @ 216000000 Finished 647313 instructions 
+Clk@ 216914431 Working on the # 650000 th memory instruction
+Clk3 @ 217000000 Finished 650285 instructions 
+Clk3 @ 218000000 Finished 653253 instructions 
+Clk3 @ 219000000 Finished 656235 instructions 
+Sampling stash size at 657000 req has stash size of: 140
+Clk3 @ 220000000 Finished 659166 instructions 
+Clk@ 220283926 Working on the # 660000 th memory instruction
+Clk3 @ 221000000 Finished 662159 instructions 
+Sampling stash size at 663000 req has stash size of: 121
+Clk3 @ 222000000 Finished 665164 instructions 
+Clk3 @ 223000000 Finished 668175 instructions 
+Clk@ 223615749 Working on the # 670000 th memory instruction
+Clk3 @ 224000000 Finished 671167 instructions 
+Clk3 @ 225000000 Finished 674188 instructions 
+Sampling stash size at 676000 req has stash size of: 141
+Clk3 @ 226000000 Finished 677206 instructions 
+Clk@ 226939336 Working on the # 680000 th memory instruction
+Clk3 @ 227000000 Finished 680185 instructions 
+Clk7 @ 228000000 Finished 683139 instructions 
+Clk3 @ 229000000 Finished 686137 instructions 
+Clk3 @ 230000000 Finished 689131 instructions 
+Clk@ 230277554 Working on the # 690000 th memory instruction
+Clk7 @ 231000000 Finished 692169 instructions 
+Clk3 @ 232000000 Finished 695155 instructions 
+Clk7 @ 233000000 Finished 698144 instructions 
+Clk@ 233618859 Working on the # 700000 th memory instruction
+Clk3 @ 234000000 Finished 701146 instructions 
+Clk7 @ 235000000 Finished 704193 instructions 
+Clk3 @ 236000000 Finished 707199 instructions 
+Clk@ 236927019 Working on the # 710000 th memory instruction
+Clk3 @ 237000000 Finished 710208 instructions 
+Clk3 @ 238000000 Finished 713234 instructions 
+Clk3 @ 239000000 Finished 716232 instructions 
+Sampling stash size at 717000 req has stash size of: 182
+Clk7 @ 240000000 Finished 719269 instructions 
+Clk@ 240246022 Working on the # 720000 th memory instruction
+Clk7 @ 241000000 Finished 722248 instructions 
+Clk7 @ 242000000 Finished 725185 instructions 
+Sampling stash size at 727000 req has stash size of: 121
+Clk3 @ 243000000 Finished 728128 instructions 
+Clk@ 243636852 Working on the # 730000 th memory instruction
+Clk7 @ 244000000 Finished 731092 instructions 
+Clk3 @ 245000000 Finished 734049 instructions 
+Clk7 @ 246000000 Finished 736995 instructions 
+Clk3 @ 247000000 Finished 739894 instructions 
+Clk@ 247036914 Working on the # 740000 th memory instruction
+Sampling stash size at 740000 req has stash size of: 162
+Clk3 @ 248000000 Finished 742765 instructions 
+Clk3 @ 249000000 Finished 745646 instructions 
+Clk3 @ 250000000 Finished 748629 instructions 
+Clk@ 250459312 Working on the # 750000 th memory instruction
+Clk3 @ 251000000 Finished 751625 instructions 
+Clk3 @ 252000000 Finished 754611 instructions 
+Sampling stash size at 757000 req has stash size of: 120
+Clk3 @ 253000000 Finished 757592 instructions 
+Clk@ 253792052 Working on the # 760000 th memory instruction
+Clk3 @ 254000000 Finished 760626 instructions 
+Clk3 @ 255000000 Finished 763658 instructions 
+Clk3 @ 256000000 Finished 766627 instructions 
+Clk3 @ 257000000 Finished 769659 instructions 
+Clk@ 257120217 Working on the # 770000 th memory instruction
+Clk3 @ 258000000 Finished 772655 instructions 
+Clk3 @ 259000000 Finished 775671 instructions 
+Sampling stash size at 776000 req has stash size of: 143
+Clk3 @ 260000000 Finished 778696 instructions 
+Clk@ 260435139 Working on the # 780000 th memory instruction
+Clk3 @ 261000000 Finished 781708 instructions 
+Clk3 @ 262000000 Finished 784720 instructions 
+Clk3 @ 263000000 Finished 787665 instructions 
+Clk@ 263780271 Working on the # 790000 th memory instruction
+Clk3 @ 264000000 Finished 790666 instructions 
+Clk3 @ 265000000 Finished 793621 instructions 
+Clk3 @ 266000000 Finished 796629 instructions 
+Clk7 @ 267000000 Finished 799648 instructions 
+Clk@ 267118064 Working on the # 800000 th memory instruction
+Sampling stash size at 800000 req has stash size of: 144
+Clk3 @ 268000000 Finished 802665 instructions 
+Clk7 @ 269000000 Finished 805674 instructions 
+Clk7 @ 270000000 Finished 808655 instructions 
+Sampling stash size at 809000 req has stash size of: 141
+Clk@ 270450712 Working on the # 810000 th memory instruction
+Clk7 @ 271000000 Finished 811637 instructions 
+Clk3 @ 272000000 Finished 814656 instructions 
+Clk3 @ 273000000 Finished 817682 instructions 
+Clk@ 273768441 Working on the # 820000 th memory instruction
+Sampling stash size at 820000 req has stash size of: 152
+Clk3 @ 274000000 Finished 820726 instructions 
+Clk3 @ 275000000 Finished 823690 instructions 
+Clk3 @ 276000000 Finished 826710 instructions 
+Clk3 @ 277000000 Finished 829691 instructions 
+Clk@ 277098114 Working on the # 830000 th memory instruction
+Clk3 @ 278000000 Finished 832677 instructions 
+Clk3 @ 279000000 Finished 835688 instructions 
+Clk7 @ 280000000 Finished 838645 instructions 
+Clk@ 280442124 Working on the # 840000 th memory instruction
+Clk7 @ 281000000 Finished 841663 instructions 
+Clk3 @ 282000000 Finished 844671 instructions 
+Clk3 @ 283000000 Finished 847596 instructions 
+Clk@ 283804887 Working on the # 850000 th memory instruction
+Clk3 @ 284000000 Finished 850584 instructions 
+Clk7 @ 285000000 Finished 853568 instructions 
+Clk3 @ 286000000 Finished 856576 instructions 
+Clk7 @ 286000000 Finished 856576 instructions 
+Clk3 @ 287000000 Finished 859530 instructions 
+Clk7 @ 287000000 Finished 859530 instructions 
+Clk@ 287153130 Working on the # 860000 th memory instruction
+Clk3 @ 288000000 Finished 862507 instructions 
+Sampling stash size at 865000 req has stash size of: 165
+Clk3 @ 289000000 Finished 865479 instructions 
+Clk3 @ 290000000 Finished 868451 instructions 
+Clk@ 290519771 Working on the # 870000 th memory instruction
+Clk3 @ 291000000 Finished 871431 instructions 
+Clk3 @ 292000000 Finished 874448 instructions 
+Clk7 @ 293000000 Finished 877432 instructions 
+Clk@ 293857147 Working on the # 880000 th memory instruction
+Clk3 @ 294000000 Finished 880434 instructions 
+Clk7 @ 295000000 Finished 883415 instructions 
+Clk3 @ 296000000 Finished 886444 instructions 
+Clk3 @ 297000000 Finished 889448 instructions 
+Clk@ 297178782 Working on the # 890000 th memory instruction
+Clk3 @ 298000000 Finished 892478 instructions 
+Clk3 @ 299000000 Finished 895476 instructions 
+Clk3 @ 300000000 Finished 898479 instructions 
+Clk@ 300511013 Working on the # 900000 th memory instruction
+Sampling stash size at 901000 req has stash size of: 144
+Clk3 @ 301000000 Finished 901507 instructions 
+Clk7 @ 302000000 Finished 904494 instructions 
+Clk3 @ 303000000 Finished 907544 instructions 
+Clk@ 303839324 Working on the # 910000 th memory instruction
+Clk3 @ 304000000 Finished 910524 instructions 
+Clk3 @ 305000000 Finished 913511 instructions 
+Clk3 @ 306000000 Finished 916510 instructions 
+Clk3 @ 307000000 Finished 919512 instructions 
+Clk@ 307158493 Working on the # 920000 th memory instruction
+Clk7 @ 308000000 Finished 922489 instructions 
+Clk3 @ 309000000 Finished 925436 instructions 
+Clk3 @ 310000000 Finished 928407 instructions 
+Sampling stash size at 929000 req has stash size of: 165
+Clk@ 310530789 Working on the # 930000 th memory instruction
+Clk3 @ 311000000 Finished 931406 instructions 
+Clk3 @ 312000000 Finished 934401 instructions 
+Clk3 @ 313000000 Finished 937439 instructions 
+Sampling stash size at 938000 req has stash size of: 161
+Clk@ 313864958 Working on the # 940000 th memory instruction
+Clk3 @ 314000000 Finished 940410 instructions 
+Clk3 @ 315000000 Finished 943423 instructions 
+Clk3 @ 316000000 Finished 946405 instructions 
+Clk3 @ 317000000 Finished 949401 instructions 
+Clk@ 317192390 Working on the # 950000 th memory instruction
+Clk3 @ 318000000 Finished 952421 instructions 
+Clk3 @ 319000000 Finished 955377 instructions 
+Clk3 @ 320000000 Finished 958336 instructions 
+Clk@ 320552118 Working on the # 960000 th memory instruction
+Clk3 @ 321000000 Finished 961306 instructions 
+Sampling stash size at 962000 req has stash size of: 126
+Sampling stash size at 964000 req has stash size of: 141
+Clk7 @ 322000000 Finished 964189 instructions 
+Clk7 @ 323000000 Finished 967096 instructions 
+Clk7 @ 324000000 Finished 969863 instructions 
+Clk@ 324050612 Working on the # 970000 th memory instruction
+Sampling stash size at 971000 req has stash size of: 144
+Sampling stash size at 972000 req has stash size of: 160
+Clk3 @ 325000000 Finished 972665 instructions 
+Clk3 @ 326000000 Finished 975453 instructions 
+Clk3 @ 327000000 Finished 978321 instructions 
+Sampling stash size at 979000 req has stash size of: 101
+Clk@ 327590703 Working on the # 980000 th memory instruction
+Clk3 @ 328000000 Finished 981172 instructions 
+Clk3 @ 330000000 Finished 986814 instructions 
+Clk3 @ 331000000 Finished 989682 instructions 
+Clk@ 331095883 Working on the # 990000 th memory instruction
+Clk3 @ 332000000 Finished 992627 instructions 
+Clk3 @ 333000000 Finished 995575 instructions 
+Clk3 @ 334000000 Finished 998520 instructions 
+Clk@ 334496652 Working on the # 1000000 th memory instruction
+
+===*** Data ***====
+Stall reason distribution: 
+mc_hazard: 0
+normal: 0
+rs_hazard: 0
+rw_swtich: 0
+Early reshuffle distribution: 
+0: 0
+1: 0
+2: 0
+3: 0
+4: 0
+5: 0
+6: 677
+7: 3127
+8: 3554
+9: 3681
+10: 3805
+11: 3790
+12: 3628
+13: 3404
+14: 2889
+15: 1859
+16: 91
+17: 0
+18: 0
+19: 0
+20: 0
+21: 0
+22: 0
+23: 0
+24: 0
+=================
+Max stash size is: 236
+Average stash size is: 148.392
+useful_read_pull_ddr: 500002 (1.31917) %
+dummy_read_pull_ddr: 8630779 (22.7708) %
+useful_early_pull_ddr: 277963 (0.733355) %
+useful_early_push_ddr: 164232 (0.433297) %
+useful_write_pull_ddr: 7302850 (19.2673) %
+useful_write_push_ddr: 3186581 (8.40722) %
+dummy_early_pull_ddr: 17446 (0.0460281) %
+dummy_early_push_ddr: 582979 (1.53808) %
+dummy_write_pull_ddr: 1662 (0.00438489) %
+dummy_write_push_ddr: 17238419 (45.4805) %
+=================
+Stash violation number of times: 0
+=================
+Check NodeID traffic: 6540446
+Update NodeID traffic: 246
+=================
+Read RS lines: 1000000 (86.1331) %
+Write RS lines: 99984 (8.61193) %
+Early RS lines: 61010 (5.25498) %
+Read DDR lines: 18188382 (24.6188) %
+Write DDR lines: 53861513 (72.9039) %
+Early DDR lines: 1830300 (2.47739) %
+
+====*** pos1 ***====
+Stall reason distribution: 
+mc_hazard: 0
+normal: 0
+rs_hazard: 0
+rw_swtich: 0
+Early reshuffle distribution: 
+0: 0
+1: 0
+2: 0
+3: 0
+4: 0
+5: 977
+6: 2424
+7: 3196
+8: 3517
+9: 3639
+10: 3722
+11: 3613
+12: 3542
+13: 3383
+14: 2731
+15: 1803
+16: 85
+17: 0
+18: 0
+19: 0
+20: 0
+21: 0
+=================
+Max stash size is: 243
+Average stash size is: 147.675
+useful_read_pull_ddr: 999989 (1.35218) %
+dummy_read_pull_ddr: 16308050 (22.0517) %
+useful_early_pull_ddr: 521305 (0.704908) %
+useful_early_push_ddr: 316882 (0.428487) %
+useful_write_pull_ddr: 13825670 (18.6951) %
+useful_write_push_ddr: 6856795 (9.27175) %
+dummy_early_pull_ddr: 33439 (0.0452162) %
+dummy_early_push_ddr: 1086294 (1.46889) %
+dummy_write_pull_ddr: 18538 (0.0250671) %
+dummy_write_push_ddr: 33986669 (45.9567) %
+=================
+Stash violation number of times: 0
+=================
+Check NodeID traffic: 9510527
+Update NodeID traffic: 37
+=================
+Read RS lines: 1000000 (85.8186) %
+Write RS lines: 99984 (8.58049) %
+Early RS lines: 65264 (5.60087) %
+Read DDR lines: 17252485 (24.5549) %
+Write DDR lines: 51050517 (72.6585) %
+Early DDR lines: 1957920 (2.78664) %
+
+====*** pos2 ***====
+Stall reason distribution: 
+mc_hazard: 0
+normal: 0
+rs_hazard: 0
+rw_swtich: 0
+Early reshuffle distribution: 
+0: 0
+1: 0
+2: 0
+3: 0
+4: 0
+5: 943
+6: 2481
+7: 3110
+8: 3451
+9: 3737
+10: 3678
+11: 3640
+12: 3572
+13: 3232
+14: 2545
+15: 1462
+16: 36
+17: 0
+18: 0
+=================
+Max stash size is: 243
+Average stash size is: 147.325
+useful_read_pull_ddr: 999939 (1.59381) %
+dummy_read_pull_ddr: 13685174 (21.8129) %
+useful_early_pull_ddr: 504403 (0.80397) %
+useful_early_push_ddr: 309247 (0.49291) %
+useful_write_pull_ddr: 11607486 (18.5012) %
+useful_write_push_ddr: 6704896 (10.687) %
+dummy_early_pull_ddr: 37676 (0.0600519) %
+dummy_early_push_ddr: 1061894 (1.69256) %
+dummy_write_pull_ddr: 138722 (0.22111) %
+dummy_write_push_ddr: 27689600 (44.1346) %
+=================
+Stash violation number of times: 0
+=================
+Check NodeID traffic: 5746196
+Update NodeID traffic: 12
+=================
+Read RS lines: 1000000 (85.9285) %
+Write RS lines: 99984 (8.59148) %
+Early RS lines: 63774 (5.48001) %
+Read DDR lines: 14640009 (24.4541) %
+Write DDR lines: 43314142 (72.3502) %
+Early DDR lines: 1913220 (3.19576) %
+=================
+The final DRAM clk is: 334497743 ticks.
+Idle waiting clk is 86386871, which is 25.8258 %
+DRAM Frequency is: 1600MHz
+The final time in ns is: 2.09061e+08 ns.
+Time distribution: 
+Data pull time is: 0
+data: 0
+pos1: 0
+pos2: 0
+Data distribution: 
+Pos2 data: 59867371
+Pos1 data: 70260922
+Data: 73880195
+Node access DDR: 13080892
+Pull DDR: 18188382
+WB DDR: 53861513
+Early DDR: 1830300
+Achieved BW is: 71.1279 GB/s
+Ideal BW is: 102.4 GB/s
+Metadata cache conclusion: 
+overall_hit: 10250458 overall_total: 23330137
+Cache Size 64 KB Overall Hit rate: 43.9366 %. 
+Simulation done. Statistics written to my_output.txt
