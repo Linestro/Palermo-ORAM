@@ -4,7 +4,15 @@ This directory contains the artifact of the HPCA'25 paper Palermo: Improving the
 
 If you find this repo useful, please cite the following paper: 
 ```
-pending
+@misc{ye2024palermoimprovingperformanceoblivious,
+      title={Palermo: Improving the Performance of Oblivious Memory using Protocol-Hardware Co-Design}, 
+      author={Haojie Ye and Yuchen Xia and Yuhan Chen and Kuan-Yu Chen and Yichao Yuan and Shuwen Deng and Baris Kasikci and Trevor Mudge and Nishil Talati},
+      year={2024},
+      eprint={2411.05400},
+      archivePrefix={arXiv},
+      primaryClass={cs.CR},
+      url={https://arxiv.org/abs/2411.05400}, 
+}
 ```
 
 ## Required packages:
