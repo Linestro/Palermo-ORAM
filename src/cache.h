@@ -11,7 +11,6 @@
 #include <cassert>
 #include <cstring>
 #include "timer.h"
-#include <omp.h>
 #include <functional>
 #include <limits.h>
 #include <set>

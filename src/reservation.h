@@ -25,7 +25,7 @@
 #define STRINGIZE_VALUE_OF(x) STRINGIZE(x)
 #define KTREE 2
 
-#define EMBED_DIM 256
+#define EMBED_DIM 16
 #define EMBED_REPEAT  ((int) (EMBED_DIM) / (64 / 4))
 #define CACHED_NUM_NODE  ((int) 95 / EMBED_REPEAT)               // 4 MB cache: 4*1024*1024 / 64  =  32768
 #define TOTAL_NUM_TOP_NODE  ((int) 16777216 / EMBED_REPEAT)         // 8 GB Mem (16 GB with 50% dummy) =  67108864 
