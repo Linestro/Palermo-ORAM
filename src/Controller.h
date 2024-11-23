@@ -350,18 +350,7 @@ public:
                       req.addr_vec.data(), -1, clk);
                 }
 
-                // cout << "Hearing response back on addr: 0x " << std::hex << req.addr << " " << "R" << " metadata? " << req.metadata << std::dec << std::endl;
-                if(req.metadata){
-                    if(req.name == "data"){
-                        myrs->metadata_remove((long long) req.addr);
-                    }
-                    else if(req.name == "pos1"){
-                        myrs_pos1->metadata_remove((long long) req.addr);
-                    }
-                    else if(req.name == "pos2"){
-                        myrs_pos2->metadata_remove((long long) req.addr);
-                    }
-                }
+                // cout << "Hearing response back on addr: 0x " << std::hex << req.addr << " " << "R" << std::dec << std::endl;
                 if(req.name == "data"){
                     if(myrs != NULL && myrs->type != "pathoram" && req.metadata == false){
                         myrs->mshr_remove((long long) req.addr);

@@ -3,7 +3,8 @@
 
 #include <vector>
 #include <functional>
-#include "task.h"
+#include "reservation.h"
+#include "pathoram.h"
 
 using namespace std;
 
@@ -20,7 +21,6 @@ public:
     // specify which core this request sent from, for virtual address translation
     bool metadata = false;
     string name;
-    int step;
     int coreid;
 
     enum class Type
