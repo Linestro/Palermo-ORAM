@@ -278,455 +278,637 @@ public:
       }
     }
 
-    void init(rs* myrs, rs* myrs_pos1 = nullptr, rs* myrs_pos2 = nullptr){
+    long long next_addr = -1;
+    long long tail_n_id = 0;
+    m_task_deque tq;
+    long long reads = 0, writes = 0, clks = 0, idle_clks = 0;
+
+    bool stall = false, end = false;
+
+    Request req;
+    Request::Type prev_type = Request::Type::READ;
+    long long *cnt;
+
+    void init(rs* myrs, rs* myrs_pos1, rs* myrs_pos2, posmap_and_stash* pos_st, posmap_and_stash* pos_st_pos1, posmap_and_stash* pos_st_pos2, Request n_req, long long *n_cnt){
         for (auto ctrl : ctrls) {
             ctrl->myrs = myrs;
             ctrl->myrs_pos1 = myrs_pos1;
             ctrl->myrs_pos2 = myrs_pos2;
         }
+        tq.myrs = myrs;
+        tq.myrs_pos1 = myrs_pos1;
+        tq.myrs_pos2 = myrs_pos2;
+        tq.pos_st = pos_st;
+        tq.pos_st_pos1 = pos_st_pos1;
+        tq.pos_st_pos2 = pos_st_pos2;
+        req = n_req;
+        cnt = n_cnt;
     }
 
-    void serve_one_address_iroram(long addr, rs* myrs, posmap_and_stash &pos_st, long long &clks, long long cnt, map<string, long long>& stall_reason, long long &reads, long long &writes, bool print_flag=false){
-            
-        bool stall = false, end = false;
-        Request::Type type = Request::Type::READ;
-        map<int, int> latencies;
-        auto read_complete = [&latencies](Request& r){latencies[r.depart - r.arrive]++;};
-
-        Request req(addr, type, read_complete);
-
-        Request::Type prev_type = Request::Type::READ;
-        
-        long long random_block = rand() % pos_st.total_num_blocks;
-        std::vector<long> pathoram_addr_vec;
-        for(int i = myrs->lowest_uncached_lvl; i < myrs->num_of_lvls; i++){
-          long long node_id = myrs->P(random_block, i, myrs->num_of_lvls);
-          int buckiet_sz = (i == myrs->num_of_lvls - 1) ? Z : (i >= 10 && i <= 15) ? 1 : (i >= 16 && i <= 18) ? 2 : Z;
-          for(int j = 0; j < buckiet_sz; j++){
-            pathoram_addr_vec.push_back(64 * (node_id * PBUCKET + j));
-          }
+    
+    void print_execution_pool(){
+        for (auto it = tq.execution_pool.begin(); it != tq.execution_pool.end(); ++it) {
+            task_2d* finished_task = *it;
+            cout << "Pool column # " << finished_task->id << " level " << finished_task->level << " next_step " << finished_task->next_step << " original addr: " << finished_task->addr  << " set id: " << finished_task->set_id << endl;
         }
-
-        while(true){
-          int index = 0;
-          for(; index < pathoram_addr_vec.size();){
-              req.addr = (long) pathoram_addr_vec[index];
-              req.type = Request::Type::READ;
-              stall = !send(req);
-              if (!stall){
-                  if (req.type == Request::Type::READ) reads++;
-                  else if (req.type == Request::Type::WRITE) writes++;
-                  index++;
-              }
-              tick();
-              clks ++;
-              Stats::curTick++; // memory clock, global, for Statistics
-          }
-          set_high_writeq_watermark(0.0f);
-          while(pending_requests()){
-              tick();
-              clks ++;
-              Stats::curTick++; // memory clock, global, for Statistics
-              stall_reason["rw_swtich"]++;
-          }
-          set_high_writeq_watermark(0.8f);
-          index = 0;
-          for(; index < pathoram_addr_vec.size();){
-              req.addr = (long) pathoram_addr_vec[index];
-              req.type = Request::Type::WRITE;
-              stall = !send(req);
-              if (!stall){
-                  if (req.type == Request::Type::READ) reads++;
-                  else if (req.type == Request::Type::WRITE) writes++;
-                  index++;
-              }
-              tick();
-              clks ++;
-              Stats::curTick++; // memory clock, global, for Statistics
-          }
-        //   set_high_writeq_watermark(0.0f);
-        //   while(pending_requests()){
-        //       tick();
-        //       clks ++;
-        //       Stats::curTick++; // memory clock, global, for Statistics
-        //       stall_reason["rw_swtich"]++;
-        //   }
-        //   set_high_writeq_watermark(0.8f);
-          break;
-        }
-        
+        // std::priority_queue<task_2d*, std::vector<task_2d*>, task_2dComparator> temp_pool;
+        // while(tq.execution_pool.size()){
+        //     cout << "tq.execution_pool.size() = " << tq.execution_pool.size() << endl;
+        //     task_2d* finished_task = tq.execution_pool.top();
+        //     cout << "Pool column # " << finished_task->id << " level " << finished_task->level << " next_step " << finished_task->next_step << endl;
+        //     temp_pool.push(finished_task);
+        //     tq.execution_pool.pop();
+        // }
+        // while(temp_pool.size()){
+        //     tq.execution_pool.push(temp_pool.top());
+        //     temp_pool.pop();
+        // }
     }
 
-    void serve_one_address_pageoram(long addr, rs* myrs, posmap_and_stash &pos_st, long long &clks, long long cnt, map<string, long long>& stall_reason, long long &reads, long long &writes, bool print_flag=false){
-            
-        bool stall = false, end = false;
-        Request::Type type = Request::Type::READ;
-        map<int, int> latencies;
-        auto read_complete = [&latencies](Request& r){latencies[r.depart - r.arrive]++;};
-
-        Request req(addr, type, read_complete);
-
-        Request::Type prev_type = Request::Type::READ;
-        
-        long long random_block = rand() % pos_st.total_num_blocks;
-        std::vector<long> pathoram_addr_vec;
-        for(int i = myrs->lowest_uncached_lvl; i < myrs->num_of_lvls; i++){
-          long long node_id = myrs->P(random_block, i, myrs->num_of_lvls);
-          for(int j = 0; j < PBUCKET - 1; j++){
-            pathoram_addr_vec.push_back(64 * (node_id * (PBUCKET - 1) + j));
-          }
-          if(i % 2 == 1){            
-            long long sibling_node = (node_id % 2 == 0) ? node_id - 1 : node_id + 1;
-            for(int j = 0; j < PBUCKET - 1; j++){
-                pathoram_addr_vec.push_back(64 * (sibling_node * (PBUCKET - 1) + j));
-            }
-          }
-        }
-
+    void call_ramulator_package(posmap_and_stash* p_s, rs* rs, task_2d* added_task){
         while(true){
-          int index = 0;
-          for(; index < pathoram_addr_vec.size();){
-              req.addr = (long) pathoram_addr_vec[index];
-              req.type = Request::Type::READ;
-              stall = !send(req);
-              if (!stall){
-                  if (req.type == Request::Type::READ) reads++;
-                  else if (req.type == Request::Type::WRITE) writes++;
-                  index++;
-              }
-              tick();
-              clks ++;
-              Stats::curTick++; // memory clock, global, for Statistics
-          }
-          set_high_writeq_watermark(0.0f);
-          while(pending_requests()){
-              tick();
-              clks ++;
-              Stats::curTick++; // memory clock, global, for Statistics
-              stall_reason["rw_swtich"]++;
-          }
-          set_high_writeq_watermark(0.8f);
-          index = 0;
-          for(; index < pathoram_addr_vec.size();){
-              req.addr = (long) pathoram_addr_vec[index];
-              req.type = Request::Type::WRITE;
-              stall = !send(req);
-              if (!stall){
-                  if (req.type == Request::Type::READ) reads++;
-                  else if (req.type == Request::Type::WRITE) writes++;
-                  index++;
-              }
-              tick();
-              clks ++;
-              Stats::curTick++; // memory clock, global, for Statistics
-          }
-        //   set_high_writeq_watermark(0.0f);
-        //   while(pending_requests()){
-        //       tick();
-        //       clks ++;
-        //       Stats::curTick++; // memory clock, global, for Statistics
-        //       stall_reason["rw_swtich"]++;
-        //   }
-        //   set_high_writeq_watermark(0.8f);
-          break;
-        }
-    }
+            int success = p_s->init_step(added_task->addr, added_task->id, added_task->level, added_task->next_step, added_task->set_id, added_task->head);
 
-    void serve_one_address_prefetchoram(long long forced_leaf, long addr, rs* myrs, posmap_and_stash &pos_st, long long &clks, long long cnt, map<string, long long>& stall_reason, long long &reads, long long &writes, bool print_flag=false){
-            
-        bool stall = false, end = false;
-        Request::Type type = Request::Type::READ;
-        map<int, int> latencies;
-        auto read_complete = [&latencies](Request& r){latencies[r.depart - r.arrive]++;};
-
-        Request req(addr, type, read_complete);
-
-        Request::Type prev_type = Request::Type::READ;
-        
-        long long random_block = (forced_leaf > 0) ? forced_leaf : rand() % pos_st.total_num_blocks;
-        std::vector<long> pathoram_addr_vec;
-        for(int i = myrs->lowest_uncached_lvl; i < myrs->num_of_lvls; i++){
-          long long node_id = myrs->P(random_block, i, myrs->num_of_lvls);
-          for(int j = 0; j < PBUCKET; j++){
-            pathoram_addr_vec.push_back(64 * (node_id * PBUCKET + j));
-          }
-        }
-
-        while(true){
-          int index = 0;
-          for(; index < pathoram_addr_vec.size();){
-              req.addr = (long) pathoram_addr_vec[index];
-              req.type = Request::Type::READ;
-              stall = !send(req);
-              if (!stall){
-                  if (req.type == Request::Type::READ) reads++;
-                  else if (req.type == Request::Type::WRITE) writes++;
-                  index++;
-              }
-              tick();
-              clks ++;
-              Stats::curTick++; // memory clock, global, for Statistics
-          }
-          set_high_writeq_watermark(0.0f);
-          while(pending_requests()){
-              tick();
-              clks ++;
-              Stats::curTick++; // memory clock, global, for Statistics
-              stall_reason["rw_swtich"]++;
-          }
-          set_high_writeq_watermark(0.8f);
-          index = 0;
-          for(; index < pathoram_addr_vec.size();){
-              req.addr = (long) pathoram_addr_vec[index];
-              req.type = Request::Type::WRITE;
-              stall = !send(req);
-              if (!stall){
-                  if (req.type == Request::Type::READ) reads++;
-                  else if (req.type == Request::Type::WRITE) writes++;
-                  index++;
-              }
-              tick();
-              clks ++;
-              Stats::curTick++; // memory clock, global, for Statistics
-          }
-        //   set_high_writeq_watermark(0.0f);
-        //   while(pending_requests()){
-        //       tick();
-        //       clks ++;
-        //       Stats::curTick++; // memory clock, global, for Statistics
-        //       stall_reason["rw_swtich"]++;
-        //   }
-        //   set_high_writeq_watermark(0.8f);
-          break;
-        }
-    }
-
-    void serve_one_address_pathoram(long addr, rs* myrs, posmap_and_stash &pos_st, long long &clks, long long cnt, map<string, long long>& stall_reason, long long &reads, long long &writes, bool print_flag=false){
-            
-        bool stall = false, end = false;
-        Request::Type type = Request::Type::READ;
-        map<int, int> latencies;
-        auto read_complete = [&latencies](Request& r){latencies[r.depart - r.arrive]++;};
-
-        Request req(addr, type, read_complete);
-
-        Request::Type prev_type = Request::Type::READ;
-        
-        long long random_block = rand() % pos_st.total_num_blocks;
-        std::vector<long> pathoram_addr_vec;
-        for(int i = myrs->lowest_uncached_lvl; i < myrs->num_of_lvls; i++){
-          long long node_id = myrs->P(random_block, i, myrs->num_of_lvls);
-          for(int j = 0; j < PBUCKET; j++){
-            pathoram_addr_vec.push_back(64 * (node_id * PBUCKET + j));
-          }
-        }
-
-        while(true){
-          int index = 0;
-          for(; index < pathoram_addr_vec.size();){
-              req.addr = (long) pathoram_addr_vec[index];
-              req.type = Request::Type::READ;
-              stall = !send(req);
-              if (!stall){
-                  if (req.type == Request::Type::READ) reads++;
-                  else if (req.type == Request::Type::WRITE) writes++;
-                  index++;
-              }
-              tick();
-              clks ++;
-              Stats::curTick++; // memory clock, global, for Statistics
-          }
-          set_high_writeq_watermark(0.0f);
-          while(pending_requests()){
-              tick();
-              clks ++;
-              Stats::curTick++; // memory clock, global, for Statistics
-              stall_reason["rw_swtich"]++;
-          }
-          set_high_writeq_watermark(0.8f);
-          index = 0;
-          for(; index < pathoram_addr_vec.size();){
-              req.addr = (long) pathoram_addr_vec[index];
-              req.type = Request::Type::WRITE;
-              stall = !send(req);
-              if (!stall){
-                  if (req.type == Request::Type::READ) reads++;
-                  else if (req.type == Request::Type::WRITE) writes++;
-                  index++;
-              }
-              tick();
-              clks ++;
-              Stats::curTick++; // memory clock, global, for Statistics
-          }
-        //   set_high_writeq_watermark(0.0f);
-        //   while(pending_requests()){
-        //       tick();
-        //       clks ++;
-        //       Stats::curTick++; // memory clock, global, for Statistics
-        //       stall_reason["rw_swtich"]++;
-        //   }
-        //   set_high_writeq_watermark(0.8f);
-          break;
-        }
-    }
-
-    void serve_one_address(long addr, rs* myrs, posmap_and_stash &pos_st, long long &clks, long long cnt, map<string, long long>& stall_reason, long long &reads, long long &writes, bool print_flag=false){
-            
-        bool stall = false, end = false;
-        Request::Type type = Request::Type::READ;
-        map<int, int> latencies;
-        auto read_complete = [&latencies](Request& r){latencies[r.depart - r.arrive]++;};
-
-        Request req(addr, type, read_complete);
-
-        Request::Type prev_type = Request::Type::READ;
-        bool prev_req_meta = true;
-        while(true){
-            int replay = 0;
-            // cout << "Stash size: " << myrs->stash.size() << endl;
-            while(myrs->stash.size() >= STASH_MAITANENCE * myrs->total_num_blocks / myrs->num_of_ways){
-            // if(pos_st.rw_counter % (A + 1) == 0){
-                myrs->stash_violation++;
-                cout << "Stash size is : " << myrs->stash.size() << endl;
-                cout << "Stash size is above or equal to maintanence threshold: " << myrs->stash.size() << " >= " <<  STASH_MAITANENCE << endl;
-                cout << "Inserting dummy combination" << endl;
-            // }
-            int success = pos_st.issue_pending_task(-1, print_flag);  // 0xdeadbeef is not a multiple of 64, it just serves as a dummy read from the address space
+            // cout << "ID: " <<  added_task->id << " level: " << added_task->level << " step: " << added_task->next_step<< " Success is: " << success << endl;
             if(success == 0){
                 tick();
                 clks ++;
-        if(clks % 1000000 == 0) {cout << "Clk4 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
-                if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
+                if(clks % 1000000 == 0) {rs->print_allline(); cout << "rs head @" << rs->head << endl; cout << " rs tail @" << rs->tail << endl;  cout << "Clk4 @ " << std::dec << clks << " Finished " << std::dec << *cnt << " instructions " << endl;}
                 Stats::curTick++; // memory clock, global, for Statistics
-                stall_reason["rs_hazard"]++;
+                // stall_reason["rs_hazard"]++;
                 // break;
                 continue;
             }
-            
+            // cout << "Handled id: " << added_task->id << " level: " << added_task->level << " step: " << added_task->next_step << " set id: " << added_task->set_id << endl;
+            if(rs->ramualtor_input_vec.size()){
+            // cout << "This inst has " << rs->ramualtor_input_vec.size() << " mem reqs" << endl;
+            }
             int index = 0;
-            for(; index < myrs->ramualtor_input_vec.size();){
-                ramulator_packet oram_packet = myrs->ramualtor_input_vec[index];
+            for(; index < rs->ramualtor_input_vec.size();){
+                ramulator_packet oram_packet = rs->ramualtor_input_vec[index];
+
                 req.addr = (long) oram_packet.address;
+                // cout << "Ramulator sends addr: " << std::hex << req.addr << std::dec << endl;
                 req.type = oram_packet.pull ? Request::Type::READ : Request::Type::WRITE;
                 req.metadata = oram_packet.metadata;
                 req.name = oram_packet.name;
-                if((prev_type != req.type && req.type == Request::Type::WRITE) ||
-                    (prev_req_meta != req.metadata && req.metadata == false)
-                ){
-                    // cout << "Switch type with memory request pending? " << pending_requests() << endl;
-                    set_high_writeq_watermark(0.0f);
-                    while(pending_requests()){
-                        tick();
-                        clks ++;
-                        if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
-        if(clks % 1000000 == 0) {cout << "Clk5 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
-                        Stats::curTick++; // memory clock, global, for Statistics
-                        
-                        stall_reason["rw_swtich"]++;
-                    }
-                    set_high_writeq_watermark(0.8f);
-                }
-                prev_type = req.type;
-                prev_req_meta = req.metadata;
-                stall = !send(req);
-                if (!stall){
-                    if (req.type == Request::Type::READ) reads++;
-                    else if (req.type == Request::Type::WRITE) writes++;
-                    index++;
-                    stall_reason["normal"]++;
-                }
-                else{
-                    stall_reason["mc_hazard"]++;
-                }
-                tick();
-                clks ++;
-                if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
-        // if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk3 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
-                Stats::curTick++; // memory clock, global, for Statistics
-            }
-
-            if(myrs->stash.size() < STASH_MAITANENCE * myrs->total_num_blocks / myrs->num_of_ways){
-                break;
-            }
-            if(pos_st.rw_counter % (A + 1) == 0){
-                replay++;
-            }
-            if(replay > 5){
-                cout << "Replay time is:" << replay << ". Stash is having problem converging. Check the config is correct " << endl;
-                break;
-            }
-            }
-
-            int success = pos_st.issue_pending_task(addr, print_flag);
-            // cout << "ORAM access: 0x " << std::hex << addr << std::dec << "; success is: " << success << endl;
-            if(success == 0){
-            tick();
-            clks ++;
-            if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
-        if(clks % 1000000 == 0) {cout << "Clk1 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
-            Stats::curTick++; // memory clock, global, for Statistics
-            stall_reason["rs_hazard"]++;
-            // break;
-            continue;
-            }
-            // cout << "Req gives " << myrs->ramualtor_input_vec.size() << " dram reqs" << endl;
-            
-            int index = 0;
-            for(; index < myrs->ramualtor_input_vec.size();){
-                ramulator_packet oram_packet = myrs->ramualtor_input_vec[index];
-                req.addr = (long) oram_packet.address;
-                req.type = oram_packet.pull ? Request::Type::READ : Request::Type::WRITE;
-                req.metadata = oram_packet.metadata;
-                req.name = oram_packet.name;
-                if((prev_type != req.type && req.type == Request::Type::WRITE) ||
-                    (prev_req_meta != req.metadata && req.metadata == false)
-                ){
-                // cout << "Switch type with memory request pending? " << pending_requests() << endl;
-                set_high_writeq_watermark(0.0f);
-                while(pending_requests()){
-                    tick();
-                    clks ++;
-            if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
-        if(clks % 1000000 == 0) {cout << "Clk2 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
-                    Stats::curTick++; // memory clock, global, for Statistics
+        //         if(prev_type != req.type){
+        //         // cout << "Switch type with memory request pending? " << pending_requests() << endl;
+        //         set_high_writeq_watermark(0.0f);
+        //         while(pending_requests()){
+        //             tick();
+        //             clks ++;
+        // if(clks % 1000000 == 0) {rs->print_allline(); cout << "Clk2 @ " << std::dec << clks << " Finished " << std::dec << *cnt << " instructions " << endl;}
+        //             Stats::curTick++; // memory clock, global, for Statistics
                     
-                    stall_reason["rw_swtich"]++;
-                }
-                set_high_writeq_watermark(0.8f);
-                }
+        //             // stall_reason["rw_swtich"]++;
+        //         }
+        //         set_high_writeq_watermark(0.8f);
+        //         }
                 prev_type = req.type;
-                prev_req_meta = req.metadata;
-                stall = !send(req);
+                bool stall = !send(req);
                 if (!stall){
                     if (req.type == Request::Type::READ) reads++;
                     else if (req.type == Request::Type::WRITE) writes++;
-                    index++;
                     // cout << "Issuing addr: " << std::hex << req.addr << " is metadata? " << req.metadata << std::dec << endl;
-                stall_reason["normal"]++;
+                    index++;
+                // stall_reason["normal"]++;
                 }
                 else{
-                stall_reason["mc_hazard"]++;
+                // stall_reason["mc_hazard"]++;
                 }
                 tick();
                 clks ++;
-            if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
-        if(clks % 1000000 == 0) {cout << "Clk3 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
+            if(clks % 1000000 == 0) {cout << "Clk3 @ " << std::dec << clks << " Finished " << std::dec << *cnt << " instructions " << endl;}
                 Stats::curTick++; // memory clock, global, for Statistics
             }
             break;
         }
+    }
+
+    void push_execution_pool(task_2d* added_task){
         
-        set_high_writeq_watermark(0.0f);
-        while(pending_requests()){
-            tick();
-            clks ++;
-            if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
-        if(clks % 1000000 == 0) {cout << "Clk-1 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
-            Stats::curTick++; // memory clock, global, for Statistics
-            
-            stall_reason["rw_swtich"]++;
+        // cout << "=== printing exe pool and task ===" << endl;
+        // // print_execution_pool();
+        // added_task->print_task();
+        // cout << "=== End exe pool and task ===" << endl;
+        assert(tq.execution_pool.find(added_task) == tq.execution_pool.end());
+        tq.execution_pool.insert(added_task);
+        // tq.execution_pool.push(added_task);
+        if(added_task->level == "data"){
+            call_ramulator_package(tq.pos_st, tq.myrs, added_task);
+            return;
         }
-        set_high_writeq_watermark(0.8f);
+            
+        if(added_task->level == "pos1"){
+            call_ramulator_package(tq.pos_st_pos1, tq.myrs_pos1, added_task);
+            return;
+        }
+        if(added_task->level == "pos2"){
+            call_ramulator_package(tq.pos_st_pos2, tq.myrs_pos2, added_task);
+            return;
+        }
+        assert(0);
+        return;
+    }
+
+    bool pop_execution_pool(){
+        if(tq.execution_pool.size() == 0){
+            return false;
+        }
+        int ret = rand() % tq.execution_pool.size();
+        std::priority_queue<task_2d*, std::vector<task_2d*>, task_2dComparator> temp_pool;
+        long long ret_id = -1;
+        string ret_level = "invalid";
+        int ret_next_step = -1;
+        task_2d* ret_task;
+        while(     tq.myrs_pos2->ready_to_pop_task.size() == 0
+                && tq.myrs_pos1->ready_to_pop_task.size() == 0
+                && tq.myrs->ready_to_pop_task.size() == 0
+            ){
+                tick();            
+                if(clks % 1000000 == 0) {cout << "Clk7 @ " << std::dec << clks << " Finished " << std::dec << *cnt << " instructions " << endl;}
+                clks ++;
+                idle_clks++;
+        }
+        // cout << "Trying to pop from pool" << endl;
+        // cout << "Before deletion" << endl;
+        // print_execution_pool();
+
+        if(tq.myrs_pos2->ready_to_pop_task.size() > 0){
+            ret_id = tq.myrs_pos2->ready_to_pop_task.front().id;
+            ret_level = tq.myrs_pos2->ready_to_pop_task.front().level;
+            ret_next_step = tq.myrs_pos2->ready_to_pop_task.front().next_step;
+            tq.myrs_pos2->ready_to_pop_task.pop();
+            // tq.myrs_pos2->mshr_print();
+            // tq.myrs_pos2->print_allline();
+            ret_task = new task_2d(ret_id, ret_level, ret_next_step, -1, tq.myrs_pos2->num_of_lvls, -1, -1);
+        }
+        else if(tq.myrs_pos1->ready_to_pop_task.size() > 0){
+            ret_id = tq.myrs_pos1->ready_to_pop_task.front().id;
+            ret_level = tq.myrs_pos1->ready_to_pop_task.front().level;
+            ret_next_step = tq.myrs_pos1->ready_to_pop_task.front().next_step;
+            tq.myrs_pos1->ready_to_pop_task.pop();
+            // tq.myrs_pos1->mshr_print();
+            // tq.myrs_pos1->print_allline();
+            ret_task = new task_2d(ret_id, ret_level, ret_next_step, -1, tq.myrs_pos1->num_of_lvls, -1, -1);
+        }
+        else if(tq.myrs->ready_to_pop_task.size() > 0){
+            ret_id = tq.myrs->ready_to_pop_task.front().id;
+            ret_level = tq.myrs->ready_to_pop_task.front().level;
+            ret_next_step = tq.myrs->ready_to_pop_task.front().next_step;
+            tq.myrs->ready_to_pop_task.pop();
+            // tq.myrs->mshr_print();
+            // tq.myrs->print_allline();
+            ret_task = new task_2d(ret_id, ret_level, ret_next_step, -1, tq.myrs->num_of_lvls, -1, -1);
+        }
+        assert(ret_id >= 0 && ret_level != "invalid" && ret_next_step >= 0);
+        // ret_task = new task_2d(ret_id, ret_level, ret_next_step, -1);
+        // ret_task->print_task();
+        assert(tq.execution_pool.find(ret_task) != tq.execution_pool.end());
+        tq.execution_pool.erase(ret_task);
+        delete ret_task;
+        // int cnt = 0;
+        // while(tq.execution_pool.size()){
+        //     task_2d* finished_task = tq.execution_pool.top();
+        //     cout << "Pool column # " << finished_task->id << " level " << finished_task->level << " next_step " << finished_task->next_step << endl;
+        //     if(cnt == ret){
+        //         ret_task = finished_task;
+        //     }
+        //     else{
+        //         temp_pool.push(finished_task);
+        //     }
+        //     tq.execution_pool.pop();
+        //     cnt++;
+        // }
+        // while(temp_pool.size()){
+        //     tq.execution_pool.push(temp_pool.top());
+        //     temp_pool.pop();
+        // }
+        // cout << "After deletion" << endl;
+        // print_execution_pool();
+        // cout << "==" << endl;
+        // cout << "Finishing column # " << ret_id << " level " << ret_level << " next_step " << ret_next_step << endl;
+        if(oram_task_finish(ret_id, ret_level, ret_next_step)){
+            // cout << "Clk-2: " << std::dec << clks << " Success finish on " << ret_id << " " << ret_level << " " << ret_next_step << endl;
+            return true;
+        }
+        // cout << "Clk-2: " << std::dec << clks << " Success finish on " << ret_id << " " << ret_level << " " << ret_next_step << endl;
+        // cout << " time to say goodbye @ clk " << std::dec << clks << endl;
+        return tq.trace_end;
+    }
+
+    void print_deque(){
+        for ( auto it = tq.task_deque.begin(); it != tq.task_deque.end(); ++it  )
+        {
+            if(it->second->next_step < 6){
+                std::cout << std::dec << (it->first.first) << "\t" << (it->first.second) << '\t' << it->second->next_step << " @ addr: " << std::hex << it->second->addr << " # set id: " << std::dec << it->second->set_id << std::dec << std::endl;
+            }
+            else{
+                assert(it->second->next_step == 6);
+                std::cout << std::dec << (it->first.first) << "\t" << (it->first.second) << '\t' << "finished" << " @ addr: " << std::hex << it->second->addr << " # set id: " << std::dec << it->second->set_id << std::dec << std::endl;
+            }
+        } 
+    }
+    
+    void oram_task_create(long long n_id, string n_level, int step_idx, long long addr=-1){
+        if(step_idx == 6){
+            assert(tq.task_deque.find(make_pair(n_id, n_level)) != tq.task_deque.end());
+            task_2d* task_test = tq.task_deque[make_pair(n_id, n_level)];
+            task_test->next_step = step_idx;
+            return;
+        }
+        if(step_idx == 0){
+            assert(tq.task_deque.find(make_pair(n_id - tq.depth, n_level)) == tq.task_deque.end());
+            if(n_level == "data"){
+                // assert(addr >= 0);
+                long long set_id = (addr >= 0) ? ((addr / Z) % tq.myrs->total_num_blocks) / tq.myrs->num_of_ways : rand() % (tq.myrs->total_num_blocks / tq.myrs->num_of_ways);
+                task_2d* task_test = new task_2d(n_id, n_level, step_idx, addr, tq.myrs->num_of_lvls, set_id, ++tq.myrs->set_cnt_map[set_id]);
+                tq.task_deque[make_pair(n_id, n_level)] = task_test;
+                oram_task_create(n_id, "pos1", 0, addr);
+            }
+            else if(n_level == "pos1"){
+                long long set_id = (addr >= 0) ? ((addr / 8 / Z) % tq.myrs_pos1->total_num_blocks) / tq.myrs_pos1->num_of_ways : rand() % (tq.myrs_pos1->total_num_blocks / tq.myrs_pos1->num_of_ways);
+                if(addr >= 0){
+                    task_2d* task_test = new task_2d(n_id, n_level, step_idx, POS1_METADATA_START + addr / 8, tq.myrs_pos1->num_of_lvls, set_id, ++tq.myrs_pos1->set_cnt_map[set_id]);
+                    tq.task_deque[make_pair(n_id, n_level)] = task_test;
+                }
+                else{
+                    task_2d* task_test = new task_2d(n_id, n_level, step_idx, -1, tq.myrs_pos1->num_of_lvls, set_id, ++tq.myrs_pos1->set_cnt_map[set_id]);
+                    tq.task_deque[make_pair(n_id, n_level)] = task_test;
+                }
+                oram_task_create(n_id, "pos2", 0, addr);
+            }
+            if(n_level == "pos2"){
+                long long set_id = (addr >= 0) ? ((addr / 64 / Z) % tq.myrs_pos2->total_num_blocks) / tq.myrs_pos2->num_of_ways : rand() % (tq.myrs_pos2->total_num_blocks / tq.myrs_pos2->num_of_ways);
+                if(addr >= 0){
+                    task_2d* task_test = new task_2d(n_id, n_level, step_idx, POS2_METADATA_START + addr / 64, tq.myrs_pos2->num_of_lvls, set_id, ++tq.myrs_pos2->set_cnt_map[set_id]);
+                    tq.task_deque[make_pair(n_id, n_level)] = task_test;
+                    push_execution_pool(task_test);
+                }
+                else{
+                    task_2d* task_test = new task_2d(n_id, n_level, step_idx, -1, tq.myrs_pos2->num_of_lvls, set_id, ++tq.myrs_pos2->set_cnt_map[set_id]);
+                    tq.task_deque[make_pair(n_id, n_level)] = task_test;
+                    push_execution_pool(task_test);
+                }
+            }
+            return;
+        }
+        assert(tq.task_deque.find(make_pair(n_id, n_level)) != tq.task_deque.end());
+        task_2d* task_test = tq.task_deque[make_pair(n_id, n_level)];
+        task_test->next_step = step_idx;
+        tq.task_deque[make_pair(n_id, n_level)] = task_test;
+
+        long long this_set_id = tq.task_deque[make_pair(n_id, n_level)]->set_id;
+        for(long long check_id = n_id - 1; ; check_id--){
+            if(tq.task_deque.find(make_pair(check_id, n_level)) == tq.task_deque.end()){
+                break;
+            }
+            if(tq.task_deque[make_pair(check_id, n_level)]->set_id != this_set_id){
+                continue;
+            }
+            if(tq.task_deque[make_pair(check_id, "data")]->set_cnt % A != 0
+                && tq.task_deque[make_pair(check_id, "data")]->next_step <= 2){
+                    return;
+            }
+            if(tq.task_deque[make_pair(check_id, "data")]->set_cnt % A == 0
+                && tq.task_deque[make_pair(check_id, "data")]->next_step <= 5){
+                    return;
+            }
+        }
+
+        // if( (n_id - 1 + 1) % A != 0 
+        //     && (tq.task_deque.find(make_pair(n_id - 1, n_level)) != tq.task_deque.end())
+        //     && tq.task_deque[make_pair(n_id - 1, n_level)]->next_step <= 2){
+        //     return;
+        // }
+        // if( (n_id - 1 + 1) % A == 0 
+        //     && (tq.task_deque.find(make_pair(n_id - 1, n_level)) != tq.task_deque.end())
+        //     && tq.task_deque[make_pair(n_id - 1, n_level)]->next_step <= 5){
+        //     return;
+        // }
+        push_execution_pool(task_test);
+    }
+
+    bool oram_task_finish(long long n_id, string n_level, int step_idx){
+        if(step_idx == 0){
+            oram_task_create(n_id, n_level, 1);
+            return true;
+        }
+        if(step_idx == 1){
+            oram_task_create(n_id, n_level, 2);
+            return true;
+        }
+        if(step_idx == 2){
+            oram_task_create(n_id, n_level, 3);
+            // if( (n_id + 1) % A != 0 
+            //     && (tq.task_deque.find(make_pair(n_id + 1, n_level)) != tq.task_deque.end())
+            //     && tq.task_deque[make_pair(n_id + 1, n_level)]->next_step == 1){
+            //     oram_task_create(n_id + 1, n_level, 1);
+            // }
+                
+            long long this_set_id = tq.task_deque[make_pair(n_id, n_level)]->set_id;
+            for(long long check_id = n_id + 1; ; check_id++){
+                if(tq.task_deque.find(make_pair(check_id, n_level)) == tq.task_deque.end()){
+                    break;
+                }
+                if(tq.task_deque[make_pair(check_id, n_level)]->set_id != this_set_id){
+                    continue;
+                }
+                // cout << "step 2 ID: " << n_id << " checking next same set neighbor: " << check_id << " " << "; what is set cnt % A:" << tq.task_deque[make_pair(n_id, n_level)]->set_cnt % A  << endl;
+                if(n_level == "data" && tq.task_deque[make_pair(n_id, "data")]->set_cnt % A != 0
+                    && tq.task_deque[make_pair(check_id, "pos2")]->next_step == 1){
+                        oram_task_create(check_id, "pos2", 1);
+                }
+                if(n_level == "data" && tq.task_deque[make_pair(n_id, "data")]->set_cnt % A != 0
+                    && tq.task_deque[make_pair(check_id, "pos1")]->next_step == 1){
+                        oram_task_create(check_id, "pos1", 1);
+                }
+                if(n_level == "data" && tq.task_deque[make_pair(n_id, "data")]->set_cnt % A != 0
+                    && tq.task_deque[make_pair(check_id, "data")]->next_step == 1){
+                        oram_task_create(check_id, "data", 1);
+                }
+                break;
+            }
+
+            return true;
+        }
+        if(step_idx == 3){            
+            // cout << "step 3 ID: " << n_id << " checking ; what is set cnt % A:" << tq.task_deque[make_pair(n_id, n_level)]->set_cnt % A  << endl;
+
+            if(tq.task_deque[make_pair(n_id, n_level)]->set_cnt % A == 0){
+            // if( (n_id + 1) % A == 0 ){
+                oram_task_create(n_id, n_level, 4);
+            }
+            else{
+                oram_task_create(n_id, n_level, 6);
+                if(n_id == tq.current_rdy_to_commit && tq.task_deque[make_pair(n_id, "data")]->next_step == 6 &&
+                    tq.task_deque[make_pair(n_id, "pos1")]->next_step == 6 &&
+                    tq.task_deque[make_pair(n_id, "pos2")]->next_step == 6
+                ){
+                    delete tq.task_deque[make_pair(n_id, "data")];
+                    delete tq.task_deque[make_pair(n_id, "pos1")];
+                    delete tq.task_deque[make_pair(n_id, "pos2")];
+
+                    tq.task_deque.erase(make_pair(n_id, "data"));
+                    tq.task_deque.erase(make_pair(n_id, "pos1"));
+                    tq.task_deque.erase(make_pair(n_id, "pos2"));
+
+                    tq.current_rdy_to_commit++;
+
+                    return false;
+                }
+            }
+            if(n_level == "pos2"){
+                oram_task_finish(n_id, "pos1", 0);
+            }
+            else if(n_level == "pos1"){
+                oram_task_finish(n_id, "data", 0);
+            }
+            return true;
+        }
+        if(step_idx == 4){
+            oram_task_create(n_id, n_level, 5);
+            return true;
+        }
+        if(step_idx == 5){
+            oram_task_create(n_id, n_level, 6);    
+            
+
+            long long this_set_id = tq.task_deque[make_pair(n_id, n_level)]->set_id;
+            for(long long check_id = n_id + 1; ; check_id++){
+                if(tq.task_deque.find(make_pair(check_id, n_level)) == tq.task_deque.end()){
+                    break;
+                }
+                if(tq.task_deque[make_pair(check_id, n_level)]->set_id != this_set_id){
+                    continue;
+                }
+                
+                // cout << "step 5 ID: " << n_id << " checking next same set neighbor: " << check_id << " " << "; what is set cnt % A:" << tq.task_deque[make_pair(n_id, n_level)]->set_cnt % A  << endl;
+
+                if(n_level == "data" && tq.task_deque[make_pair(n_id, "data")]->set_cnt % A == 0
+                    && tq.task_deque[make_pair(check_id, "pos2")]->next_step == 1){
+                        oram_task_create(check_id, "pos2", 1);
+                }
+                if(n_level == "data" && tq.task_deque[make_pair(n_id, "data")]->set_cnt % A == 0
+                    && tq.task_deque[make_pair(check_id, "pos1")]->next_step == 1){
+                        oram_task_create(check_id, "pos1", 1);
+                }
+                if(n_level == "data" && tq.task_deque[make_pair(n_id, "data")]->set_cnt % A == 0
+                    && tq.task_deque[make_pair(check_id, "data")]->next_step == 1){
+                        oram_task_create(check_id, "data", 1);
+                }
+                break;
+            }
+
+            // if( (n_id + 1) % A == 0 
+            //     && (tq.task_deque.find(make_pair(n_id + 1, n_level)) != tq.task_deque.end())
+            //     && tq.task_deque[make_pair(n_id + 1, n_level)]->next_step == 1){
+            //     oram_task_create(n_id + 1, n_level, 1);
+            // }  
+            
+            if(n_id == tq.current_rdy_to_commit && tq.task_deque[make_pair(n_id, "data")]->next_step == 6 &&
+                tq.task_deque[make_pair(n_id, "pos1")]->next_step == 6 &&
+                tq.task_deque[make_pair(n_id, "pos2")]->next_step == 6
+            ){
+                delete tq.task_deque[make_pair(n_id, "data")];
+                delete tq.task_deque[make_pair(n_id, "pos1")];
+                delete tq.task_deque[make_pair(n_id, "pos2")];
+
+                tq.task_deque.erase(make_pair(n_id, "data"));
+                tq.task_deque.erase(make_pair(n_id, "pos1"));
+                tq.task_deque.erase(make_pair(n_id, "pos2"));
+
+                tq.current_rdy_to_commit++;
+
+                return false;
+            }
+            return true;
+        }
+        return true;
+    }
+    
+    void serve_until_need_address(long long new_addr, bool end){
+        if(end == false){
+            oram_task_create(tail_n_id, "data", 0, new_addr);
+            tail_n_id++;
+        }
+        tq.trace_end = end;
+        if(tail_n_id < tq.depth && !tq.trace_end){
+            return;
+        }
+        long long check_head = tail_n_id - tq.depth;
+        if(check_head == tq.current_rdy_to_commit && tq.task_deque[make_pair(check_head, "data")]->next_step == 6 &&
+                tq.task_deque[make_pair(check_head, "pos1")]->next_step == 6 &&
+                tq.task_deque[make_pair(check_head, "pos2")]->next_step == 6
+            ){
+                delete tq.task_deque[make_pair(check_head, "data")]->head;
+                delete tq.task_deque[make_pair(check_head, "pos1")]->head;
+                delete tq.task_deque[make_pair(check_head, "pos2")]->head;
+
+                delete tq.task_deque[make_pair(check_head, "data")];
+                delete tq.task_deque[make_pair(check_head, "pos1")];
+                delete tq.task_deque[make_pair(check_head, "pos2")];
+
+                tq.task_deque.erase(make_pair(check_head, "data"));
+                tq.task_deque.erase(make_pair(check_head, "pos1"));
+                tq.task_deque.erase(make_pair(check_head, "pos2"));
+
+
+                tq.current_rdy_to_commit++;
+                if(!tq.trace_end){
+                    return;
+                }
+        }
+
+        while(pop_execution_pool()){
+            // print_execution_pool();
+            // print_deque();
+        }
+        return;
+        
+        
+    // (long addr, rs* myrs, posmap_and_stash &pos_st, long long &clks, long long cnt, map<string, long long>& stall_reason, long long &reads, long long &writes, bool print_flag=false){
+        
+        // bool stall = false, end = false;
+        // Request::Type type = Request::Type::READ;
+        // map<int, int> latencies;
+        // auto read_complete = [&latencies](Request& r){latencies[r.depart - r.arrive]++;};
+
+        // Request req(addr, type, read_complete);
+
+        // Request::Type prev_type = Request::Type::READ;
+        // while(true){
+        //     int replay = 0;
+        //     // cout << "Stash size: " << myrs->stash.size() << endl;
+        //     while(myrs->stash.size() >= STASH_MAITANENCE){
+        //     if(pos_st.rw_counter % (A + 1) == 0){
+        //         myrs->stash_violation++;
+        //         cout << "Stash size is : " << myrs->stash.size() << endl;
+        //         cout << "Stash size is above or equal to maintanence threshold: " << myrs->stash.size() << " >= " <<  STASH_MAITANENCE << endl;
+        //         cout << "Inserting dummy combination" << endl;
+        //     }
+        //     int success = pos_st.issue_pending_task(-1, print_flag);  // 0xdeadbeef is not a multiple of 64, it just serves as a dummy read from the address space
+        //     if(success == 0){
+        //         tick();
+        //         clks ++;
+        // if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk4 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
+        //         Stats::curTick++; // memory clock, global, for Statistics
+        //         stall_reason["rs_hazard"]++;
+        //         // break;
+        //         continue;
+        //     }
+            
+        //     int index = 0;
+        //     for(; index < myrs->ramualtor_input_vec.size();){
+        //         ramulator_packet oram_packet = myrs->ramualtor_input_vec[index];
+        //         req.addr = (long) oram_packet.address;
+        //         req.type = oram_packet.pull ? Request::Type::READ : Request::Type::WRITE;
+        //         req.metadata = oram_packet.metadata;
+        //         req.name = oram_packet.name;
+        //         if(prev_type != req.type){
+        //             // cout << "Switch type with memory request pending? " << pending_requests() << endl;
+        //             set_high_writeq_watermark(0.0f);
+        //             while(pending_requests()){
+        //                 tick();
+        //                 clks ++;
+        // if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk5 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
+        //                 Stats::curTick++; // memory clock, global, for Statistics
+                        
+        //                 stall_reason["rw_swtich"]++;
+        //             }
+        //             set_high_writeq_watermark(0.8f);
+        //         }
+        //         prev_type = req.type;
+        //         stall = !send(req);
+        //         if (!stall){
+        //             if (type == Request::Type::READ) reads++;
+        //             else if (type == Request::Type::WRITE) writes++;
+        //             index++;
+        //             stall_reason["normal"]++;
+        //         }
+        //         else{
+        //             stall_reason["mc_hazard"]++;
+        //         }
+        //         tick();
+        //         clks ++;
+        // if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk3 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
+        //         Stats::curTick++; // memory clock, global, for Statistics
+        //     }
+
+        //     if(myrs->stash.size() < STASH_MAITANENCE){
+        //         break;
+        //     }
+        //     if(pos_st.rw_counter % (A + 1) == 0){
+        //         replay++;
+        //     }
+        //     if(replay > 5){
+        //         cout << "Replay time is:" << replay << ". Stash is having problem converging. Check the config is correct " << endl;
+        //         break;
+        //     }
+        //     }
+
+        //     int success = pos_st.issue_pending_task(addr, print_flag);
+        //     // cout << "ORAM access: 0x " << std::hex << addr << std::dec << "; success is: " << success << endl;
+        //     if(success == 0){
+        //     tick();
+        //     clks ++;
+        // if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk1 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
+        //     Stats::curTick++; // memory clock, global, for Statistics
+        //     stall_reason["rs_hazard"]++;
+        //     // break;
+        //     continue;
+        //     }
+            
+        //     int index = 0;
+        //     for(; index < myrs->ramualtor_input_vec.size();){
+        //         ramulator_packet oram_packet = myrs->ramualtor_input_vec[index];
+        //         req.addr = (long) oram_packet.address;
+        //         req.type = oram_packet.pull ? Request::Type::READ : Request::Type::WRITE;
+        //         req.metadata = oram_packet.metadata;
+        //         req.name = oram_packet.name;
+        //         if(prev_type != req.type){
+        //         // cout << "Switch type with memory request pending? " << pending_requests() << endl;
+        //         set_high_writeq_watermark(0.0f);
+        //         while(pending_requests()){
+        //             tick();
+        //             clks ++;
+        // if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk2 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
+        //             Stats::curTick++; // memory clock, global, for Statistics
+                    
+        //             stall_reason["rw_swtich"]++;
+        //         }
+        //         set_high_writeq_watermark(0.8f);
+        //         }
+        //         prev_type = req.type;
+        //         stall = !send(req);
+        //         if (!stall){
+        //             if (type == Request::Type::READ) reads++;
+        //             else if (type == Request::Type::WRITE) writes++;
+        //             index++;
+        //         stall_reason["normal"]++;
+        //         }
+        //         else{
+        //         stall_reason["mc_hazard"]++;
+        //         }
+        //         tick();
+        //         clks ++;
+        // if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk3 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
+        //         Stats::curTick++; // memory clock, global, for Statistics
+        //     }
+        //     break;
+        // }
+        
+        // set_high_writeq_watermark(0.0f);
+        // while(pending_requests()){
+        //     tick();
+        //     clks ++;
+        // if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk-1 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
+        //     Stats::curTick++; // memory clock, global, for Statistics
+            
+        //     stall_reason["rw_swtich"]++;
+        // }
+        // set_high_writeq_watermark(0.8f);
     }
 
     void tick()
