@@ -357,6 +357,103 @@ public:
         
     }
 
+    long long id_convert_to_address(long long node_id, int offset, int num_of_lvl){
+        // long long block_id = node_id * (Z + S) + offset;
+        int level = (int)log2(node_id+1);
+        long long posinlvl = node_id - (pow(2,level) - 1);
+        long long blockposinlvl = posinlvl * (Z - 1) + offset;
+        int highest_lvl = num_of_lvl - 1;
+        int diff = ((highest_lvl - level)) % 4; // for bankgroup
+        int diff2 = ((highest_lvl - level) / 4) % 4; // for bank
+        // int diff1 = (highest_lvl - level) % 2; //for rank
+        int channel = 0;
+        int rank = 0;
+        int diffd = 0;
+        int diffs = 0;
+        if(level % 2 == 1){ //double
+            diffd = ((level / 2) + 3) % 4;
+            if(posinlvl % 2 == 0){
+                channel = (diffd + offset) % 4;
+                rank = 0;
+            }
+            else{
+                channel = (diffd + 3 + offset) % 4;
+                rank = 1;
+            }
+        }
+        else if(level % 2 == 0){
+            diffs = (level / 2) % 4;
+            channel = (diffs + offset) % 4;
+            if(posinlvl % 2 == 0){        
+                rank = 0;
+            }
+            else{
+                rank = 1;
+            }
+        }
+
+        int bankgroup = 0;
+
+        if(level >= 2){
+            bankgroup = ((int)(posinlvl / (pow(2,level)/4)) + diff) % 4;
+        }
+        if(node_id == 0){
+            bankgroup = 0;
+        }
+        else if(node_id == 1){
+            bankgroup = 3;
+        }
+        else if(node_id == 2){
+            bankgroup = 1;
+        }
+
+        int bank = 0;
+        long long row_column = 0;
+        if(level >= 4){
+            bank = ((int)((posinlvl / (long long)(pow(2,level)/16)) % 4) + diff2) % 4;
+            long long numinlayer = posinlvl % (long long)(pow(2,level)/16);
+            long long count = 0;
+            for(int i = highest_lvl; i > level; i --){
+                count = count + (pow(2,i)/32);
+            }
+            row_column =  count + (numinlayer / 2);
+        }
+        else if(level == 3){
+            bank = diff2;
+            long long count = 0;
+            for(int i = highest_lvl; i > 4; i --){
+                count = count + (pow(2,i)/32);
+            }
+            
+            row_column = count + (posinlvl / 2) + 1;
+            
+        }
+        else if(level == 2){
+            bank = ((highest_lvl - 3) / 4) % 4;
+            long long count = 0;
+            for(int i = highest_lvl; i > 4; i --){
+                count = count + (pow(2,i)/32);
+            }
+            count = count + 2 + (posinlvl / 2);
+            row_column = count ;
+        }
+        else if(level == 1 || level == 0){
+            bank = ((highest_lvl - 3) / 4) % 4;
+            long long count = 0;
+            for(int i = highest_lvl; i > 4; i --){
+                count = count + (pow(2,i)/32);
+            }
+            count = count + 3 + (posinlvl / 2);
+            row_column = count ;
+        }
+        long row_column1 = long(row_column);
+        long long column = slice_lower_bits(row_column1, addr_bits[int(T::Level::Column)]);
+        //RoBaRaCoCh
+        long long block_id =  row_column1 * 128 * (long long)pow(2,addr_bits[int(T::Level::Column)])+ bank * (long long)pow(2,addr_bits[int(T::Level::Column)]) * 32+ bankgroup * (long long)pow(2,addr_bits[int(T::Level::Column)]) * 8+ rank * (long long)pow(2,addr_bits[int(T::Level::Column)]) * 4+ column * 4 + channel;
+        //cout << "block_id: " << block_id  << endl;
+        //cout << "rowcolumn:" << row_column << " " << "bank:" << bank << " " << "bankgroup:" << bankgroup << " "<< "channel:" << channel << " " << "rank:" << rank << endl;
+        return (long long)(block_id );
+    }
     void serve_one_address_pageoram(long addr, rs* myrs, posmap_and_stash &pos_st, long long &clks, long long cnt, map<string, long long>& stall_reason, long long &reads, long long &writes, bool print_flag=false){
             
         bool stall = false, end = false;
@@ -372,15 +469,41 @@ public:
         std::vector<long> pathoram_addr_vec;
         for(int i = myrs->lowest_uncached_lvl; i < myrs->num_of_lvls; i++){
           long long node_id = myrs->P(random_block, i, myrs->num_of_lvls);
-          for(int j = 0; j < PBUCKET - 1; j++){
-            pathoram_addr_vec.push_back(64 * (node_id * (PBUCKET - 1) + j));
+          if(node_id + 1 < CACHED_NUM_NODE * Z / (Z - 1)){
+            continue;
           }
-          if(i % 2 == 1){            
-            long long sibling_node = (node_id % 2 == 0) ? node_id - 1 : node_id + 1;
-            for(int j = 0; j < PBUCKET - 1; j++){
-                pathoram_addr_vec.push_back(64 * (sibling_node * (PBUCKET - 1) + j));
+           if(i % 2 == 1){
+            if(node_id % 2 == 0){
+                for(int j = 0; j < PBUCKET - 1; j++){
+                    pathoram_addr_vec.push_back(64 * id_convert_to_address(node_id - 1, j, myrs->num_of_lvls));
+                }
+                for(int j = 0; j < PBUCKET - 1; j++){
+                    pathoram_addr_vec.push_back(64 * id_convert_to_address(node_id, j,myrs->num_of_lvls));
+                }
+            }
+            else{
+                for(int j = 0; j < PBUCKET - 1; j++){
+                    pathoram_addr_vec.push_back(64 * id_convert_to_address(node_id, j, myrs->num_of_lvls));
+                }
+                for(int j = 0; j < PBUCKET - 1; j++){
+                    pathoram_addr_vec.push_back(64 * id_convert_to_address(node_id + 1, j,myrs->num_of_lvls));
+                }
             }
           }
+          else{
+            for(int j = 0; j < PBUCKET - 1; j++){
+                pathoram_addr_vec.push_back(64 * id_convert_to_address(node_id, j,myrs->num_of_lvls));
+            }
+          }
+        //   for(int j = 0; j < PBUCKET - 1; j++){
+        //     pathoram_addr_vec.push_back(64 * (node_id * (PBUCKET - 1) + j));
+        //   }
+        //   if(i % 2 == 1){            
+        //     long long sibling_node = (node_id % 2 == 0) ? node_id - 1 : node_id + 1;
+        //     for(int j = 0; j < PBUCKET - 1; j++){
+        //         pathoram_addr_vec.push_back(64 * (sibling_node * (PBUCKET - 1) + j));
+        //     }
+        //   }
         }
 
         while(true){
@@ -580,11 +703,10 @@ public:
         Request req(addr, type, read_complete);
 
         Request::Type prev_type = Request::Type::READ;
-        bool prev_req_meta = true;
         while(true){
             int replay = 0;
             // cout << "Stash size: " << myrs->stash.size() << endl;
-            while(myrs->stash.size() >= STASH_MAITANENCE * myrs->total_num_blocks / myrs->num_of_ways){
+            while(myrs->stash.size() >= STASH_MAITANENCE){
             // if(pos_st.rw_counter % (A + 1) == 0){
                 myrs->stash_violation++;
                 cout << "Stash size is : " << myrs->stash.size() << endl;
@@ -595,8 +717,7 @@ public:
             if(success == 0){
                 tick();
                 clks ++;
-        if(clks % 1000000 == 0) {cout << "Clk4 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
-                if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
+        if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk4 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
                 Stats::curTick++; // memory clock, global, for Statistics
                 stall_reason["rs_hazard"]++;
                 // break;
@@ -610,16 +731,13 @@ public:
                 req.type = oram_packet.pull ? Request::Type::READ : Request::Type::WRITE;
                 req.metadata = oram_packet.metadata;
                 req.name = oram_packet.name;
-                if((prev_type != req.type && req.type == Request::Type::WRITE) ||
-                    (prev_req_meta != req.metadata && req.metadata == false)
-                ){
+                if(prev_type != req.type && req.type == Request::Type::WRITE){
                     // cout << "Switch type with memory request pending? " << pending_requests() << endl;
                     set_high_writeq_watermark(0.0f);
                     while(pending_requests()){
                         tick();
                         clks ++;
-                        if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
-        if(clks % 1000000 == 0) {cout << "Clk5 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
+        if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk5 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
                         Stats::curTick++; // memory clock, global, for Statistics
                         
                         stall_reason["rw_swtich"]++;
@@ -627,7 +745,6 @@ public:
                     set_high_writeq_watermark(0.8f);
                 }
                 prev_type = req.type;
-                prev_req_meta = req.metadata;
                 stall = !send(req);
                 if (!stall){
                     if (req.type == Request::Type::READ) reads++;
@@ -640,12 +757,11 @@ public:
                 }
                 tick();
                 clks ++;
-                if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
         // if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk3 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
                 Stats::curTick++; // memory clock, global, for Statistics
             }
 
-            if(myrs->stash.size() < STASH_MAITANENCE * myrs->total_num_blocks / myrs->num_of_ways){
+            if(myrs->stash.size() < STASH_MAITANENCE){
                 break;
             }
             if(pos_st.rw_counter % (A + 1) == 0){
@@ -662,14 +778,12 @@ public:
             if(success == 0){
             tick();
             clks ++;
-            if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
-        if(clks % 1000000 == 0) {cout << "Clk1 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
+        if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk1 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
             Stats::curTick++; // memory clock, global, for Statistics
             stall_reason["rs_hazard"]++;
             // break;
             continue;
             }
-            // cout << "Req gives " << myrs->ramualtor_input_vec.size() << " dram reqs" << endl;
             
             int index = 0;
             for(; index < myrs->ramualtor_input_vec.size();){
@@ -678,16 +792,13 @@ public:
                 req.type = oram_packet.pull ? Request::Type::READ : Request::Type::WRITE;
                 req.metadata = oram_packet.metadata;
                 req.name = oram_packet.name;
-                if((prev_type != req.type && req.type == Request::Type::WRITE) ||
-                    (prev_req_meta != req.metadata && req.metadata == false)
-                ){
+                if(prev_type != req.type && req.type == Request::Type::WRITE){
                 // cout << "Switch type with memory request pending? " << pending_requests() << endl;
                 set_high_writeq_watermark(0.0f);
                 while(pending_requests()){
                     tick();
                     clks ++;
-            if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
-        if(clks % 1000000 == 0) {cout << "Clk2 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
+        if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk2 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
                     Stats::curTick++; // memory clock, global, for Statistics
                     
                     stall_reason["rw_swtich"]++;
@@ -695,13 +806,11 @@ public:
                 set_high_writeq_watermark(0.8f);
                 }
                 prev_type = req.type;
-                prev_req_meta = req.metadata;
                 stall = !send(req);
                 if (!stall){
                     if (req.type == Request::Type::READ) reads++;
                     else if (req.type == Request::Type::WRITE) writes++;
                     index++;
-                    // cout << "Issuing addr: " << std::hex << req.addr << " is metadata? " << req.metadata << std::dec << endl;
                 stall_reason["normal"]++;
                 }
                 else{
@@ -709,24 +818,22 @@ public:
                 }
                 tick();
                 clks ++;
-            if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
-        if(clks % 1000000 == 0) {cout << "Clk3 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
+        if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk3 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
                 Stats::curTick++; // memory clock, global, for Statistics
             }
             break;
         }
         
-        set_high_writeq_watermark(0.0f);
-        while(pending_requests()){
-            tick();
-            clks ++;
-            if(clks % 1000 == 0){myrs->mem_q_sample_times++;myrs->mem_q_total+=pending_requests();}
-        if(clks % 1000000 == 0) {cout << "Clk-1 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
-            Stats::curTick++; // memory clock, global, for Statistics
+        // set_high_writeq_watermark(0.0f);
+        // while(pending_requests()){
+        //     tick();
+        //     clks ++;
+        // if(clks % 1000000 == 0) {myrs->print_allline(); cout << "Clk-1 @ " << std::dec << clks << " Finished " << std::dec << cnt << " instructions " << endl;}
+        //     Stats::curTick++; // memory clock, global, for Statistics
             
-            stall_reason["rw_swtich"]++;
-        }
-        set_high_writeq_watermark(0.8f);
+        //     stall_reason["rw_swtich"]++;
+        // }
+        // set_high_writeq_watermark(0.8f);
     }
 
     void tick()
@@ -773,11 +880,11 @@ public:
                         req.addr_vec[i] = slice_lower_bits(addr, addr_bits[i]);
                     break;
                 case int(Type::RoBaRaCoCh):
-                    req.addr_vec[0] = slice_lower_bits(addr, addr_bits[0]);
-                    req.addr_vec[addr_bits.size() - 1] = slice_lower_bits(addr, addr_bits[addr_bits.size() - 1]);
-                    for (int i = 1; i <= int(T::Level::Row); i++)
-                        req.addr_vec[i] = slice_lower_bits(addr, addr_bits[i]);
-                    break;
+                        req.addr_vec[0] = slice_lower_bits(addr, addr_bits[0]);
+                        req.addr_vec[addr_bits.size() - 1] = slice_lower_bits(addr, addr_bits[addr_bits.size() - 1]);
+                        for (int i = 1; i <= int(T::Level::Row); i++)
+                            req.addr_vec[i] = slice_lower_bits(addr, addr_bits[i]);
+                        break;
                 default:
                     assert(false);
             }

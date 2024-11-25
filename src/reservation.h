@@ -27,10 +27,9 @@
 
 #define EMBED_DIM 16
 #define EMBED_REPEAT  ((int) (EMBED_DIM) / (64 / 4))
-#define CACHED_NUM_NODE  ((int) 95 / EMBED_REPEAT)               // 4 MB cache: 4*1024*1024 / 64  =  32768
-#define TOTAL_NUM_TOP_NODE  ((int) 16777216 / EMBED_REPEAT)         // 8 GB Mem (16 GB with 50% dummy) =  67108864 
+#define CACHED_NUM_NODE  ((int) 1024 / EMBED_REPEAT)               // 4 MB cache: 4*1024*1024 / 64  =  32768
+#define TOTAL_NUM_TOP_NODE  ((int) 67108864 / EMBED_REPEAT)         // 8 GB Mem (16 GB with 50% dummy) =  67108864 
 #define STASH_MAITANENCE  128
-
 
 
 #define NODEID_METADATA_START   0x7000000
@@ -234,9 +233,6 @@ class rs{
     long long stash_size_max = 0;
     long long stash_size_total = 0;
     long long stash_sample_times = 0;
-    
-    long long mem_q_total = 0;
-    long long mem_q_sample_times = 0;
 
     int tree_move_factor = log2(KTREE);
     std::vector<long long> lvl_base_lookup;
@@ -264,20 +260,10 @@ class rs{
     vector<ring_bucket>* ring_bucket_vec = new vector<ring_bucket>();
     string name;   
     map<string, long long> stall_reason;
-    long long total_num_blocks;
-    int num_of_ways = -1;
-    int start_lvl = 0;
-    long long cache_start_nodeid = 0;
-    long long cache_end_nodeid = 0;
-    vector<long long> ring_counter;
-    vector<long long> wb_block_id_last;
-    map<long long, long long> set_cnt_map;
 
-    rs(int n_lines, long long n_num_of_ways, long long n_total_num_blocks, int n_lowest_uncached_lvl=0, string n_name="invalid_name"){
+    rs(int n_lines, long long total_num_blocks, int n_lowest_uncached_lvl=0, string n_name="invalid_name"){
         name = n_name;
         num_of_entries = n_lines;
-        num_of_ways = n_num_of_ways;
-        total_num_blocks = n_total_num_blocks;
         num_of_lvls = ceil(log(float(total_num_blocks)) / log(float(KTREE))) + 1;
         lowest_uncached_lvl = n_lowest_uncached_lvl;
         // assert(num_of_entries > 0 && num_of_entries % (A + 1) == 0);
@@ -311,19 +297,6 @@ class rs{
         for(long long i = 0; i < valid_leaf_right; i++){
             ring_bucket_vec->push_back(ring_bucket(i));
         }
-        ring_counter.resize(total_num_blocks / num_of_ways, 0);
-        wb_block_id_last.resize(total_num_blocks / num_of_ways, -1);
-        for(long long i = 0; i < total_num_blocks / num_of_ways; i++){
-            set_cnt_map[i] = 0;
-        }
-        start_lvl = num_of_lvls - 1 - int(log((KTREE - 1) * num_of_ways) / log(KTREE));
-        cache_start_nodeid = (long long)(pow(2, start_lvl) - 1);
-        cache_end_nodeid = (name == "data") ? cache_start_nodeid + CACHED_NUM_NODE :
-                            (name == "pos1") ? cache_start_nodeid + CACHED_NUM_NODE / 8 :
-                            (name == "pos2") ? cache_start_nodeid + CACHED_NUM_NODE / 16 :
-                            -1;
-        assert(cache_end_nodeid >= 0);
-        cout << "Cached node ID: " << cache_start_nodeid << " -- " << cache_end_nodeid << endl;
         
         stall_reason["normal"] = 0;
         stall_reason["rs_hazard"] = 0;
@@ -336,30 +309,6 @@ class rs{
             delete rs_vec[i];
         }
     }
-
-    long long get_ring_counter(long long set_id, bool print=false){
-        // int bits = ceil(log2(float(total_num_blocks)));
-        int bits = ceil(log2(float(num_of_ways)));
-        long long ring_cp = ring_counter[set_id];
-        long long ret = 0;
-        for(int i = bits - 1; i >= 0; i--){
-            ret |= (ring_cp & 1) <<i;
-            ring_cp>>=1;
-        }
-        ring_counter[set_id]++;
-        if(print){
-            cout << "ring_counter: " << ret << endl;
-        }
-        return ret + set_id * num_of_ways;
-    }
-
-    long long get_rand_leaf(long long original_address){
-        long long set_num = ((original_address / Z) % (long long) total_num_blocks) / num_of_ways;
-        // cout << " set num: " << set_num << " original addr: " << original_address << " mapped place: " << set_num * NUM_OF_WAYS + rand() % NUM_OF_WAYS << " total num blocks" << total_num_blocks << endl;
-        // assert(set_num * num_of_ways + rand() % num_of_ways < total_num_blocks);
-        return set_num * num_of_ways + rand() % num_of_ways;
-    }
-
 
     void print_stats(){
         cout << "Stall reason distribution: " << endl;
@@ -379,11 +328,6 @@ class rs{
         else{
         cout << "Trace too short. To report stash size average have a longer trace. " << endl;
         }
-        if(mem_q_sample_times){
-            cout << "Average mem q size is: " << mem_q_total * 1.0 / mem_q_sample_times << endl;
-        }
-        cout << "Total mem q size is:" << mem_q_total << endl;
-        cout << "mem_q_sample_times is:" << mem_q_sample_times << endl;
 
         long long sum_ddr_accesses = useful_read_pull_ddr + dummy_read_pull_ddr + useful_early_pull_ddr + useful_early_push_ddr + useful_write_pull_ddr
                                 + useful_write_push_ddr + dummy_early_pull_ddr + dummy_early_push_ddr
@@ -438,19 +382,19 @@ class rs{
 
     long long posmap_nodeid_access(long long node_id){
         if(name == "data"){
-            if(metadata_cache->cache_access(node_id * 2 / 64 * 64 + NODEID_METADATA_START)){
+            if(metadata_cache->cache_access(node_id * 4 / 64 * 64 + NODEID_METADATA_START)){
                 return -1;
             }
             return node_id * 2 / 64 * 64 + NODEID_METADATA_START;
         }
         if(name == "pos1"){
-            if(metadata_cache->cache_access(node_id * 2 / 64 * 64 + POS1_METADATA_START)){
+            if(metadata_cache->cache_access(node_id * 4 / 64 * 64 + POS1_METADATA_START)){
                 return -1;
             }
             return node_id * 2 / 64 * 64 + POS1_METADATA_START;
         }
         if(name == "pos2"){
-            if(metadata_cache->cache_access(node_id * 2 / 64 * 64 + POS2_METADATA_START)){
+            if(metadata_cache->cache_access(node_id * 4 / 64 * 64 + POS2_METADATA_START)){
                 return -1;
             }
             return node_id * 2 / 64 * 64 + POS2_METADATA_START;
@@ -494,12 +438,6 @@ class rs{
         return;
     }
 
-    int slice_lower_bits(long& addr, int bits)
-    {
-        int lbits = addr & ((1<<bits) - 1);
-        addr >>= bits;
-        return lbits;
-    }
     long long id_convert_to_address(long long node_id, int offset){
         long long block_id = node_id * (Z + S) + offset;
         return (long long)(block_id);
@@ -575,7 +513,7 @@ class rs{
         }
         for(int i = 0; i < mshr_array[address].first.size(); i++){
             // TODO: in the future can remove this expensive assertion
-            // assert(!(mshr_array[address].first)[i].is_equal(mshr_entry(rs_row_num, rs_offset, pull, type)));
+            assert(!(mshr_array[address].first)[i].is_equal(mshr_entry(rs_row_num, rs_offset, pull, type)));
         }
         mshr_array[address].first.push_back(mshr_entry(rs_row_num, rs_offset, pull, type));
     }
@@ -660,17 +598,6 @@ class rs{
         for(int i = 0; i < num_of_lvls; i++){
             long long node_id = P(block_id, i, num_of_lvls);
             node_id_vec[i] = node_id;
-            assert(node_id >= 0);
-            long long metadata_addr = posmap_nodeid_access(node_id);
-            if(metadata_addr >= 0){
-                check_nodeid_ddr++;
-                ramualtor_input_vec.push_back(ramulator_packet(metadata_addr, true, true, name));
-            }
-
-            if(i < start_lvl || node_id < cache_end_nodeid){
-                offset_vec[i] = -1;
-                continue;
-            }
             std::pair<int, bool> offset_lookup;
             if(intended_node == node_id){
                 // cout << "Read node id: " << node_id << " offset: " << intended_offset <<  endl;
@@ -687,6 +614,12 @@ class rs{
             }
             offset_vec[i] = offset_lookup.first;
 
+            assert(node_id >= 0);
+            long long metadata_addr = posmap_nodeid_access(node_id);
+            if(metadata_addr >= 0){
+                check_nodeid_ddr++;
+                ramualtor_input_vec.push_back(ramulator_packet(metadata_addr, true, true, name));
+            }
 
             if(offset_lookup.second){
                 if((masking_writeback_block_id < 0) || is_node_on_block_path(node_id, i, masking_writeback_block_id) == false){
@@ -854,7 +787,7 @@ class rs{
             rs_vec[tail]->oram_finished_vec_for_early_pull[j] = make_pair(true, "unknown"); 
             if(addr_to_origaddr.find(pull_addr) != addr_to_origaddr.end()){
                 pos_map_line line_info = addr_to_origaddr[pull_addr];
-                // assert(stash.find(line_info.original_address) == stash.end());
+                assert(stash.find(line_info.original_address) == stash.end());
                 // cout << "Stash holding: " << std::hex << line_info.original_address << "->" << line_info.block_id << std::dec << endl;
                 // cout << "Map removing: " << std::hex << pull_addr << "->" << addr_to_origaddr[pull_addr].original_address << std::dec << endl;
                 assert(line_info.original_address >= 0);
@@ -889,7 +822,7 @@ class rs{
         //     int fo = flushed_offset[j];
         //     rs_vec[tail]->oram_finished_vec_for_early_pull[fo] = false; 
         // }
-        if(node_lvl < lowest_uncached_lvl || node_id < cache_end_nodeid){
+        if(node_lvl < lowest_uncached_lvl){
             for(int j = 0; j < Z + S; j++){
                 rs_vec[tail]->oram_finished_vec_for_early_pull[j] = make_pair(true, "unknown"); 
             }
@@ -1057,7 +990,7 @@ class rs{
             rs_vec[tail]->oram_addr_for_early_write[j] = id_convert_to_address(node_id, j);
             // rs_vec[tail]->oram_finished_vec_for_early_write[j] = false; 
             rs_vec[tail]->oram_finished_vec_for_early_write[j] = true; 
-            if(node_lvl >= lowest_uncached_lvl && node_id >= cache_end_nodeid){
+            if(node_lvl >= lowest_uncached_lvl){
                 mshr_add(rs_vec[tail]->oram_addr_for_early_write[j], tail, j, false, "early");
             }
         }
@@ -1103,16 +1036,7 @@ class rs{
         // cout << "Line # " << tail << " ";
         rs_vec[tail]->type = "write-pull";
         rs_vec[tail]->orig_addr = 0xdeadbeef;
-        for(int i = 0; i < start_lvl; i++){
-            long long node_id = node_id_vec[i];
-            rs_vec[tail]->oram_node_id[i] = node_id;
-            for(int j = 0; j < Z + S; j++){
-                long long pull_addr = id_convert_to_address(node_id, j);
-                rs_vec[tail]->oram_addr_for_pull[i * (Z + S) + j] = pull_addr;
-                rs_vec[tail]->oram_finished_vec_for_pull[i * (Z + S) + j] = make_pair(true, "unkown"); 
-            }
-        }
-        for(int i = start_lvl; i < num_of_lvls; i++){
+        for(int i = 0; i < num_of_lvls; i++){
             long long node_id = node_id_vec[i];
             rs_vec[tail]->oram_node_id[i] = node_id;
             for(int j = 0; j < Z + S; j++){
@@ -1125,7 +1049,7 @@ class rs{
                         cout << "Violating addr: " << std::hex << line_info.original_address << std::dec << endl;
                         cout << "Orig -> mapped: " << std::hex << line_info.original_address << "->" << pull_addr << std::dec << endl;
                     }
-                    // assert(stash.find(line_info.original_address) == stash.end());
+                    assert(stash.find(line_info.original_address) == stash.end());
                     // cout << "Stash holding: " << std::hex << line_info.original_address << "->" << line_info.block_id << std::dec << endl;
                     // cout << "Map removing: " << std::hex << pull_addr << "->" << addr_to_origaddr[pull_addr].original_address << std::dec << endl;
                     assert(line_info.original_address >= 0);
@@ -1137,10 +1061,7 @@ class rs{
             for(int j = 0; j < (*ring_bucket_vec)[node_id].z_arr.size(); j++){
                 int not_used_offset = (*ring_bucket_vec)[node_id].z_arr[j];
                 rs_vec[tail]->oram_addr_for_pull[i * (Z + S) + not_used_offset] = id_convert_to_address(node_id, not_used_offset);
-                rs_vec[tail]->oram_finished_vec_for_pull[i * (Z + S) + not_used_offset] = make_pair(false, "useful");
-                if(i < start_lvl || node_id < cache_end_nodeid){
-                    rs_vec[tail]->oram_finished_vec_for_pull[i * (Z + S) + not_used_offset] = make_pair(true, "unknown"); 
-                } 
+                rs_vec[tail]->oram_finished_vec_for_pull[i * (Z + S) + not_used_offset] = make_pair(false, "useful"); 
             }
             int streamed_Z = (*ring_bucket_vec)[node_id].z_arr.size();
             int remaining_S = Z - streamed_Z;
@@ -1149,9 +1070,6 @@ class rs{
                 int not_used_offset = (*ring_bucket_vec)[node_id].s_arr[j];
                 rs_vec[tail]->oram_addr_for_pull[i * (Z + S) + not_used_offset] = id_convert_to_address(node_id, not_used_offset);
                 rs_vec[tail]->oram_finished_vec_for_pull[i * (Z + S) + not_used_offset] = make_pair(false, "dummy"); 
-                if(i < start_lvl || node_id < cache_end_nodeid){
-                    rs_vec[tail]->oram_finished_vec_for_pull[i * (Z + S) + not_used_offset] = make_pair(true, "unknown"); 
-                }
             }
             for(int j = remaining_S; j < (*ring_bucket_vec)[node_id].s_arr.size(); j++){
                 int not_used_offset = (*ring_bucket_vec)[node_id].s_arr[j];
@@ -1204,9 +1122,6 @@ class rs{
                 rs_vec[tail]->oram_addr_for_write[i * (Z + S) + j] = converted_addr;
                 // rs_vec[tail]->oram_finished_vec_for_write[i * (Z + S) + j] = false; 
                 rs_vec[tail]->oram_finished_vec_for_write[i * (Z + S) + j] = true; 
-                if(i < start_lvl || node_id < cache_end_nodeid){
-                    continue;
-                }
                 mshr_add(converted_addr, tail, i * (Z + S) + j, false, "write");
                 // rs_vec[tail]->oram_unfinished_cnt++;
             }
@@ -1236,10 +1151,7 @@ class rs{
             rs_vec[tail]->oram_node_id[i] = extract_node_id;
             rs_vec[tail]->bucket_offset[i] = extract_offset;
             rs_vec[tail]->oram_lvl_addr[i] = id_convert_to_address(extract_node_id, extract_offset);
-            rs_vec[tail]->oram_finished_vec_for_read[i] = (extract_offset == -1) ? true : false;      
-            if(i < start_lvl || extract_node_id < cache_end_nodeid){
-                rs_vec[tail]->oram_finished_vec_for_read[i] = true;
-            }
+            rs_vec[tail]->oram_finished_vec_for_read[i] = false;      
         }
         ld_fwd_st_check(tail, node_id_vec.back());     
         // cout << "After ld st check of " << std::hex << orig_addr << std::dec << endl;
@@ -1269,7 +1181,6 @@ struct task{
     long long block_id = -1;
     long long node_id = -1;
     int offset = -1;
-    long long set_id = -1;
     string type = "";
     void print_task(){
         cout << "Type | orig | block | node | offset " << endl;
@@ -1312,6 +1223,21 @@ class posmap_and_stash{
     ~posmap_and_stash(){
         ;
     }
+
+    long long get_ring_counter(bool print=false){
+        int bits = ceil(log2(float(total_num_blocks)));
+        long long ring_cp = ring_counter;
+        long long ret = 0;
+        for(int i = bits - 1; i >= 0; i--){
+            ret |= (ring_cp & 1) <<i;
+            ring_cp>>=1;
+        }
+        ring_counter++;
+        if(print){
+            cout << "ring_counter: " << ret << endl;
+        }
+        return ret;
+    }
     
     void printposmap(){
         cout << "Posmap: address -> block, node, offset" << std::endl;
@@ -1340,11 +1266,9 @@ class posmap_and_stash{
         // if(posMap.find(access_addr) != posMap.end()){
         //     cout << "address pending? " << posMap[access_addr].pending << std::endl;
         // }
-        long long set_id = (access_addr >= 0) ? ((access_addr / Z) % myrs->total_num_blocks) / myrs->num_of_ways : rand() % (myrs->total_num_blocks / myrs->num_of_ways);
         if(myrs->posMap.find(access_addr) == myrs->posMap.end() || myrs->posMap[access_addr].pending){
-            long long random_block = set_id * myrs->num_of_ways + rand() % myrs->num_of_ways;; // rand() % total_num_blocks;
+            long long random_block = rand() % total_num_blocks;
             to_push.block_id = random_block;
-            to_push.set_id = set_id;
             if(myrs->struct_hazard(evaluate_next_task(to_push.block_id))){
                 // cout << "Hazard detected. " << endl;
                 return false;
@@ -1355,7 +1279,6 @@ class posmap_and_stash{
         else{
             pos_map_line line = myrs->posMap[access_addr];
             to_push.block_id = line.block_id;
-            to_push.set_id = set_id;
             if(myrs->struct_hazard(evaluate_next_task(to_push.block_id))){
                 // cout << "Hazard detected. " << endl;
                 return false;
@@ -1379,9 +1302,9 @@ class posmap_and_stash{
 
     int evaluate_next_task(long long block_id){
         int prospective_lines_added = 1;
-        // if((rw_counter + 2) % (A + 1) == 0){
+        if((rw_counter + 2) % (A + 1) == 0){
             prospective_lines_added+=2;
-        // }
+        }
         
         for(int i = 0; i < max_num_levels; i++){
             long long node_id = myrs->P(block_id, i, max_num_levels);
@@ -1401,9 +1324,6 @@ class posmap_and_stash{
         // myrs->print_allline();
         // printstash();
         // printposmap();
-        if(access_addr > 0){
-            access_addr = access_addr % total_num_of_original_addr_space;
-        }
         if(push_to_pending_read(access_addr, print_flag) == false){
             return 0;
         }
@@ -1414,7 +1334,6 @@ class posmap_and_stash{
         int ret_val = 1;
         task head;
         if(pending_q.size() == 0){
-            assert(0);
             long long random_block = rand() % total_num_blocks;
             head.block_id = random_block;
             string type = "read";
@@ -1426,15 +1345,13 @@ class posmap_and_stash{
         myrs->rs_read_rs_lines++;
 
         assert(head.type == "read");
-        myrs->set_cnt_map[head.set_id]++;
-        // rw_counter++;
-        // long long wb_block_id = -1;
-        if((myrs->set_cnt_map[head.set_id] + 1) % (A + 1) == 0){
-            myrs->wb_block_id_last[head.set_id] = myrs->get_ring_counter(head.set_id); 
-            // wb_block_id = myrs->wb_block_id_last[head.set_id];
+        rw_counter++;
+        long long wb_block_id = -1;
+        if((rw_counter + 1) % (A + 1) == 0){
+            wb_block_id = get_ring_counter();
         }
         // cout << "Reading from a path: " << head.block_id << " head node id: " << head.node_id << " offset: " << head.offset << " wb block id: " << wb_block_id << endl;
-        myrs->convert_to_ring_path_read(head.block_id, head.node_id, head.offset, myrs->wb_block_id_last[head.set_id]);
+        myrs->convert_to_ring_path_read(head.block_id, head.node_id, head.offset, wb_block_id);
         myrs->rs_line_register_read(head.original_address, head.node_id, head.offset);
         
         
@@ -1456,25 +1373,16 @@ class posmap_and_stash{
         }
         
         if(head.original_address >= 0){
-            myrs->stash[head.original_address] = myrs->get_rand_leaf(head.original_address); // rand() % total_num_blocks;
+            myrs->stash[head.original_address] = rand() % total_num_blocks;
         }
         // cout << "Stash creating: " << std::hex << head.original_address << "->" << myrs->stash[head.original_address] << std::dec << endl;
 
-        if((myrs->set_cnt_map[head.set_id] + 1) % (A + 1) == 0){
-            myrs->set_cnt_map[head.set_id]++;
-            myrs->convert_to_ring_path_write(myrs->wb_block_id_last[head.set_id]);
-            for(int i = myrs->start_lvl; i < myrs->num_of_lvls; i++){
-                long long wb_node_id = myrs->P(myrs->wb_block_id_last[head.set_id], i, myrs->num_of_lvls);
-                assert(wb_node_id >= 0);
-                long long metadata_addr = myrs->posmap_nodeid_access(wb_node_id);
-                if(metadata_addr >= 0){
-                    myrs->check_nodeid_ddr++;
-                    myrs->ramualtor_input_vec.push_back(ramulator_packet(metadata_addr, true, true, myrs->name));
-                }
-            }
+        if((rw_counter + 1) % (A + 1) == 0){
+            rw_counter++;
+            myrs->convert_to_ring_path_write(wb_block_id);
             // cout << "Trying to wb: " << wb_block_id << endl;
             myrs->rs_line_register_write();
-            piggy_writeback(myrs->wb_block_id_last[head.set_id]);
+            piggy_writeback(wb_block_id);
             ret_val+=2;
             myrs->rs_write_rs_lines+=2;
         }
@@ -1624,7 +1532,7 @@ class posmap_and_stash{
             //     }
             // }
             // cout << "Match up to " << deepest_lvl << " lvl" << endl;
-            for(int i = deepest_lvl; i >= myrs->start_lvl; i--){
+            for(int i = deepest_lvl; i >= 0; i--){
                 long long wb_node_id = node_id_vec[i];
                 if((*ring_bucket_vec)[wb_node_id].free_z_index < Z){
                     wb_lvl_useful_count[i]++;
@@ -1658,36 +1566,32 @@ class posmap_and_stash{
         }
     }
 
-    void posmap_init_writeback(){
 
-        for(long long set_id = 0; set_id < myrs->total_num_blocks / myrs->num_of_ways; set_id++){
-            long long set_start = set_id * myrs->num_of_ways * Z;
-            long long set_end = (set_id + 1) * myrs->num_of_ways * Z;
-            std::vector<long long> reshuff_addr;
-            for(long long i = set_start; i < set_end; i++){
-                reshuff_addr.push_back(i);
-            }
-            std::random_shuffle ( reshuff_addr.begin(), reshuff_addr.end() );
-            long long iter = 0;
-            for(long long wb_node_id = valid_leaf_left + set_id * myrs->num_of_ways; wb_node_id < valid_leaf_left + (set_id + 1) * myrs->num_of_ways; wb_node_id++){
-                while((*ring_bucket_vec)[wb_node_id].free_z_index < Z){
-                    int assigned_offset = (*ring_bucket_vec)[wb_node_id].assign_z_off();
-                    // std::cout << "Normal writing back stash: 0x" << std::hex << it->first << std::dec << " => " << it->second << '\n';
-                    // cout << std::hex << it->first << std::dec << " finally pick node: " << wb_node_id << " offset: " << assigned_offset << endl;
-                    // cout << "writing back to node: " << wb_node_id << " offset: " << assigned_offset << endl;
-                    pos_map_line tmp;
-                    tmp.original_address = reshuff_addr[iter++];
-                    tmp.block_id = wb_node_id - valid_leaf_left;
-                    tmp.node_id = wb_node_id;
-                    tmp.offset = assigned_offset;
-                    tmp.pending = false;
-                    myrs->posMap[tmp.original_address] = tmp;
-                    myrs->addr_to_origaddr[myrs->id_convert_to_address(wb_node_id, assigned_offset)] = tmp;
-                    // cout << "Init Map adding: " << std::hex << myrs->id_convert_to_address(wb_node_id, assigned_offset) << "->" << tmp.original_address << std::dec << endl;
-                }
-            }
-            // assert(iter == total_num_of_original_addr_space / 64);
+    void posmap_init_writeback(){
+        std::vector<long long> reshuff_addr;
+        for(long long i = 0; i < total_num_of_original_addr_space; i++){
+            reshuff_addr.push_back(i);
         }
+        std::random_shuffle ( reshuff_addr.begin(), reshuff_addr.end() );
+        long long iter = 0;
+        for(long long wb_node_id = valid_leaf_left; wb_node_id < valid_leaf_right; wb_node_id++){
+            while((*ring_bucket_vec)[wb_node_id].free_z_index < Z){
+                int assigned_offset = (*ring_bucket_vec)[wb_node_id].assign_z_off();
+                // std::cout << "Normal writing back stash: 0x" << std::hex << it->first << std::dec << " => " << it->second << '\n';
+                // cout << std::hex << it->first << std::dec << " finally pick node: " << wb_node_id << " offset: " << assigned_offset << endl;
+                // cout << "writing back to node: " << wb_node_id << " offset: " << assigned_offset << endl;
+                pos_map_line tmp;
+                tmp.original_address = reshuff_addr[iter++];
+                tmp.block_id = wb_node_id - valid_leaf_left;
+                tmp.node_id = wb_node_id;
+                tmp.offset = assigned_offset;
+                tmp.pending = false;
+                myrs->posMap[tmp.original_address] = tmp;
+                myrs->addr_to_origaddr[myrs->id_convert_to_address(wb_node_id, assigned_offset)] = tmp;
+                // cout << "Init Map adding: " << std::hex << myrs->id_convert_to_address(wb_node_id, assigned_offset) << "->" << tmp.original_address << std::dec << endl;
+            }
+        }
+        // assert(iter == total_num_of_original_addr_space / 64);
     }
 };
 

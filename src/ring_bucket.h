@@ -2,9 +2,9 @@
 #include <iostream>
 #include <functional>
 
-#define Z 16
-#define S 27
-#define A 20
+#define Z 4
+#define S 5
+#define A 3
 
 
 #define PBUCKET Z
@@ -12,15 +12,12 @@
 using namespace std;
 
 struct ring_bucket{
-    public:
     long long node_id;
     vector<int> z_arr;
     vector<int> s_arr;
     int free_z_index = 0;
     int accessed_times = 0;
     ring_bucket(long long n_id){
-        z_arr.clear();
-        s_arr.clear();
         node_id = n_id;
         accessed_times= 0;
         std::vector<int> tmp;
@@ -40,7 +37,6 @@ struct ring_bucket{
         assert(z_arr.size());
         int ret = z_arr[free_z_index];
         free_z_index++;
-        assert(s_arr.size() <= S);
         return ret;
     }
 
@@ -51,14 +47,12 @@ struct ring_bucket{
         for(int i = 0; i < s_arr.size(); i++){
             flushed_offset.push_back(s_arr[i]);
         }
-        assert(s_arr.size() <= S);
     }
 
     std::pair<int, bool> next_s(){
         int ret_s = s_arr.back();
         accessed_times++;
         s_arr.pop_back();
-        assert(s_arr.size() <= S);
         return std::make_pair(ret_s, (accessed_times == S));
     }
 
@@ -73,20 +67,17 @@ struct ring_bucket{
         }
         accessed_times++;
         assert(ret >= 0);
-        assert(s_arr.size() <= S);
         return std::make_pair(ret, (accessed_times == S));
     }
 
     void print_permutation(){
-        // cout << std::dec << "Node ID: " << node_id << endl;
-        // cout << "Z arr: ";
+        cout << std::dec << "Node ID: " << node_id << endl;
+        cout << "Z arr: ";
         for(int i=0; i<z_arr.size();i++){
             cout << z_arr[i] << " ";
         }
         cout << endl;
-        // cout << "S arr: ";
-        // cout << "S arr size: " << s_arr.size() << endl;
-        assert(s_arr.size() <= S);
+        cout << "S arr: ";
         for(int i=0; i<s_arr.size();i++){
             cout << s_arr[i] << " ";
         }

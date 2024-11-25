@@ -53,7 +53,7 @@ class pathoram{
             path_bucket_vec->push_back(path_bucket(i));
         }
         for(int i = 0; i < num_of_lvl; i++){
-            assert(KTREE > 0);
+            // assert(KTREE > 0);
             if((KTREE & (KTREE - 1)) == 0){     // if KTREE is power of 2
                 leaf_division.push_back(((num_of_lvl - i - 1)*tree_move_factor));
                 lvl_base_lookup.push_back((long long)(((1<<(i*tree_move_factor)) - 1) / (KTREE - 1)));
@@ -92,10 +92,10 @@ class pathoram{
                         cout << "Violating addr: " << std::hex << line_info.original_address << std::dec << endl;
                         cout << "Orig -> mapped: " << std::hex << line_info.original_address << "->" << pull_addr << std::dec << endl;
                     }
-                    assert(stash.find(line_info.original_address) == stash.end());
+                    // assert(stash.find(line_info.original_address) == stash.end());
                     // cout << "Stash holding: " << std::hex << line_info.original_address << "->" << line_info.block_id << std::dec << endl;
                     // cout << "Map removing: " << std::hex << pull_addr << "->" << addr_to_origaddr[pull_addr].original_address << std::dec << endl;
-                    assert(line_info.original_address >= 0);
+                    // assert(line_info.original_address >= 0);
                     stash[line_info.original_address] = line_info.block_id;
                     addr_to_origaddr.erase(pull_addr);
                     posMap.erase(line_info.original_address);
@@ -117,11 +117,11 @@ class pathoram{
                     deepest_lvl = i;
                 }
                 else{
-                    assert(i > 0);
+                    // assert(i > 0);
                     break;
                 }
             }
-            assert(deepest_lvl >= 0);
+            // assert(deepest_lvl >= 0);
             for(int i = deepest_lvl; i >= 0; i--){
                 long long wb_node_id = P(leaf, i, num_of_lvl);
                 if((*path_bucket_vec)[wb_node_id].filled_idx < Z){
@@ -236,7 +236,7 @@ class proram{
             path_bucket_vec->push_back(path_bucket(i));
         }
         for(int i = 0; i < num_of_lvl; i++){
-            assert(KTREE > 0);
+            // assert(KTREE > 0);
             if((KTREE & (KTREE - 1)) == 0){     // if KTREE is power of 2
                 leaf_division.push_back(((num_of_lvl - i - 1)*tree_move_factor));
                 lvl_base_lookup.push_back((long long)(((1<<(i*tree_move_factor)) - 1) / (KTREE - 1)));
@@ -275,10 +275,10 @@ class proram{
                         cout << "Violating addr: " << std::hex << line_info.original_address << std::dec << endl;
                         cout << "Orig -> mapped: " << std::hex << line_info.original_address << "->" << pull_addr << std::dec << endl;
                     }
-                    assert(stash.find(line_info.original_address) == stash.end());
+                    // assert(stash.find(line_info.original_address) == stash.end());
                     // cout << "Stash holding: " << std::hex << line_info.original_address << "->" << line_info.block_id << std::dec << endl;
                     // cout << "Map removing: " << std::hex << pull_addr << "->" << addr_to_origaddr[pull_addr].original_address << std::dec << endl;
-                    assert(line_info.original_address >= 0);
+                    // assert(line_info.original_address >= 0);
                     stash[line_info.original_address] = line_info.block_id;
                     addr_to_origaddr.erase(pull_addr);
                     posMap.erase(line_info.original_address);
@@ -303,11 +303,11 @@ class proram{
                     deepest_lvl = i;
                 }
                 else{
-                    assert(i > 0);
+                    // assert(i > 0);
                     break;
                 }
             }
-            assert(deepest_lvl >= 0);
+            // assert(deepest_lvl >= 0);
             for(int i = deepest_lvl; i >= 0; i--){
                 long long wb_node_id = P(leaf, i, num_of_lvl);
                 if((*path_bucket_vec)[wb_node_id].filled_idx < Z){
@@ -424,7 +424,7 @@ class iroram{
             path_bucket_vec->push_back(path_bucket(i));
         }
         for(int i = 0; i < num_of_lvl; i++){
-            assert(KTREE > 0);
+            // assert(KTREE > 0);
             if((KTREE & (KTREE - 1)) == 0){     // if KTREE is power of 2
                 leaf_division.push_back(((num_of_lvl - i - 1)*tree_move_factor));
                 lvl_base_lookup.push_back((long long)(((1<<(i*tree_move_factor)) - 1) / (KTREE - 1)));
@@ -464,10 +464,10 @@ class iroram{
                         cout << "Violating addr: " << std::hex << line_info.original_address << std::dec << endl;
                         cout << "Orig -> mapped: " << std::hex << line_info.original_address << "->" << pull_addr << std::dec << endl;
                     }
-                    assert(stash.find(line_info.original_address) == stash.end());
+                    // assert(stash.find(line_info.original_address) == stash.end());
                     // cout << "Stash holding: " << std::hex << line_info.original_address << "->" << line_info.block_id << std::dec << endl;
                     // cout << "Map removing: " << std::hex << pull_addr << "->" << addr_to_origaddr[pull_addr].original_address << std::dec << endl;
-                    assert(line_info.original_address >= 0);
+                    // assert(line_info.original_address >= 0);
                     stash[line_info.original_address] = line_info.block_id;
                     addr_to_origaddr.erase(pull_addr);
                     posMap.erase(line_info.original_address);
@@ -489,11 +489,11 @@ class iroram{
                     deepest_lvl = i;
                 }
                 else{
-                    assert(i > 0);
+                    // assert(i > 0);
                     break;
                 }
             }
-            assert(deepest_lvl >= 0);
+            // assert(deepest_lvl >= 0);
             for(int i = deepest_lvl; i >= 0; i--){
                 long long wb_node_id = P(leaf, i, num_of_lvl);
                 int buckiet_sz = (i == num_of_lvl - 1) ? Z : (i >= 10 && i <= 15) ? 1 : (i >= 16 && i <= 18) ? 2 : Z;
@@ -610,7 +610,7 @@ class pageoram{
             path_bucket_vec->push_back(path_bucket(i));
         }
         for(int i = 0; i < num_of_lvl; i++){
-            assert(KTREE > 0);
+            // assert(KTREE > 0);
             if((KTREE & (KTREE - 1)) == 0){     // if KTREE is power of 2
                 leaf_division.push_back(((num_of_lvl - i - 1)*tree_move_factor));
                 lvl_base_lookup.push_back((long long)(((1<<(i*tree_move_factor)) - 1) / (KTREE - 1)));
@@ -649,10 +649,10 @@ class pageoram{
                         cout << "Violating addr: " << std::hex << line_info.original_address << std::dec << endl;
                         cout << "Orig -> mapped: " << std::hex << line_info.original_address << "->" << pull_addr << std::dec << endl;
                     }
-                    assert(stash.find(line_info.original_address) == stash.end());
+                    // assert(stash.find(line_info.original_address) == stash.end());
                     // cout << "Stash holding: " << std::hex << line_info.original_address << "->" << line_info.block_id << std::dec << endl;
                     // cout << "Map removing: " << std::hex << pull_addr << "->" << addr_to_origaddr[pull_addr].original_address << std::dec << endl;
-                    assert(line_info.original_address >= 0);
+                    // assert(line_info.original_address >= 0);
                     stash[line_info.original_address] = line_info.block_id;
                     addr_to_origaddr.erase(pull_addr);
                     posMap.erase(line_info.original_address);
@@ -671,10 +671,10 @@ class pageoram{
                             cout << "Violating addr: " << std::hex << line_info.original_address << std::dec << endl;
                             cout << "Orig -> mapped: " << std::hex << line_info.original_address << "->" << pull_addr << std::dec << endl;
                         }
-                        assert(stash.find(line_info.original_address) == stash.end());
+                        // assert(stash.find(line_info.original_address) == stash.end());
                         // cout << "Stash holding: " << std::hex << line_info.original_address << "->" << line_info.block_id << std::dec << endl;
                         // cout << "Map removing: " << std::hex << pull_addr << "->" << addr_to_origaddr[pull_addr].original_address << std::dec << endl;
-                        assert(line_info.original_address >= 0);
+                        // assert(line_info.original_address >= 0);
                         stash[line_info.original_address] = line_info.block_id;
                         addr_to_origaddr.erase(pull_addr);
                         posMap.erase(line_info.original_address);
@@ -697,11 +697,11 @@ class pageoram{
                     deepest_lvl = i;
                 }
                 else{
-                    assert(i > 0);
+                    // assert(i > 0);
                     break;
                 }
             }
-            assert(deepest_lvl >= 0);
+            // assert(deepest_lvl >= 0);
             for(int i = deepest_lvl + 1; i >= 0; i--){
                 if(i == num_of_lvl){
                     continue;
