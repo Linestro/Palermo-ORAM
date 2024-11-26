@@ -15,13 +15,28 @@ If you find this repo useful, please cite the following paper:
 }
 ```
 
+## Required hardware:
+CPU with at least 1TB main memory
+
 ## Required packages:
+g++ (9.4.0 preferred), cmake, python3 (Python 3.9 preferred), numpy, matplotlib
 
-g++ (9.4.0 preferred), cmake, python3 (Python 3.9 preferred)
+## **Step 0**: Generate Palermo main results (2 hours)
+./run_main.sh
 
-## **Step 1**: Plug and play by executing run.sh
-./run.sh
+## **Step 1**: Generate Palermo software only results (2 hours)
+git checkout palermo_sw && ./run_palermo_sw.sh
 
+## **Step 2**: Generate RingORAM results
+git checkout ringoram && ./run_ringoram.sh
 
-## **Step 2**: Plug and play by executing run.sh
-I will add more script to generate different figures in the paper
+## **Step 3**: Generate PrORAM results
+git checkout proram && ./run_proram.sh
+
+## **Step 4**: Generate other baselines
+git checkout other_oram && ./run_otheroram.sh
+
+## **Step 5**: Plot results in the paper
+git checkout main && cd fig9 && python3 fig9.py
+
+## **Step 6**: fig9/fig9.png should look the same as the paper Fig.9. 

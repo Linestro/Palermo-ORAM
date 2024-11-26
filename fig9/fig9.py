@@ -1,15 +1,7 @@
-import sys
-import re
 import numpy
-import os
-import math
 import matplotlib
 import matplotlib.pyplot as plt 
-import glob
-import argparse
-from pylab import *
 
-import matplotlib
 matplotlib.rcParams['pdf.fonttype'] = 42
 matplotlib.rcParams['ps.fonttype'] = 42
 
