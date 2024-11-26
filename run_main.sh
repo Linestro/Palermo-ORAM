@@ -2,8 +2,6 @@ set -e
 set -x 
 
 
-make clean
-make -j
 
 
 
@@ -14,6 +12,11 @@ prefetch_lens=(1 2 4 8)
 
 for prefetch_len in "${prefetch_lens[@]}"
 do
+    sed -i '28d' src/reservation.h
+    sed -i '28i #define EMBED_DIM '''$(( 16*prefetch_len ))'''' src/reservation.h
+    make clean
+    make -j
+
     for workload in "${workloads[@]}"
     do
     i=24
