@@ -10,6 +10,7 @@ cputraces/
 
 *reuslts*/
 ramulator_*
-*.txt
+# *.txt
+# !oram_traces/
 *.trace
 .vscode/
